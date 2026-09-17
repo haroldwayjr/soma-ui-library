@@ -1,0 +1,59 @@
+{
+  "name": "Popover / Popup",
+  "figmaComponentName": "Popover / Popup",
+  "category": "Popovers",
+  "page": "Popovers",
+  "nodeId": "1440:8895",
+  "description": "TODO",
+  "buildStatus": "Not started",
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [
+    {
+      "name": "Footer",
+      "figmaValues": [
+        "Actions",
+        "Links",
+        "None"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show close",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Footer": "Actions"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Footer": "Links"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Footer": "None"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

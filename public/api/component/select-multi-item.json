@@ -1,0 +1,103 @@
+{
+  "name": "Select / Multi Item",
+  "figmaComponentName": "Select / Multi Item",
+  "category": "Forms & inputs",
+  "page": "Multi-select",
+  "nodeId": "907:12365",
+  "description": "TODO",
+  "buildStatus": "Blocked",
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [
+    {
+      "name": "Checked",
+      "figmaValues": [
+        "False",
+        "True"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "State",
+      "figmaValues": [
+        "Rest",
+        "Hover",
+        "Focus visible",
+        "Disabled"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Checked": "False",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Checked": "False",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Checked": "False",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Checked": "False",
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Checked": "True",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Checked": "True",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Checked": "True",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Checked": "True",
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

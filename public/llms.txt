@@ -1,0 +1,128 @@
+# Soma UI component registry
+# Structured metadata: /registry.json
+# Icon catalog (400 icons): /icons.json
+# One line per Figma registry component; icons are intentionally excluded.
+
+_deleted · Tooltip Callout (do not use) — TODO — no code import — status: Unknown — impl: not-implemented
+Alert — TODO — no code import — status: Not started — impl: not-implemented
+App Shell — TODO — no code import — status: Unknown — impl: not-implemented
+Avatar — Avatar represents who — one person's identity in a compact circular form. It renders a photo when one is available and otherwise falls back to initials (a known user with no photo) or a person silhouette (unknown, anonymous, or pending identity), per the Soma Avatars page. — import { Avatar } from '@nova/ui' — status: In progress — impl: partial
+Avatar / Photo / Alex Rivera — TODO — no code import — status: In progress — impl: not-implemented
+Avatar / Photo / Amara Diallo — TODO — no code import — status: In progress — impl: not-implemented
+Avatar / Photo / Dana Whitfield — TODO — no code import — status: In progress — impl: not-implemented
+Avatar / Photo / Default — TODO — no code import — status: In progress — impl: not-implemented
+Avatar / Photo / Jordan Ellis — TODO — no code import — status: In progress — impl: not-implemented
+Avatar / Photo / Kenji Sato — TODO — no code import — status: In progress — impl: not-implemented
+Avatar / Photo / Luis Andrade — TODO — no code import — status: In progress — impl: not-implemented
+Avatar / Photo / Maya Chen — TODO — no code import — status: In progress — impl: not-implemented
+Avatar / Photo / Noah Patel — TODO — no code import — status: In progress — impl: not-implemented
+Avatar / Photo / Priya Nair — TODO — no code import — status: In progress — impl: not-implemented
+Avatar / Photo / Sam Okonkwo — TODO — no code import — status: In progress — impl: not-implemented
+Avatar / Presence dot — Avatar represents who — one person's identity in a compact circular form. It renders a photo when one is available and otherwise falls back to initials (a known user with no photo) or a person silhouette (unknown, anonymous, or pending identity), per the Soma Avatars page. — import { Avatar } from '@nova/ui' — status: In progress — impl: partial
+Avatar Group — TODO — no code import — status: In progress — impl: not-implemented
+Avatar Label Group — TODO — no code import — status: In progress — impl: not-implemented
+Back Link — Link is the Soma inline hyperlink: text that takes the user somewhere else. Its job is to look like a link — color, underline, hover, focus — and to leave navigation itself to the element that owns the destination. — import { Link } from '@nova/ui' — status: Unknown — impl: matched
+Badge — Badge is the Soma Badge: a passive status label, tag, or count indicator — `Completed`, `In progress`, `Draft`. It communicates status or classification at a glance and is never interactive, per the Soma Badges page. — import { Badge } from '@nova/ui' — status: Done — impl: matched
+Badge / Count — Badge is the Soma Badge: a passive status label, tag, or count indicator — `Completed`, `In progress`, `Draft`. It communicates status or classification at a glance and is never interactive, per the Soma Badges page. — import { Badge } from '@nova/ui' — status: Done — impl: matched
+Breadcrumb / Current — TODO — no code import — status: Not started — impl: not-implemented
+Breadcrumb / Home — TODO — no code import — status: Not started — impl: not-implemented
+Breadcrumb / Link — TODO — no code import — status: Not started — impl: not-implemented
+Breadcrumb / Overflow — TODO — no code import — status: Not started — impl: not-implemented
+Breadcrumb / Separator — TODO — no code import — status: Not started — impl: not-implemented
+Breadcrumb Trail — TODO — no code import — status: Not started — impl: not-implemented
+Button — Button renders a native `<button>` for actions. — import { Button } from '@nova/ui' — status: In progress — impl: partial
+Card — `Card` is the first compound API in `libs/ui`. Every other component here flattens to a single function — even ones with a Base UI primitive underneath that is itself namespaced (`Switch` wraps `Switch.Root` / `Switch.Thumb` into one component). Card has no Base UI primitive at all — there is no accessible "card" role, so nothing is lost by not flattening it — and Soma's own sheet already models it as independent regions (a header with an optional trailing action, a body slot, an optional footer), not a fixed set of props. Exposing `Card.Root` / `Card.Header` / `Card.HeaderTitle` / `Card.Body` / `Card.Footer` as parts lets a consumer: — import { Card } from '@nova/ui' — status: Done — impl: partial
+Card / Notice — `Card` is the first compound API in `libs/ui`. Every other component here flattens to a single function — even ones with a Base UI primitive underneath that is itself namespaced (`Switch` wraps `Switch.Root` / `Switch.Thumb` into one component). Card has no Base UI primitive at all — there is no accessible "card" role, so nothing is lost by not flattening it — and Soma's own sheet already models it as independent regions (a header with an optional trailing action, a body slot, an optional footer), not a fixed set of props. Exposing `Card.Root` / `Card.Header` / `Card.HeaderTitle` / `Card.Body` / `Card.Footer` as parts lets a consumer: — import { Card } from '@nova/ui' — status: Done — impl: partial
+Chat / Message — TODO — no code import — status: Unknown — impl: not-implemented
+Checkbox / Control — Checkbox is the Soma Checkbox / Control: a 16×16 selection box that the user ticks, unticks, or leaves mixed. Phase 1 is that control only — default tone, one size — as documented on the Soma Checkboxes page. — import { Checkbox } from '@nova/ui' — status: In progress — impl: matched
+Checkbox / Group — TODO — no code import — status: In progress — impl: not-implemented
+Checkbox / Item — TODO — no code import — status: In progress — impl: not-implemented
+Chip — Chip is the Soma Chip: a compact pill that labels a discrete value the user has already supplied or the system has already applied — a selected filter, a recipient, an applied tag. Its job is to make that value visible and, when the value is removable, to carry the control that removes it. — import { Chip } from '@nova/ui' — status: In progress — impl: partial
+Chip / Dismiss — Chip is the Soma Chip: a compact pill that labels a discrete value the user has already supplied or the system has already applied — a selected filter, a recipient, an applied tag. Its job is to make that value visible and, when the value is removable, to carry the control that removes it. — import { Chip } from '@nova/ui' — status: In progress — impl: partial
+Choice chip — Chip is the Soma Chip: a compact pill that labels a discrete value the user has already supplied or the system has already applied — a selected filter, a recipient, an applied tag. Its job is to make that value visible and, when the value is removable, to carry the control that removes it. — import { Chip } from '@nova/ui' — status: In progress — impl: partial
+Choice chip group — TODO — no code import — status: In progress — impl: not-implemented
+Close — TODO — no code import — status: Not started — impl: not-implemented
+Dialog — TODO — no code import — status: Not started — impl: not-implemented
+Field — Field composes the parts every labeled form control shares: a visible label, one control, and one supporting line — description or error. Controls own their own chrome and behavior; Field owns everything around them. — import { Field } from '@nova/ui' — status: Done — impl: partial
+Form / Section — TODO — no code import — status: Unknown — impl: not-implemented
+IHP Tips / Disclosure — TODO — no code import — status: Unknown — impl: not-implemented
+Illustration / Empty — TODO — no code import — status: Unknown — impl: not-implemented
+Input / Amount — TODO — no code import — status: In progress — impl: not-implemented
+Input / Card — TODO — no code import — status: In progress — impl: not-implemented
+Input / Chips — TODO — no code import — status: In progress — impl: not-implemented
+Input / Chips external — TODO — no code import — status: In progress — impl: not-implemented
+Input / Clear — TODO — no code import — status: In progress — impl: not-implemented
+Input / Date — TODO — no code import — status: In progress — impl: not-implemented
+Input / Email — TextField combines a visible field label, one native text input, and one supporting line — description or error — into a single accessible control. — import { TextField } from '@nova/ui' — status: In progress — impl: partial
+Input / Number — TODO — no code import — status: In progress — impl: not-implemented
+Input / Number vertical — TODO — no code import — status: In progress — impl: not-implemented
+Input / OTP — TODO — no code import — status: In progress — impl: not-implemented
+Input / Phone — TextField combines a visible field label, one native text input, and one supporting line — description or error — into a single accessible control. — import { TextField } from '@nova/ui' — status: In progress — impl: partial
+Input / Upload — TODO — no code import — status: In progress — impl: not-implemented
+Input / Website — TextField combines a visible field label, one native text input, and one supporting line — description or error — into a single accessible control. — import { TextField } from '@nova/ui' — status: In progress — impl: partial
+Link — Link is the Soma inline hyperlink: text that takes the user somewhere else. Its job is to look like a link — color, underline, hover, focus — and to leave navigation itself to the element that owns the destination. — import { Link } from '@nova/ui' — status: In progress — impl: partial
+List — TODO — no code import — status: Unknown — impl: not-implemented
+ListItem — TODO — no code import — status: Unknown — impl: not-implemented
+Logo / Care App — Logomark is the Included Health brand mark used next to a product wordmark (Care App in the App Shell). It is a committed SVG, not a Streamline glyph and not a remote asset. — import { Logomark } from '@nova/ui' — status: Done — impl: matched
+Logo / Dot — Logomark is the Included Health brand mark used next to a product wordmark (Care App in the App Shell). It is a committed SVG, not a Streamline glyph and not a remote asset. — import { Logomark } from '@nova/ui' — status: Done — impl: matched
+Logo / Dot / Lockup — Logomark is the Included Health brand mark used next to a product wordmark (Care App in the App Shell). It is a committed SVG, not a Streamline glyph and not a remote asset. — import { Logomark } from '@nova/ui' — status: Done — impl: matched
+Logo / Included Health — Logomark is the Included Health brand mark used next to a product wordmark (Care App in the App Shell). It is a committed SVG, not a Streamline glyph and not a remote asset. — import { Logomark } from '@nova/ui' — status: Done — impl: partial
+Mac Cursor — TODO — no code import — status: Unknown — impl: not-implemented
+Menu / CheckboxItem — TODO — no code import — status: Not started — impl: not-implemented
+Menu / GroupLabel — TODO — no code import — status: Not started — impl: not-implemented
+Menu / Item — TODO — no code import — status: Not started — impl: not-implemented
+Menu / Popup — TODO — no code import — status: Not started — impl: not-implemented
+Menu / RadioItem — TODO — no code import — status: Not started — impl: not-implemented
+Menu / Separator — TODO — no code import — status: Not started — impl: not-implemented
+Pagination — `Pagination` is the control that moves a user through a numbered page sequence. Use it anywhere a bounded list is split into pages — table footers (via `TablePagination`), card grids, search results — when the caller owns `page`, `pageCount`, and the fetch/slice logic. — import { Pagination } from '@nova/ui' — status: Done — impl: partial
+Password Input — TextField combines a visible field label, one native text input, and one supporting line — description or error — into a single accessible control. — import { TextField } from '@nova/ui' — status: In progress — impl: partial
+Popover / Popup — TODO — no code import — status: Not started — impl: not-implemented
+Profile Menu / Panel — TODO — no code import — status: Unknown — impl: not-implemented
+Profile Menu / Status nav — TODO — no code import — status: Unknown — impl: not-implemented
+Profile Menu / Status Panel — TODO — no code import — status: Unknown — impl: not-implemented
+Progress Bar — Progress is the Soma Progress Bar: a determinate, horizontal indicator that shows how much of a known-length task has completed — an upload, a multi-step form, a wizard. Phase 1 is the determinate bar only, per the Soma Progress Indicators page; the file groups the bar and an indeterminate Spinner under the same page, and only the bar is in scope here. — import { Progress } from '@nova/ui' — status: Done — impl: matched
+Radio / Control — Radio is the Soma Radio / Control: a 16×16 circle expressing one choice in a mutually exclusive set. Exactly one member of a group is selected, and selecting one deselects the rest. Phase 1 is the control plus the group that owns its value — default tone, one size — per the Soma Radio page. — import { Radio } from '@nova/ui' — status: In progress — impl: matched
+Radio / Group — Radio is the Soma Radio / Control: a 16×16 circle expressing one choice in a mutually exclusive set. Exactly one member of a group is selected, and selecting one deselects the rest. Phase 1 is the control plus the group that owns its value — default tone, one size — per the Soma Radio page. — import { RadioGroup } from '@nova/ui' — status: In progress — impl: partial
+Radio / Item — TODO — no code import — status: In progress — impl: not-implemented
+Rail / Icon — TODO — no code import — status: Unknown — impl: not-implemented
+Search Input — TextField combines a visible field label, one native text input, and one supporting line — description or error — into a single accessible control. — import { TextField } from '@nova/ui' — status: Not started — impl: partial
+Search Input — TextField combines a visible field label, one native text input, and one supporting line — description or error — into a single accessible control. — import { TextField } from '@nova/ui' — status: Not started — impl: partial
+Select / Field — SelectField is a select with a label. It is the component product code should reach for whenever a user picks one value from a list inside a form, and it exists so that the label, the help text, the error message, and the required marker are supplied once, as strings, rather than assembled by every consumer. — import { SelectField } from '@nova/ui' — status: Blocked — impl: partial
+Select / Field Multi — TODO — no code import — status: Blocked — impl: not-implemented
+Select / Item — Select is the Soma Select: choose exactly one value from a known, finite list, collapsed behind a trigger until it is needed. It is the right control when the options are enumerable and the user does not need to see them all at once — a country, an assignee, a status. — import { Select } from '@nova/ui' — status: Blocked — impl: partial
+Select / Multi Item — TODO — no code import — status: Blocked — impl: not-implemented
+Select / Popup — Select is the Soma Select: choose exactly one value from a known, finite list, collapsed behind a trigger until it is needed. It is the right control when the options are enumerable and the user does not need to see them all at once — a country, an assignee, a status. — import { Select } from '@nova/ui' — status: Blocked — impl: partial
+Select / Popup Panel — Select is the Soma Select: choose exactly one value from a known, finite list, collapsed behind a trigger until it is needed. It is the right control when the options are enumerable and the user does not need to see them all at once — a country, an assignee, a status. — import { Select } from '@nova/ui' — status: Blocked — impl: partial
+Select / Trigger — Select is the Soma Select: choose exactly one value from a known, finite list, collapsed behind a trigger until it is needed. It is the right control when the options are enumerable and the user does not need to see them all at once — a country, an assignee, a status. — import { Select } from '@nova/ui' — status: Blocked — impl: partial
+Select / Trigger Multi — TODO — no code import — status: Blocked — impl: not-implemented
+Slider — TODO — no code import — status: Not started — impl: not-implemented
+Spinner — TODO — no code import — status: Not started — impl: not-implemented
+StatusSelector / Panel — TODO — no code import — status: Unknown — impl: not-implemented
+StatusSelector / Row — TODO — no code import — status: Unknown — impl: not-implemented
+StatusSelector / Signal — TODO — no code import — status: Unknown — impl: not-implemented
+StatusSelector / Trigger — TODO — no code import — status: Unknown — impl: not-implemented
+Stepper / Indicator — TODO — no code import — status: Unknown — impl: not-implemented
+Stepper / Step — TODO — no code import — status: Unknown — impl: not-implemented
+Switch — Switch is the Soma Switch: a 44×24 pill that turns a setting on or off and takes effect immediately. Phase 1 is that control only — default tone, one size — per the Soma Switches page. — import { Switch } from '@nova/ui' — status: In progress — impl: matched
+Switch / Field — TODO — no code import — status: In progress — impl: not-implemented
+Tab — TODO — no code import — status: Not started — impl: not-implemented
+Tab · Compact — TODO — no code import — status: Not started — impl: not-implemented
+Tab · Nav — TODO — no code import — status: Not started — impl: not-implemented
+Table / Cell · actions — `Table` is the Soma table element set. Use it when the markup _is_ the table: a short composed list, a dashboard preview, anything that does not need sort, column drag, or virtualization. — import { Table } from '@nova/ui' — status: Done — impl: matched
+Table / Cell · avatar — `Table` is the Soma table element set. Use it when the markup _is_ the table: a short composed list, a dashboard preview, anything that does not need sort, column drag, or virtualization. — import { Table } from '@nova/ui' — status: Done — impl: partial
+Table / Cell · badge — `Table` is the Soma table element set. Use it when the markup _is_ the table: a short composed list, a dashboard preview, anything that does not need sort, column drag, or virtualization. — import { Table } from '@nova/ui' — status: Done — impl: matched
+Table / Cell · chips — `Table` is the Soma table element set. Use it when the markup _is_ the table: a short composed list, a dashboard preview, anything that does not need sort, column drag, or virtualization. — import { Table } from '@nova/ui' — status: Done — impl: matched
+Table / Cell · select — `Table` is the Soma table element set. Use it when the markup _is_ the table: a short composed list, a dashboard preview, anything that does not need sort, column drag, or virtualization. — import { Table } from '@nova/ui' — status: Done — impl: matched
+Table / Cell · text — `Table` is the Soma table element set. Use it when the markup _is_ the table: a short composed list, a dashboard preview, anything that does not need sort, column drag, or virtualization. — import { Table } from '@nova/ui' — status: Done — impl: partial
+Table / Empty state — `Table` is the Soma table element set. Use it when the markup _is_ the table: a short composed list, a dashboard preview, anything that does not need sort, column drag, or virtualization. — import { Table } from '@nova/ui' — status: Done — impl: matched
+Table / Header cell — `Table` is the Soma table element set. Use it when the markup _is_ the table: a short composed list, a dashboard preview, anything that does not need sort, column drag, or virtualization. — import { Table } from '@nova/ui' — status: Done — impl: partial
+Table / Header row — `Table` is the Soma table element set. Use it when the markup _is_ the table: a short composed list, a dashboard preview, anything that does not need sort, column drag, or virtualization. — import { Table } from '@nova/ui' — status: Done — impl: partial
+Table / Results — `Table` is the Soma table element set. Use it when the markup _is_ the table: a short composed list, a dashboard preview, anything that does not need sort, column drag, or virtualization. — import { Table } from '@nova/ui' — status: Done — impl: partial
+Table / Row — `Table` is the Soma table element set. Use it when the markup _is_ the table: a short composed list, a dashboard preview, anything that does not need sort, column drag, or virtualization. — import { Table } from '@nova/ui' — status: Done — impl: partial
+Tabs.List — TODO — no code import — status: Not started — impl: not-implemented
+Text Input — TextField combines a visible field label, one native text input, and one supporting line — description or error — into a single accessible control. — import { TextField } from '@nova/ui' — status: In progress — impl: partial
+Textarea — TODO — no code import — status: Not started — impl: not-implemented
+Theme Menu / Panel — TODO — no code import — status: Unknown — impl: not-implemented
+Tool rail — TODO — no code import — status: Unknown — impl: not-implemented
+Tooltip — Tooltip provides a short visual label or supplementary hint when a user hovers with a mouse or focuses the trigger with a keyboard. — import { Tooltip } from '@nova/ui' — status: Blocked — impl: matched
+View switcher — TODO — no code import — status: Unknown — impl: not-implemented

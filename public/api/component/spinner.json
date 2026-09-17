@@ -1,0 +1,192 @@
+{
+  "name": "Spinner",
+  "figmaComponentName": "Spinner",
+  "category": "Communication",
+  "page": "Spinners",
+  "nodeId": "3343:27182",
+  "description": "TODO",
+  "buildStatus": "Not started",
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [
+    {
+      "name": "Size",
+      "figmaValues": [
+        "xs",
+        "sm",
+        "md",
+        "lg"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Layout",
+      "figmaValues": [
+        "Bare",
+        "Labeled"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Style",
+      "figmaValues": [
+        "Track",
+        "Line"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Size": "xs",
+        "Layout": "Bare",
+        "Style": "Track"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "xs",
+        "Layout": "Bare",
+        "Style": "Line"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "xs",
+        "Layout": "Labeled",
+        "Style": "Track"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "xs",
+        "Layout": "Labeled",
+        "Style": "Line"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "sm",
+        "Layout": "Bare",
+        "Style": "Track"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "sm",
+        "Layout": "Bare",
+        "Style": "Line"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "sm",
+        "Layout": "Labeled",
+        "Style": "Track"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "sm",
+        "Layout": "Labeled",
+        "Style": "Line"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "md",
+        "Layout": "Bare",
+        "Style": "Track"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "md",
+        "Layout": "Bare",
+        "Style": "Line"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "md",
+        "Layout": "Labeled",
+        "Style": "Track"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "md",
+        "Layout": "Labeled",
+        "Style": "Line"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "lg",
+        "Layout": "Bare",
+        "Style": "Track"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "lg",
+        "Layout": "Bare",
+        "Style": "Line"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "lg",
+        "Layout": "Labeled",
+        "Style": "Track"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "lg",
+        "Layout": "Labeled",
+        "Style": "Line"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

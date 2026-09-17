@@ -1,0 +1,120 @@
+{
+  "name": "Switch / Field",
+  "figmaComponentName": "Switch / Field",
+  "category": "Forms & inputs",
+  "page": "Switches",
+  "nodeId": "476:733",
+  "description": "TODO",
+  "buildStatus": "In progress",
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [
+    {
+      "name": "Content",
+      "figmaValues": [
+        "Label",
+        "Label + caption"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Checked",
+      "figmaValues": [
+        "False",
+        "True"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "State",
+      "figmaValues": [
+        "Rest",
+        "Disabled"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Content": "Label",
+        "Checked": "False",
+        "State": "Rest"
+      },
+      "nodeId": "476:629",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Label",
+        "Checked": "False",
+        "State": "Disabled"
+      },
+      "nodeId": "476:641",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Label",
+        "Checked": "True",
+        "State": "Rest"
+      },
+      "nodeId": "476:653",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Label",
+        "Checked": "True",
+        "State": "Disabled"
+      },
+      "nodeId": "476:665",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Label + caption",
+        "Checked": "False",
+        "State": "Rest"
+      },
+      "nodeId": "476:677",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Label + caption",
+        "Checked": "False",
+        "State": "Disabled"
+      },
+      "nodeId": "476:691",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Label + caption",
+        "Checked": "True",
+        "State": "Rest"
+      },
+      "nodeId": "476:705",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Label + caption",
+        "Checked": "True",
+        "State": "Disabled"
+      },
+      "nodeId": "476:719",
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [
+    "proposed Switch+Field composite; bare Switch exists"
+  ],
+  "notApplicable": []
+}

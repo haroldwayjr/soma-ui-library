@@ -1,0 +1,118 @@
+{
+  "name": "Progress Bar",
+  "figmaComponentName": "Progress Bar",
+  "category": "Communication",
+  "page": "Progress Indicators",
+  "nodeId": "1167:163",
+  "description": "Progress is the Soma Progress Bar: a determinate, horizontal indicator that shows how much of a known-length task has completed — an upload, a multi-step form, a wizard. Phase 1 is the determinate bar only, per the Soma Progress Indicators page; the file groups the bar and an indeterminate Spinner under the same page, and only the bar is in scope here.",
+  "buildStatus": "Done",
+  "importPath": "@nova/ui",
+  "implementationStatus": "matched",
+  "props": [
+    {
+      "name": "Size",
+      "figmaValues": [
+        "sm",
+        "md"
+      ],
+      "codeProp": "size",
+      "implementationStatus": "matched"
+    },
+    {
+      "name": "State",
+      "figmaValues": [
+        "Default",
+        "Disabled"
+      ],
+      "codeProp": "disabled",
+      "implementationStatus": "matched"
+    },
+    {
+      "name": "Layout",
+      "figmaValues": [
+        "Bare",
+        "Labeled"
+      ],
+      "codeProp": "layout",
+      "implementationStatus": "matched"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Size": "sm",
+        "State": "Default",
+        "Layout": "Bare"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "sm",
+        "State": "Default",
+        "Layout": "Labeled"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "sm",
+        "State": "Disabled",
+        "Layout": "Bare"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "sm",
+        "State": "Disabled",
+        "Layout": "Labeled"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "md",
+        "State": "Default",
+        "Layout": "Bare"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "md",
+        "State": "Default",
+        "Layout": "Labeled"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "md",
+        "State": "Disabled",
+        "Layout": "Bare"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "md",
+        "State": "Disabled",
+        "Layout": "Labeled"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    }
+  ],
+  "codeExample": "<Progress />",
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

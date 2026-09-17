@@ -1,0 +1,111 @@
+{
+  "name": "Close",
+  "figmaComponentName": "Close",
+  "category": "Popovers",
+  "page": "Popovers",
+  "nodeId": "1559:8945",
+  "description": "TODO",
+  "buildStatus": "Not started",
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [
+    {
+      "name": "Size",
+      "figmaValues": [
+        "Default",
+        "Compact",
+        "Large"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "State",
+      "figmaValues": [
+        "Rest",
+        "Hover",
+        "Focus visible"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Size": "Default",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "Default",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "Default",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "Compact",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "Compact",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "Compact",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "Large",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "Large",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "Large",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

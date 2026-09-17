@@ -1,0 +1,23 @@
+{
+  "name": "Menu / Popup",
+  "figmaComponentName": "Menu / Popup",
+  "category": "Navigation & misc",
+  "page": "Dropdowns",
+  "nodeId": "358:101",
+  "description": "TODO",
+  "buildStatus": "Not started",
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [],
+  "variants": [
+    {
+      "properties": {},
+      "nodeId": "358:101",
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

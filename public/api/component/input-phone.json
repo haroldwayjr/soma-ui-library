@@ -1,0 +1,69 @@
+{
+  "name": "Input / Phone",
+  "figmaComponentName": "Input / Phone",
+  "category": "Forms & inputs",
+  "page": "Inputs",
+  "nodeId": "466:4287",
+  "description": "TextField combines a visible field label, one native text input, and one supporting line — description or error — into a single accessible control.",
+  "buildStatus": "In progress",
+  "importPath": "@nova/ui",
+  "implementationStatus": "partial",
+  "props": [
+    {
+      "name": "State",
+      "figmaValues": [
+        "Rest",
+        "Focus",
+        "Disabled",
+        "Filled",
+        "Error"
+      ],
+      "codeProp": "disabled, error",
+      "implementationStatus": "partial",
+      "notes": "Focus handled in CSS/:pseudo or data-attribute styles; Filled may be implied by value/content but has no explicit public prop"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "State": "Focus"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "State": "Filled"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "State": "Error"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    }
+  ],
+  "codeExample": "<TextField />",
+  "a11yNotes": null,
+  "gaps": [
+    "State=Filled"
+  ],
+  "notApplicable": []
+}

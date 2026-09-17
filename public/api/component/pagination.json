@@ -1,0 +1,95 @@
+{
+  "name": "Pagination",
+  "figmaComponentName": "Pagination",
+  "category": "Navigation & misc",
+  "page": "Pagination",
+  "nodeId": "1376:7529",
+  "description": "`Pagination` is the control that moves a user through a numbered page sequence. Use it anywhere a bounded list is split into pages — table footers (via `TablePagination`), card grids, search results — when the caller owns `page`, `pageCount`, and the fetch/slice logic.",
+  "buildStatus": "Done",
+  "importPath": "@nova/ui",
+  "implementationStatus": "partial",
+  "props": [
+    {
+      "name": "Size",
+      "figmaValues": [
+        "small",
+        "medium"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented",
+      "notes": "No public size prop — controls are fixed 24×24; TablePagination owns Select size only"
+    },
+    {
+      "name": "Position",
+      "figmaValues": [
+        "First",
+        "Middle",
+        "Last"
+      ],
+      "codeProp": null,
+      "implementationStatus": "matched",
+      "notes": "Figma Position (First/Middle/Last) documents page-range regions derived from page/pageCount"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Size": "small",
+        "Position": "First"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Size": "small",
+        "Position": "Middle"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Size": "small",
+        "Position": "Last"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Size": "medium",
+        "Position": "First"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Size": "medium",
+        "Position": "Middle"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Size": "medium",
+        "Position": "Last"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    }
+  ],
+  "codeExample": "<Pagination />",
+  "a11yNotes": null,
+  "gaps": [
+    "Size=small",
+    "Size=medium"
+  ],
+  "notApplicable": [
+    "Position=First",
+    "Position=Middle",
+    "Position=Last"
+  ]
+}

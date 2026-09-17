@@ -1,0 +1,17 @@
+{
+  "name": "Tooltip",
+  "figmaComponentName": "Tooltip",
+  "category": "Communication",
+  "page": "Tooltips",
+  "nodeId": "716:5314",
+  "description": "Tooltip provides a short visual label or supplementary hint when a user hovers with a mouse or focuses the trigger with a keyboard.",
+  "buildStatus": "Blocked",
+  "importPath": "@nova/ui",
+  "implementationStatus": "matched",
+  "props": [],
+  "variants": [],
+  "codeExample": "<Tooltip />",
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Avatar / Photo / Theo Nakamura",
+  "figmaComponentName": "Avatar / Photo / Theo Nakamura",
+  "category": "Data display",
+  "page": "Avatars",
+  "nodeId": "demo:photo:4",
+  "description": "Library photo asset for Avatar.Image; demo extension beyond Figma set.",
+  "buildStatus": "In progress",
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [],
+  "variants": [
+    {
+      "properties": {},
+      "nodeId": "demo:photo:4",
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [
+    "Library photo asset for Avatar.Image; not a UI control component"
+  ],
+  "notApplicable": []
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Avatar Group",
+  "figmaComponentName": "Avatar Group",
+  "category": "Data display",
+  "page": "Avatars",
+  "nodeId": "991:970",
+  "description": "TODO",
+  "buildStatus": "In progress",
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [
+    {
+      "name": "Show overflow",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show member 4",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {},
+      "nodeId": "991:970",
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [
+    "Figma pattern; no AvatarGroup export in @nova/ui"
+  ],
+  "notApplicable": []
+}

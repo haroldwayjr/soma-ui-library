@@ -1,0 +1,138 @@
+{
+  "name": "Tab",
+  "figmaComponentName": "Tab",
+  "category": "Navigation & misc",
+  "page": "Tabs",
+  "nodeId": "1375:7093",
+  "description": "TODO",
+  "buildStatus": "Not started",
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [
+    {
+      "name": "Size",
+      "figmaValues": [
+        "Compact",
+        "Nav"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "State",
+      "figmaValues": [
+        "Rest",
+        "Hover",
+        "Active",
+        "Disabled",
+        "Focus visible"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show icon",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show count",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Size": "Compact",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "Compact",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "Compact",
+        "State": "Active"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "Compact",
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "Compact",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "Nav",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "Nav",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "Nav",
+        "State": "Active"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "Nav",
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "Nav",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

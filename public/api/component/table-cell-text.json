@@ -1,0 +1,54 @@
+{
+  "name": "Table / Cell · text",
+  "figmaComponentName": "Table / Cell · text",
+  "category": "Data display",
+  "page": "Tables",
+  "nodeId": "1401:8121",
+  "description": "`Table` is the Soma table element set. Use it when the markup _is_ the table: a short composed list, a dashboard preview, anything that does not need sort, column drag, or virtualization.",
+  "buildStatus": "Done",
+  "importPath": "@nova/ui",
+  "implementationStatus": "partial",
+  "props": [
+    {
+      "name": "Variant",
+      "figmaValues": [
+        "Default",
+        "Date",
+        "Truncated"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Variant": "Default"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Date"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Truncated"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    }
+  ],
+  "codeExample": "<Table.Root />",
+  "a11yNotes": null,
+  "gaps": [
+    "Variant=Default",
+    "Variant=Date",
+    "Variant=Truncated"
+  ],
+  "notApplicable": []
+}

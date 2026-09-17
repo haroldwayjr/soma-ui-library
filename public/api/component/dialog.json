@@ -1,0 +1,60 @@
+{
+  "name": "Dialog",
+  "figmaComponentName": "Dialog",
+  "category": "Modals",
+  "page": "Modals",
+  "nodeId": "3530:26797",
+  "description": "TODO",
+  "buildStatus": "Not started",
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [
+    {
+      "name": "Intent",
+      "figmaValues": [
+        "Default",
+        "Destructive"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show leading icon",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show close",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Intent": "Default"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Intent": "Destructive"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

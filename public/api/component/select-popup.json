@@ -1,0 +1,35 @@
+{
+  "name": "Select / Popup",
+  "figmaComponentName": "Select / Popup",
+  "category": "Forms & inputs",
+  "page": "Select",
+  "nodeId": "723:6333",
+  "description": "Select is the Soma Select: choose exactly one value from a known, finite list, collapsed behind a trigger until it is needed. It is the right control when the options are enumerable and the user does not need to see them all at once — a country, an assignee, a status.",
+  "buildStatus": "Blocked",
+  "importPath": "@nova/ui",
+  "implementationStatus": "partial",
+  "props": [
+    {
+      "name": "Show item 6",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {},
+      "nodeId": "723:6333",
+      "implementationStatus": "matched"
+    }
+  ],
+  "codeExample": "<Select />",
+  "a11yNotes": null,
+  "gaps": [
+    "Show item 6"
+  ],
+  "notApplicable": []
+}

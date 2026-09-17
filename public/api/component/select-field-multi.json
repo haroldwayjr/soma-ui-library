@@ -1,0 +1,129 @@
+{
+  "name": "Select / Field Multi",
+  "figmaComponentName": "Select / Field Multi",
+  "category": "Forms & inputs",
+  "page": "Multi-select",
+  "nodeId": "907:12459",
+  "description": "TODO",
+  "buildStatus": "Blocked",
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [
+    {
+      "name": "Content",
+      "figmaValues": [
+        "Summary",
+        "Chips"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "State",
+      "figmaValues": [
+        "Rest",
+        "Filled",
+        "Focus visible",
+        "Disabled",
+        "Error"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Open",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Content": "Summary",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Summary",
+        "State": "Filled"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Summary",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Summary",
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Summary",
+        "State": "Error"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Chips",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Chips",
+        "State": "Filled"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Chips",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Chips",
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Chips",
+        "State": "Error"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

@@ -1,0 +1,161 @@
+{
+  "name": "Select / Trigger",
+  "figmaComponentName": "Select / Trigger",
+  "category": "Forms & inputs",
+  "page": "Select",
+  "nodeId": "723:5379",
+  "description": "Select is the Soma Select: choose exactly one value from a known, finite list, collapsed behind a trigger until it is needed. It is the right control when the options are enumerable and the user does not need to see them all at once — a country, an assignee, a status.",
+  "buildStatus": "Blocked",
+  "importPath": "@nova/ui",
+  "implementationStatus": "partial",
+  "props": [
+    {
+      "name": "Size",
+      "figmaValues": [
+        "medium",
+        "small"
+      ],
+      "codeProp": "size",
+      "implementationStatus": "matched"
+    },
+    {
+      "name": "State",
+      "figmaValues": [
+        "Rest",
+        "Hover",
+        "Focus visible",
+        "Disabled",
+        "Filled",
+        "Error"
+      ],
+      "codeProp": "disabled",
+      "implementationStatus": "partial",
+      "notes": "Hover handled in CSS/:pseudo or data-attribute styles; Focus visible handled in CSS/:pseudo or data-attribute styles; Filled may be implied by value/content but has no explicit public prop"
+    },
+    {
+      "name": "Show icon",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show status",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Size": "medium",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "medium",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "medium",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "medium",
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "medium",
+        "State": "Filled"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Size": "medium",
+        "State": "Error"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Size": "small",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "small",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "small",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "small",
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "small",
+        "State": "Filled"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Size": "small",
+        "State": "Error"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    }
+  ],
+  "codeExample": "<Select />",
+  "a11yNotes": null,
+  "gaps": [
+    "State=Filled",
+    "State=Error",
+    "Show icon",
+    "Show status"
+  ],
+  "notApplicable": []
+}

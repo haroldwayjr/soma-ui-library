@@ -1,0 +1,42 @@
+{
+  "name": "IHP Tips / Disclosure",
+  "figmaComponentName": "IHP Tips / Disclosure",
+  "category": "App components (WIP)",
+  "page": "App components (WIP)",
+  "nodeId": "3634:1700",
+  "description": "TODO",
+  "buildStatus": null,
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [
+    {
+      "name": "State",
+      "figmaValues": [
+        "Collapsed",
+        "Expanded"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "State": "Collapsed"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "Expanded"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

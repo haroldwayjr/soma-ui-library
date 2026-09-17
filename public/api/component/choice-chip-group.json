@@ -1,0 +1,93 @@
+{
+  "name": "Choice chip group",
+  "figmaComponentName": "Choice chip group",
+  "category": "Data display",
+  "page": "Chips",
+  "nodeId": "3826:16920",
+  "description": "TODO",
+  "buildStatus": "In progress",
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [
+    {
+      "name": "Selected",
+      "figmaValues": [
+        "Chip 1",
+        "Chip 2",
+        "Chip 3",
+        "Chip 4",
+        "Chip 5"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show chip 3",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show chip 4",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show chip 5",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Selected": "Chip 1"
+      },
+      "nodeId": "3826:16850",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Selected": "Chip 2"
+      },
+      "nodeId": "3826:16864",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Selected": "Chip 3"
+      },
+      "nodeId": "3826:16878",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Selected": "Chip 4"
+      },
+      "nodeId": "3826:16892",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Selected": "Chip 5"
+      },
+      "nodeId": "3826:16906",
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

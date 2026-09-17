@@ -1,0 +1,134 @@
+{
+  "name": "Select / Popup Panel",
+  "figmaComponentName": "Select / Popup Panel",
+  "category": "Forms & inputs",
+  "page": "Multi-select",
+  "nodeId": "907:12411",
+  "description": "Select is the Soma Select: choose exactly one value from a known, finite list, collapsed behind a trigger until it is needed. It is the right control when the options are enumerable and the user does not need to see them all at once — a country, an assignee, a status.",
+  "buildStatus": "Blocked",
+  "importPath": "@nova/ui",
+  "implementationStatus": "partial",
+  "props": [
+    {
+      "name": "List item type",
+      "figmaValues": [
+        "Simple",
+        "Checkbox",
+        "Radio"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Include search",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Include footer",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show item 1",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show item 2",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show item 3",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show item 4",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show item 5",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show item 6",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "List item type": "Simple"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "List item type": "Checkbox"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "List item type": "Radio"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    }
+  ],
+  "codeExample": "<Select />",
+  "a11yNotes": null,
+  "gaps": [
+    "List item type=Simple",
+    "List item type=Checkbox",
+    "List item type=Radio",
+    "Include search",
+    "Include footer",
+    "Show item 1",
+    "Show item 2",
+    "Show item 3",
+    "Show item 4",
+    "Show item 5",
+    "Show item 6"
+  ],
+  "notApplicable": []
+}

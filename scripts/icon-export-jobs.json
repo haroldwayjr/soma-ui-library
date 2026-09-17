@@ -1,0 +1,4784 @@
+[
+  {
+    "name": "icon/actions/add",
+    "style": "outline",
+    "nodeId": "1593:44255",
+    "path": "public/icon-assets/icon/actions/add-outline.svg"
+  },
+  {
+    "name": "icon/actions/add",
+    "style": "bold",
+    "nodeId": "2414:20210",
+    "path": "public/icon-assets/icon/actions/add-bold.svg"
+  },
+  {
+    "name": "icon/actions/archive",
+    "style": "outline",
+    "nodeId": "1593:34684",
+    "path": "public/icon-assets/icon/actions/archive-outline.svg"
+  },
+  {
+    "name": "icon/actions/archive",
+    "style": "bold",
+    "nodeId": "2414:20218",
+    "path": "public/icon-assets/icon/actions/archive-bold.svg"
+  },
+  {
+    "name": "icon/actions/attach",
+    "style": "outline",
+    "nodeId": "1593:34708",
+    "path": "public/icon-assets/icon/actions/attach-outline.svg"
+  },
+  {
+    "name": "icon/actions/attach",
+    "style": "bold",
+    "nodeId": "2414:20230",
+    "path": "public/icon-assets/icon/actions/attach-bold.svg"
+  },
+  {
+    "name": "icon/actions/browse",
+    "style": "outline",
+    "nodeId": "1593:34721",
+    "path": "public/icon-assets/icon/actions/browse-outline.svg"
+  },
+  {
+    "name": "icon/actions/browse",
+    "style": "bold",
+    "nodeId": "2414:20236",
+    "path": "public/icon-assets/icon/actions/browse-bold.svg"
+  },
+  {
+    "name": "icon/actions/cancel",
+    "style": "outline",
+    "nodeId": "1593:34759",
+    "path": "public/icon-assets/icon/actions/cancel-outline.svg"
+  },
+  {
+    "name": "icon/actions/cancel",
+    "style": "bold",
+    "nodeId": "2414:20256",
+    "path": "public/icon-assets/icon/actions/cancel-bold.svg"
+  },
+  {
+    "name": "icon/actions/check",
+    "style": "outline",
+    "nodeId": "1593:44271",
+    "path": "public/icon-assets/icon/actions/check-outline.svg"
+  },
+  {
+    "name": "icon/actions/check",
+    "style": "bold",
+    "nodeId": "2414:20268",
+    "path": "public/icon-assets/icon/actions/check-bold.svg"
+  },
+  {
+    "name": "icon/actions/check.circle",
+    "style": "outline",
+    "nodeId": "1593:36166",
+    "path": "public/icon-assets/icon/actions/check.circle-outline.svg"
+  },
+  {
+    "name": "icon/actions/check.circle",
+    "style": "bold",
+    "nodeId": "2414:21006",
+    "path": "public/icon-assets/icon/actions/check.circle-bold.svg"
+  },
+  {
+    "name": "icon/actions/clear",
+    "style": "outline",
+    "nodeId": "1593:34794",
+    "path": "public/icon-assets/icon/actions/clear-outline.svg"
+  },
+  {
+    "name": "icon/actions/clear",
+    "style": "bold",
+    "nodeId": "2414:20274",
+    "path": "public/icon-assets/icon/actions/clear-bold.svg"
+  },
+  {
+    "name": "icon/actions/close.alt",
+    "style": "outline",
+    "nodeId": "1593:34831",
+    "path": "public/icon-assets/icon/actions/close.alt-outline.svg"
+  },
+  {
+    "name": "icon/actions/close.alt",
+    "style": "bold",
+    "nodeId": "2414:20292",
+    "path": "public/icon-assets/icon/actions/close.alt-bold.svg"
+  },
+  {
+    "name": "icon/actions/copy",
+    "style": "outline",
+    "nodeId": "1593:34847",
+    "path": "public/icon-assets/icon/actions/copy-outline.svg"
+  },
+  {
+    "name": "icon/actions/copy",
+    "style": "bold",
+    "nodeId": "2414:20300",
+    "path": "public/icon-assets/icon/actions/copy-bold.svg"
+  },
+  {
+    "name": "icon/actions/create",
+    "style": "outline",
+    "nodeId": "1593:34863",
+    "path": "public/icon-assets/icon/actions/create-outline.svg"
+  },
+  {
+    "name": "icon/actions/create",
+    "style": "bold",
+    "nodeId": "2414:20308",
+    "path": "public/icon-assets/icon/actions/create-bold.svg"
+  },
+  {
+    "name": "icon/actions/cut",
+    "style": "outline",
+    "nodeId": "1593:35039",
+    "path": "public/icon-assets/icon/actions/cut-outline.svg"
+  },
+  {
+    "name": "icon/actions/cut",
+    "style": "bold",
+    "nodeId": "2414:20402",
+    "path": "public/icon-assets/icon/actions/cut-bold.svg"
+  },
+  {
+    "name": "icon/actions/delete",
+    "style": "outline",
+    "nodeId": "1593:44284",
+    "path": "public/icon-assets/icon/actions/delete-outline.svg"
+  },
+  {
+    "name": "icon/actions/delete",
+    "style": "bold",
+    "nodeId": "2414:20414",
+    "path": "public/icon-assets/icon/actions/delete-bold.svg"
+  },
+  {
+    "name": "icon/actions/download",
+    "style": "outline",
+    "nodeId": "1593:44300",
+    "path": "public/icon-assets/icon/actions/download-outline.svg"
+  },
+  {
+    "name": "icon/actions/download",
+    "style": "bold",
+    "nodeId": "2414:20442",
+    "path": "public/icon-assets/icon/actions/download-bold.svg"
+  },
+  {
+    "name": "icon/actions/draft",
+    "style": "outline",
+    "nodeId": "1593:35129",
+    "path": "public/icon-assets/icon/actions/draft-outline.svg"
+  },
+  {
+    "name": "icon/actions/draft",
+    "style": "bold",
+    "nodeId": "2414:20450",
+    "path": "public/icon-assets/icon/actions/draft-bold.svg"
+  },
+  {
+    "name": "icon/actions/duplicate",
+    "style": "outline",
+    "nodeId": "1593:35169",
+    "path": "public/icon-assets/icon/actions/duplicate-outline.svg"
+  },
+  {
+    "name": "icon/actions/duplicate",
+    "style": "bold",
+    "nodeId": "2414:20474",
+    "path": "public/icon-assets/icon/actions/duplicate-bold.svg"
+  },
+  {
+    "name": "icon/actions/edit",
+    "style": "outline",
+    "nodeId": "1593:44318",
+    "path": "public/icon-assets/icon/actions/edit-outline.svg"
+  },
+  {
+    "name": "icon/actions/edit",
+    "style": "bold",
+    "nodeId": "2414:20482",
+    "path": "public/icon-assets/icon/actions/edit-bold.svg"
+  },
+  {
+    "name": "icon/actions/edit.alt",
+    "style": "outline",
+    "nodeId": "1593:34885",
+    "path": "public/icon-assets/icon/actions/edit.alt-outline.svg"
+  },
+  {
+    "name": "icon/actions/edit.alt",
+    "style": "bold",
+    "nodeId": "2414:20320",
+    "path": "public/icon-assets/icon/actions/edit.alt-bold.svg"
+  },
+  {
+    "name": "icon/actions/empty.trash",
+    "style": "outline",
+    "nodeId": "1593:35208",
+    "path": "public/icon-assets/icon/actions/empty.trash-outline.svg"
+  },
+  {
+    "name": "icon/actions/empty.trash",
+    "style": "bold",
+    "nodeId": "2414:20492",
+    "path": "public/icon-assets/icon/actions/empty.trash-bold.svg"
+  },
+  {
+    "name": "icon/actions/erase",
+    "style": "outline",
+    "nodeId": "1593:34910",
+    "path": "public/icon-assets/icon/actions/erase-outline.svg"
+  },
+  {
+    "name": "icon/actions/erase",
+    "style": "bold",
+    "nodeId": "2414:20334",
+    "path": "public/icon-assets/icon/actions/erase-bold.svg"
+  },
+  {
+    "name": "icon/actions/explore",
+    "style": "outline",
+    "nodeId": "1593:34965",
+    "path": "public/icon-assets/icon/actions/explore-outline.svg"
+  },
+  {
+    "name": "icon/actions/explore",
+    "style": "bold",
+    "nodeId": "2414:20362",
+    "path": "public/icon-assets/icon/actions/explore-bold.svg"
+  },
+  {
+    "name": "icon/actions/export",
+    "style": "outline",
+    "nodeId": "1593:34946",
+    "path": "public/icon-assets/icon/actions/export-outline.svg"
+  },
+  {
+    "name": "icon/actions/export",
+    "style": "bold",
+    "nodeId": "2414:20352",
+    "path": "public/icon-assets/icon/actions/export-bold.svg"
+  },
+  {
+    "name": "icon/actions/find",
+    "style": "outline",
+    "nodeId": "1593:35011",
+    "path": "public/icon-assets/icon/actions/find-outline.svg"
+  },
+  {
+    "name": "icon/actions/find",
+    "style": "bold",
+    "nodeId": "2414:20386",
+    "path": "public/icon-assets/icon/actions/find-bold.svg"
+  },
+  {
+    "name": "icon/actions/flag.alt",
+    "style": "outline",
+    "nodeId": "1593:35241",
+    "path": "public/icon-assets/icon/actions/flag.alt-outline.svg"
+  },
+  {
+    "name": "icon/actions/flag.alt",
+    "style": "bold",
+    "nodeId": "2414:20510",
+    "path": "public/icon-assets/icon/actions/flag.alt-bold.svg"
+  },
+  {
+    "name": "icon/actions/forward.alt",
+    "style": "outline",
+    "nodeId": "1593:35268",
+    "path": "public/icon-assets/icon/actions/forward.alt-outline.svg"
+  },
+  {
+    "name": "icon/actions/forward.alt",
+    "style": "bold",
+    "nodeId": "2414:20524",
+    "path": "public/icon-assets/icon/actions/forward.alt-bold.svg"
+  },
+  {
+    "name": "icon/actions/import",
+    "style": "outline",
+    "nodeId": "1593:35284",
+    "path": "public/icon-assets/icon/actions/import-outline.svg"
+  },
+  {
+    "name": "icon/actions/import",
+    "style": "bold",
+    "nodeId": "2414:20532",
+    "path": "public/icon-assets/icon/actions/import-bold.svg"
+  },
+  {
+    "name": "icon/actions/link",
+    "style": "outline",
+    "nodeId": "1593:35303",
+    "path": "public/icon-assets/icon/actions/link-outline.svg"
+  },
+  {
+    "name": "icon/actions/link",
+    "style": "bold",
+    "nodeId": "2414:20542",
+    "path": "public/icon-assets/icon/actions/link-bold.svg"
+  },
+  {
+    "name": "icon/actions/locate",
+    "style": "outline",
+    "nodeId": "1593:35325",
+    "path": "public/icon-assets/icon/actions/locate-outline.svg"
+  },
+  {
+    "name": "icon/actions/locate",
+    "style": "bold",
+    "nodeId": "2414:20552",
+    "path": "public/icon-assets/icon/actions/locate-bold.svg"
+  },
+  {
+    "name": "icon/actions/login",
+    "style": "outline",
+    "nodeId": "1593:35358",
+    "path": "public/icon-assets/icon/actions/login-outline.svg"
+  },
+  {
+    "name": "icon/actions/login",
+    "style": "bold",
+    "nodeId": "2414:20570",
+    "path": "public/icon-assets/icon/actions/login-bold.svg"
+  },
+  {
+    "name": "icon/actions/logout",
+    "style": "outline",
+    "nodeId": "1593:35377",
+    "path": "public/icon-assets/icon/actions/logout-outline.svg"
+  },
+  {
+    "name": "icon/actions/logout",
+    "style": "bold",
+    "nodeId": "2414:20580",
+    "path": "public/icon-assets/icon/actions/logout-bold.svg"
+  },
+  {
+    "name": "icon/actions/minus",
+    "style": "outline",
+    "nodeId": "1593:36199",
+    "path": "public/icon-assets/icon/actions/minus-outline.svg"
+  },
+  {
+    "name": "icon/actions/minus",
+    "style": "bold",
+    "nodeId": "2414:21022",
+    "path": "public/icon-assets/icon/actions/minus-bold.svg"
+  },
+  {
+    "name": "icon/actions/move",
+    "style": "outline",
+    "nodeId": "1593:35396",
+    "path": "public/icon-assets/icon/actions/move-outline.svg"
+  },
+  {
+    "name": "icon/actions/move",
+    "style": "bold",
+    "nodeId": "2414:20590",
+    "path": "public/icon-assets/icon/actions/move-bold.svg"
+  },
+  {
+    "name": "icon/actions/new",
+    "style": "outline",
+    "nodeId": "1593:35417",
+    "path": "public/icon-assets/icon/actions/new-outline.svg"
+  },
+  {
+    "name": "icon/actions/new",
+    "style": "bold",
+    "nodeId": "2414:20600",
+    "path": "public/icon-assets/icon/actions/new-bold.svg"
+  },
+  {
+    "name": "icon/actions/open",
+    "style": "outline",
+    "nodeId": "1593:35448",
+    "path": "public/icon-assets/icon/actions/open-outline.svg"
+  },
+  {
+    "name": "icon/actions/open",
+    "style": "bold",
+    "nodeId": "2414:20618",
+    "path": "public/icon-assets/icon/actions/open-bold.svg"
+  },
+  {
+    "name": "icon/actions/paste",
+    "style": "outline",
+    "nodeId": "1593:35476",
+    "path": "public/icon-assets/icon/actions/paste-outline.svg"
+  },
+  {
+    "name": "icon/actions/paste",
+    "style": "bold",
+    "nodeId": "2414:20634",
+    "path": "public/icon-assets/icon/actions/paste-bold.svg"
+  },
+  {
+    "name": "icon/actions/pin",
+    "style": "outline",
+    "nodeId": "1593:35516",
+    "path": "public/icon-assets/icon/actions/pin-outline.svg"
+  },
+  {
+    "name": "icon/actions/pin",
+    "style": "bold",
+    "nodeId": "2414:20654",
+    "path": "public/icon-assets/icon/actions/pin-bold.svg"
+  },
+  {
+    "name": "icon/actions/power",
+    "style": "outline",
+    "nodeId": "1593:35534",
+    "path": "public/icon-assets/icon/actions/power-outline.svg"
+  },
+  {
+    "name": "icon/actions/power",
+    "style": "bold",
+    "nodeId": "2414:20662",
+    "path": "public/icon-assets/icon/actions/power-bold.svg"
+  },
+  {
+    "name": "icon/actions/print",
+    "style": "outline",
+    "nodeId": "1593:35552",
+    "path": "public/icon-assets/icon/actions/print-outline.svg"
+  },
+  {
+    "name": "icon/actions/print",
+    "style": "bold",
+    "nodeId": "2414:20670",
+    "path": "public/icon-assets/icon/actions/print-bold.svg"
+  },
+  {
+    "name": "icon/actions/quote.reply",
+    "style": "outline",
+    "nodeId": "1593:35587",
+    "path": "public/icon-assets/icon/actions/quote.reply-outline.svg"
+  },
+  {
+    "name": "icon/actions/quote.reply",
+    "style": "bold",
+    "nodeId": "2414:20688",
+    "path": "public/icon-assets/icon/actions/quote.reply-bold.svg"
+  },
+  {
+    "name": "icon/actions/redo",
+    "style": "outline",
+    "nodeId": "1593:35615",
+    "path": "public/icon-assets/icon/actions/redo-outline.svg"
+  },
+  {
+    "name": "icon/actions/redo",
+    "style": "bold",
+    "nodeId": "2414:20704",
+    "path": "public/icon-assets/icon/actions/redo-bold.svg"
+  },
+  {
+    "name": "icon/actions/refresh",
+    "style": "outline",
+    "nodeId": "1593:35631",
+    "path": "public/icon-assets/icon/actions/refresh-outline.svg"
+  },
+  {
+    "name": "icon/actions/refresh",
+    "style": "bold",
+    "nodeId": "2414:20712",
+    "path": "public/icon-assets/icon/actions/refresh-bold.svg"
+  },
+  {
+    "name": "icon/actions/remind",
+    "style": "outline",
+    "nodeId": "1593:35655",
+    "path": "public/icon-assets/icon/actions/remind-outline.svg"
+  },
+  {
+    "name": "icon/actions/remind",
+    "style": "bold",
+    "nodeId": "2414:20724",
+    "path": "public/icon-assets/icon/actions/remind-bold.svg"
+  },
+  {
+    "name": "icon/actions/reply.alt",
+    "style": "outline",
+    "nodeId": "1593:35689",
+    "path": "public/icon-assets/icon/actions/reply.alt-outline.svg"
+  },
+  {
+    "name": "icon/actions/reply.alt",
+    "style": "bold",
+    "nodeId": "2414:20744",
+    "path": "public/icon-assets/icon/actions/reply.alt-bold.svg"
+  },
+  {
+    "name": "icon/actions/restore",
+    "style": "outline",
+    "nodeId": "1593:35723",
+    "path": "public/icon-assets/icon/actions/restore-outline.svg"
+  },
+  {
+    "name": "icon/actions/restore",
+    "style": "bold",
+    "nodeId": "2414:20764",
+    "path": "public/icon-assets/icon/actions/restore-bold.svg"
+  },
+  {
+    "name": "icon/actions/save",
+    "style": "outline",
+    "nodeId": "1593:44340",
+    "path": "public/icon-assets/icon/actions/save-outline.svg"
+  },
+  {
+    "name": "icon/actions/save",
+    "style": "bold",
+    "nodeId": "2414:20776",
+    "path": "public/icon-assets/icon/actions/save-bold.svg"
+  },
+  {
+    "name": "icon/actions/search.alt",
+    "style": "outline",
+    "nodeId": "54:495",
+    "path": "public/icon-assets/icon/actions/search.alt-outline.svg"
+  },
+  {
+    "name": "icon/actions/search.alt",
+    "style": "bold",
+    "nodeId": "2414:20792",
+    "path": "public/icon-assets/icon/actions/search.alt-bold.svg"
+  },
+  {
+    "name": "icon/actions/select",
+    "style": "outline",
+    "nodeId": "1593:35777",
+    "path": "public/icon-assets/icon/actions/select-outline.svg"
+  },
+  {
+    "name": "icon/actions/select",
+    "style": "bold",
+    "nodeId": "2414:20800",
+    "path": "public/icon-assets/icon/actions/select-bold.svg"
+  },
+  {
+    "name": "icon/actions/select.all",
+    "style": "outline",
+    "nodeId": "1593:35838",
+    "path": "public/icon-assets/icon/actions/select.all-outline.svg"
+  },
+  {
+    "name": "icon/actions/select.all",
+    "style": "bold",
+    "nodeId": "2414:20838",
+    "path": "public/icon-assets/icon/actions/select.all-bold.svg"
+  },
+  {
+    "name": "icon/actions/send.alt",
+    "style": "outline",
+    "nodeId": "1593:35863",
+    "path": "public/icon-assets/icon/actions/send.alt-outline.svg"
+  },
+  {
+    "name": "icon/actions/send.alt",
+    "style": "bold",
+    "nodeId": "2414:20852",
+    "path": "public/icon-assets/icon/actions/send.alt-bold.svg"
+  },
+  {
+    "name": "icon/actions/share",
+    "style": "outline",
+    "nodeId": "1593:44372",
+    "path": "public/icon-assets/icon/actions/share-outline.svg"
+  },
+  {
+    "name": "icon/actions/share",
+    "style": "bold",
+    "nodeId": "2414:20862",
+    "path": "public/icon-assets/icon/actions/share-bold.svg"
+  },
+  {
+    "name": "icon/actions/share.alt",
+    "style": "outline",
+    "nodeId": "1593:35907",
+    "path": "public/icon-assets/icon/actions/share.alt-outline.svg"
+  },
+  {
+    "name": "icon/actions/share.alt",
+    "style": "bold",
+    "nodeId": "2414:20876",
+    "path": "public/icon-assets/icon/actions/share.alt-bold.svg"
+  },
+  {
+    "name": "icon/actions/snooze",
+    "style": "outline",
+    "nodeId": "1593:35925",
+    "path": "public/icon-assets/icon/actions/snooze-outline.svg"
+  },
+  {
+    "name": "icon/actions/snooze",
+    "style": "bold",
+    "nodeId": "2414:20884",
+    "path": "public/icon-assets/icon/actions/snooze-bold.svg"
+  },
+  {
+    "name": "icon/actions/sort",
+    "style": "outline",
+    "nodeId": "1593:35950",
+    "path": "public/icon-assets/icon/actions/sort-outline.svg"
+  },
+  {
+    "name": "icon/actions/sort",
+    "style": "bold",
+    "nodeId": "2414:20898",
+    "path": "public/icon-assets/icon/actions/sort-bold.svg"
+  },
+  {
+    "name": "icon/actions/sort.asc",
+    "style": "outline",
+    "nodeId": "1593:35972",
+    "path": "public/icon-assets/icon/actions/sort.asc-outline.svg"
+  },
+  {
+    "name": "icon/actions/sort.asc",
+    "style": "bold",
+    "nodeId": "2414:20910",
+    "path": "public/icon-assets/icon/actions/sort.asc-bold.svg"
+  },
+  {
+    "name": "icon/actions/sort.desc",
+    "style": "outline",
+    "nodeId": "1593:35993",
+    "path": "public/icon-assets/icon/actions/sort.desc-outline.svg"
+  },
+  {
+    "name": "icon/actions/sort.desc",
+    "style": "bold",
+    "nodeId": "2414:20920",
+    "path": "public/icon-assets/icon/actions/sort.desc-bold.svg"
+  },
+  {
+    "name": "icon/actions/star.add",
+    "style": "outline",
+    "nodeId": "1593:36014",
+    "path": "public/icon-assets/icon/actions/star.add-outline.svg"
+  },
+  {
+    "name": "icon/actions/star.add",
+    "style": "bold",
+    "nodeId": "2414:20930",
+    "path": "public/icon-assets/icon/actions/star.add-bold.svg"
+  },
+  {
+    "name": "icon/actions/swap",
+    "style": "outline",
+    "nodeId": "1593:36038",
+    "path": "public/icon-assets/icon/actions/swap-outline.svg"
+  },
+  {
+    "name": "icon/actions/swap",
+    "style": "bold",
+    "nodeId": "2414:20942",
+    "path": "public/icon-assets/icon/actions/swap-bold.svg"
+  },
+  {
+    "name": "icon/actions/sync",
+    "style": "outline",
+    "nodeId": "1593:36073",
+    "path": "public/icon-assets/icon/actions/sync-outline.svg"
+  },
+  {
+    "name": "icon/actions/sync",
+    "style": "bold",
+    "nodeId": "2414:20960",
+    "path": "public/icon-assets/icon/actions/sync-bold.svg"
+  },
+  {
+    "name": "icon/actions/trash",
+    "style": "outline",
+    "nodeId": "1593:36094",
+    "path": "public/icon-assets/icon/actions/trash-outline.svg"
+  },
+  {
+    "name": "icon/actions/trash",
+    "style": "bold",
+    "nodeId": "2414:20970",
+    "path": "public/icon-assets/icon/actions/trash-bold.svg"
+  },
+  {
+    "name": "icon/actions/undo",
+    "style": "outline",
+    "nodeId": "1593:36121",
+    "path": "public/icon-assets/icon/actions/undo-outline.svg"
+  },
+  {
+    "name": "icon/actions/undo",
+    "style": "bold",
+    "nodeId": "2414:20984",
+    "path": "public/icon-assets/icon/actions/undo-bold.svg"
+  },
+  {
+    "name": "icon/actions/upload",
+    "style": "outline",
+    "nodeId": "1593:36137",
+    "path": "public/icon-assets/icon/actions/upload-outline.svg"
+  },
+  {
+    "name": "icon/actions/upload",
+    "style": "bold",
+    "nodeId": "2414:20992",
+    "path": "public/icon-assets/icon/actions/upload-bold.svg"
+  },
+  {
+    "name": "icon/commerce/bag",
+    "style": "outline",
+    "nodeId": "1593:40880",
+    "path": "public/icon-assets/icon/commerce/bag-outline.svg"
+  },
+  {
+    "name": "icon/commerce/bag",
+    "style": "bold",
+    "nodeId": "2414:22407",
+    "path": "public/icon-assets/icon/commerce/bag-bold.svg"
+  },
+  {
+    "name": "icon/commerce/bank",
+    "style": "outline",
+    "nodeId": "1593:40896",
+    "path": "public/icon-assets/icon/commerce/bank-outline.svg"
+  },
+  {
+    "name": "icon/commerce/bank",
+    "style": "bold",
+    "nodeId": "2414:22415",
+    "path": "public/icon-assets/icon/commerce/bank-bold.svg"
+  },
+  {
+    "name": "icon/commerce/barcode",
+    "style": "outline",
+    "nodeId": "1593:40927",
+    "path": "public/icon-assets/icon/commerce/barcode-outline.svg"
+  },
+  {
+    "name": "icon/commerce/barcode",
+    "style": "bold",
+    "nodeId": "2414:22433",
+    "path": "public/icon-assets/icon/commerce/barcode-bold.svg"
+  },
+  {
+    "name": "icon/commerce/cart",
+    "style": "outline",
+    "nodeId": "1593:40970",
+    "path": "public/icon-assets/icon/commerce/cart-outline.svg"
+  },
+  {
+    "name": "icon/commerce/cart",
+    "style": "bold",
+    "nodeId": "2414:22453",
+    "path": "public/icon-assets/icon/commerce/cart-bold.svg"
+  },
+  {
+    "name": "icon/commerce/chart.bar",
+    "style": "outline",
+    "nodeId": "1593:41010",
+    "path": "public/icon-assets/icon/commerce/chart.bar-outline.svg"
+  },
+  {
+    "name": "icon/commerce/chart.bar",
+    "style": "bold",
+    "nodeId": "2414:22475",
+    "path": "public/icon-assets/icon/commerce/chart.bar-bold.svg"
+  },
+  {
+    "name": "icon/commerce/chart.line",
+    "style": "outline",
+    "nodeId": "1593:41037",
+    "path": "public/icon-assets/icon/commerce/chart.line-outline.svg"
+  },
+  {
+    "name": "icon/commerce/chart.line",
+    "style": "bold",
+    "nodeId": "2414:22487",
+    "path": "public/icon-assets/icon/commerce/chart.line-bold.svg"
+  },
+  {
+    "name": "icon/commerce/coins",
+    "style": "outline",
+    "nodeId": "1593:41093",
+    "path": "public/icon-assets/icon/commerce/coins-outline.svg"
+  },
+  {
+    "name": "icon/commerce/coins",
+    "style": "bold",
+    "nodeId": "2414:22517",
+    "path": "public/icon-assets/icon/commerce/coins-bold.svg"
+  },
+  {
+    "name": "icon/commerce/coupon",
+    "style": "outline",
+    "nodeId": "1593:41126",
+    "path": "public/icon-assets/icon/commerce/coupon-outline.svg"
+  },
+  {
+    "name": "icon/commerce/coupon",
+    "style": "bold",
+    "nodeId": "2414:22535",
+    "path": "public/icon-assets/icon/commerce/coupon-bold.svg"
+  },
+  {
+    "name": "icon/commerce/credit.card",
+    "style": "outline",
+    "nodeId": "1593:41162",
+    "path": "public/icon-assets/icon/commerce/credit.card-outline.svg"
+  },
+  {
+    "name": "icon/commerce/credit.card",
+    "style": "bold",
+    "nodeId": "2414:22553",
+    "path": "public/icon-assets/icon/commerce/credit.card-bold.svg"
+  },
+  {
+    "name": "icon/commerce/discount",
+    "style": "outline",
+    "nodeId": "1593:41192",
+    "path": "public/icon-assets/icon/commerce/discount-outline.svg"
+  },
+  {
+    "name": "icon/commerce/discount",
+    "style": "bold",
+    "nodeId": "2414:22569",
+    "path": "public/icon-assets/icon/commerce/discount-bold.svg"
+  },
+  {
+    "name": "icon/commerce/dollar",
+    "style": "outline",
+    "nodeId": "1593:41217",
+    "path": "public/icon-assets/icon/commerce/dollar-outline.svg"
+  },
+  {
+    "name": "icon/commerce/dollar",
+    "style": "bold",
+    "nodeId": "2414:22581",
+    "path": "public/icon-assets/icon/commerce/dollar-bold.svg"
+  },
+  {
+    "name": "icon/commerce/gift",
+    "style": "outline",
+    "nodeId": "1593:41257",
+    "path": "public/icon-assets/icon/commerce/gift-outline.svg"
+  },
+  {
+    "name": "icon/commerce/gift",
+    "style": "bold",
+    "nodeId": "2414:22605",
+    "path": "public/icon-assets/icon/commerce/gift-bold.svg"
+  },
+  {
+    "name": "icon/commerce/invoice",
+    "style": "outline",
+    "nodeId": "1593:41294",
+    "path": "public/icon-assets/icon/commerce/invoice-outline.svg"
+  },
+  {
+    "name": "icon/commerce/invoice",
+    "style": "bold",
+    "nodeId": "2414:22623",
+    "path": "public/icon-assets/icon/commerce/invoice-bold.svg"
+  },
+  {
+    "name": "icon/commerce/payment",
+    "style": "outline",
+    "nodeId": "1593:41325",
+    "path": "public/icon-assets/icon/commerce/payment-outline.svg"
+  },
+  {
+    "name": "icon/commerce/payment",
+    "style": "bold",
+    "nodeId": "2414:22641",
+    "path": "public/icon-assets/icon/commerce/payment-bold.svg"
+  },
+  {
+    "name": "icon/commerce/piggy.bank",
+    "style": "outline",
+    "nodeId": "1593:41373",
+    "path": "public/icon-assets/icon/commerce/piggy.bank-outline.svg"
+  },
+  {
+    "name": "icon/commerce/piggy.bank",
+    "style": "bold",
+    "nodeId": "2414:22667",
+    "path": "public/icon-assets/icon/commerce/piggy.bank-bold.svg"
+  },
+  {
+    "name": "icon/commerce/qr.code",
+    "style": "outline",
+    "nodeId": "1593:41398",
+    "path": "public/icon-assets/icon/commerce/qr.code-outline.svg"
+  },
+  {
+    "name": "icon/commerce/qr.code",
+    "style": "bold",
+    "nodeId": "2414:22681",
+    "path": "public/icon-assets/icon/commerce/qr.code-bold.svg"
+  },
+  {
+    "name": "icon/commerce/receipt",
+    "style": "outline",
+    "nodeId": "1593:41480",
+    "path": "public/icon-assets/icon/commerce/receipt-outline.svg"
+  },
+  {
+    "name": "icon/commerce/receipt",
+    "style": "bold",
+    "nodeId": "2414:22725",
+    "path": "public/icon-assets/icon/commerce/receipt-bold.svg"
+  },
+  {
+    "name": "icon/commerce/store",
+    "style": "outline",
+    "nodeId": "1593:41511",
+    "path": "public/icon-assets/icon/commerce/store-outline.svg"
+  },
+  {
+    "name": "icon/commerce/store",
+    "style": "bold",
+    "nodeId": "2414:22743",
+    "path": "public/icon-assets/icon/commerce/store-bold.svg"
+  },
+  {
+    "name": "icon/commerce/wallet",
+    "style": "outline",
+    "nodeId": "1593:41539",
+    "path": "public/icon-assets/icon/commerce/wallet-outline.svg"
+  },
+  {
+    "name": "icon/commerce/wallet",
+    "style": "bold",
+    "nodeId": "2414:22753",
+    "path": "public/icon-assets/icon/commerce/wallet-bold.svg"
+  },
+  {
+    "name": "icon/comms/calendar",
+    "style": "outline",
+    "nodeId": "1593:42283",
+    "path": "public/icon-assets/icon/comms/calendar-outline.svg"
+  },
+  {
+    "name": "icon/comms/calendar",
+    "style": "bold",
+    "nodeId": "2414:23133",
+    "path": "public/icon-assets/icon/comms/calendar-bold.svg"
+  },
+  {
+    "name": "icon/comms/chat",
+    "style": "outline",
+    "nodeId": "1593:42305",
+    "path": "public/icon-assets/icon/comms/chat-outline.svg"
+  },
+  {
+    "name": "icon/comms/chat",
+    "style": "bold",
+    "nodeId": "2414:23145",
+    "path": "public/icon-assets/icon/comms/chat-bold.svg"
+  },
+  {
+    "name": "icon/comms/clock",
+    "style": "outline",
+    "nodeId": "1593:42318",
+    "path": "public/icon-assets/icon/comms/clock-outline.svg"
+  },
+  {
+    "name": "icon/comms/clock",
+    "style": "bold",
+    "nodeId": "2414:23151",
+    "path": "public/icon-assets/icon/comms/clock-bold.svg"
+  },
+  {
+    "name": "icon/comms/comment",
+    "style": "outline",
+    "nodeId": "1593:42349",
+    "path": "public/icon-assets/icon/comms/comment-outline.svg"
+  },
+  {
+    "name": "icon/comms/comment",
+    "style": "bold",
+    "nodeId": "2414:23161",
+    "path": "public/icon-assets/icon/comms/comment-bold.svg"
+  },
+  {
+    "name": "icon/comms/contacts",
+    "style": "outline",
+    "nodeId": "1593:42377",
+    "path": "public/icon-assets/icon/comms/contacts-outline.svg"
+  },
+  {
+    "name": "icon/comms/contacts",
+    "style": "bold",
+    "nodeId": "2414:23177",
+    "path": "public/icon-assets/icon/comms/contacts-bold.svg"
+  },
+  {
+    "name": "icon/comms/forward.mail",
+    "style": "outline",
+    "nodeId": "1593:42402",
+    "path": "public/icon-assets/icon/comms/forward.mail-outline.svg"
+  },
+  {
+    "name": "icon/comms/forward.mail",
+    "style": "bold",
+    "nodeId": "2414:23191",
+    "path": "public/icon-assets/icon/comms/forward.mail-bold.svg"
+  },
+  {
+    "name": "icon/comms/group",
+    "style": "outline",
+    "nodeId": "1593:42424",
+    "path": "public/icon-assets/icon/comms/group-outline.svg"
+  },
+  {
+    "name": "icon/comms/group",
+    "style": "bold",
+    "nodeId": "2414:23203",
+    "path": "public/icon-assets/icon/comms/group-bold.svg"
+  },
+  {
+    "name": "icon/comms/inbox",
+    "style": "outline",
+    "nodeId": "1593:42440",
+    "path": "public/icon-assets/icon/comms/inbox-outline.svg"
+  },
+  {
+    "name": "icon/comms/inbox",
+    "style": "bold",
+    "nodeId": "2414:23211",
+    "path": "public/icon-assets/icon/comms/inbox-bold.svg"
+  },
+  {
+    "name": "icon/comms/mail",
+    "style": "outline",
+    "nodeId": "1593:42462",
+    "path": "public/icon-assets/icon/comms/mail-outline.svg"
+  },
+  {
+    "name": "icon/comms/mail",
+    "style": "bold",
+    "nodeId": "2414:23223",
+    "path": "public/icon-assets/icon/comms/mail-bold.svg"
+  },
+  {
+    "name": "icon/comms/meeting",
+    "style": "outline",
+    "nodeId": "1593:42493",
+    "path": "public/icon-assets/icon/comms/meeting-outline.svg"
+  },
+  {
+    "name": "icon/comms/meeting",
+    "style": "bold",
+    "nodeId": "2414:23237",
+    "path": "public/icon-assets/icon/comms/meeting-bold.svg"
+  },
+  {
+    "name": "icon/comms/message",
+    "style": "outline",
+    "nodeId": "1593:42532",
+    "path": "public/icon-assets/icon/comms/message-outline.svg"
+  },
+  {
+    "name": "icon/comms/message",
+    "style": "bold",
+    "nodeId": "2414:23259",
+    "path": "public/icon-assets/icon/comms/message-bold.svg"
+  },
+  {
+    "name": "icon/comms/messages",
+    "style": "outline",
+    "nodeId": "2170:6202",
+    "path": "public/icon-assets/icon/comms/messages-outline.svg"
+  },
+  {
+    "name": "icon/comms/messages",
+    "style": "bold",
+    "nodeId": "2414:23271",
+    "path": "public/icon-assets/icon/comms/messages-bold.svg"
+  },
+  {
+    "name": "icon/comms/phone",
+    "style": "outline",
+    "nodeId": "1593:42554",
+    "path": "public/icon-assets/icon/comms/phone-outline.svg"
+  },
+  {
+    "name": "icon/comms/phone",
+    "style": "bold",
+    "nodeId": "2414:23281",
+    "path": "public/icon-assets/icon/comms/phone-bold.svg"
+  },
+  {
+    "name": "icon/comms/phone.off",
+    "style": "outline",
+    "nodeId": "1593:42567",
+    "path": "public/icon-assets/icon/comms/phone.off-outline.svg"
+  },
+  {
+    "name": "icon/comms/phone.off",
+    "style": "bold",
+    "nodeId": "2414:23287",
+    "path": "public/icon-assets/icon/comms/phone.off-bold.svg"
+  },
+  {
+    "name": "icon/comms/presentation",
+    "style": "outline",
+    "nodeId": "1593:42588",
+    "path": "public/icon-assets/icon/comms/presentation-outline.svg"
+  },
+  {
+    "name": "icon/comms/presentation",
+    "style": "bold",
+    "nodeId": "2414:23297",
+    "path": "public/icon-assets/icon/comms/presentation-bold.svg"
+  },
+  {
+    "name": "icon/comms/reply",
+    "style": "outline",
+    "nodeId": "1593:42623",
+    "path": "public/icon-assets/icon/comms/reply-outline.svg"
+  },
+  {
+    "name": "icon/comms/reply",
+    "style": "bold",
+    "nodeId": "2414:23315",
+    "path": "public/icon-assets/icon/comms/reply-bold.svg"
+  },
+  {
+    "name": "icon/comms/reply.all",
+    "style": "outline",
+    "nodeId": "1593:42642",
+    "path": "public/icon-assets/icon/comms/reply.all-outline.svg"
+  },
+  {
+    "name": "icon/comms/reply.all",
+    "style": "bold",
+    "nodeId": "2414:23325",
+    "path": "public/icon-assets/icon/comms/reply.all-bold.svg"
+  },
+  {
+    "name": "icon/comms/send",
+    "style": "outline",
+    "nodeId": "1593:42663",
+    "path": "public/icon-assets/icon/comms/send-outline.svg"
+  },
+  {
+    "name": "icon/comms/send",
+    "style": "bold",
+    "nodeId": "2414:23335",
+    "path": "public/icon-assets/icon/comms/send-bold.svg"
+  },
+  {
+    "name": "icon/comms/team",
+    "style": "outline",
+    "nodeId": "1593:42681",
+    "path": "public/icon-assets/icon/comms/team-outline.svg"
+  },
+  {
+    "name": "icon/comms/team",
+    "style": "bold",
+    "nodeId": "2414:23343",
+    "path": "public/icon-assets/icon/comms/team-bold.svg"
+  },
+  {
+    "name": "icon/comms/user",
+    "style": "outline",
+    "nodeId": "1593:42746",
+    "path": "public/icon-assets/icon/comms/user-outline.svg"
+  },
+  {
+    "name": "icon/comms/user",
+    "style": "bold",
+    "nodeId": "2414:23375",
+    "path": "public/icon-assets/icon/comms/user-bold.svg"
+  },
+  {
+    "name": "icon/comms/user.add",
+    "style": "outline",
+    "nodeId": "1593:42768",
+    "path": "public/icon-assets/icon/comms/user.add-outline.svg"
+  },
+  {
+    "name": "icon/comms/user.add",
+    "style": "bold",
+    "nodeId": "2414:23383",
+    "path": "public/icon-assets/icon/comms/user.add-bold.svg"
+  },
+  {
+    "name": "icon/comms/user.check",
+    "style": "outline",
+    "nodeId": "1593:44706",
+    "path": "public/icon-assets/icon/comms/user.check-outline.svg"
+  },
+  {
+    "name": "icon/comms/user.check",
+    "style": "bold",
+    "nodeId": "2414:23399",
+    "path": "public/icon-assets/icon/comms/user.check-bold.svg"
+  },
+  {
+    "name": "icon/comms/user.remove",
+    "style": "outline",
+    "nodeId": "1593:42821",
+    "path": "public/icon-assets/icon/comms/user.remove-outline.svg"
+  },
+  {
+    "name": "icon/comms/user.remove",
+    "style": "bold",
+    "nodeId": "2414:23409",
+    "path": "public/icon-assets/icon/comms/user.remove-bold.svg"
+  },
+  {
+    "name": "icon/comms/users",
+    "style": "outline",
+    "nodeId": "1593:42849",
+    "path": "public/icon-assets/icon/comms/users-outline.svg"
+  },
+  {
+    "name": "icon/comms/users",
+    "style": "bold",
+    "nodeId": "2414:23423",
+    "path": "public/icon-assets/icon/comms/users-bold.svg"
+  },
+  {
+    "name": "icon/comms/video.call",
+    "style": "outline",
+    "nodeId": "1593:44200",
+    "path": "public/icon-assets/icon/comms/video.call-outline.svg"
+  },
+  {
+    "name": "icon/comms/video.call",
+    "style": "bold",
+    "nodeId": "2414:23445",
+    "path": "public/icon-assets/icon/comms/video.call-bold.svg"
+  },
+  {
+    "name": "icon/files/agreement",
+    "style": "outline",
+    "nodeId": "1593:37070",
+    "path": "public/icon-assets/icon/files/agreement-outline.svg"
+  },
+  {
+    "name": "icon/files/agreement",
+    "style": "bold",
+    "nodeId": "2414:21028",
+    "path": "public/icon-assets/icon/files/agreement-bold.svg"
+  },
+  {
+    "name": "icon/files/attachment",
+    "style": "outline",
+    "nodeId": "1593:37104",
+    "path": "public/icon-assets/icon/files/attachment-outline.svg"
+  },
+  {
+    "name": "icon/files/attachment",
+    "style": "bold",
+    "nodeId": "2414:21044",
+    "path": "public/icon-assets/icon/files/attachment-bold.svg"
+  },
+  {
+    "name": "icon/files/blog",
+    "style": "outline",
+    "nodeId": "1593:37117",
+    "path": "public/icon-assets/icon/files/blog-outline.svg"
+  },
+  {
+    "name": "icon/files/blog",
+    "style": "bold",
+    "nodeId": "2414:21050",
+    "path": "public/icon-assets/icon/files/blog-bold.svg"
+  },
+  {
+    "name": "icon/files/bookmark",
+    "style": "outline",
+    "nodeId": "1593:37136",
+    "path": "public/icon-assets/icon/files/bookmark-outline.svg"
+  },
+  {
+    "name": "icon/files/bookmark",
+    "style": "bold",
+    "nodeId": "2414:21060",
+    "path": "public/icon-assets/icon/files/bookmark-bold.svg"
+  },
+  {
+    "name": "icon/files/box.alt",
+    "style": "outline",
+    "nodeId": "1593:37149",
+    "path": "public/icon-assets/icon/files/box.alt-outline.svg"
+  },
+  {
+    "name": "icon/files/box.alt",
+    "style": "bold",
+    "nodeId": "2414:21066",
+    "path": "public/icon-assets/icon/files/box.alt-bold.svg"
+  },
+  {
+    "name": "icon/files/cabinet",
+    "style": "outline",
+    "nodeId": "1593:37183",
+    "path": "public/icon-assets/icon/files/cabinet-outline.svg"
+  },
+  {
+    "name": "icon/files/cabinet",
+    "style": "bold",
+    "nodeId": "2414:21086",
+    "path": "public/icon-assets/icon/files/cabinet-bold.svg"
+  },
+  {
+    "name": "icon/files/clipboard",
+    "style": "outline",
+    "nodeId": "1593:37221",
+    "path": "public/icon-assets/icon/files/clipboard-outline.svg"
+  },
+  {
+    "name": "icon/files/clipboard",
+    "style": "bold",
+    "nodeId": "2414:21106",
+    "path": "public/icon-assets/icon/files/clipboard-bold.svg"
+  },
+  {
+    "name": "icon/files/cloud",
+    "style": "outline",
+    "nodeId": "1593:37243",
+    "path": "public/icon-assets/icon/files/cloud-outline.svg"
+  },
+  {
+    "name": "icon/files/cloud",
+    "style": "bold",
+    "nodeId": "2414:21126",
+    "path": "public/icon-assets/icon/files/cloud-bold.svg"
+  },
+  {
+    "name": "icon/files/cloud.download",
+    "style": "outline",
+    "nodeId": "1593:37256",
+    "path": "public/icon-assets/icon/files/cloud.download-outline.svg"
+  },
+  {
+    "name": "icon/files/cloud.download",
+    "style": "bold",
+    "nodeId": "2414:21132",
+    "path": "public/icon-assets/icon/files/cloud.download-bold.svg"
+  },
+  {
+    "name": "icon/files/cloud.upload",
+    "style": "outline",
+    "nodeId": "1593:37277",
+    "path": "public/icon-assets/icon/files/cloud.upload-outline.svg"
+  },
+  {
+    "name": "icon/files/cloud.upload",
+    "style": "bold",
+    "nodeId": "2414:21142",
+    "path": "public/icon-assets/icon/files/cloud.upload-bold.svg"
+  },
+  {
+    "name": "icon/files/contract",
+    "style": "outline",
+    "nodeId": "1593:37298",
+    "path": "public/icon-assets/icon/files/contract-outline.svg"
+  },
+  {
+    "name": "icon/files/contract",
+    "style": "bold",
+    "nodeId": "2414:21152",
+    "path": "public/icon-assets/icon/files/contract-bold.svg"
+  },
+  {
+    "name": "icon/files/database",
+    "style": "outline",
+    "nodeId": "1593:37570",
+    "path": "public/icon-assets/icon/files/database-outline.svg"
+  },
+  {
+    "name": "icon/files/database",
+    "style": "bold",
+    "nodeId": "2414:21296",
+    "path": "public/icon-assets/icon/files/database-bold.svg"
+  },
+  {
+    "name": "icon/files/document",
+    "style": "outline",
+    "nodeId": "1593:37615",
+    "path": "public/icon-assets/icon/files/document-outline.svg"
+  },
+  {
+    "name": "icon/files/document",
+    "style": "bold",
+    "nodeId": "2414:21320",
+    "path": "public/icon-assets/icon/files/document-bold.svg"
+  },
+  {
+    "name": "icon/files/drawer",
+    "style": "outline",
+    "nodeId": "1593:37628",
+    "path": "public/icon-assets/icon/files/drawer-outline.svg"
+  },
+  {
+    "name": "icon/files/drawer",
+    "style": "bold",
+    "nodeId": "2414:21326",
+    "path": "public/icon-assets/icon/files/drawer-bold.svg"
+  },
+  {
+    "name": "icon/files/envelope",
+    "style": "outline",
+    "nodeId": "1593:37325",
+    "path": "public/icon-assets/icon/files/envelope-outline.svg"
+  },
+  {
+    "name": "icon/files/envelope",
+    "style": "bold",
+    "nodeId": "2414:21166",
+    "path": "public/icon-assets/icon/files/envelope-bold.svg"
+  },
+  {
+    "name": "icon/files/faq",
+    "style": "outline",
+    "nodeId": "1593:37349",
+    "path": "public/icon-assets/icon/files/faq-outline.svg"
+  },
+  {
+    "name": "icon/files/faq",
+    "style": "bold",
+    "nodeId": "2414:21178",
+    "path": "public/icon-assets/icon/files/faq-bold.svg"
+  },
+  {
+    "name": "icon/files/file",
+    "style": "outline",
+    "nodeId": "1593:37439",
+    "path": "public/icon-assets/icon/files/file-outline.svg"
+  },
+  {
+    "name": "icon/files/file",
+    "style": "bold",
+    "nodeId": "2414:21224",
+    "path": "public/icon-assets/icon/files/file-bold.svg"
+  },
+  {
+    "name": "icon/files/file.code",
+    "style": "outline",
+    "nodeId": "1593:37380",
+    "path": "public/icon-assets/icon/files/file.code-outline.svg"
+  },
+  {
+    "name": "icon/files/file.code",
+    "style": "bold",
+    "nodeId": "2414:21196",
+    "path": "public/icon-assets/icon/files/file.code-bold.svg"
+  },
+  {
+    "name": "icon/files/file.image",
+    "style": "outline",
+    "nodeId": "1593:37455",
+    "path": "public/icon-assets/icon/files/file.image-outline.svg"
+  },
+  {
+    "name": "icon/files/file.image",
+    "style": "bold",
+    "nodeId": "2414:21232",
+    "path": "public/icon-assets/icon/files/file.image-bold.svg"
+  },
+  {
+    "name": "icon/files/file.pdf",
+    "style": "outline",
+    "nodeId": "1593:37477",
+    "path": "public/icon-assets/icon/files/file.pdf-outline.svg"
+  },
+  {
+    "name": "icon/files/file.pdf",
+    "style": "bold",
+    "nodeId": "2414:21242",
+    "path": "public/icon-assets/icon/files/file.pdf-bold.svg"
+  },
+  {
+    "name": "icon/files/file.text",
+    "style": "outline",
+    "nodeId": "1593:37539",
+    "path": "public/icon-assets/icon/files/file.text-outline.svg"
+  },
+  {
+    "name": "icon/files/file.text",
+    "style": "bold",
+    "nodeId": "2414:21278",
+    "path": "public/icon-assets/icon/files/file.text-bold.svg"
+  },
+  {
+    "name": "icon/files/file.zip",
+    "style": "outline",
+    "nodeId": "1593:37502",
+    "path": "public/icon-assets/icon/files/file.zip-outline.svg"
+  },
+  {
+    "name": "icon/files/file.zip",
+    "style": "bold",
+    "nodeId": "2414:21256",
+    "path": "public/icon-assets/icon/files/file.zip-bold.svg"
+  },
+  {
+    "name": "icon/files/folder",
+    "style": "outline",
+    "nodeId": "1593:37641",
+    "path": "public/icon-assets/icon/files/folder-outline.svg"
+  },
+  {
+    "name": "icon/files/folder",
+    "style": "bold",
+    "nodeId": "2414:21332",
+    "path": "public/icon-assets/icon/files/folder-bold.svg"
+  },
+  {
+    "name": "icon/files/folder.add",
+    "style": "outline",
+    "nodeId": "1593:37654",
+    "path": "public/icon-assets/icon/files/folder.add-outline.svg"
+  },
+  {
+    "name": "icon/files/folder.add",
+    "style": "bold",
+    "nodeId": "2414:21338",
+    "path": "public/icon-assets/icon/files/folder.add-bold.svg"
+  },
+  {
+    "name": "icon/files/folder.shared",
+    "style": "outline",
+    "nodeId": "1593:37681",
+    "path": "public/icon-assets/icon/files/folder.shared-outline.svg"
+  },
+  {
+    "name": "icon/files/folder.shared",
+    "style": "bold",
+    "nodeId": "2414:21352",
+    "path": "public/icon-assets/icon/files/folder.shared-bold.svg"
+  },
+  {
+    "name": "icon/files/folder.star",
+    "style": "outline",
+    "nodeId": "1593:37700",
+    "path": "public/icon-assets/icon/files/folder.star-outline.svg"
+  },
+  {
+    "name": "icon/files/folder.star",
+    "style": "bold",
+    "nodeId": "2414:21362",
+    "path": "public/icon-assets/icon/files/folder.star-bold.svg"
+  },
+  {
+    "name": "icon/files/guide",
+    "style": "outline",
+    "nodeId": "1593:37721",
+    "path": "public/icon-assets/icon/files/guide-outline.svg"
+  },
+  {
+    "name": "icon/files/guide",
+    "style": "bold",
+    "nodeId": "2414:21372",
+    "path": "public/icon-assets/icon/files/guide-bold.svg"
+  },
+  {
+    "name": "icon/files/hard.drive",
+    "style": "outline",
+    "nodeId": "1593:37746",
+    "path": "public/icon-assets/icon/files/hard.drive-outline.svg"
+  },
+  {
+    "name": "icon/files/hard.drive",
+    "style": "bold",
+    "nodeId": "2414:21386",
+    "path": "public/icon-assets/icon/files/hard.drive-bold.svg"
+  },
+  {
+    "name": "icon/files/letter",
+    "style": "outline",
+    "nodeId": "1593:37779",
+    "path": "public/icon-assets/icon/files/letter-outline.svg"
+  },
+  {
+    "name": "icon/files/letter",
+    "style": "bold",
+    "nodeId": "2414:21404",
+    "path": "public/icon-assets/icon/files/letter-bold.svg"
+  },
+  {
+    "name": "icon/files/magazine",
+    "style": "outline",
+    "nodeId": "1593:37821",
+    "path": "public/icon-assets/icon/files/magazine-outline.svg"
+  },
+  {
+    "name": "icon/files/magazine",
+    "style": "bold",
+    "nodeId": "2414:21426",
+    "path": "public/icon-assets/icon/files/magazine-bold.svg"
+  },
+  {
+    "name": "icon/files/manual",
+    "style": "outline",
+    "nodeId": "1593:37846",
+    "path": "public/icon-assets/icon/files/manual-outline.svg"
+  },
+  {
+    "name": "icon/files/manual",
+    "style": "bold",
+    "nodeId": "2414:21438",
+    "path": "public/icon-assets/icon/files/manual-bold.svg"
+  },
+  {
+    "name": "icon/files/newspaper",
+    "style": "outline",
+    "nodeId": "1593:37874",
+    "path": "public/icon-assets/icon/files/newspaper-outline.svg"
+  },
+  {
+    "name": "icon/files/newspaper",
+    "style": "bold",
+    "nodeId": "2414:21454",
+    "path": "public/icon-assets/icon/files/newspaper-bold.svg"
+  },
+  {
+    "name": "icon/files/notes",
+    "style": "outline",
+    "nodeId": "1593:37916",
+    "path": "public/icon-assets/icon/files/notes-outline.svg"
+  },
+  {
+    "name": "icon/files/notes",
+    "style": "bold",
+    "nodeId": "2414:21474",
+    "path": "public/icon-assets/icon/files/notes-bold.svg"
+  },
+  {
+    "name": "icon/files/package.alt",
+    "style": "outline",
+    "nodeId": "1593:37949",
+    "path": "public/icon-assets/icon/files/package.alt-outline.svg"
+  },
+  {
+    "name": "icon/files/package.alt",
+    "style": "bold",
+    "nodeId": "2414:21486",
+    "path": "public/icon-assets/icon/files/package.alt-bold.svg"
+  },
+  {
+    "name": "icon/files/parcel",
+    "style": "outline",
+    "nodeId": "1593:37983",
+    "path": "public/icon-assets/icon/files/parcel-outline.svg"
+  },
+  {
+    "name": "icon/files/parcel",
+    "style": "bold",
+    "nodeId": "2414:21506",
+    "path": "public/icon-assets/icon/files/parcel-bold.svg"
+  },
+  {
+    "name": "icon/files/policy",
+    "style": "outline",
+    "nodeId": "1593:38002",
+    "path": "public/icon-assets/icon/files/policy-outline.svg"
+  },
+  {
+    "name": "icon/files/policy",
+    "style": "bold",
+    "nodeId": "2414:21516",
+    "path": "public/icon-assets/icon/files/policy-bold.svg"
+  },
+  {
+    "name": "icon/files/portfolio",
+    "style": "outline",
+    "nodeId": "1593:38036",
+    "path": "public/icon-assets/icon/files/portfolio-outline.svg"
+  },
+  {
+    "name": "icon/files/portfolio",
+    "style": "bold",
+    "nodeId": "2414:21536",
+    "path": "public/icon-assets/icon/files/portfolio-bold.svg"
+  },
+  {
+    "name": "icon/files/postcard",
+    "style": "outline",
+    "nodeId": "1593:38058",
+    "path": "public/icon-assets/icon/files/postcard-outline.svg"
+  },
+  {
+    "name": "icon/files/postcard",
+    "style": "bold",
+    "nodeId": "2414:21548",
+    "path": "public/icon-assets/icon/files/postcard-bold.svg"
+  },
+  {
+    "name": "icon/files/press",
+    "style": "outline",
+    "nodeId": "1593:38092",
+    "path": "public/icon-assets/icon/files/press-outline.svg"
+  },
+  {
+    "name": "icon/files/press",
+    "style": "bold",
+    "nodeId": "2414:21566",
+    "path": "public/icon-assets/icon/files/press-bold.svg"
+  },
+  {
+    "name": "icon/files/resume",
+    "style": "outline",
+    "nodeId": "1593:38111",
+    "path": "public/icon-assets/icon/files/resume-outline.svg"
+  },
+  {
+    "name": "icon/files/resume",
+    "style": "bold",
+    "nodeId": "2414:21576",
+    "path": "public/icon-assets/icon/files/resume-bold.svg"
+  },
+  {
+    "name": "icon/files/server",
+    "style": "outline",
+    "nodeId": "1593:38146",
+    "path": "public/icon-assets/icon/files/server-outline.svg"
+  },
+  {
+    "name": "icon/files/server",
+    "style": "bold",
+    "nodeId": "2414:21592",
+    "path": "public/icon-assets/icon/files/server-bold.svg"
+  },
+  {
+    "name": "icon/files/shelf",
+    "style": "outline",
+    "nodeId": "1593:38212",
+    "path": "public/icon-assets/icon/files/shelf-outline.svg"
+  },
+  {
+    "name": "icon/files/shelf",
+    "style": "bold",
+    "nodeId": "2414:21630",
+    "path": "public/icon-assets/icon/files/shelf-bold.svg"
+  },
+  {
+    "name": "icon/files/tag",
+    "style": "outline",
+    "nodeId": "1593:38234",
+    "path": "public/icon-assets/icon/files/tag-outline.svg"
+  },
+  {
+    "name": "icon/files/tag",
+    "style": "bold",
+    "nodeId": "2414:21642",
+    "path": "public/icon-assets/icon/files/tag-bold.svg"
+  },
+  {
+    "name": "icon/files/usb",
+    "style": "outline",
+    "nodeId": "1593:38267",
+    "path": "public/icon-assets/icon/files/usb-outline.svg"
+  },
+  {
+    "name": "icon/files/usb",
+    "style": "bold",
+    "nodeId": "2414:21658",
+    "path": "public/icon-assets/icon/files/usb-bold.svg"
+  },
+  {
+    "name": "icon/files/wiki",
+    "style": "outline",
+    "nodeId": "1593:38308",
+    "path": "public/icon-assets/icon/files/wiki-outline.svg"
+  },
+  {
+    "name": "icon/files/wiki",
+    "style": "bold",
+    "nodeId": "2414:21678",
+    "path": "public/icon-assets/icon/files/wiki-bold.svg"
+  },
+  {
+    "name": "icon/health/911",
+    "style": "outline",
+    "nodeId": "1593:28888",
+    "path": "public/icon-assets/icon/health/911-outline.svg"
+  },
+  {
+    "name": "icon/health/911",
+    "style": "bold",
+    "nodeId": "2412:2756",
+    "path": "public/icon-assets/icon/health/911-bold.svg"
+  },
+  {
+    "name": "icon/health/ambulance",
+    "style": "outline",
+    "nodeId": "1593:27296",
+    "path": "public/icon-assets/icon/health/ambulance-outline.svg"
+  },
+  {
+    "name": "icon/health/ambulance",
+    "style": "bold",
+    "nodeId": "2414:17540",
+    "path": "public/icon-assets/icon/health/ambulance-bold.svg"
+  },
+  {
+    "name": "icon/health/appointment",
+    "style": "outline",
+    "nodeId": "1593:28910",
+    "path": "public/icon-assets/icon/health/appointment-outline.svg"
+  },
+  {
+    "name": "icon/health/appointment",
+    "style": "bold",
+    "nodeId": "2414:17568",
+    "path": "public/icon-assets/icon/health/appointment-bold.svg"
+  },
+  {
+    "name": "icon/health/bandage",
+    "style": "outline",
+    "nodeId": "1593:28935",
+    "path": "public/icon-assets/icon/health/bandage-outline.svg"
+  },
+  {
+    "name": "icon/health/bandage",
+    "style": "bold",
+    "nodeId": "2414:17582",
+    "path": "public/icon-assets/icon/health/bandage-bold.svg"
+  },
+  {
+    "name": "icon/health/bed",
+    "style": "outline",
+    "nodeId": "1593:28984",
+    "path": "public/icon-assets/icon/health/bed-outline.svg"
+  },
+  {
+    "name": "icon/health/bed",
+    "style": "bold",
+    "nodeId": "2414:17610",
+    "path": "public/icon-assets/icon/health/bed-bold.svg"
+  },
+  {
+    "name": "icon/health/blood",
+    "style": "outline",
+    "nodeId": "1593:29016",
+    "path": "public/icon-assets/icon/health/blood-outline.svg"
+  },
+  {
+    "name": "icon/health/blood",
+    "style": "bold",
+    "nodeId": "2414:17626",
+    "path": "public/icon-assets/icon/health/blood-bold.svg"
+  },
+  {
+    "name": "icon/health/blood.pressure",
+    "style": "outline",
+    "nodeId": "1593:29081",
+    "path": "public/icon-assets/icon/health/blood.pressure-outline.svg"
+  },
+  {
+    "name": "icon/health/blood.pressure",
+    "style": "bold",
+    "nodeId": "2414:17664",
+    "path": "public/icon-assets/icon/health/blood.pressure-bold.svg"
+  },
+  {
+    "name": "icon/health/brain",
+    "style": "outline",
+    "nodeId": "1593:29041",
+    "path": "public/icon-assets/icon/health/brain-outline.svg"
+  },
+  {
+    "name": "icon/health/brain",
+    "style": "bold",
+    "nodeId": "2414:17640",
+    "path": "public/icon-assets/icon/health/brain-bold.svg"
+  },
+  {
+    "name": "icon/health/cancer",
+    "style": "outline",
+    "nodeId": "1593:29112",
+    "path": "public/icon-assets/icon/health/cancer-outline.svg"
+  },
+  {
+    "name": "icon/health/cancer",
+    "style": "bold",
+    "nodeId": "2414:17682",
+    "path": "public/icon-assets/icon/health/cancer-bold.svg"
+  },
+  {
+    "name": "icon/health/clipboard.health",
+    "style": "outline",
+    "nodeId": "1593:29179",
+    "path": "public/icon-assets/icon/health/clipboard.health-outline.svg"
+  },
+  {
+    "name": "icon/health/clipboard.health",
+    "style": "bold",
+    "nodeId": "2414:17724",
+    "path": "public/icon-assets/icon/health/clipboard.health-bold.svg"
+  },
+  {
+    "name": "icon/health/counseling",
+    "style": "outline",
+    "nodeId": "1593:29210",
+    "path": "public/icon-assets/icon/health/counseling-outline.svg"
+  },
+  {
+    "name": "icon/health/counseling",
+    "style": "bold",
+    "nodeId": "2414:17742",
+    "path": "public/icon-assets/icon/health/counseling-bold.svg"
+  },
+  {
+    "name": "icon/health/crisis",
+    "style": "outline",
+    "nodeId": "1593:29239",
+    "path": "public/icon-assets/icon/health/crisis-outline.svg"
+  },
+  {
+    "name": "icon/health/crisis",
+    "style": "bold",
+    "nodeId": "2414:17758",
+    "path": "public/icon-assets/icon/health/crisis-bold.svg"
+  },
+  {
+    "name": "icon/health/dna",
+    "style": "outline",
+    "nodeId": "1593:29369",
+    "path": "public/icon-assets/icon/health/dna-outline.svg"
+  },
+  {
+    "name": "icon/health/dna",
+    "style": "bold",
+    "nodeId": "2414:17822",
+    "path": "public/icon-assets/icon/health/dna-bold.svg"
+  },
+  {
+    "name": "icon/health/doctor",
+    "style": "outline",
+    "nodeId": "1593:29411",
+    "path": "public/icon-assets/icon/health/doctor-outline.svg"
+  },
+  {
+    "name": "icon/health/doctor",
+    "style": "bold",
+    "nodeId": "2414:17842",
+    "path": "public/icon-assets/icon/health/doctor-bold.svg"
+  },
+  {
+    "name": "icon/health/dosage",
+    "style": "outline",
+    "nodeId": "1593:29448",
+    "path": "public/icon-assets/icon/health/dosage-outline.svg"
+  },
+  {
+    "name": "icon/health/dosage",
+    "style": "bold",
+    "nodeId": "2414:17864",
+    "path": "public/icon-assets/icon/health/dosage-bold.svg"
+  },
+  {
+    "name": "icon/health/ear",
+    "style": "outline",
+    "nodeId": "1593:29473",
+    "path": "public/icon-assets/icon/health/ear-outline.svg"
+  },
+  {
+    "name": "icon/health/ear",
+    "style": "bold",
+    "nodeId": "2414:17878",
+    "path": "public/icon-assets/icon/health/ear-bold.svg"
+  },
+  {
+    "name": "icon/health/emergency",
+    "style": "outline",
+    "nodeId": "1593:29255",
+    "path": "public/icon-assets/icon/health/emergency-outline.svg"
+  },
+  {
+    "name": "icon/health/emergency",
+    "style": "bold",
+    "nodeId": "2414:17766",
+    "path": "public/icon-assets/icon/health/emergency-bold.svg"
+  },
+  {
+    "name": "icon/health/eye.health",
+    "style": "outline",
+    "nodeId": "1593:29296",
+    "path": "public/icon-assets/icon/health/eye.health-outline.svg"
+  },
+  {
+    "name": "icon/health/eye.health",
+    "style": "bold",
+    "nodeId": "2414:17786",
+    "path": "public/icon-assets/icon/health/eye.health-bold.svg"
+  },
+  {
+    "name": "icon/health/family.care",
+    "style": "outline",
+    "nodeId": "1593:29315",
+    "path": "public/icon-assets/icon/health/family.care-outline.svg"
+  },
+  {
+    "name": "icon/health/family.care",
+    "style": "bold",
+    "nodeId": "2414:17796",
+    "path": "public/icon-assets/icon/health/family.care-bold.svg"
+  },
+  {
+    "name": "icon/health/first.aid",
+    "style": "outline",
+    "nodeId": "1593:29347",
+    "path": "public/icon-assets/icon/health/first.aid-outline.svg"
+  },
+  {
+    "name": "icon/health/first.aid",
+    "style": "bold",
+    "nodeId": "2414:17810",
+    "path": "public/icon-assets/icon/health/first.aid-bold.svg"
+  },
+  {
+    "name": "icon/health/fitness",
+    "style": "outline",
+    "nodeId": "1593:29504",
+    "path": "public/icon-assets/icon/health/fitness-outline.svg"
+  },
+  {
+    "name": "icon/health/fitness",
+    "style": "bold",
+    "nodeId": "2414:17894",
+    "path": "public/icon-assets/icon/health/fitness-bold.svg"
+  },
+  {
+    "name": "icon/health/glasses",
+    "style": "outline",
+    "nodeId": "1593:29540",
+    "path": "public/icon-assets/icon/health/glasses-outline.svg"
+  },
+  {
+    "name": "icon/health/glasses",
+    "style": "bold",
+    "nodeId": "2414:17912",
+    "path": "public/icon-assets/icon/health/glasses-bold.svg"
+  },
+  {
+    "name": "icon/health/hearing.aid",
+    "style": "outline",
+    "nodeId": "1593:29583",
+    "path": "public/icon-assets/icon/health/hearing.aid-outline.svg"
+  },
+  {
+    "name": "icon/health/hearing.aid",
+    "style": "bold",
+    "nodeId": "2414:17934",
+    "path": "public/icon-assets/icon/health/hearing.aid-bold.svg"
+  },
+  {
+    "name": "icon/health/heart",
+    "style": "outline",
+    "nodeId": "1593:29614",
+    "path": "public/icon-assets/icon/health/heart-outline.svg"
+  },
+  {
+    "name": "icon/health/heart",
+    "style": "bold",
+    "nodeId": "2414:17952",
+    "path": "public/icon-assets/icon/health/heart-bold.svg"
+  },
+  {
+    "name": "icon/health/hipaa",
+    "style": "outline",
+    "nodeId": "1593:29630",
+    "path": "public/icon-assets/icon/health/hipaa-outline.svg"
+  },
+  {
+    "name": "icon/health/hipaa",
+    "style": "bold",
+    "nodeId": "2414:17960",
+    "path": "public/icon-assets/icon/health/hipaa-bold.svg"
+  },
+  {
+    "name": "icon/health/hospital",
+    "style": "outline",
+    "nodeId": "1593:29655",
+    "path": "public/icon-assets/icon/health/hospital-outline.svg"
+  },
+  {
+    "name": "icon/health/hospital",
+    "style": "bold",
+    "nodeId": "2414:17974",
+    "path": "public/icon-assets/icon/health/hospital-bold.svg"
+  },
+  {
+    "name": "icon/health/inhaler",
+    "style": "outline",
+    "nodeId": "1593:29671",
+    "path": "public/icon-assets/icon/health/inhaler-outline.svg"
+  },
+  {
+    "name": "icon/health/inhaler",
+    "style": "bold",
+    "nodeId": "2414:17982",
+    "path": "public/icon-assets/icon/health/inhaler-bold.svg"
+  },
+  {
+    "name": "icon/health/insurance",
+    "style": "outline",
+    "nodeId": "1593:29696",
+    "path": "public/icon-assets/icon/health/insurance-outline.svg"
+  },
+  {
+    "name": "icon/health/insurance",
+    "style": "bold",
+    "nodeId": "2414:17996",
+    "path": "public/icon-assets/icon/health/insurance-bold.svg"
+  },
+  {
+    "name": "icon/health/lab",
+    "style": "outline",
+    "nodeId": "1593:29721",
+    "path": "public/icon-assets/icon/health/lab-outline.svg"
+  },
+  {
+    "name": "icon/health/lab",
+    "style": "bold",
+    "nodeId": "2414:18004",
+    "path": "public/icon-assets/icon/health/lab-bold.svg"
+  },
+  {
+    "name": "icon/health/mask",
+    "style": "outline",
+    "nodeId": "1593:29809",
+    "path": "public/icon-assets/icon/health/mask-outline.svg"
+  },
+  {
+    "name": "icon/health/mask",
+    "style": "bold",
+    "nodeId": "2414:18052",
+    "path": "public/icon-assets/icon/health/mask-bold.svg"
+  },
+  {
+    "name": "icon/health/medical.cross",
+    "style": "outline",
+    "nodeId": "1593:29827",
+    "path": "public/icon-assets/icon/health/medical.cross-outline.svg"
+  },
+  {
+    "name": "icon/health/medical.cross",
+    "style": "bold",
+    "nodeId": "2414:18060",
+    "path": "public/icon-assets/icon/health/medical.cross-bold.svg"
+  },
+  {
+    "name": "icon/health/meditation",
+    "style": "outline",
+    "nodeId": "1593:29840",
+    "path": "public/icon-assets/icon/health/meditation-outline.svg"
+  },
+  {
+    "name": "icon/health/meditation",
+    "style": "bold",
+    "nodeId": "2414:18066",
+    "path": "public/icon-assets/icon/health/meditation-bold.svg"
+  },
+  {
+    "name": "icon/health/mental.health",
+    "style": "outline",
+    "nodeId": "1593:29868",
+    "path": "public/icon-assets/icon/health/mental.health-outline.svg"
+  },
+  {
+    "name": "icon/health/mental.health",
+    "style": "bold",
+    "nodeId": "2414:18082",
+    "path": "public/icon-assets/icon/health/mental.health-bold.svg"
+  },
+  {
+    "name": "icon/health/mental.wellness",
+    "style": "outline",
+    "nodeId": "1593:29887",
+    "path": "public/icon-assets/icon/health/mental.wellness-outline.svg"
+  },
+  {
+    "name": "icon/health/mental.wellness",
+    "style": "bold",
+    "nodeId": "2414:18092",
+    "path": "public/icon-assets/icon/health/mental.wellness-bold.svg"
+  },
+  {
+    "name": "icon/health/microscope",
+    "style": "outline",
+    "nodeId": "1593:29918",
+    "path": "public/icon-assets/icon/health/microscope-outline.svg"
+  },
+  {
+    "name": "icon/health/microscope",
+    "style": "bold",
+    "nodeId": "2414:18110",
+    "path": "public/icon-assets/icon/health/microscope-bold.svg"
+  },
+  {
+    "name": "icon/health/mri",
+    "style": "outline",
+    "nodeId": "1593:29949",
+    "path": "public/icon-assets/icon/health/mri-outline.svg"
+  },
+  {
+    "name": "icon/health/mri",
+    "style": "bold",
+    "nodeId": "2414:18128",
+    "path": "public/icon-assets/icon/health/mri-bold.svg"
+  },
+  {
+    "name": "icon/health/neurology",
+    "style": "outline",
+    "nodeId": "1593:29989",
+    "path": "public/icon-assets/icon/health/neurology-outline.svg"
+  },
+  {
+    "name": "icon/health/neurology",
+    "style": "bold",
+    "nodeId": "2414:18152",
+    "path": "public/icon-assets/icon/health/neurology-bold.svg"
+  },
+  {
+    "name": "icon/health/nurse",
+    "style": "outline",
+    "nodeId": "1593:30035",
+    "path": "public/icon-assets/icon/health/nurse-outline.svg"
+  },
+  {
+    "name": "icon/health/nurse",
+    "style": "bold",
+    "nodeId": "2414:18180",
+    "path": "public/icon-assets/icon/health/nurse-bold.svg"
+  },
+  {
+    "name": "icon/health/orthopedics",
+    "style": "outline",
+    "nodeId": "1593:30080",
+    "path": "public/icon-assets/icon/health/orthopedics-outline.svg"
+  },
+  {
+    "name": "icon/health/orthopedics",
+    "style": "bold",
+    "nodeId": "2414:18206",
+    "path": "public/icon-assets/icon/health/orthopedics-bold.svg"
+  },
+  {
+    "name": "icon/health/otc",
+    "style": "outline",
+    "nodeId": "1593:30419",
+    "path": "public/icon-assets/icon/health/otc-outline.svg"
+  },
+  {
+    "name": "icon/health/otc",
+    "style": "bold",
+    "nodeId": "2414:18226",
+    "path": "public/icon-assets/icon/health/otc-bold.svg"
+  },
+  {
+    "name": "icon/health/oxygen",
+    "style": "outline",
+    "nodeId": "1593:30444",
+    "path": "public/icon-assets/icon/health/oxygen-outline.svg"
+  },
+  {
+    "name": "icon/health/oxygen",
+    "style": "bold",
+    "nodeId": "2414:18240",
+    "path": "public/icon-assets/icon/health/oxygen-bold.svg"
+  },
+  {
+    "name": "icon/health/patient",
+    "style": "outline",
+    "nodeId": "1593:30463",
+    "path": "public/icon-assets/icon/health/patient-outline.svg"
+  },
+  {
+    "name": "icon/health/patient",
+    "style": "bold",
+    "nodeId": "2414:18250",
+    "path": "public/icon-assets/icon/health/patient-bold.svg"
+  },
+  {
+    "name": "icon/health/pediatric",
+    "style": "outline",
+    "nodeId": "1593:30499",
+    "path": "public/icon-assets/icon/health/pediatric-outline.svg"
+  },
+  {
+    "name": "icon/health/pediatric",
+    "style": "bold",
+    "nodeId": "2414:18268",
+    "path": "public/icon-assets/icon/health/pediatric-bold.svg"
+  },
+  {
+    "name": "icon/health/pharmacy",
+    "style": "outline",
+    "nodeId": "1593:30531",
+    "path": "public/icon-assets/icon/health/pharmacy-outline.svg"
+  },
+  {
+    "name": "icon/health/pharmacy",
+    "style": "bold",
+    "nodeId": "2414:18284",
+    "path": "public/icon-assets/icon/health/pharmacy-bold.svg"
+  },
+  {
+    "name": "icon/health/pharmacy.alt",
+    "style": "outline",
+    "nodeId": "1593:30550",
+    "path": "public/icon-assets/icon/health/pharmacy.alt-outline.svg"
+  },
+  {
+    "name": "icon/health/pharmacy.alt",
+    "style": "bold",
+    "nodeId": "2414:18294",
+    "path": "public/icon-assets/icon/health/pharmacy.alt-bold.svg"
+  },
+  {
+    "name": "icon/health/pill",
+    "style": "outline",
+    "nodeId": "1593:30575",
+    "path": "public/icon-assets/icon/health/pill-outline.svg"
+  },
+  {
+    "name": "icon/health/pill",
+    "style": "bold",
+    "nodeId": "2414:18308",
+    "path": "public/icon-assets/icon/health/pill-bold.svg"
+  },
+  {
+    "name": "icon/health/prescription",
+    "style": "outline",
+    "nodeId": "1593:30626",
+    "path": "public/icon-assets/icon/health/prescription-outline.svg"
+  },
+  {
+    "name": "icon/health/prescription",
+    "style": "bold",
+    "nodeId": "2414:18334",
+    "path": "public/icon-assets/icon/health/prescription-bold.svg"
+  },
+  {
+    "name": "icon/health/prosthetic",
+    "style": "outline",
+    "nodeId": "1593:30648",
+    "path": "public/icon-assets/icon/health/prosthetic-outline.svg"
+  },
+  {
+    "name": "icon/health/prosthetic",
+    "style": "bold",
+    "nodeId": "2414:18346",
+    "path": "public/icon-assets/icon/health/prosthetic-bold.svg"
+  },
+  {
+    "name": "icon/health/pulse",
+    "style": "outline",
+    "nodeId": "1593:30670",
+    "path": "public/icon-assets/icon/health/pulse-outline.svg"
+  },
+  {
+    "name": "icon/health/pulse",
+    "style": "bold",
+    "nodeId": "2414:18358",
+    "path": "public/icon-assets/icon/health/pulse-bold.svg"
+  },
+  {
+    "name": "icon/health/radiology",
+    "style": "outline",
+    "nodeId": "1593:30698",
+    "path": "public/icon-assets/icon/health/radiology-outline.svg"
+  },
+  {
+    "name": "icon/health/radiology",
+    "style": "bold",
+    "nodeId": "2414:18374",
+    "path": "public/icon-assets/icon/health/radiology-bold.svg"
+  },
+  {
+    "name": "icon/health/sign.language",
+    "style": "outline",
+    "nodeId": "1593:30723",
+    "path": "public/icon-assets/icon/health/sign.language-outline.svg"
+  },
+  {
+    "name": "icon/health/sign.language",
+    "style": "bold",
+    "nodeId": "2414:18388",
+    "path": "public/icon-assets/icon/health/sign.language-bold.svg"
+  },
+  {
+    "name": "icon/health/sleep",
+    "style": "outline",
+    "nodeId": "1593:30753",
+    "path": "public/icon-assets/icon/health/sleep-outline.svg"
+  },
+  {
+    "name": "icon/health/sleep",
+    "style": "bold",
+    "nodeId": "2414:18404",
+    "path": "public/icon-assets/icon/health/sleep-bold.svg"
+  },
+  {
+    "name": "icon/health/stethoscope",
+    "style": "outline",
+    "nodeId": "1593:30772",
+    "path": "public/icon-assets/icon/health/stethoscope-outline.svg"
+  },
+  {
+    "name": "icon/health/stethoscope",
+    "style": "bold",
+    "nodeId": "2414:18414",
+    "path": "public/icon-assets/icon/health/stethoscope-bold.svg"
+  },
+  {
+    "name": "icon/health/symptoms",
+    "style": "outline",
+    "nodeId": "1593:30864",
+    "path": "public/icon-assets/icon/health/symptoms-outline.svg"
+  },
+  {
+    "name": "icon/health/symptoms",
+    "style": "bold",
+    "nodeId": "2414:18468",
+    "path": "public/icon-assets/icon/health/symptoms-bold.svg"
+  },
+  {
+    "name": "icon/health/syringe",
+    "style": "outline",
+    "nodeId": "1593:30900",
+    "path": "public/icon-assets/icon/health/syringe-outline.svg"
+  },
+  {
+    "name": "icon/health/syringe",
+    "style": "bold",
+    "nodeId": "2414:18488",
+    "path": "public/icon-assets/icon/health/syringe-bold.svg"
+  },
+  {
+    "name": "icon/health/thermometer",
+    "style": "outline",
+    "nodeId": "1593:30934",
+    "path": "public/icon-assets/icon/health/thermometer-outline.svg"
+  },
+  {
+    "name": "icon/health/thermometer",
+    "style": "bold",
+    "nodeId": "2414:18508",
+    "path": "public/icon-assets/icon/health/thermometer-bold.svg"
+  },
+  {
+    "name": "icon/health/tooth",
+    "style": "outline",
+    "nodeId": "1593:30955",
+    "path": "public/icon-assets/icon/health/tooth-outline.svg"
+  },
+  {
+    "name": "icon/health/tooth",
+    "style": "bold",
+    "nodeId": "2414:18518",
+    "path": "public/icon-assets/icon/health/tooth-bold.svg"
+  },
+  {
+    "name": "icon/health/ultrasound",
+    "style": "outline",
+    "nodeId": "1593:30971",
+    "path": "public/icon-assets/icon/health/ultrasound-outline.svg"
+  },
+  {
+    "name": "icon/health/ultrasound",
+    "style": "bold",
+    "nodeId": "2414:18526",
+    "path": "public/icon-assets/icon/health/ultrasound-bold.svg"
+  },
+  {
+    "name": "icon/health/vaccine",
+    "style": "outline",
+    "nodeId": "1593:31002",
+    "path": "public/icon-assets/icon/health/vaccine-outline.svg"
+  },
+  {
+    "name": "icon/health/vaccine",
+    "style": "bold",
+    "nodeId": "2414:18544",
+    "path": "public/icon-assets/icon/health/vaccine-bold.svg"
+  },
+  {
+    "name": "icon/health/virus",
+    "style": "outline",
+    "nodeId": "1593:31045",
+    "path": "public/icon-assets/icon/health/virus-outline.svg"
+  },
+  {
+    "name": "icon/health/virus",
+    "style": "bold",
+    "nodeId": "2414:18570",
+    "path": "public/icon-assets/icon/health/virus-bold.svg"
+  },
+  {
+    "name": "icon/health/waiting.room",
+    "style": "outline",
+    "nodeId": "1593:31112",
+    "path": "public/icon-assets/icon/health/waiting.room-outline.svg"
+  },
+  {
+    "name": "icon/health/waiting.room",
+    "style": "bold",
+    "nodeId": "2414:18612",
+    "path": "public/icon-assets/icon/health/waiting.room-bold.svg"
+  },
+  {
+    "name": "icon/health/weight.scale",
+    "style": "outline",
+    "nodeId": "1593:31141",
+    "path": "public/icon-assets/icon/health/weight.scale-outline.svg"
+  },
+  {
+    "name": "icon/health/weight.scale",
+    "style": "bold",
+    "nodeId": "2414:18626",
+    "path": "public/icon-assets/icon/health/weight.scale-bold.svg"
+  },
+  {
+    "name": "icon/health/wheelchair",
+    "style": "outline",
+    "nodeId": "1593:31172",
+    "path": "public/icon-assets/icon/health/wheelchair-outline.svg"
+  },
+  {
+    "name": "icon/health/wheelchair",
+    "style": "bold",
+    "nodeId": "2414:18644",
+    "path": "public/icon-assets/icon/health/wheelchair-bold.svg"
+  },
+  {
+    "name": "icon/media/brightness",
+    "style": "outline",
+    "nodeId": "1593:41573",
+    "path": "public/icon-assets/icon/media/brightness-outline.svg"
+  },
+  {
+    "name": "icon/media/brightness",
+    "style": "bold",
+    "nodeId": "2414:22771",
+    "path": "public/icon-assets/icon/media/brightness-bold.svg"
+  },
+  {
+    "name": "icon/media/camera",
+    "style": "outline",
+    "nodeId": "1593:41619",
+    "path": "public/icon-assets/icon/media/camera-outline.svg"
+  },
+  {
+    "name": "icon/media/camera",
+    "style": "bold",
+    "nodeId": "2414:22793",
+    "path": "public/icon-assets/icon/media/camera-bold.svg"
+  },
+  {
+    "name": "icon/media/cast",
+    "style": "outline",
+    "nodeId": "1593:41647",
+    "path": "public/icon-assets/icon/media/cast-outline.svg"
+  },
+  {
+    "name": "icon/media/cast",
+    "style": "bold",
+    "nodeId": "2414:22807",
+    "path": "public/icon-assets/icon/media/cast-bold.svg"
+  },
+  {
+    "name": "icon/media/contrast",
+    "style": "outline",
+    "nodeId": "1593:41677",
+    "path": "public/icon-assets/icon/media/contrast-outline.svg"
+  },
+  {
+    "name": "icon/media/contrast",
+    "style": "bold",
+    "nodeId": "2414:22821",
+    "path": "public/icon-assets/icon/media/contrast-bold.svg"
+  },
+  {
+    "name": "icon/media/crop",
+    "style": "outline",
+    "nodeId": "1593:41705",
+    "path": "public/icon-assets/icon/media/crop-outline.svg"
+  },
+  {
+    "name": "icon/media/crop",
+    "style": "bold",
+    "nodeId": "2414:22837",
+    "path": "public/icon-assets/icon/media/crop-bold.svg"
+  },
+  {
+    "name": "icon/media/equalizer",
+    "style": "outline",
+    "nodeId": "1593:41739",
+    "path": "public/icon-assets/icon/media/equalizer-outline.svg"
+  },
+  {
+    "name": "icon/media/equalizer",
+    "style": "bold",
+    "nodeId": "2414:22857",
+    "path": "public/icon-assets/icon/media/equalizer-bold.svg"
+  },
+  {
+    "name": "icon/media/film",
+    "style": "outline",
+    "nodeId": "1593:41785",
+    "path": "public/icon-assets/icon/media/film-outline.svg"
+  },
+  {
+    "name": "icon/media/film",
+    "style": "bold",
+    "nodeId": "2414:22885",
+    "path": "public/icon-assets/icon/media/film-bold.svg"
+  },
+  {
+    "name": "icon/media/flip",
+    "style": "outline",
+    "nodeId": "1593:41816",
+    "path": "public/icon-assets/icon/media/flip-outline.svg"
+  },
+  {
+    "name": "icon/media/flip",
+    "style": "bold",
+    "nodeId": "2414:22895",
+    "path": "public/icon-assets/icon/media/flip-bold.svg"
+  },
+  {
+    "name": "icon/media/gallery",
+    "style": "outline",
+    "nodeId": "1593:41873",
+    "path": "public/icon-assets/icon/media/gallery-outline.svg"
+  },
+  {
+    "name": "icon/media/gallery",
+    "style": "bold",
+    "nodeId": "2414:22923",
+    "path": "public/icon-assets/icon/media/gallery-bold.svg"
+  },
+  {
+    "name": "icon/media/headphones",
+    "style": "outline",
+    "nodeId": "1593:41901",
+    "path": "public/icon-assets/icon/media/headphones-outline.svg"
+  },
+  {
+    "name": "icon/media/headphones",
+    "style": "bold",
+    "nodeId": "2414:22937",
+    "path": "public/icon-assets/icon/media/headphones-bold.svg"
+  },
+  {
+    "name": "icon/media/image",
+    "style": "outline",
+    "nodeId": "1593:41923",
+    "path": "public/icon-assets/icon/media/image-outline.svg"
+  },
+  {
+    "name": "icon/media/image",
+    "style": "bold",
+    "nodeId": "2414:22947",
+    "path": "public/icon-assets/icon/media/image-bold.svg"
+  },
+  {
+    "name": "icon/media/mic",
+    "style": "outline",
+    "nodeId": "1593:41957",
+    "path": "public/icon-assets/icon/media/mic-outline.svg"
+  },
+  {
+    "name": "icon/media/mic",
+    "style": "bold",
+    "nodeId": "2414:22967",
+    "path": "public/icon-assets/icon/media/mic-bold.svg"
+  },
+  {
+    "name": "icon/media/mic.off",
+    "style": "outline",
+    "nodeId": "1593:41981",
+    "path": "public/icon-assets/icon/media/mic.off-outline.svg"
+  },
+  {
+    "name": "icon/media/mic.off",
+    "style": "bold",
+    "nodeId": "2414:22979",
+    "path": "public/icon-assets/icon/media/mic.off-bold.svg"
+  },
+  {
+    "name": "icon/media/music",
+    "style": "outline",
+    "nodeId": "1593:42015",
+    "path": "public/icon-assets/icon/media/music-outline.svg"
+  },
+  {
+    "name": "icon/media/music",
+    "style": "bold",
+    "nodeId": "2414:22997",
+    "path": "public/icon-assets/icon/media/music-bold.svg"
+  },
+  {
+    "name": "icon/media/pause",
+    "style": "outline",
+    "nodeId": "1593:42034",
+    "path": "public/icon-assets/icon/media/pause-outline.svg"
+  },
+  {
+    "name": "icon/media/pause",
+    "style": "bold",
+    "nodeId": "2414:23007",
+    "path": "public/icon-assets/icon/media/pause-bold.svg"
+  },
+  {
+    "name": "icon/media/play",
+    "style": "outline",
+    "nodeId": "1593:42053",
+    "path": "public/icon-assets/icon/media/play-outline.svg"
+  },
+  {
+    "name": "icon/media/play",
+    "style": "bold",
+    "nodeId": "2414:23017",
+    "path": "public/icon-assets/icon/media/play-bold.svg"
+  },
+  {
+    "name": "icon/media/playlist",
+    "style": "outline",
+    "nodeId": "1593:42069",
+    "path": "public/icon-assets/icon/media/playlist-outline.svg"
+  },
+  {
+    "name": "icon/media/playlist",
+    "style": "bold",
+    "nodeId": "2414:23025",
+    "path": "public/icon-assets/icon/media/playlist-bold.svg"
+  },
+  {
+    "name": "icon/media/record",
+    "style": "outline",
+    "nodeId": "1593:42100",
+    "path": "public/icon-assets/icon/media/record-outline.svg"
+  },
+  {
+    "name": "icon/media/record",
+    "style": "bold",
+    "nodeId": "2414:23041",
+    "path": "public/icon-assets/icon/media/record-bold.svg"
+  },
+  {
+    "name": "icon/media/rotate",
+    "style": "outline",
+    "nodeId": "1593:42125",
+    "path": "public/icon-assets/icon/media/rotate-outline.svg"
+  },
+  {
+    "name": "icon/media/rotate",
+    "style": "bold",
+    "nodeId": "2414:23053",
+    "path": "public/icon-assets/icon/media/rotate-bold.svg"
+  },
+  {
+    "name": "icon/media/skip.back",
+    "style": "outline",
+    "nodeId": "1593:42149",
+    "path": "public/icon-assets/icon/media/skip.back-outline.svg"
+  },
+  {
+    "name": "icon/media/skip.back",
+    "style": "bold",
+    "nodeId": "2414:23065",
+    "path": "public/icon-assets/icon/media/skip.back-bold.svg"
+  },
+  {
+    "name": "icon/media/skip.forward",
+    "style": "outline",
+    "nodeId": "1593:42168",
+    "path": "public/icon-assets/icon/media/skip.forward-outline.svg"
+  },
+  {
+    "name": "icon/media/skip.forward",
+    "style": "bold",
+    "nodeId": "2414:23075",
+    "path": "public/icon-assets/icon/media/skip.forward-bold.svg"
+  },
+  {
+    "name": "icon/media/stop",
+    "style": "outline",
+    "nodeId": "1593:42187",
+    "path": "public/icon-assets/icon/media/stop-outline.svg"
+  },
+  {
+    "name": "icon/media/stop",
+    "style": "bold",
+    "nodeId": "2414:23085",
+    "path": "public/icon-assets/icon/media/stop-bold.svg"
+  },
+  {
+    "name": "icon/media/video",
+    "style": "outline",
+    "nodeId": "1593:42203",
+    "path": "public/icon-assets/icon/media/video-outline.svg"
+  },
+  {
+    "name": "icon/media/video",
+    "style": "bold",
+    "nodeId": "2414:23093",
+    "path": "public/icon-assets/icon/media/video-bold.svg"
+  },
+  {
+    "name": "icon/media/volume",
+    "style": "outline",
+    "nodeId": "1593:42219",
+    "path": "public/icon-assets/icon/media/volume-outline.svg"
+  },
+  {
+    "name": "icon/media/volume",
+    "style": "bold",
+    "nodeId": "2414:23101",
+    "path": "public/icon-assets/icon/media/volume-bold.svg"
+  },
+  {
+    "name": "icon/media/volume.off",
+    "style": "outline",
+    "nodeId": "1593:42259",
+    "path": "public/icon-assets/icon/media/volume.off-outline.svg"
+  },
+  {
+    "name": "icon/media/volume.off",
+    "style": "bold",
+    "nodeId": "2414:23121",
+    "path": "public/icon-assets/icon/media/volume.off-bold.svg"
+  },
+  {
+    "name": "icon/misc/accessibility",
+    "style": "outline",
+    "nodeId": "1593:31198",
+    "path": "public/icon-assets/icon/misc/accessibility-outline.svg"
+  },
+  {
+    "name": "icon/misc/accessibility",
+    "style": "bold",
+    "nodeId": "2414:18656",
+    "path": "public/icon-assets/icon/misc/accessibility-bold.svg"
+  },
+  {
+    "name": "icon/misc/airplane",
+    "style": "outline",
+    "nodeId": "1593:31217",
+    "path": "public/icon-assets/icon/misc/airplane-outline.svg"
+  },
+  {
+    "name": "icon/misc/airplane",
+    "style": "bold",
+    "nodeId": "2414:18666",
+    "path": "public/icon-assets/icon/misc/airplane-bold.svg"
+  },
+  {
+    "name": "icon/misc/alarm",
+    "style": "outline",
+    "nodeId": "1593:31245",
+    "path": "public/icon-assets/icon/misc/alarm-outline.svg"
+  },
+  {
+    "name": "icon/misc/alarm",
+    "style": "bold",
+    "nodeId": "2414:18680",
+    "path": "public/icon-assets/icon/misc/alarm-bold.svg"
+  },
+  {
+    "name": "icon/misc/atom",
+    "style": "outline",
+    "nodeId": "1593:31276",
+    "path": "public/icon-assets/icon/misc/atom-outline.svg"
+  },
+  {
+    "name": "icon/misc/atom",
+    "style": "bold",
+    "nodeId": "2414:18698",
+    "path": "public/icon-assets/icon/misc/atom-bold.svg"
+  },
+  {
+    "name": "icon/misc/award",
+    "style": "outline",
+    "nodeId": "1593:31298",
+    "path": "public/icon-assets/icon/misc/award-outline.svg"
+  },
+  {
+    "name": "icon/misc/award",
+    "style": "bold",
+    "nodeId": "2414:18708",
+    "path": "public/icon-assets/icon/misc/award-bold.svg"
+  },
+  {
+    "name": "icon/misc/balloon",
+    "style": "outline",
+    "nodeId": "1593:31317",
+    "path": "public/icon-assets/icon/misc/balloon-outline.svg"
+  },
+  {
+    "name": "icon/misc/balloon",
+    "style": "bold",
+    "nodeId": "2414:18716",
+    "path": "public/icon-assets/icon/misc/balloon-bold.svg"
+  },
+  {
+    "name": "icon/misc/barcode.scan",
+    "style": "outline",
+    "nodeId": "1593:31481",
+    "path": "public/icon-assets/icon/misc/barcode.scan-outline.svg"
+  },
+  {
+    "name": "icon/misc/barcode.scan",
+    "style": "bold",
+    "nodeId": "2414:18800",
+    "path": "public/icon-assets/icon/misc/barcode.scan-bold.svg"
+  },
+  {
+    "name": "icon/misc/battery",
+    "style": "outline",
+    "nodeId": "1593:31402",
+    "path": "public/icon-assets/icon/misc/battery-outline.svg"
+  },
+  {
+    "name": "icon/misc/battery",
+    "style": "bold",
+    "nodeId": "2414:18760",
+    "path": "public/icon-assets/icon/misc/battery-bold.svg"
+  },
+  {
+    "name": "icon/misc/battery.charging",
+    "style": "outline",
+    "nodeId": "1593:31415",
+    "path": "public/icon-assets/icon/misc/battery.charging-outline.svg"
+  },
+  {
+    "name": "icon/misc/battery.charging",
+    "style": "bold",
+    "nodeId": "2414:18766",
+    "path": "public/icon-assets/icon/misc/battery.charging-bold.svg"
+  },
+  {
+    "name": "icon/misc/battery.full",
+    "style": "outline",
+    "nodeId": "1593:31457",
+    "path": "public/icon-assets/icon/misc/battery.full-outline.svg"
+  },
+  {
+    "name": "icon/misc/battery.full",
+    "style": "bold",
+    "nodeId": "2414:18788",
+    "path": "public/icon-assets/icon/misc/battery.full-bold.svg"
+  },
+  {
+    "name": "icon/misc/battery.low",
+    "style": "outline",
+    "nodeId": "1593:31533",
+    "path": "public/icon-assets/icon/misc/battery.low-outline.svg"
+  },
+  {
+    "name": "icon/misc/battery.low",
+    "style": "bold",
+    "nodeId": "2414:18824",
+    "path": "public/icon-assets/icon/misc/battery.low-bold.svg"
+  },
+  {
+    "name": "icon/misc/bike",
+    "style": "outline",
+    "nodeId": "1593:31349",
+    "path": "public/icon-assets/icon/misc/bike-outline.svg"
+  },
+  {
+    "name": "icon/misc/bike",
+    "style": "bold",
+    "nodeId": "2414:18732",
+    "path": "public/icon-assets/icon/misc/bike-bold.svg"
+  },
+  {
+    "name": "icon/misc/bluetooth",
+    "style": "outline",
+    "nodeId": "1593:31374",
+    "path": "public/icon-assets/icon/misc/bluetooth-outline.svg"
+  },
+  {
+    "name": "icon/misc/bluetooth",
+    "style": "bold",
+    "nodeId": "2414:18746",
+    "path": "public/icon-assets/icon/misc/bluetooth-bold.svg"
+  },
+  {
+    "name": "icon/misc/book",
+    "style": "outline",
+    "nodeId": "1593:31552",
+    "path": "public/icon-assets/icon/misc/book-outline.svg"
+  },
+  {
+    "name": "icon/misc/book",
+    "style": "bold",
+    "nodeId": "2414:18834",
+    "path": "public/icon-assets/icon/misc/book-bold.svg"
+  },
+  {
+    "name": "icon/misc/briefcase",
+    "style": "outline",
+    "nodeId": "1593:31579",
+    "path": "public/icon-assets/icon/misc/briefcase-outline.svg"
+  },
+  {
+    "name": "icon/misc/briefcase",
+    "style": "bold",
+    "nodeId": "2414:18848",
+    "path": "public/icon-assets/icon/misc/briefcase-bold.svg"
+  },
+  {
+    "name": "icon/misc/bug",
+    "style": "outline",
+    "nodeId": "1593:31607",
+    "path": "public/icon-assets/icon/misc/bug-outline.svg"
+  },
+  {
+    "name": "icon/misc/bug",
+    "style": "bold",
+    "nodeId": "2414:18864",
+    "path": "public/icon-assets/icon/misc/bug-bold.svg"
+  },
+  {
+    "name": "icon/misc/building",
+    "style": "outline",
+    "nodeId": "1593:31626",
+    "path": "public/icon-assets/icon/misc/building-outline.svg"
+  },
+  {
+    "name": "icon/misc/building",
+    "style": "bold",
+    "nodeId": "2414:18874",
+    "path": "public/icon-assets/icon/misc/building-bold.svg"
+  },
+  {
+    "name": "icon/misc/bus",
+    "style": "outline",
+    "nodeId": "1593:31669",
+    "path": "public/icon-assets/icon/misc/bus-outline.svg"
+  },
+  {
+    "name": "icon/misc/bus",
+    "style": "bold",
+    "nodeId": "2414:18900",
+    "path": "public/icon-assets/icon/misc/bus-bold.svg"
+  },
+  {
+    "name": "icon/misc/cake",
+    "style": "outline",
+    "nodeId": "1593:31706",
+    "path": "public/icon-assets/icon/misc/cake-outline.svg"
+  },
+  {
+    "name": "icon/misc/cake",
+    "style": "bold",
+    "nodeId": "2414:18922",
+    "path": "public/icon-assets/icon/misc/cake-bold.svg"
+  },
+  {
+    "name": "icon/misc/camera.off",
+    "style": "outline",
+    "nodeId": "1593:31731",
+    "path": "public/icon-assets/icon/misc/camera.off-outline.svg"
+  },
+  {
+    "name": "icon/misc/camera.off",
+    "style": "bold",
+    "nodeId": "2414:18934",
+    "path": "public/icon-assets/icon/misc/camera.off-bold.svg"
+  },
+  {
+    "name": "icon/misc/car",
+    "style": "outline",
+    "nodeId": "1593:31756",
+    "path": "public/icon-assets/icon/misc/car-outline.svg"
+  },
+  {
+    "name": "icon/misc/car",
+    "style": "bold",
+    "nodeId": "2414:18946",
+    "path": "public/icon-assets/icon/misc/car-bold.svg"
+  },
+  {
+    "name": "icon/misc/cloud.sun",
+    "style": "outline",
+    "nodeId": "1593:31790",
+    "path": "public/icon-assets/icon/misc/cloud.sun-outline.svg"
+  },
+  {
+    "name": "icon/misc/cloud.sun",
+    "style": "bold",
+    "nodeId": "2414:18966",
+    "path": "public/icon-assets/icon/misc/cloud.sun-bold.svg"
+  },
+  {
+    "name": "icon/misc/code",
+    "style": "outline",
+    "nodeId": "1593:31839",
+    "path": "public/icon-assets/icon/misc/code-outline.svg"
+  },
+  {
+    "name": "icon/misc/code",
+    "style": "bold",
+    "nodeId": "2414:18990",
+    "path": "public/icon-assets/icon/misc/code-bold.svg"
+  },
+  {
+    "name": "icon/misc/coffee",
+    "style": "outline",
+    "nodeId": "1593:31858",
+    "path": "public/icon-assets/icon/misc/coffee-outline.svg"
+  },
+  {
+    "name": "icon/misc/coffee",
+    "style": "bold",
+    "nodeId": "2414:19000",
+    "path": "public/icon-assets/icon/misc/coffee-bold.svg"
+  },
+  {
+    "name": "icon/misc/desktop",
+    "style": "outline",
+    "nodeId": "1593:32049",
+    "path": "public/icon-assets/icon/misc/desktop-outline.svg"
+  },
+  {
+    "name": "icon/misc/desktop",
+    "style": "bold",
+    "nodeId": "2414:19104",
+    "path": "public/icon-assets/icon/misc/desktop-bold.svg"
+  },
+  {
+    "name": "icon/misc/droplet",
+    "style": "outline",
+    "nodeId": "1593:32079",
+    "path": "public/icon-assets/icon/misc/droplet-outline.svg"
+  },
+  {
+    "name": "icon/misc/droplet",
+    "style": "bold",
+    "nodeId": "2414:19120",
+    "path": "public/icon-assets/icon/misc/droplet-bold.svg"
+  },
+  {
+    "name": "icon/misc/ecology",
+    "style": "outline",
+    "nodeId": "1593:31888",
+    "path": "public/icon-assets/icon/misc/ecology-outline.svg"
+  },
+  {
+    "name": "icon/misc/ecology",
+    "style": "bold",
+    "nodeId": "2414:19016",
+    "path": "public/icon-assets/icon/misc/ecology-bold.svg"
+  },
+  {
+    "name": "icon/misc/face.id",
+    "style": "outline",
+    "nodeId": "1593:31907",
+    "path": "public/icon-assets/icon/misc/face.id-outline.svg"
+  },
+  {
+    "name": "icon/misc/face.id",
+    "style": "bold",
+    "nodeId": "2414:19026",
+    "path": "public/icon-assets/icon/misc/face.id-bold.svg"
+  },
+  {
+    "name": "icon/misc/factory",
+    "style": "outline",
+    "nodeId": "1593:31948",
+    "path": "public/icon-assets/icon/misc/factory-outline.svg"
+  },
+  {
+    "name": "icon/misc/factory",
+    "style": "bold",
+    "nodeId": "2414:19046",
+    "path": "public/icon-assets/icon/misc/factory-bold.svg"
+  },
+  {
+    "name": "icon/misc/fingerprint",
+    "style": "outline",
+    "nodeId": "1593:31988",
+    "path": "public/icon-assets/icon/misc/fingerprint-outline.svg"
+  },
+  {
+    "name": "icon/misc/fingerprint",
+    "style": "bold",
+    "nodeId": "2414:19070",
+    "path": "public/icon-assets/icon/misc/fingerprint-bold.svg"
+  },
+  {
+    "name": "icon/misc/fire",
+    "style": "outline",
+    "nodeId": "1593:32031",
+    "path": "public/icon-assets/icon/misc/fire-outline.svg"
+  },
+  {
+    "name": "icon/misc/fire",
+    "style": "bold",
+    "nodeId": "2414:19096",
+    "path": "public/icon-assets/icon/misc/fire-bold.svg"
+  },
+  {
+    "name": "icon/misc/flash",
+    "style": "outline",
+    "nodeId": "1593:32092",
+    "path": "public/icon-assets/icon/misc/flash-outline.svg"
+  },
+  {
+    "name": "icon/misc/flash",
+    "style": "bold",
+    "nodeId": "2414:19126",
+    "path": "public/icon-assets/icon/misc/flash-bold.svg"
+  },
+  {
+    "name": "icon/misc/flash.off",
+    "style": "outline",
+    "nodeId": "1593:32105",
+    "path": "public/icon-assets/icon/misc/flash.off-outline.svg"
+  },
+  {
+    "name": "icon/misc/flash.off",
+    "style": "bold",
+    "nodeId": "2414:19132",
+    "path": "public/icon-assets/icon/misc/flash.off-bold.svg"
+  },
+  {
+    "name": "icon/misc/food",
+    "style": "outline",
+    "nodeId": "1593:32132",
+    "path": "public/icon-assets/icon/misc/food-outline.svg"
+  },
+  {
+    "name": "icon/misc/food",
+    "style": "bold",
+    "nodeId": "2414:19146",
+    "path": "public/icon-assets/icon/misc/food-bold.svg"
+  },
+  {
+    "name": "icon/misc/gas",
+    "style": "outline",
+    "nodeId": "1593:32157",
+    "path": "public/icon-assets/icon/misc/gas-outline.svg"
+  },
+  {
+    "name": "icon/misc/gas",
+    "style": "bold",
+    "nodeId": "2414:19160",
+    "path": "public/icon-assets/icon/misc/gas-bold.svg"
+  },
+  {
+    "name": "icon/misc/globe",
+    "style": "outline",
+    "nodeId": "1593:32182",
+    "path": "public/icon-assets/icon/misc/globe-outline.svg"
+  },
+  {
+    "name": "icon/misc/globe",
+    "style": "bold",
+    "nodeId": "2414:19174",
+    "path": "public/icon-assets/icon/misc/globe-bold.svg"
+  },
+  {
+    "name": "icon/misc/graduation",
+    "style": "outline",
+    "nodeId": "1593:32207",
+    "path": "public/icon-assets/icon/misc/graduation-outline.svg"
+  },
+  {
+    "name": "icon/misc/graduation",
+    "style": "bold",
+    "nodeId": "2414:19188",
+    "path": "public/icon-assets/icon/misc/graduation-bold.svg"
+  },
+  {
+    "name": "icon/misc/grid",
+    "style": "outline",
+    "nodeId": "1593:32229",
+    "path": "public/icon-assets/icon/misc/grid-outline.svg"
+  },
+  {
+    "name": "icon/misc/grid",
+    "style": "bold",
+    "nodeId": "2414:19200",
+    "path": "public/icon-assets/icon/misc/grid-bold.svg"
+  },
+  {
+    "name": "icon/misc/hammer",
+    "style": "outline",
+    "nodeId": "1593:32248",
+    "path": "public/icon-assets/icon/misc/hammer-outline.svg"
+  },
+  {
+    "name": "icon/misc/hammer",
+    "style": "bold",
+    "nodeId": "2414:19210",
+    "path": "public/icon-assets/icon/misc/hammer-bold.svg"
+  },
+  {
+    "name": "icon/misc/history",
+    "style": "outline",
+    "nodeId": "1593:32266",
+    "path": "public/icon-assets/icon/misc/history-outline.svg"
+  },
+  {
+    "name": "icon/misc/history",
+    "style": "bold",
+    "nodeId": "2414:19218",
+    "path": "public/icon-assets/icon/misc/history-bold.svg"
+  },
+  {
+    "name": "icon/misc/id.card",
+    "style": "outline",
+    "nodeId": "1593:32297",
+    "path": "public/icon-assets/icon/misc/id.card-outline.svg"
+  },
+  {
+    "name": "icon/misc/id.card",
+    "style": "bold",
+    "nodeId": "2414:19236",
+    "path": "public/icon-assets/icon/misc/id.card-bold.svg"
+  },
+  {
+    "name": "icon/misc/key",
+    "style": "outline",
+    "nodeId": "1593:32325",
+    "path": "public/icon-assets/icon/misc/key-outline.svg"
+  },
+  {
+    "name": "icon/misc/key",
+    "style": "bold",
+    "nodeId": "2414:19250",
+    "path": "public/icon-assets/icon/misc/key-bold.svg"
+  },
+  {
+    "name": "icon/misc/keyboard",
+    "style": "outline",
+    "nodeId": "1593:32355",
+    "path": "public/icon-assets/icon/misc/keyboard-outline.svg"
+  },
+  {
+    "name": "icon/misc/keyboard",
+    "style": "bold",
+    "nodeId": "2414:19266",
+    "path": "public/icon-assets/icon/misc/keyboard-bold.svg"
+  },
+  {
+    "name": "icon/misc/language",
+    "style": "outline",
+    "nodeId": "1593:32395",
+    "path": "public/icon-assets/icon/misc/language-outline.svg"
+  },
+  {
+    "name": "icon/misc/language",
+    "style": "bold",
+    "nodeId": "2414:19290",
+    "path": "public/icon-assets/icon/misc/language-bold.svg"
+  },
+  {
+    "name": "icon/misc/laptop",
+    "style": "outline",
+    "nodeId": "1593:32440",
+    "path": "public/icon-assets/icon/misc/laptop-outline.svg"
+  },
+  {
+    "name": "icon/misc/laptop",
+    "style": "bold",
+    "nodeId": "2414:19316",
+    "path": "public/icon-assets/icon/misc/laptop-bold.svg"
+  },
+  {
+    "name": "icon/misc/layout",
+    "style": "outline",
+    "nodeId": "1593:32459",
+    "path": "public/icon-assets/icon/misc/layout-outline.svg"
+  },
+  {
+    "name": "icon/misc/layout",
+    "style": "bold",
+    "nodeId": "2414:19326",
+    "path": "public/icon-assets/icon/misc/layout-bold.svg"
+  },
+  {
+    "name": "icon/misc/leaf",
+    "style": "outline",
+    "nodeId": "1593:32481",
+    "path": "public/icon-assets/icon/misc/leaf-outline.svg"
+  },
+  {
+    "name": "icon/misc/leaf",
+    "style": "bold",
+    "nodeId": "2414:19338",
+    "path": "public/icon-assets/icon/misc/leaf-bold.svg"
+  },
+  {
+    "name": "icon/misc/light.mode",
+    "style": "outline",
+    "nodeId": "1593:32521",
+    "path": "public/icon-assets/icon/misc/light.mode-outline.svg"
+  },
+  {
+    "name": "icon/misc/light.mode",
+    "style": "bold",
+    "nodeId": "2414:19360",
+    "path": "public/icon-assets/icon/misc/light.mode-bold.svg"
+  },
+  {
+    "name": "icon/misc/list",
+    "style": "outline",
+    "nodeId": "1593:32549",
+    "path": "public/icon-assets/icon/misc/list-outline.svg"
+  },
+  {
+    "name": "icon/misc/list",
+    "style": "bold",
+    "nodeId": "2414:19386",
+    "path": "public/icon-assets/icon/misc/list-bold.svg"
+  },
+  {
+    "name": "icon/misc/map.pin",
+    "style": "outline",
+    "nodeId": "1593:32605",
+    "path": "public/icon-assets/icon/misc/map.pin-outline.svg"
+  },
+  {
+    "name": "icon/misc/map.pin",
+    "style": "bold",
+    "nodeId": "2414:19416",
+    "path": "public/icon-assets/icon/misc/map.pin-bold.svg"
+  },
+  {
+    "name": "icon/misc/medal",
+    "style": "outline",
+    "nodeId": "1593:32623",
+    "path": "public/icon-assets/icon/misc/medal-outline.svg"
+  },
+  {
+    "name": "icon/misc/medal",
+    "style": "bold",
+    "nodeId": "2414:19424",
+    "path": "public/icon-assets/icon/misc/medal-bold.svg"
+  },
+  {
+    "name": "icon/misc/moon",
+    "style": "outline",
+    "nodeId": "1593:32654",
+    "path": "public/icon-assets/icon/misc/moon-outline.svg"
+  },
+  {
+    "name": "icon/misc/moon",
+    "style": "bold",
+    "nodeId": "2414:19440",
+    "path": "public/icon-assets/icon/misc/moon-bold.svg"
+  },
+  {
+    "name": "icon/misc/mouse",
+    "style": "outline",
+    "nodeId": "1593:32667",
+    "path": "public/icon-assets/icon/misc/mouse-outline.svg"
+  },
+  {
+    "name": "icon/misc/mouse",
+    "style": "bold",
+    "nodeId": "2414:19446",
+    "path": "public/icon-assets/icon/misc/mouse-bold.svg"
+  },
+  {
+    "name": "icon/misc/office",
+    "style": "outline",
+    "nodeId": "1593:32686",
+    "path": "public/icon-assets/icon/misc/office-outline.svg"
+  },
+  {
+    "name": "icon/misc/office",
+    "style": "bold",
+    "nodeId": "2414:19456",
+    "path": "public/icon-assets/icon/misc/office-bold.svg"
+  },
+  {
+    "name": "icon/misc/parking",
+    "style": "outline",
+    "nodeId": "1593:33274",
+    "path": "public/icon-assets/icon/misc/parking-outline.svg"
+  },
+  {
+    "name": "icon/misc/parking",
+    "style": "bold",
+    "nodeId": "2414:19476",
+    "path": "public/icon-assets/icon/misc/parking-bold.svg"
+  },
+  {
+    "name": "icon/misc/passport",
+    "style": "outline",
+    "nodeId": "1593:33313",
+    "path": "public/icon-assets/icon/misc/passport-outline.svg"
+  },
+  {
+    "name": "icon/misc/passport",
+    "style": "bold",
+    "nodeId": "2414:19496",
+    "path": "public/icon-assets/icon/misc/passport-bold.svg"
+  },
+  {
+    "name": "icon/misc/planet",
+    "style": "outline",
+    "nodeId": "1593:33348",
+    "path": "public/icon-assets/icon/misc/planet-outline.svg"
+  },
+  {
+    "name": "icon/misc/planet",
+    "style": "bold",
+    "nodeId": "2414:19512",
+    "path": "public/icon-assets/icon/misc/planet-bold.svg"
+  },
+  {
+    "name": "icon/misc/printer.alt",
+    "style": "outline",
+    "nodeId": "1593:33456",
+    "path": "public/icon-assets/icon/misc/printer.alt-outline.svg"
+  },
+  {
+    "name": "icon/misc/printer.alt",
+    "style": "bold",
+    "nodeId": "2414:19580",
+    "path": "public/icon-assets/icon/misc/printer.alt-bold.svg"
+  },
+  {
+    "name": "icon/misc/projector",
+    "style": "outline",
+    "nodeId": "1593:33487",
+    "path": "public/icon-assets/icon/misc/projector-outline.svg"
+  },
+  {
+    "name": "icon/misc/projector",
+    "style": "bold",
+    "nodeId": "2414:19596",
+    "path": "public/icon-assets/icon/misc/projector-bold.svg"
+  },
+  {
+    "name": "icon/misc/qr.scan",
+    "style": "outline",
+    "nodeId": "1593:33571",
+    "path": "public/icon-assets/icon/misc/qr.scan-outline.svg"
+  },
+  {
+    "name": "icon/misc/qr.scan",
+    "style": "bold",
+    "nodeId": "2414:19642",
+    "path": "public/icon-assets/icon/misc/qr.scan-bold.svg"
+  },
+  {
+    "name": "icon/misc/rain",
+    "style": "outline",
+    "nodeId": "1593:33610",
+    "path": "public/icon-assets/icon/misc/rain-outline.svg"
+  },
+  {
+    "name": "icon/misc/rain",
+    "style": "bold",
+    "nodeId": "2414:19662",
+    "path": "public/icon-assets/icon/misc/rain-bold.svg"
+  },
+  {
+    "name": "icon/misc/recycle",
+    "style": "outline",
+    "nodeId": "1593:33631",
+    "path": "public/icon-assets/icon/misc/recycle-outline.svg"
+  },
+  {
+    "name": "icon/misc/recycle",
+    "style": "bold",
+    "nodeId": "2414:19672",
+    "path": "public/icon-assets/icon/misc/recycle-bold.svg"
+  },
+  {
+    "name": "icon/misc/robot",
+    "style": "outline",
+    "nodeId": "1593:33672",
+    "path": "public/icon-assets/icon/misc/robot-outline.svg"
+  },
+  {
+    "name": "icon/misc/robot",
+    "style": "bold",
+    "nodeId": "2414:19694",
+    "path": "public/icon-assets/icon/misc/robot-bold.svg"
+  },
+  {
+    "name": "icon/misc/rocket",
+    "style": "outline",
+    "nodeId": "1593:33706",
+    "path": "public/icon-assets/icon/misc/rocket-outline.svg"
+  },
+  {
+    "name": "icon/misc/rocket",
+    "style": "bold",
+    "nodeId": "2414:19712",
+    "path": "public/icon-assets/icon/misc/rocket-bold.svg"
+  },
+  {
+    "name": "icon/misc/satellite",
+    "style": "outline",
+    "nodeId": "1593:33731",
+    "path": "public/icon-assets/icon/misc/satellite-outline.svg"
+  },
+  {
+    "name": "icon/misc/satellite",
+    "style": "bold",
+    "nodeId": "2414:19726",
+    "path": "public/icon-assets/icon/misc/satellite-bold.svg"
+  },
+  {
+    "name": "icon/misc/scanner",
+    "style": "outline",
+    "nodeId": "1593:33755",
+    "path": "public/icon-assets/icon/misc/scanner-outline.svg"
+  },
+  {
+    "name": "icon/misc/scanner",
+    "style": "bold",
+    "nodeId": "2414:19738",
+    "path": "public/icon-assets/icon/misc/scanner-bold.svg"
+  },
+  {
+    "name": "icon/misc/schedule",
+    "style": "outline",
+    "nodeId": "1593:33780",
+    "path": "public/icon-assets/icon/misc/schedule-outline.svg"
+  },
+  {
+    "name": "icon/misc/schedule",
+    "style": "bold",
+    "nodeId": "2414:19750",
+    "path": "public/icon-assets/icon/misc/schedule-bold.svg"
+  },
+  {
+    "name": "icon/misc/school",
+    "style": "outline",
+    "nodeId": "1593:33805",
+    "path": "public/icon-assets/icon/misc/school-outline.svg"
+  },
+  {
+    "name": "icon/misc/school",
+    "style": "bold",
+    "nodeId": "2414:19764",
+    "path": "public/icon-assets/icon/misc/school-bold.svg"
+  },
+  {
+    "name": "icon/misc/signal",
+    "style": "outline",
+    "nodeId": "1593:33835",
+    "path": "public/icon-assets/icon/misc/signal-outline.svg"
+  },
+  {
+    "name": "icon/misc/signal",
+    "style": "bold",
+    "nodeId": "2414:19780",
+    "path": "public/icon-assets/icon/misc/signal-bold.svg"
+  },
+  {
+    "name": "icon/misc/smartphone",
+    "style": "outline",
+    "nodeId": "1593:33857",
+    "path": "public/icon-assets/icon/misc/smartphone-outline.svg"
+  },
+  {
+    "name": "icon/misc/smartphone",
+    "style": "bold",
+    "nodeId": "2414:19792",
+    "path": "public/icon-assets/icon/misc/smartphone-bold.svg"
+  },
+  {
+    "name": "icon/misc/snow",
+    "style": "outline",
+    "nodeId": "1593:33885",
+    "path": "public/icon-assets/icon/misc/snow-outline.svg"
+  },
+  {
+    "name": "icon/misc/snow",
+    "style": "bold",
+    "nodeId": "2414:19808",
+    "path": "public/icon-assets/icon/misc/snow-bold.svg"
+  },
+  {
+    "name": "icon/misc/stopwatch",
+    "style": "outline",
+    "nodeId": "1593:33969",
+    "path": "public/icon-assets/icon/misc/stopwatch-outline.svg"
+  },
+  {
+    "name": "icon/misc/stopwatch",
+    "style": "bold",
+    "nodeId": "2414:19850",
+    "path": "public/icon-assets/icon/misc/stopwatch-bold.svg"
+  },
+  {
+    "name": "icon/misc/sun",
+    "style": "outline",
+    "nodeId": "1593:33999",
+    "path": "public/icon-assets/icon/misc/sun-outline.svg"
+  },
+  {
+    "name": "icon/misc/sun",
+    "style": "bold",
+    "nodeId": "2414:19866",
+    "path": "public/icon-assets/icon/misc/sun-bold.svg"
+  },
+  {
+    "name": "icon/misc/tablet",
+    "style": "outline",
+    "nodeId": "1593:34045",
+    "path": "public/icon-assets/icon/misc/tablet-outline.svg"
+  },
+  {
+    "name": "icon/misc/tablet",
+    "style": "bold",
+    "nodeId": "2414:19888",
+    "path": "public/icon-assets/icon/misc/tablet-bold.svg"
+  },
+  {
+    "name": "icon/misc/temperature",
+    "style": "outline",
+    "nodeId": "1593:34079",
+    "path": "public/icon-assets/icon/misc/temperature-outline.svg"
+  },
+  {
+    "name": "icon/misc/temperature",
+    "style": "bold",
+    "nodeId": "2414:19902",
+    "path": "public/icon-assets/icon/misc/temperature-bold.svg"
+  },
+  {
+    "name": "icon/misc/terminal",
+    "style": "outline",
+    "nodeId": "1593:34114",
+    "path": "public/icon-assets/icon/misc/terminal-outline.svg"
+  },
+  {
+    "name": "icon/misc/terminal",
+    "style": "bold",
+    "nodeId": "2414:19920",
+    "path": "public/icon-assets/icon/misc/terminal-bold.svg"
+  },
+  {
+    "name": "icon/misc/ticket",
+    "style": "outline",
+    "nodeId": "1593:34133",
+    "path": "public/icon-assets/icon/misc/ticket-outline.svg"
+  },
+  {
+    "name": "icon/misc/ticket",
+    "style": "bold",
+    "nodeId": "2414:19930",
+    "path": "public/icon-assets/icon/misc/ticket-bold.svg"
+  },
+  {
+    "name": "icon/misc/timer",
+    "style": "outline",
+    "nodeId": "1593:34176",
+    "path": "public/icon-assets/icon/misc/timer-outline.svg"
+  },
+  {
+    "name": "icon/misc/timer",
+    "style": "bold",
+    "nodeId": "2414:19954",
+    "path": "public/icon-assets/icon/misc/timer-bold.svg"
+  },
+  {
+    "name": "icon/misc/tool",
+    "style": "outline",
+    "nodeId": "1593:34201",
+    "path": "public/icon-assets/icon/misc/tool-outline.svg"
+  },
+  {
+    "name": "icon/misc/tool",
+    "style": "bold",
+    "nodeId": "2414:19966",
+    "path": "public/icon-assets/icon/misc/tool-bold.svg"
+  },
+  {
+    "name": "icon/misc/train",
+    "style": "outline",
+    "nodeId": "1593:34237",
+    "path": "public/icon-assets/icon/misc/train-outline.svg"
+  },
+  {
+    "name": "icon/misc/train",
+    "style": "bold",
+    "nodeId": "2414:19984",
+    "path": "public/icon-assets/icon/misc/train-bold.svg"
+  },
+  {
+    "name": "icon/misc/translate",
+    "style": "outline",
+    "nodeId": "1593:34276",
+    "path": "public/icon-assets/icon/misc/translate-outline.svg"
+  },
+  {
+    "name": "icon/misc/translate",
+    "style": "bold",
+    "nodeId": "2414:20006",
+    "path": "public/icon-assets/icon/misc/translate-bold.svg"
+  },
+  {
+    "name": "icon/misc/trophy",
+    "style": "outline",
+    "nodeId": "1593:34340",
+    "path": "public/icon-assets/icon/misc/trophy-outline.svg"
+  },
+  {
+    "name": "icon/misc/trophy",
+    "style": "bold",
+    "nodeId": "2414:20042",
+    "path": "public/icon-assets/icon/misc/trophy-bold.svg"
+  },
+  {
+    "name": "icon/misc/umbrella",
+    "style": "outline",
+    "nodeId": "1593:34383",
+    "path": "public/icon-assets/icon/misc/umbrella-outline.svg"
+  },
+  {
+    "name": "icon/misc/umbrella",
+    "style": "bold",
+    "nodeId": "2414:20068",
+    "path": "public/icon-assets/icon/misc/umbrella-bold.svg"
+  },
+  {
+    "name": "icon/misc/watch",
+    "style": "outline",
+    "nodeId": "1593:34405",
+    "path": "public/icon-assets/icon/misc/watch-outline.svg"
+  },
+  {
+    "name": "icon/misc/watch",
+    "style": "bold",
+    "nodeId": "2414:20080",
+    "path": "public/icon-assets/icon/misc/watch-bold.svg"
+  },
+  {
+    "name": "icon/misc/water",
+    "style": "outline",
+    "nodeId": "1593:34429",
+    "path": "public/icon-assets/icon/misc/water-outline.svg"
+  },
+  {
+    "name": "icon/misc/water",
+    "style": "bold",
+    "nodeId": "2414:20092",
+    "path": "public/icon-assets/icon/misc/water-bold.svg"
+  },
+  {
+    "name": "icon/misc/weather",
+    "style": "outline",
+    "nodeId": "1593:34448",
+    "path": "public/icon-assets/icon/misc/weather-outline.svg"
+  },
+  {
+    "name": "icon/misc/weather",
+    "style": "bold",
+    "nodeId": "2414:20102",
+    "path": "public/icon-assets/icon/misc/weather-bold.svg"
+  },
+  {
+    "name": "icon/misc/wifi",
+    "style": "outline",
+    "nodeId": "1593:34522",
+    "path": "public/icon-assets/icon/misc/wifi-outline.svg"
+  },
+  {
+    "name": "icon/misc/wifi",
+    "style": "bold",
+    "nodeId": "2414:20140",
+    "path": "public/icon-assets/icon/misc/wifi-bold.svg"
+  },
+  {
+    "name": "icon/misc/wifi.off",
+    "style": "outline",
+    "nodeId": "1593:34548",
+    "path": "public/icon-assets/icon/misc/wifi.off-outline.svg"
+  },
+  {
+    "name": "icon/misc/wifi.off",
+    "style": "bold",
+    "nodeId": "2414:20152",
+    "path": "public/icon-assets/icon/misc/wifi.off-bold.svg"
+  },
+  {
+    "name": "icon/misc/wind",
+    "style": "outline",
+    "nodeId": "1593:34584",
+    "path": "public/icon-assets/icon/misc/wind-outline.svg"
+  },
+  {
+    "name": "icon/misc/wind",
+    "style": "bold",
+    "nodeId": "2414:20170",
+    "path": "public/icon-assets/icon/misc/wind-bold.svg"
+  },
+  {
+    "name": "icon/misc/wrench",
+    "style": "outline",
+    "nodeId": "1593:34610",
+    "path": "public/icon-assets/icon/misc/wrench-outline.svg"
+  },
+  {
+    "name": "icon/misc/wrench",
+    "style": "bold",
+    "nodeId": "2414:20182",
+    "path": "public/icon-assets/icon/misc/wrench-bold.svg"
+  },
+  {
+    "name": "icon/misc/zoom.in",
+    "style": "outline",
+    "nodeId": "1593:34623",
+    "path": "public/icon-assets/icon/misc/zoom.in-outline.svg"
+  },
+  {
+    "name": "icon/misc/zoom.in",
+    "style": "bold",
+    "nodeId": "2414:20188",
+    "path": "public/icon-assets/icon/misc/zoom.in-bold.svg"
+  },
+  {
+    "name": "icon/misc/zoom.out",
+    "style": "outline",
+    "nodeId": "1593:34647",
+    "path": "public/icon-assets/icon/misc/zoom.out-outline.svg"
+  },
+  {
+    "name": "icon/misc/zoom.out",
+    "style": "bold",
+    "nodeId": "2414:20200",
+    "path": "public/icon-assets/icon/misc/zoom.out-bold.svg"
+  },
+  {
+    "name": "icon/navigation/arrow.bottom.left",
+    "style": "outline",
+    "nodeId": "2590:16956",
+    "path": "public/icon-assets/icon/navigation/arrow.bottom.left-outline.svg"
+  },
+  {
+    "name": "icon/navigation/arrow.bottom.left",
+    "style": "bold",
+    "nodeId": "2590:16964",
+    "path": "public/icon-assets/icon/navigation/arrow.bottom.left-bold.svg"
+  },
+  {
+    "name": "icon/navigation/arrow.bottom.right",
+    "style": "outline",
+    "nodeId": "2590:16992",
+    "path": "public/icon-assets/icon/navigation/arrow.bottom.right-outline.svg"
+  },
+  {
+    "name": "icon/navigation/arrow.bottom.right",
+    "style": "bold",
+    "nodeId": "2590:17000",
+    "path": "public/icon-assets/icon/navigation/arrow.bottom.right-bold.svg"
+  },
+  {
+    "name": "icon/navigation/arrow.down",
+    "style": "outline",
+    "nodeId": "1593:38336",
+    "path": "public/icon-assets/icon/navigation/arrow.down-outline.svg"
+  },
+  {
+    "name": "icon/navigation/arrow.down",
+    "style": "bold",
+    "nodeId": "2414:21694",
+    "path": "public/icon-assets/icon/navigation/arrow.down-bold.svg"
+  },
+  {
+    "name": "icon/navigation/arrow.left",
+    "style": "outline",
+    "nodeId": "1593:38352",
+    "path": "public/icon-assets/icon/navigation/arrow.left-outline.svg"
+  },
+  {
+    "name": "icon/navigation/arrow.left",
+    "style": "bold",
+    "nodeId": "2414:21702",
+    "path": "public/icon-assets/icon/navigation/arrow.left-bold.svg"
+  },
+  {
+    "name": "icon/navigation/arrow.right",
+    "style": "outline",
+    "nodeId": "1593:38368",
+    "path": "public/icon-assets/icon/navigation/arrow.right-outline.svg"
+  },
+  {
+    "name": "icon/navigation/arrow.right",
+    "style": "bold",
+    "nodeId": "2414:21710",
+    "path": "public/icon-assets/icon/navigation/arrow.right-bold.svg"
+  },
+  {
+    "name": "icon/navigation/arrow.top.left",
+    "style": "outline",
+    "nodeId": "2765:2734",
+    "path": "public/icon-assets/icon/navigation/arrow.top.left-outline.svg"
+  },
+  {
+    "name": "icon/navigation/arrow.top.left",
+    "style": "bold",
+    "nodeId": "2765:2742",
+    "path": "public/icon-assets/icon/navigation/arrow.top.left-bold.svg"
+  },
+  {
+    "name": "icon/navigation/arrow.top.right",
+    "style": "outline",
+    "nodeId": "2765:2754",
+    "path": "public/icon-assets/icon/navigation/arrow.top.right-outline.svg"
+  },
+  {
+    "name": "icon/navigation/arrow.top.right",
+    "style": "bold",
+    "nodeId": "2765:2762",
+    "path": "public/icon-assets/icon/navigation/arrow.top.right-bold.svg"
+  },
+  {
+    "name": "icon/navigation/arrow.up",
+    "style": "outline",
+    "nodeId": "1593:38384",
+    "path": "public/icon-assets/icon/navigation/arrow.up-outline.svg"
+  },
+  {
+    "name": "icon/navigation/arrow.up",
+    "style": "bold",
+    "nodeId": "2414:21718",
+    "path": "public/icon-assets/icon/navigation/arrow.up-bold.svg"
+  },
+  {
+    "name": "icon/navigation/back",
+    "style": "outline",
+    "nodeId": "1593:38400",
+    "path": "public/icon-assets/icon/navigation/back-outline.svg"
+  },
+  {
+    "name": "icon/navigation/back",
+    "style": "bold",
+    "nodeId": "2414:21726",
+    "path": "public/icon-assets/icon/navigation/back-bold.svg"
+  },
+  {
+    "name": "icon/navigation/breadcrumb",
+    "style": "outline",
+    "nodeId": "1593:38416",
+    "path": "public/icon-assets/icon/navigation/breadcrumb-outline.svg"
+  },
+  {
+    "name": "icon/navigation/breadcrumb",
+    "style": "bold",
+    "nodeId": "2414:21734",
+    "path": "public/icon-assets/icon/navigation/breadcrumb-bold.svg"
+  },
+  {
+    "name": "icon/navigation/chevron.down",
+    "style": "outline",
+    "nodeId": "1593:44397",
+    "path": "public/icon-assets/icon/navigation/chevron.down-outline.svg"
+  },
+  {
+    "name": "icon/navigation/chevron.down",
+    "style": "bold",
+    "nodeId": "2414:21750",
+    "path": "public/icon-assets/icon/navigation/chevron.down-bold.svg"
+  },
+  {
+    "name": "icon/navigation/chevron.left",
+    "style": "outline",
+    "nodeId": "1593:44410",
+    "path": "public/icon-assets/icon/navigation/chevron.left-outline.svg"
+  },
+  {
+    "name": "icon/navigation/chevron.left",
+    "style": "bold",
+    "nodeId": "2414:21756",
+    "path": "public/icon-assets/icon/navigation/chevron.left-bold.svg"
+  },
+  {
+    "name": "icon/navigation/chevron.right",
+    "style": "outline",
+    "nodeId": "1593:44423",
+    "path": "public/icon-assets/icon/navigation/chevron.right-outline.svg"
+  },
+  {
+    "name": "icon/navigation/chevron.right",
+    "style": "bold",
+    "nodeId": "2414:21762",
+    "path": "public/icon-assets/icon/navigation/chevron.right-bold.svg"
+  },
+  {
+    "name": "icon/navigation/chevron.up",
+    "style": "outline",
+    "nodeId": "1593:44436",
+    "path": "public/icon-assets/icon/navigation/chevron.up-outline.svg"
+  },
+  {
+    "name": "icon/navigation/chevron.up",
+    "style": "bold",
+    "nodeId": "2414:21768",
+    "path": "public/icon-assets/icon/navigation/chevron.up-bold.svg"
+  },
+  {
+    "name": "icon/navigation/close",
+    "style": "outline",
+    "nodeId": "1593:44449",
+    "path": "public/icon-assets/icon/navigation/close-outline.svg"
+  },
+  {
+    "name": "icon/navigation/close",
+    "style": "bold",
+    "nodeId": "2414:21774",
+    "path": "public/icon-assets/icon/navigation/close-bold.svg"
+  },
+  {
+    "name": "icon/navigation/compass",
+    "style": "outline",
+    "nodeId": "1593:38512",
+    "path": "public/icon-assets/icon/navigation/compass-outline.svg"
+  },
+  {
+    "name": "icon/navigation/compass",
+    "style": "bold",
+    "nodeId": "2414:21782",
+    "path": "public/icon-assets/icon/navigation/compass-bold.svg"
+  },
+  {
+    "name": "icon/navigation/drag",
+    "style": "outline",
+    "nodeId": "1593:38624",
+    "path": "public/icon-assets/icon/navigation/drag-outline.svg"
+  },
+  {
+    "name": "icon/navigation/drag",
+    "style": "bold",
+    "nodeId": "2414:21838",
+    "path": "public/icon-assets/icon/navigation/drag-bold.svg"
+  },
+  {
+    "name": "icon/navigation/exit.fullscreen",
+    "style": "outline",
+    "nodeId": "1593:38536",
+    "path": "public/icon-assets/icon/navigation/exit.fullscreen-outline.svg"
+  },
+  {
+    "name": "icon/navigation/exit.fullscreen",
+    "style": "bold",
+    "nodeId": "2414:21794",
+    "path": "public/icon-assets/icon/navigation/exit.fullscreen-bold.svg"
+  },
+  {
+    "name": "icon/navigation/external.link",
+    "style": "outline",
+    "nodeId": "1593:38578",
+    "path": "public/icon-assets/icon/navigation/external.link-outline.svg"
+  },
+  {
+    "name": "icon/navigation/external.link",
+    "style": "bold",
+    "nodeId": "2414:21816",
+    "path": "public/icon-assets/icon/navigation/external.link-bold.svg"
+  },
+  {
+    "name": "icon/navigation/filter",
+    "style": "outline",
+    "nodeId": "1593:44465",
+    "path": "public/icon-assets/icon/navigation/filter-outline.svg"
+  },
+  {
+    "name": "icon/navigation/filter",
+    "style": "bold",
+    "nodeId": "2414:21826",
+    "path": "public/icon-assets/icon/navigation/filter-bold.svg"
+  },
+  {
+    "name": "icon/navigation/forward",
+    "style": "outline",
+    "nodeId": "1593:38645",
+    "path": "public/icon-assets/icon/navigation/forward-outline.svg"
+  },
+  {
+    "name": "icon/navigation/forward",
+    "style": "bold",
+    "nodeId": "2414:21848",
+    "path": "public/icon-assets/icon/navigation/forward-bold.svg"
+  },
+  {
+    "name": "icon/navigation/fullscreen",
+    "style": "outline",
+    "nodeId": "1593:38661",
+    "path": "public/icon-assets/icon/navigation/fullscreen-outline.svg"
+  },
+  {
+    "name": "icon/navigation/fullscreen",
+    "style": "bold",
+    "nodeId": "2414:21856",
+    "path": "public/icon-assets/icon/navigation/fullscreen-bold.svg"
+  },
+  {
+    "name": "icon/navigation/home",
+    "style": "outline",
+    "nodeId": "1593:44546",
+    "path": "public/icon-assets/icon/navigation/home-outline.svg"
+  },
+  {
+    "name": "icon/navigation/home",
+    "style": "bold",
+    "nodeId": "2414:22094",
+    "path": "public/icon-assets/icon/navigation/home-bold.svg"
+  },
+  {
+    "name": "icon/navigation/home.alt",
+    "style": "outline",
+    "nodeId": "1593:38691",
+    "path": "public/icon-assets/icon/navigation/home.alt-outline.svg"
+  },
+  {
+    "name": "icon/navigation/home.alt",
+    "style": "bold",
+    "nodeId": "2414:21870",
+    "path": "public/icon-assets/icon/navigation/home.alt-bold.svg"
+  },
+  {
+    "name": "icon/navigation/layers",
+    "style": "outline",
+    "nodeId": "1593:38704",
+    "path": "public/icon-assets/icon/navigation/layers-outline.svg"
+  },
+  {
+    "name": "icon/navigation/layers",
+    "style": "bold",
+    "nodeId": "2414:21876",
+    "path": "public/icon-assets/icon/navigation/layers-bold.svg"
+  },
+  {
+    "name": "icon/navigation/map",
+    "style": "outline",
+    "nodeId": "1593:38727",
+    "path": "public/icon-assets/icon/navigation/map-outline.svg"
+  },
+  {
+    "name": "icon/navigation/map",
+    "style": "bold",
+    "nodeId": "2414:21886",
+    "path": "public/icon-assets/icon/navigation/map-bold.svg"
+  },
+  {
+    "name": "icon/navigation/menu",
+    "style": "outline",
+    "nodeId": "1593:44490",
+    "path": "public/icon-assets/icon/navigation/menu-outline.svg"
+  },
+  {
+    "name": "icon/navigation/menu",
+    "style": "bold",
+    "nodeId": "2414:21904",
+    "path": "public/icon-assets/icon/navigation/menu-bold.svg"
+  },
+  {
+    "name": "icon/navigation/merge",
+    "style": "outline",
+    "nodeId": "1593:38780",
+    "path": "public/icon-assets/icon/navigation/merge-outline.svg"
+  },
+  {
+    "name": "icon/navigation/merge",
+    "style": "bold",
+    "nodeId": "2414:21914",
+    "path": "public/icon-assets/icon/navigation/merge-bold.svg"
+  },
+  {
+    "name": "icon/navigation/more.horizontal",
+    "style": "outline",
+    "nodeId": "1593:38793",
+    "path": "public/icon-assets/icon/navigation/more.horizontal-outline.svg"
+  },
+  {
+    "name": "icon/navigation/more.horizontal",
+    "style": "bold",
+    "nodeId": "2414:21920",
+    "path": "public/icon-assets/icon/navigation/more.horizontal-bold.svg"
+  },
+  {
+    "name": "icon/navigation/more.vertical",
+    "style": "outline",
+    "nodeId": "1593:38815",
+    "path": "public/icon-assets/icon/navigation/more.vertical-outline.svg"
+  },
+  {
+    "name": "icon/navigation/more.vertical",
+    "style": "bold",
+    "nodeId": "2414:21930",
+    "path": "public/icon-assets/icon/navigation/more.vertical-bold.svg"
+  },
+  {
+    "name": "icon/navigation/navigation.pointer",
+    "style": "outline",
+    "nodeId": "1593:38837",
+    "path": "public/icon-assets/icon/navigation/navigation.pointer-outline.svg"
+  },
+  {
+    "name": "icon/navigation/navigation.pointer",
+    "style": "bold",
+    "nodeId": "2414:21940",
+    "path": "public/icon-assets/icon/navigation/navigation.pointer-bold.svg"
+  },
+  {
+    "name": "icon/navigation/panel.bottom",
+    "style": "outline",
+    "nodeId": "1593:38861",
+    "path": "public/icon-assets/icon/navigation/panel.bottom-outline.svg"
+  },
+  {
+    "name": "icon/navigation/panel.bottom",
+    "style": "bold",
+    "nodeId": "2414:21952",
+    "path": "public/icon-assets/icon/navigation/panel.bottom-bold.svg"
+  },
+  {
+    "name": "icon/navigation/panel.left",
+    "style": "outline",
+    "nodeId": "1593:38880",
+    "path": "public/icon-assets/icon/navigation/panel.left-outline.svg"
+  },
+  {
+    "name": "icon/navigation/panel.left",
+    "style": "bold",
+    "nodeId": "2414:21962",
+    "path": "public/icon-assets/icon/navigation/panel.left-bold.svg"
+  },
+  {
+    "name": "icon/navigation/panel.right",
+    "style": "outline",
+    "nodeId": "1593:38899",
+    "path": "public/icon-assets/icon/navigation/panel.right-outline.svg"
+  },
+  {
+    "name": "icon/navigation/panel.right",
+    "style": "bold",
+    "nodeId": "2414:21972",
+    "path": "public/icon-assets/icon/navigation/panel.right-bold.svg"
+  },
+  {
+    "name": "icon/navigation/panel.top",
+    "style": "outline",
+    "nodeId": "1593:38918",
+    "path": "public/icon-assets/icon/navigation/panel.top-outline.svg"
+  },
+  {
+    "name": "icon/navigation/panel.top",
+    "style": "bold",
+    "nodeId": "2414:21982",
+    "path": "public/icon-assets/icon/navigation/panel.top-bold.svg"
+  },
+  {
+    "name": "icon/navigation/resize",
+    "style": "outline",
+    "nodeId": "1593:38940",
+    "path": "public/icon-assets/icon/navigation/resize-outline.svg"
+  },
+  {
+    "name": "icon/navigation/resize",
+    "style": "bold",
+    "nodeId": "2414:21994",
+    "path": "public/icon-assets/icon/navigation/resize-bold.svg"
+  },
+  {
+    "name": "icon/navigation/route",
+    "style": "outline",
+    "nodeId": "1593:38966",
+    "path": "public/icon-assets/icon/navigation/route-outline.svg"
+  },
+  {
+    "name": "icon/navigation/route",
+    "style": "bold",
+    "nodeId": "2414:22006",
+    "path": "public/icon-assets/icon/navigation/route-bold.svg"
+  },
+  {
+    "name": "icon/navigation/scroll",
+    "style": "outline",
+    "nodeId": "1593:38994",
+    "path": "public/icon-assets/icon/navigation/scroll-outline.svg"
+  },
+  {
+    "name": "icon/navigation/scroll",
+    "style": "bold",
+    "nodeId": "2414:22022",
+    "path": "public/icon-assets/icon/navigation/scroll-bold.svg"
+  },
+  {
+    "name": "icon/navigation/search",
+    "style": "outline",
+    "nodeId": "1593:44512",
+    "path": "public/icon-assets/icon/navigation/search-outline.svg"
+  },
+  {
+    "name": "icon/navigation/search",
+    "style": "bold",
+    "nodeId": "2414:22032",
+    "path": "public/icon-assets/icon/navigation/search-bold.svg"
+  },
+  {
+    "name": "icon/navigation/settings",
+    "style": "outline",
+    "nodeId": "1593:44530",
+    "path": "public/icon-assets/icon/navigation/settings-outline.svg"
+  },
+  {
+    "name": "icon/navigation/settings",
+    "style": "bold",
+    "nodeId": "2414:22040",
+    "path": "public/icon-assets/icon/navigation/settings-bold.svg"
+  },
+  {
+    "name": "icon/navigation/sidebar",
+    "style": "outline",
+    "nodeId": "1593:39050",
+    "path": "public/icon-assets/icon/navigation/sidebar-outline.svg"
+  },
+  {
+    "name": "icon/navigation/sidebar",
+    "style": "bold",
+    "nodeId": "2414:22048",
+    "path": "public/icon-assets/icon/navigation/sidebar-bold.svg"
+  },
+  {
+    "name": "icon/navigation/split",
+    "style": "outline",
+    "nodeId": "1593:39072",
+    "path": "public/icon-assets/icon/navigation/split-outline.svg"
+  },
+  {
+    "name": "icon/navigation/split",
+    "style": "bold",
+    "nodeId": "2414:22060",
+    "path": "public/icon-assets/icon/navigation/split-bold.svg"
+  },
+  {
+    "name": "icon/navigation/walking",
+    "style": "outline",
+    "nodeId": "2591:3513",
+    "path": "public/icon-assets/icon/navigation/walking-outline.svg"
+  },
+  {
+    "name": "icon/status/badge",
+    "style": "outline",
+    "nodeId": "1593:39143",
+    "path": "public/icon-assets/icon/status/badge-outline.svg"
+  },
+  {
+    "name": "icon/status/badge",
+    "style": "bold",
+    "nodeId": "2414:22102",
+    "path": "public/icon-assets/icon/status/badge-bold.svg"
+  },
+  {
+    "name": "icon/status/bell",
+    "style": "outline",
+    "nodeId": "1593:44562",
+    "path": "public/icon-assets/icon/status/bell-outline.svg"
+  },
+  {
+    "name": "icon/status/bell",
+    "style": "bold",
+    "nodeId": "2414:22110",
+    "path": "public/icon-assets/icon/status/bell-bold.svg"
+  },
+  {
+    "name": "icon/status/bell.off",
+    "style": "outline",
+    "nodeId": "1593:39202",
+    "path": "public/icon-assets/icon/status/bell.off-outline.svg"
+  },
+  {
+    "name": "icon/status/bell.off",
+    "style": "bold",
+    "nodeId": "2414:22132",
+    "path": "public/icon-assets/icon/status/bell.off-bold.svg"
+  },
+  {
+    "name": "icon/status/blocked",
+    "style": "outline",
+    "nodeId": "1593:39175",
+    "path": "public/icon-assets/icon/status/blocked-outline.svg"
+  },
+  {
+    "name": "icon/status/blocked",
+    "style": "bold",
+    "nodeId": "2414:22118",
+    "path": "public/icon-assets/icon/status/blocked-bold.svg"
+  },
+  {
+    "name": "icon/status/critical",
+    "style": "outline",
+    "nodeId": "1593:39230",
+    "path": "public/icon-assets/icon/status/critical-outline.svg"
+  },
+  {
+    "name": "icon/status/critical",
+    "style": "bold",
+    "nodeId": "2414:22146",
+    "path": "public/icon-assets/icon/status/critical-bold.svg"
+  },
+  {
+    "name": "icon/status/error",
+    "style": "outline",
+    "nodeId": "1593:44578",
+    "path": "public/icon-assets/icon/status/error-outline.svg"
+  },
+  {
+    "name": "icon/status/error",
+    "style": "bold",
+    "nodeId": "2414:22160",
+    "path": "public/icon-assets/icon/status/error-bold.svg"
+  },
+  {
+    "name": "icon/status/eye",
+    "style": "outline",
+    "nodeId": "1593:39243",
+    "path": "public/icon-assets/icon/status/eye-outline.svg"
+  },
+  {
+    "name": "icon/status/eye",
+    "style": "bold",
+    "nodeId": "2414:22152",
+    "path": "public/icon-assets/icon/status/eye-bold.svg"
+  },
+  {
+    "name": "icon/status/eye.off",
+    "style": "outline",
+    "nodeId": "1593:39280",
+    "path": "public/icon-assets/icon/status/eye.off-outline.svg"
+  },
+  {
+    "name": "icon/status/eye.off",
+    "style": "bold",
+    "nodeId": "2414:22170",
+    "path": "public/icon-assets/icon/status/eye.off-bold.svg"
+  },
+  {
+    "name": "icon/status/flag",
+    "style": "outline",
+    "nodeId": "1593:39310",
+    "path": "public/icon-assets/icon/status/flag-outline.svg"
+  },
+  {
+    "name": "icon/status/flag",
+    "style": "bold",
+    "nodeId": "2414:22186",
+    "path": "public/icon-assets/icon/status/flag-bold.svg"
+  },
+  {
+    "name": "icon/status/help",
+    "style": "outline",
+    "nodeId": "1593:39328",
+    "path": "public/icon-assets/icon/status/help-outline.svg"
+  },
+  {
+    "name": "icon/status/help",
+    "style": "bold",
+    "nodeId": "2414:22194",
+    "path": "public/icon-assets/icon/status/help-bold.svg"
+  },
+  {
+    "name": "icon/status/info",
+    "style": "outline",
+    "nodeId": "1593:44597",
+    "path": "public/icon-assets/icon/status/info-outline.svg"
+  },
+  {
+    "name": "icon/status/info",
+    "style": "bold",
+    "nodeId": "2414:22206",
+    "path": "public/icon-assets/icon/status/info-bold.svg"
+  },
+  {
+    "name": "icon/status/loading",
+    "style": "outline",
+    "nodeId": "1593:40553",
+    "path": "public/icon-assets/icon/status/loading-outline.svg"
+  },
+  {
+    "name": "icon/status/loading",
+    "style": "bold",
+    "nodeId": "2414:22220",
+    "path": "public/icon-assets/icon/status/loading-bold.svg"
+  },
+  {
+    "name": "icon/status/lock",
+    "style": "outline",
+    "nodeId": "1593:40595",
+    "path": "public/icon-assets/icon/status/lock-outline.svg"
+  },
+  {
+    "name": "icon/status/lock",
+    "style": "bold",
+    "nodeId": "2414:22240",
+    "path": "public/icon-assets/icon/status/lock-bold.svg"
+  },
+  {
+    "name": "icon/status/lock.2",
+    "style": "outline",
+    "nodeId": "2240:2724",
+    "path": "public/icon-assets/icon/status/lock.2-outline.svg"
+  },
+  {
+    "name": "icon/status/lock.2",
+    "style": "bold",
+    "nodeId": "2414:22260",
+    "path": "public/icon-assets/icon/status/lock.2-bold.svg"
+  },
+  {
+    "name": "icon/status/notification",
+    "style": "outline",
+    "nodeId": "1593:40634",
+    "path": "public/icon-assets/icon/status/notification-outline.svg"
+  },
+  {
+    "name": "icon/status/notification",
+    "style": "bold",
+    "nodeId": "2414:22271",
+    "path": "public/icon-assets/icon/status/notification-bold.svg"
+  },
+  {
+    "name": "icon/status/online",
+    "style": "outline",
+    "nodeId": "1593:40664",
+    "path": "public/icon-assets/icon/status/online-outline.svg"
+  },
+  {
+    "name": "icon/status/online",
+    "style": "bold",
+    "nodeId": "2414:22287",
+    "path": "public/icon-assets/icon/status/online-bold.svg"
+  },
+  {
+    "name": "icon/status/pending",
+    "style": "outline",
+    "nodeId": "1593:40689",
+    "path": "public/icon-assets/icon/status/pending-outline.svg"
+  },
+  {
+    "name": "icon/status/pending",
+    "style": "bold",
+    "nodeId": "2414:22301",
+    "path": "public/icon-assets/icon/status/pending-bold.svg"
+  },
+  {
+    "name": "icon/status/shield",
+    "style": "outline",
+    "nodeId": "1593:40711",
+    "path": "public/icon-assets/icon/status/shield-outline.svg"
+  },
+  {
+    "name": "icon/status/shield",
+    "style": "bold",
+    "nodeId": "2414:22313",
+    "path": "public/icon-assets/icon/status/shield-bold.svg"
+  },
+  {
+    "name": "icon/status/shield.check",
+    "style": "outline",
+    "nodeId": "1593:40739",
+    "path": "public/icon-assets/icon/status/shield.check-outline.svg"
+  },
+  {
+    "name": "icon/status/shield.check",
+    "style": "bold",
+    "nodeId": "2414:22327",
+    "path": "public/icon-assets/icon/status/shield.check-bold.svg"
+  },
+  {
+    "name": "icon/status/shield.off",
+    "style": "outline",
+    "nodeId": "1593:40758",
+    "path": "public/icon-assets/icon/status/shield.off-outline.svg"
+  },
+  {
+    "name": "icon/status/shield.off",
+    "style": "bold",
+    "nodeId": "2414:22337",
+    "path": "public/icon-assets/icon/status/shield.off-bold.svg"
+  },
+  {
+    "name": "icon/status/sparkles",
+    "style": "outline",
+    "nodeId": "2212:14153",
+    "path": "public/icon-assets/icon/status/sparkles-outline.svg"
+  },
+  {
+    "name": "icon/status/sparkles",
+    "style": "bold",
+    "nodeId": "2414:22371",
+    "path": "public/icon-assets/icon/status/sparkles-bold.svg"
+  },
+  {
+    "name": "icon/status/star",
+    "style": "outline",
+    "nodeId": "1593:44622",
+    "path": "public/icon-assets/icon/status/star-outline.svg"
+  },
+  {
+    "name": "icon/status/star",
+    "style": "bold",
+    "nodeId": "2414:22347",
+    "path": "public/icon-assets/icon/status/star-bold.svg"
+  },
+  {
+    "name": "icon/status/star.filled",
+    "style": "outline",
+    "nodeId": "1593:44653",
+    "path": "public/icon-assets/icon/status/star.filled-outline.svg"
+  },
+  {
+    "name": "icon/status/star.filled",
+    "style": "bold",
+    "nodeId": "2414:22365",
+    "path": "public/icon-assets/icon/status/star.filled-bold.svg"
+  },
+  {
+    "name": "icon/status/success",
+    "style": "outline",
+    "nodeId": "1593:44666",
+    "path": "public/icon-assets/icon/status/success-outline.svg"
+  },
+  {
+    "name": "icon/status/success",
+    "style": "bold",
+    "nodeId": "2414:22377",
+    "path": "public/icon-assets/icon/status/success-bold.svg"
+  },
+  {
+    "name": "icon/status/unlock",
+    "style": "outline",
+    "nodeId": "1593:40839",
+    "path": "public/icon-assets/icon/status/unlock-outline.svg"
+  },
+  {
+    "name": "icon/status/unlock",
+    "style": "bold",
+    "nodeId": "2414:22385",
+    "path": "public/icon-assets/icon/status/unlock-bold.svg"
+  },
+  {
+    "name": "icon/status/warning",
+    "style": "outline",
+    "nodeId": "1593:44684",
+    "path": "public/icon-assets/icon/status/warning-outline.svg"
+  },
+  {
+    "name": "icon/status/warning",
+    "style": "bold",
+    "nodeId": "2414:22395",
+    "path": "public/icon-assets/icon/status/warning-bold.svg"
+  }
+]

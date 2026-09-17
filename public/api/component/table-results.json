@@ -1,0 +1,45 @@
+{
+  "name": "Table / Results",
+  "figmaComponentName": "Table / Results",
+  "category": "Data display",
+  "page": "Tables",
+  "nodeId": "2087:914",
+  "description": "`Table` is the Soma table element set. Use it when the markup _is_ the table: a short composed list, a dashboard preview, anything that does not need sort, column drag, or virtualization.",
+  "buildStatus": "Done",
+  "importPath": "@nova/ui",
+  "implementationStatus": "partial",
+  "props": [
+    {
+      "name": "Selection",
+      "figmaValues": [
+        "None",
+        "Some"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Selection": "None"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selection": "Some"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    }
+  ],
+  "codeExample": "<Table.Root />",
+  "a11yNotes": null,
+  "gaps": [
+    "Selection=None",
+    "Selection=Some"
+  ],
+  "notApplicable": []
+}

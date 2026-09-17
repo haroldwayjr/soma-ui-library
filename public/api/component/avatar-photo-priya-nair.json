@@ -1,0 +1,25 @@
+{
+  "name": "Avatar / Photo / Priya Nair",
+  "figmaComponentName": "Avatar / Photo / Priya Nair",
+  "category": "Data display",
+  "page": "Avatars",
+  "nodeId": "3708:360",
+  "description": "TODO",
+  "buildStatus": "In progress",
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [],
+  "variants": [
+    {
+      "properties": {},
+      "nodeId": "3708:360",
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [
+    "Library photo asset for Avatar.Image; not a UI control component"
+  ],
+  "notApplicable": []
+}

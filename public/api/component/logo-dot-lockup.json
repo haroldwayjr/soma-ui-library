@@ -1,0 +1,23 @@
+{
+  "name": "Logo / Dot / Lockup",
+  "figmaComponentName": "Logo / Dot / Lockup",
+  "category": "Brand",
+  "page": "Logos",
+  "nodeId": "3379:201",
+  "description": "Logomark is the Included Health brand mark used next to a product wordmark (Care App in the App Shell). It is a committed SVG, not a Streamline glyph and not a remote asset.",
+  "buildStatus": "Done",
+  "importPath": "@nova/ui",
+  "implementationStatus": "matched",
+  "props": [],
+  "variants": [
+    {
+      "properties": {},
+      "nodeId": "3379:201",
+      "implementationStatus": "matched"
+    }
+  ],
+  "codeExample": "<Logomark />",
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

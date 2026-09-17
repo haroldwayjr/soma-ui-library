@@ -1,0 +1,135 @@
+{
+  "name": "Field",
+  "figmaComponentName": "Field",
+  "category": "Forms & inputs",
+  "page": "Inputs",
+  "nodeId": "483:398",
+  "description": "Field composes the parts every labeled form control shares: a visible label, one control, and one supporting line — description or error. Controls own their own chrome and behavior; Field owns everything around them.",
+  "buildStatus": "Done",
+  "importPath": "@nova/ui",
+  "implementationStatus": "partial",
+  "props": [
+    {
+      "name": "State",
+      "figmaValues": [
+        "Default",
+        "Error",
+        "Disabled"
+      ],
+      "codeProp": "error, disabled",
+      "implementationStatus": "matched"
+    },
+    {
+      "name": "Control",
+      "figmaValues": [
+        "Single-line",
+        "OTP",
+        "Multiline"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Required",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show message",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "State": "Default",
+        "Control": "Single-line"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "State": "Default",
+        "Control": "OTP"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "State": "Default",
+        "Control": "Multiline"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "State": "Error",
+        "Control": "Single-line"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "State": "Error",
+        "Control": "OTP"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "State": "Error",
+        "Control": "Multiline"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "State": "Disabled",
+        "Control": "Single-line"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "State": "Disabled",
+        "Control": "OTP"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "State": "Disabled",
+        "Control": "Multiline"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    }
+  ],
+  "codeExample": "<Field />",
+  "a11yNotes": null,
+  "gaps": [
+    "Control=Single-line",
+    "Control=OTP",
+    "Control=Multiline",
+    "Required",
+    "Show message"
+  ],
+  "notApplicable": []
+}

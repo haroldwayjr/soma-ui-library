@@ -1,0 +1,23 @@
+{
+  "name": "Table / Empty state",
+  "figmaComponentName": "Table / Empty state",
+  "category": "Data display",
+  "page": "Tables",
+  "nodeId": "1426:1318",
+  "description": "`Table` is the Soma table element set. Use it when the markup _is_ the table: a short composed list, a dashboard preview, anything that does not need sort, column drag, or virtualization.",
+  "buildStatus": "Done",
+  "importPath": "@nova/ui",
+  "implementationStatus": "matched",
+  "props": [],
+  "variants": [
+    {
+      "properties": {},
+      "nodeId": "1426:1318",
+      "implementationStatus": "matched"
+    }
+  ],
+  "codeExample": "<Table.Root />",
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

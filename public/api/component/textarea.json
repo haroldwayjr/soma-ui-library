@@ -1,0 +1,103 @@
+{
+  "name": "Textarea",
+  "figmaComponentName": "Textarea",
+  "category": "Forms & inputs",
+  "page": "Inputs",
+  "nodeId": "466:3908",
+  "description": "TODO",
+  "buildStatus": "Not started",
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [
+    {
+      "name": "State",
+      "figmaValues": [
+        "Rest",
+        "Focus",
+        "Disabled",
+        "Error"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Content",
+      "figmaValues": [
+        "Empty",
+        "Filled"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "State": "Rest",
+        "Content": "Empty"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "Rest",
+        "Content": "Filled"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "Focus",
+        "Content": "Empty"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "Focus",
+        "Content": "Filled"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "Disabled",
+        "Content": "Empty"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "Disabled",
+        "Content": "Filled"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "Error",
+        "Content": "Empty"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "Error",
+        "Content": "Filled"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

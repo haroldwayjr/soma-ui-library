@@ -10,6 +10,11 @@
 
     /* Bundler mode */
     "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "paths": {
+      "@nova/ui": ["./vendor/nova-ui/src/index.ts"],
+      "@nova/ui/*": ["./vendor/nova-ui/src/*"]
+    },
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",

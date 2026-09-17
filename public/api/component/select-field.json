@@ -1,0 +1,79 @@
+{
+  "name": "Select / Field",
+  "figmaComponentName": "Select / Field",
+  "category": "Forms & inputs",
+  "page": "Select",
+  "nodeId": "723:6582",
+  "description": "SelectField is a select with a label. It is the component product code should reach for whenever a user picks one value from a list inside a form, and it exists so that the label, the help text, the error message, and the required marker are supplied once, as strings, rather than assembled by every consumer.",
+  "buildStatus": "Blocked",
+  "importPath": "@nova/ui",
+  "implementationStatus": "partial",
+  "props": [
+    {
+      "name": "State",
+      "figmaValues": [
+        "Rest",
+        "Filled",
+        "Focus visible",
+        "Disabled",
+        "Error"
+      ],
+      "codeProp": "disabled, error",
+      "implementationStatus": "partial",
+      "notes": "Filled may be implied by value/content but has no explicit public prop; Focus visible handled in CSS/:pseudo or data-attribute styles"
+    },
+    {
+      "name": "Open",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "State": "Filled"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "State": "Error"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    }
+  ],
+  "codeExample": "<SelectField />",
+  "a11yNotes": null,
+  "gaps": [
+    "State=Filled",
+    "Open"
+  ],
+  "notApplicable": []
+}

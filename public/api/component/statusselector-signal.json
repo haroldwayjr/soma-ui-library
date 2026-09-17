@@ -1,0 +1,90 @@
+{
+  "name": "StatusSelector / Signal",
+  "figmaComponentName": "StatusSelector / Signal",
+  "category": "App components (WIP)",
+  "page": "App components (WIP)",
+  "nodeId": "2397:16048",
+  "description": "TODO",
+  "buildStatus": null,
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [
+    {
+      "name": "Status",
+      "figmaValues": [
+        "Available",
+        "Meeting",
+        "Break",
+        "Meal",
+        "Away from Desk",
+        "Unavailable",
+        "Busy",
+        "Away"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Status": "Available"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Status": "Meeting"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Status": "Break"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Status": "Meal"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Status": "Away from Desk"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Status": "Unavailable"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Status": "Busy"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Status": "Away"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Table / Header row",
+  "figmaComponentName": "Table / Header row",
+  "category": "Data display",
+  "page": "Tables",
+  "nodeId": "1401:8215",
+  "description": "`Table` is the Soma table element set. Use it when the markup _is_ the table: a short composed list, a dashboard preview, anything that does not need sort, column drag, or virtualization.",
+  "buildStatus": "Done",
+  "importPath": "@nova/ui",
+  "implementationStatus": "partial",
+  "props": [
+    {
+      "name": "Show more menu",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {},
+      "nodeId": "1401:8215",
+      "implementationStatus": "matched"
+    }
+  ],
+  "codeExample": "<Table.Root />",
+  "a11yNotes": null,
+  "gaps": [
+    "Show more menu"
+  ],
+  "notApplicable": []
+}

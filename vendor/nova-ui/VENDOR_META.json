@@ -1,0 +1,8 @@
+{
+  "generatedAt": "2026-09-16T23:04:40.465133+00:00",
+  "sourcePath": "/Users/harold.wayjr/Documents/GitHub/nova-care-app/libs/ui",
+  "note": "@nova/ui has no JS/CSS library build; this is a source snapshot compiled by soma-ui-library's Vite + vanilla-extract plugin.",
+  "sourceCommit": "e35387a9e5ff8d852e3f43558a375828dc4ce2b9",
+  "sourceBranch": "body1-lineHeight-20px-change",
+  "sourceDescribe": "e35387a"
+}

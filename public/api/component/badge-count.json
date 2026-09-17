@@ -1,0 +1,50 @@
+{
+  "name": "Badge / Count",
+  "figmaComponentName": "Badge / Count",
+  "category": "Data display",
+  "page": "Badges",
+  "nodeId": "2288:13598",
+  "description": "Badge is the Soma Badge: a passive status label, tag, or count indicator — `Completed`, `In progress`, `Draft`. It communicates status or classification at a glance and is never interactive, per the Soma Badges page.",
+  "buildStatus": "Done",
+  "importPath": "@nova/ui",
+  "implementationStatus": "matched",
+  "props": [
+    {
+      "name": "Digits",
+      "figmaValues": [
+        "1",
+        "2",
+        "Overflow"
+      ],
+      "codeProp": "children",
+      "implementationStatus": "matched"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Digits": "1"
+      },
+      "nodeId": "2288:13595",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Digits": "2"
+      },
+      "nodeId": "2288:13596",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Digits": "Overflow"
+      },
+      "nodeId": "2288:13597",
+      "implementationStatus": "matched"
+    }
+  ],
+  "codeExample": "<Badge />",
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

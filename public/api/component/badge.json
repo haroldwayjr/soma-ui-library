@@ -1,0 +1,2446 @@
+{
+  "name": "Badge",
+  "figmaComponentName": "Badge",
+  "category": "Data display",
+  "page": "Badges",
+  "nodeId": "74:779",
+  "description": "Badge is the Soma Badge: a passive status label, tag, or count indicator — `Completed`, `In progress`, `Draft`. It communicates status or classification at a glance and is never interactive, per the Soma Badges page.",
+  "buildStatus": "Done",
+  "importPath": "@nova/ui",
+  "implementationStatus": "matched",
+  "props": [
+    {
+      "name": "Size",
+      "figmaValues": [
+        "Small",
+        "Medium"
+      ],
+      "codeProp": "size",
+      "implementationStatus": "matched"
+    },
+    {
+      "name": "Variant",
+      "figmaValues": [
+        "Soft",
+        "Solid",
+        "Outlined"
+      ],
+      "codeProp": "variant",
+      "implementationStatus": "matched"
+    },
+    {
+      "name": "Tone",
+      "figmaValues": [
+        "Success",
+        "Warning",
+        "Danger",
+        "Neutral",
+        "Brand",
+        "Accent"
+      ],
+      "codeProp": "tone",
+      "implementationStatus": "matched"
+    },
+    {
+      "name": "State",
+      "figmaValues": [
+        "Rest",
+        "Disabled"
+      ],
+      "codeProp": "disabled",
+      "implementationStatus": "matched"
+    },
+    {
+      "name": "Leading",
+      "figmaValues": [
+        "Plain",
+        "Icon",
+        "Status"
+      ],
+      "codeProp": "leading",
+      "implementationStatus": "matched"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Success",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:2",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Success",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:9",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Brand",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:23",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Brand",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:30",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Warning",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:44",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Warning",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:51",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Danger",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:65",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Danger",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:72",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Success",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:86",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Success",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:93",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Brand",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:107",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Brand",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:114",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Warning",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:128",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Warning",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:135",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Danger",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:149",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Danger",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:156",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Neutral",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:170",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Neutral",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:177",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Neutral",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:191",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Neutral",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:198",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Brand",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:212",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Brand",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:219",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Brand",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:233",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Brand",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:240",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Accent",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:254",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Accent",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:261",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Accent",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:275",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Accent",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:282",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Success",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:296",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Success",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:303",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Success",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:317",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Success",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:324",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Warning",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:380",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Warning",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:387",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Warning",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:401",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Warning",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:408",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Danger",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:422",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Danger",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:429",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Danger",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:443",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Danger",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:450",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Neutral",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:464",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Neutral",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:471",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Neutral",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:485",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Neutral",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:492",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Brand",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:506",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Brand",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:513",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Brand",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:527",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Brand",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:534",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Accent",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:548",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Accent",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:555",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Accent",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:569",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Accent",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:576",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Success",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:590",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Success",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:597",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Success",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:611",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Success",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:618",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Warning",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:674",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Warning",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:681",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Warning",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:695",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Warning",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:702",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Danger",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:716",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Danger",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:723",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Danger",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:737",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Danger",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "74:744",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Neutral",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "99:3192",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Neutral",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "99:3198",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Neutral",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "99:3210",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Neutral",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "99:3216",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Accent",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "99:3228",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Accent",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "99:3234",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Accent",
+        "State": "Rest",
+        "Leading": "Plain"
+      },
+      "nodeId": "99:3246",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Accent",
+        "State": "Disabled",
+        "Leading": "Plain"
+      },
+      "nodeId": "99:3252",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Success",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:438",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Success",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:441",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Success",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:449",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Success",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:452",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Brand",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:460",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Brand",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:463",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Brand",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:470",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Brand",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:473",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Warning",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:480",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Warning",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:483",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Warning",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:490",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Warning",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:493",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Danger",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:500",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Danger",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:503",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Danger",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:510",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Danger",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:513",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Success",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:520",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Success",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:523",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Success",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:531",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Success",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:534",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Brand",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:542",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Brand",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:545",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Brand",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:552",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Brand",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:555",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Warning",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:562",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Warning",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:565",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Warning",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:572",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Warning",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:575",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Danger",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:582",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Danger",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:585",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Danger",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:592",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Danger",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:595",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Neutral",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:602",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Neutral",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:605",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Neutral",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:612",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Neutral",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:615",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Neutral",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:622",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Neutral",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:625",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Neutral",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:632",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Neutral",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:635",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Brand",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:642",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Brand",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:645",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Brand",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:652",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Brand",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:655",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Brand",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:662",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Brand",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:665",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Brand",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:672",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Brand",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:675",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Accent",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:682",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Accent",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:685",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Accent",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:692",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Accent",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:695",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Accent",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:702",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Accent",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:705",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Accent",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:712",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Accent",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:715",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Success",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:722",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Success",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:725",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Success",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:733",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Success",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:736",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Success",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:744",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Success",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:747",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Success",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:755",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Success",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:758",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Warning",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:766",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Warning",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:769",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Warning",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:776",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Warning",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:779",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Warning",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:786",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Warning",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:789",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Warning",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:796",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Warning",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:799",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Danger",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:806",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Danger",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:809",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Danger",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:816",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Solid",
+        "Tone": "Danger",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:819",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Danger",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:826",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Danger",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:829",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Danger",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:836",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Outlined",
+        "Tone": "Danger",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:839",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Neutral",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:846",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Neutral",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:849",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Neutral",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:856",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Neutral",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:859",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Neutral",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:866",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Neutral",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:869",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Neutral",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:876",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Neutral",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:879",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Brand",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:886",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Brand",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:889",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Brand",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:896",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Brand",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:899",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Brand",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:906",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Brand",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:909",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Brand",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:916",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Brand",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:919",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Accent",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:926",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Accent",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:929",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Accent",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:936",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Accent",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:939",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Accent",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:946",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Accent",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:949",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Accent",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:956",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Accent",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:959",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Success",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:966",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Success",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:969",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Success",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:977",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Success",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:980",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Success",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:988",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Success",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:991",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Success",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:999",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Success",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:1002",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Warning",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:1010",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Warning",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:1013",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Warning",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:1020",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Warning",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:1023",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Warning",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:1030",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Warning",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:1033",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Warning",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:1040",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Warning",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:1043",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Danger",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:1050",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Danger",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:1053",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Danger",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:1060",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Solid",
+        "Tone": "Danger",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:1063",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Danger",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:1070",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Danger",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:1073",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Danger",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:1080",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Outlined",
+        "Tone": "Danger",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:1083",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Neutral",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:1090",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Neutral",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:1093",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Neutral",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:1100",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Neutral",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:1103",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Neutral",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:1110",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Neutral",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:1113",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Neutral",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:1120",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Neutral",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:1123",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Accent",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:1130",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Accent",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:1133",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Accent",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:1140",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Small",
+        "Variant": "Soft",
+        "Tone": "Accent",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:1143",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Accent",
+        "State": "Rest",
+        "Leading": "Status"
+      },
+      "nodeId": "389:1150",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Accent",
+        "State": "Rest",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:1153",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Accent",
+        "State": "Disabled",
+        "Leading": "Status"
+      },
+      "nodeId": "389:1160",
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "Medium",
+        "Variant": "Soft",
+        "Tone": "Accent",
+        "State": "Disabled",
+        "Leading": "Icon"
+      },
+      "nodeId": "389:1163",
+      "implementationStatus": "matched"
+    }
+  ],
+  "codeExample": "<Badge />",
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

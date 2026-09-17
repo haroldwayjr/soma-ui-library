@@ -1,0 +1,137 @@
+{
+  "name": "Checkbox / Control",
+  "figmaComponentName": "Checkbox / Control",
+  "category": "Forms & inputs",
+  "page": "Checkbox",
+  "nodeId": "440:80",
+  "description": "Checkbox is the Soma Checkbox / Control: a 16×16 selection box that the user ticks, unticks, or leaves mixed. Phase 1 is that control only — default tone, one size — as documented on the Soma Checkboxes page.",
+  "buildStatus": "In progress",
+  "importPath": "@nova/ui",
+  "implementationStatus": "matched",
+  "props": [
+    {
+      "name": "Checked",
+      "figmaValues": [
+        "False",
+        "Indeterminate",
+        "True"
+      ],
+      "codeProp": "checked, indeterminate",
+      "implementationStatus": "matched"
+    },
+    {
+      "name": "State",
+      "figmaValues": [
+        "Rest",
+        "Disabled",
+        "Focus visible",
+        "Hover"
+      ],
+      "codeProp": "disabled",
+      "implementationStatus": "matched",
+      "notes": "Focus visible handled in CSS/:pseudo or data-attribute styles; Hover handled in CSS/:pseudo or data-attribute styles"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Checked": "False",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Checked": "False",
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Checked": "False",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Checked": "False",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Checked": "Indeterminate",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Checked": "Indeterminate",
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Checked": "Indeterminate",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Checked": "Indeterminate",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Checked": "True",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Checked": "True",
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Checked": "True",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Checked": "True",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    }
+  ],
+  "codeExample": "<Checkbox />",
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

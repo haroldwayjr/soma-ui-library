@@ -1,0 +1,25 @@
+{
+  "name": "Avatar / Photo / Grace Okafor",
+  "figmaComponentName": "Avatar / Photo / Grace Okafor",
+  "category": "Data display",
+  "page": "Avatars",
+  "nodeId": "demo:photo:7",
+  "description": "Library photo asset for Avatar.Image; demo extension beyond Figma set.",
+  "buildStatus": "In progress",
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [],
+  "variants": [
+    {
+      "properties": {},
+      "nodeId": "demo:photo:7",
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [
+    "Library photo asset for Avatar.Image; not a UI control component"
+  ],
+  "notApplicable": []
+}

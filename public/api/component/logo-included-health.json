@@ -1,0 +1,54 @@
+{
+  "name": "Logo / Included Health",
+  "figmaComponentName": "Logo / Included Health",
+  "category": "Brand",
+  "page": "Logos",
+  "nodeId": "3361:27271",
+  "description": "Logomark is the Included Health brand mark used next to a product wordmark (Care App in the App Shell). It is a committed SVG, not a Streamline glyph and not a remote asset.",
+  "buildStatus": "Done",
+  "importPath": "@nova/ui",
+  "implementationStatus": "partial",
+  "props": [
+    {
+      "name": "Style",
+      "figmaValues": [
+        "IH / Blue",
+        "IH / White",
+        "DOD"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Style": "IH / Blue"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Style": "IH / White"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Style": "DOD"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    }
+  ],
+  "codeExample": "<Logomark />",
+  "a11yNotes": null,
+  "gaps": [
+    "Style=IH / Blue",
+    "Style=IH / White",
+    "Style=DOD"
+  ],
+  "notApplicable": []
+}

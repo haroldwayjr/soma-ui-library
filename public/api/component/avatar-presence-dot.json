@@ -1,0 +1,106 @@
+{
+  "name": "Avatar / Presence dot",
+  "figmaComponentName": "Avatar / Presence dot",
+  "category": "Data display",
+  "page": "Avatars",
+  "nodeId": "977:116",
+  "description": "Avatar represents who — one person's identity in a compact circular form. It renders a photo when one is available and otherwise falls back to initials (a known user with no photo) or a person silhouette (unknown, anonymous, or pending identity), per the Soma Avatars page.",
+  "buildStatus": "In progress",
+  "importPath": "@nova/ui",
+  "implementationStatus": "partial",
+  "props": [
+    {
+      "name": "Status",
+      "figmaValues": [
+        "Online",
+        "Offline",
+        "Busy",
+        "Away"
+      ],
+      "codeProp": "presence",
+      "implementationStatus": "partial",
+      "notes": "presence does not include 'Away'"
+    },
+    {
+      "name": "Size",
+      "figmaValues": [
+        "md",
+        "lg"
+      ],
+      "codeProp": "size",
+      "implementationStatus": "matched"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Status": "Online",
+        "Size": "md"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Status": "Online",
+        "Size": "lg"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Status": "Offline",
+        "Size": "md"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Status": "Offline",
+        "Size": "lg"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Status": "Busy",
+        "Size": "md"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Status": "Busy",
+        "Size": "lg"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Status": "Away",
+        "Size": "md"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Status": "Away",
+        "Size": "lg"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    }
+  ],
+  "codeExample": "<Avatar />",
+  "a11yNotes": null,
+  "gaps": [
+    "Status=Away"
+  ],
+  "notApplicable": []
+}

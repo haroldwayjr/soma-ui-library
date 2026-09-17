@@ -1,0 +1,23 @@
+{
+  "name": "Profile Menu / Status nav",
+  "figmaComponentName": "Profile Menu / Status nav",
+  "category": "App components (WIP)",
+  "page": "App components (WIP)",
+  "nodeId": "2614:18897",
+  "description": "TODO",
+  "buildStatus": null,
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [],
+  "variants": [
+    {
+      "properties": {},
+      "nodeId": "2614:18897",
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

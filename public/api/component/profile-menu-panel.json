@@ -1,0 +1,23 @@
+{
+  "name": "Profile Menu / Panel",
+  "figmaComponentName": "Profile Menu / Panel",
+  "category": "App components (WIP)",
+  "page": "App components (WIP)",
+  "nodeId": "2614:19277",
+  "description": "TODO",
+  "buildStatus": null,
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [],
+  "variants": [
+    {
+      "properties": {},
+      "nodeId": "2614:19277",
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

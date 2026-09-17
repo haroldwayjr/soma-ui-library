@@ -1,0 +1,51 @@
+{
+  "name": "Back Link",
+  "figmaComponentName": "Back Link",
+  "category": "Navigation & misc",
+  "page": "Breadcrumbs",
+  "nodeId": "1739:150",
+  "description": "Link is the Soma inline hyperlink: text that takes the user somewhere else. Its job is to look like a link — color, underline, hover, focus — and to leave navigation itself to the element that owns the destination.",
+  "buildStatus": null,
+  "importPath": "@nova/ui",
+  "implementationStatus": "matched",
+  "props": [
+    {
+      "name": "State",
+      "figmaValues": [
+        "Rest",
+        "Hover",
+        "Focus visible"
+      ],
+      "codeProp": null,
+      "implementationStatus": "matched",
+      "notes": "Hover handled in CSS/:pseudo or data-attribute styles; Focus visible handled in CSS/:pseudo or data-attribute styles"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    }
+  ],
+  "codeExample": "<Link />",
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

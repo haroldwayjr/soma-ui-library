@@ -1,75 +1,57 @@
-# React + TypeScript + Vite
+# Soma UI Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Internal component browser for the Soma registry and local Nova UI implementation.
 
-Currently, two official plugins are available:
+## Run locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## Vendored `@nova/ui` (`vendor/nova-ui/`)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This app compiles a **committed source snapshot** of `@nova/ui` from
+`vendor/nova-ui/`. That package has no standalone JS/CSS library build today —
+consumers (including this app) compile its TypeScript + Vanilla Extract via Vite.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+**`vendor/nova-ui/` must be committed** (not gitignored). Vercel has no access to
+`nova-care-app`, so the snapshot is the deployable dependency.
 
+Refresh the snapshot when `@nova/ui` changes (requires a local `nova-care-app`
+checkout beside this repo, or `NOVA_UI_SRC` pointing at `libs/ui`):
+
+```bash
+npm run refresh-nova-ui
+# equivalent: bash scripts/refresh-nova-ui.sh
+```
+
+Optional: `NOVA_UI_SRC=/path/to/nova-care-app/libs/ui npm run refresh-nova-ui`
+
+Then commit the updated `vendor/nova-ui/` tree (includes `VENDOR_META.json` with
+source commit provenance).
+
+## Agent-facing endpoints
+
+Vite serves these from `public/` (and they ship in `dist/` on build):
+
+| Path | Source |
+|------|--------|
+| `/registry.json` | Full component registry |
+| `/llms.txt` | One-line agent index |
+| `/icons.json` | Icon catalog (400) |
+| `/api/component/<slug>.json` | Per-component manifest |
+
+Unknown `/api/component/<slug>.json` paths return **404** with
+`Content-Type: application/json` (never the SPA shell). The same guard runs in
+Vite dev/preview via `vite.agent-static-guard.ts`, and on Vercel via
+`vercel.json` (filesystem first) + `api/agent-not-found.ts`.
+
+Only non-agent app paths fall through to `index.html` (HashRouter:
+`#/ui-library/...`).
+
+Regenerate per-component JSON after registry changes:
+
+```bash
+npm run generate:api
 ```

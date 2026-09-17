@@ -1,0 +1,33 @@
+{
+  "name": "_deleted · Tooltip Callout (do not use)",
+  "figmaComponentName": "_deleted · Tooltip Callout (do not use)",
+  "category": "Communication",
+  "page": "Tooltips",
+  "nodeId": "3679:321",
+  "description": "TODO",
+  "buildStatus": null,
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [
+    {
+      "name": "Show close",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {},
+      "nodeId": "3679:321",
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

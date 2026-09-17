@@ -1,0 +1,92 @@
+{
+  "name": "Card / Notice",
+  "figmaComponentName": "Card / Notice",
+  "category": "Containers",
+  "page": "Cards",
+  "nodeId": "1879:436",
+  "description": "`Card` is the first compound API in `libs/ui`. Every other component here flattens to a single function — even ones with a Base UI primitive underneath that is itself namespaced (`Switch` wraps `Switch.Root` / `Switch.Thumb` into one component). Card has no Base UI primitive at all — there is no accessible \"card\" role, so nothing is lost by not flattening it — and Soma's own sheet already models it as independent regions (a header with an optional trailing action, a body slot, an optional footer), not a fixed set of props. Exposing `Card.Root` / `Card.Header` / `Card.HeaderTitle` / `Card.Body` / `Card.Footer` as parts lets a consumer:",
+  "buildStatus": "Done",
+  "importPath": "@nova/ui",
+  "implementationStatus": "partial",
+  "props": [
+    {
+      "name": "Layout",
+      "figmaValues": [
+        "Notice",
+        "Tile"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Tone",
+      "figmaValues": [
+        "Brand",
+        "Neutral",
+        "Success"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Layout": "Notice",
+        "Tone": "Brand"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Layout": "Notice",
+        "Tone": "Neutral"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Layout": "Notice",
+        "Tone": "Success"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Layout": "Tile",
+        "Tone": "Brand"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Layout": "Tile",
+        "Tone": "Neutral"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Layout": "Tile",
+        "Tone": "Success"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    }
+  ],
+  "codeExample": "<Card.Root />",
+  "a11yNotes": null,
+  "gaps": [
+    "Layout=Notice",
+    "Layout=Tile",
+    "Tone=Brand",
+    "Tone=Neutral",
+    "Tone=Success"
+  ],
+  "notApplicable": []
+}

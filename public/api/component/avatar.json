@@ -1,0 +1,123 @@
+{
+  "name": "Avatar",
+  "figmaComponentName": "Avatar",
+  "category": "Data display",
+  "page": "Avatars",
+  "nodeId": "979:174",
+  "description": "Avatar represents who — one person's identity in a compact circular form. It renders a photo when one is available and otherwise falls back to initials (a known user with no photo) or a person silhouette (unknown, anonymous, or pending identity), per the Soma Avatars page.",
+  "buildStatus": "In progress",
+  "importPath": "@nova/ui",
+  "implementationStatus": "partial",
+  "props": [
+    {
+      "name": "Size",
+      "figmaValues": [
+        "sm",
+        "md",
+        "lg"
+      ],
+      "codeProp": "size",
+      "implementationStatus": "matched"
+    },
+    {
+      "name": "Content",
+      "figmaValues": [
+        "Image",
+        "Initials",
+        "Silhouette"
+      ],
+      "codeProp": "src, initials",
+      "implementationStatus": "partial",
+      "notes": "Silhouette fallback has no dedicated public prop"
+    },
+    {
+      "name": "Show presence",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": "presence",
+      "implementationStatus": "matched"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Size": "sm",
+        "Content": "Image"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "sm",
+        "Content": "Initials"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "sm",
+        "Content": "Silhouette"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Size": "md",
+        "Content": "Image"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "md",
+        "Content": "Initials"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "md",
+        "Content": "Silhouette"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Size": "lg",
+        "Content": "Image"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "lg",
+        "Content": "Initials"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Size": "lg",
+        "Content": "Silhouette"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    }
+  ],
+  "codeExample": "<Avatar />",
+  "a11yNotes": null,
+  "gaps": [
+    "Content=Silhouette"
+  ],
+  "notApplicable": []
+}

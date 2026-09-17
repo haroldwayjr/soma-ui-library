@@ -1,0 +1,6 @@
+export { Card } from './card'
+export { type CardBodyProps } from './CardBody'
+export { type CardFooterProps } from './CardFooter'
+export { type CardHeaderProps } from './CardHeader'
+export { type CardHeaderTitleProps } from './CardHeaderTitle'
+export { type CardRootProps } from './CardRoot'

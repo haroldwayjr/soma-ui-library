@@ -1,0 +1,23 @@
+{
+  "name": "Menu / Separator",
+  "figmaComponentName": "Menu / Separator",
+  "category": "Navigation & misc",
+  "page": "Dropdowns",
+  "nodeId": "358:86",
+  "description": "TODO",
+  "buildStatus": "Not started",
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [],
+  "variants": [
+    {
+      "properties": {},
+      "nodeId": "358:86",
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

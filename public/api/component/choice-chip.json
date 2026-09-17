@@ -1,0 +1,469 @@
+{
+  "name": "Choice chip",
+  "figmaComponentName": "Choice chip",
+  "category": "Data display",
+  "page": "Chips",
+  "nodeId": "3823:1549",
+  "description": "Chip is the Soma Chip: a compact pill that labels a discrete value the user has already supplied or the system has already applied — a selected filter, a recipient, an applied tag. Its job is to make that value visible and, when the value is removable, to carry the control that removes it.",
+  "buildStatus": "In progress",
+  "importPath": "@nova/ui",
+  "implementationStatus": "partial",
+  "props": [
+    {
+      "name": "Selected",
+      "figmaValues": [
+        "False",
+        "True"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "State",
+      "figmaValues": [
+        "Rest",
+        "Hover",
+        "Focus visible",
+        "Pressed",
+        "Disabled"
+      ],
+      "codeProp": "disabled",
+      "implementationStatus": "partial",
+      "notes": "Hover has no matching prop and no CSS/:pseudo handling found; Focus visible has no matching prop and no CSS/:pseudo handling found; Pressed has no matching prop and no CSS/:pseudo handling found"
+    },
+    {
+      "name": "Size",
+      "figmaValues": [
+        "Medium",
+        "Small"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Leading",
+      "figmaValues": [
+        "None",
+        "Check"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Selected": "False",
+        "State": "Rest",
+        "Size": "Medium",
+        "Leading": "None"
+      },
+      "nodeId": "3823:1408",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "False",
+        "State": "Rest",
+        "Size": "Medium",
+        "Leading": "Check"
+      },
+      "nodeId": "3823:1410",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "False",
+        "State": "Rest",
+        "Size": "Small",
+        "Leading": "None"
+      },
+      "nodeId": "3823:1415",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "False",
+        "State": "Rest",
+        "Size": "Small",
+        "Leading": "Check"
+      },
+      "nodeId": "3823:1417",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "False",
+        "State": "Hover",
+        "Size": "Medium",
+        "Leading": "None"
+      },
+      "nodeId": "3823:1422",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "False",
+        "State": "Hover",
+        "Size": "Medium",
+        "Leading": "Check"
+      },
+      "nodeId": "3823:1424",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "False",
+        "State": "Hover",
+        "Size": "Small",
+        "Leading": "None"
+      },
+      "nodeId": "3823:1429",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "False",
+        "State": "Hover",
+        "Size": "Small",
+        "Leading": "Check"
+      },
+      "nodeId": "3823:1431",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "False",
+        "State": "Focus visible",
+        "Size": "Medium",
+        "Leading": "None"
+      },
+      "nodeId": "3823:1436",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "False",
+        "State": "Focus visible",
+        "Size": "Medium",
+        "Leading": "Check"
+      },
+      "nodeId": "3823:1438",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "False",
+        "State": "Focus visible",
+        "Size": "Small",
+        "Leading": "None"
+      },
+      "nodeId": "3823:1443",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "False",
+        "State": "Focus visible",
+        "Size": "Small",
+        "Leading": "Check"
+      },
+      "nodeId": "3823:1445",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "False",
+        "State": "Pressed",
+        "Size": "Medium",
+        "Leading": "None"
+      },
+      "nodeId": "3823:1450",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "False",
+        "State": "Pressed",
+        "Size": "Medium",
+        "Leading": "Check"
+      },
+      "nodeId": "3823:1452",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "False",
+        "State": "Pressed",
+        "Size": "Small",
+        "Leading": "None"
+      },
+      "nodeId": "3823:1457",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "False",
+        "State": "Pressed",
+        "Size": "Small",
+        "Leading": "Check"
+      },
+      "nodeId": "3823:1459",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "False",
+        "State": "Disabled",
+        "Size": "Medium",
+        "Leading": "None"
+      },
+      "nodeId": "3823:1464",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "False",
+        "State": "Disabled",
+        "Size": "Medium",
+        "Leading": "Check"
+      },
+      "nodeId": "3823:1466",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "False",
+        "State": "Disabled",
+        "Size": "Small",
+        "Leading": "None"
+      },
+      "nodeId": "3823:1471",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "False",
+        "State": "Disabled",
+        "Size": "Small",
+        "Leading": "Check"
+      },
+      "nodeId": "3823:1473",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "True",
+        "State": "Rest",
+        "Size": "Medium",
+        "Leading": "None"
+      },
+      "nodeId": "3823:1478",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "True",
+        "State": "Rest",
+        "Size": "Medium",
+        "Leading": "Check"
+      },
+      "nodeId": "3823:1480",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "True",
+        "State": "Rest",
+        "Size": "Small",
+        "Leading": "None"
+      },
+      "nodeId": "3823:1485",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "True",
+        "State": "Rest",
+        "Size": "Small",
+        "Leading": "Check"
+      },
+      "nodeId": "3823:1487",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "True",
+        "State": "Hover",
+        "Size": "Medium",
+        "Leading": "None"
+      },
+      "nodeId": "3823:1492",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "True",
+        "State": "Hover",
+        "Size": "Medium",
+        "Leading": "Check"
+      },
+      "nodeId": "3823:1494",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "True",
+        "State": "Hover",
+        "Size": "Small",
+        "Leading": "None"
+      },
+      "nodeId": "3823:1499",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "True",
+        "State": "Hover",
+        "Size": "Small",
+        "Leading": "Check"
+      },
+      "nodeId": "3823:1501",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "True",
+        "State": "Focus visible",
+        "Size": "Medium",
+        "Leading": "None"
+      },
+      "nodeId": "3823:1506",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "True",
+        "State": "Focus visible",
+        "Size": "Medium",
+        "Leading": "Check"
+      },
+      "nodeId": "3823:1508",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "True",
+        "State": "Focus visible",
+        "Size": "Small",
+        "Leading": "None"
+      },
+      "nodeId": "3823:1513",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "True",
+        "State": "Focus visible",
+        "Size": "Small",
+        "Leading": "Check"
+      },
+      "nodeId": "3823:1515",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "True",
+        "State": "Pressed",
+        "Size": "Medium",
+        "Leading": "None"
+      },
+      "nodeId": "3823:1520",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "True",
+        "State": "Pressed",
+        "Size": "Medium",
+        "Leading": "Check"
+      },
+      "nodeId": "3823:1522",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "True",
+        "State": "Pressed",
+        "Size": "Small",
+        "Leading": "None"
+      },
+      "nodeId": "3823:1527",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "True",
+        "State": "Pressed",
+        "Size": "Small",
+        "Leading": "Check"
+      },
+      "nodeId": "3823:1529",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "True",
+        "State": "Disabled",
+        "Size": "Medium",
+        "Leading": "None"
+      },
+      "nodeId": "3823:1534",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "True",
+        "State": "Disabled",
+        "Size": "Medium",
+        "Leading": "Check"
+      },
+      "nodeId": "3823:1536",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "True",
+        "State": "Disabled",
+        "Size": "Small",
+        "Leading": "None"
+      },
+      "nodeId": "3823:1541",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Selected": "True",
+        "State": "Disabled",
+        "Size": "Small",
+        "Leading": "Check"
+      },
+      "nodeId": "3823:1543",
+      "implementationStatus": "partial"
+    }
+  ],
+  "codeExample": "<Chip />",
+  "a11yNotes": null,
+  "gaps": [
+    "Selected=False",
+    "Selected=True",
+    "State=Hover",
+    "State=Focus visible",
+    "State=Pressed",
+    "Size=Medium",
+    "Size=Small",
+    "Leading=None",
+    "Leading=Check"
+  ],
+  "notApplicable": []
+}

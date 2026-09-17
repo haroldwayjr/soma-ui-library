@@ -1,0 +1,8 @@
+export { Table } from './table'
+export { type TableBodyProps } from './TableBody'
+export { type TableCellProps } from './TableCell'
+export { type TableColumn } from './tableColumns'
+export { type TableHeadProps } from './TableHead'
+export { type TableHeaderCellProps } from './TableHeaderCell'
+export { type TableRootProps } from './TableRoot'
+export { type TableRowProps } from './TableRow'

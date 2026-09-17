@@ -1,0 +1,23 @@
+{
+  "name": "Breadcrumb / Current",
+  "figmaComponentName": "Breadcrumb / Current",
+  "category": "Navigation & misc",
+  "page": "Breadcrumbs",
+  "nodeId": "1748:9670",
+  "description": "TODO",
+  "buildStatus": "Not started",
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [],
+  "variants": [
+    {
+      "properties": {},
+      "nodeId": "1748:9670",
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

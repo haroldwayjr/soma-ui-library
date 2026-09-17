@@ -1,0 +1,61 @@
+{
+  "headers": [
+    {
+      "source": "/api/component/(.*)\\.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "source": "/registry.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "source": "/icons.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "source": "/llms.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "^/api/component/([^/]+)\\.json$",
+      "dest": "/api/agent-not-found?slug=$1"
+    },
+    {
+      "src": "^/(registry\\.json|llms\\.txt|icons\\.json)$",
+      "dest": "/api/agent-not-found?asset=$1"
+    },
+    {
+      "src": "^/api(?:/.*)?$",
+      "dest": "/api/agent-not-found?asset=api"
+    },
+    {
+      "src": "/.*",
+      "dest": "/index.html"
+    }
+  ]
+}

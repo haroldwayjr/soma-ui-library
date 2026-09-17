@@ -1,0 +1,354 @@
+{
+  "paginationNotes": {
+    "sizeProp": false,
+    "sizeDetails": "No public size prop. README states page controls are always 24×24 with the small page-number type scale (13px / weight 500). TablePagination owns small/medium for the paired Select only.",
+    "positionProp": false,
+    "positionDetails": "No First/Middle/Last position prop. README documents Figma Position column as documentation only; rendering is deterministic from page, pageCount, siblingCount, and boundaryCount (internal constants, not public props).",
+    "openWork": "Arrow hover is explicitly filed as open work — masters draw rest/disabled only for prev/next arrows."
+  },
+  "components": {
+    "Switch": {
+      "styleFiles": ["libs/ui/src/components/switch/Switch.css.ts"],
+      "hover": true,
+      "focusVisible": true,
+      "pressed": false,
+      "disabled": true,
+      "checked": true,
+      "evidence": {
+        "hover": "`${enabled}:not(:focus-visible):hover` as `hovered`; `${hovered}[data-checked]` sets primary.hover background",
+        "focusVisible": "`&:focus-visible` with 2px outline + outlineOffset on rootStyle",
+        "pressed": "No `:active`, `[data-pressed]`, or `[data-active]` selectors found",
+        "disabled": "`&[data-disabled]` on rootStyle (background, borderColor, cursor)",
+        "checked": "`[data-checked]` on rootStyle and thumbStyle (checked fill + thumb travel via marginInlineStart)"
+      }
+    },
+    "Checkbox": {
+      "styleFiles": ["libs/ui/src/components/checkbox/Checkbox.css.ts"],
+      "hover": true,
+      "focusVisible": true,
+      "pressed": false,
+      "disabled": true,
+      "checked": true,
+      "evidence": {
+        "hover": "`${hovered}::before` borderColor hover; `${hovered}[data-checked]::before, ${hovered}[data-indeterminate]::before` filled hover",
+        "focusVisible": "`&:focus-visible` outline:none + `&:focus-visible::after` inset boxShadow focus ring",
+        "pressed": "No `:active`, `[data-pressed]`, or `[data-active]` selectors found",
+        "disabled": "`&[data-disabled]` on root + `&[data-disabled]::before` (color, background, border)",
+        "checked": "`${enabled}[data-checked]::before` and `[data-indeterminate]::before` brand fill/border"
+      }
+    },
+    "Radio": {
+      "styleFiles": ["libs/ui/src/components/radio/Radio.css.ts"],
+      "hover": true,
+      "focusVisible": true,
+      "pressed": false,
+      "disabled": true,
+      "checked": true,
+      "evidence": {
+        "hover": "`${hovered}::before` border hover; `${hovered}[data-checked]::before` and `${hovered}[data-checked]` color hover",
+        "focusVisible": "`&:focus-visible` outline:none + `&:focus-visible::after` inset boxShadow focus ring",
+        "pressed": "No `:active`, `[data-pressed]`, or `[data-active]` selectors found",
+        "disabled": "`&[data-disabled]` on root + `&[data-disabled]::before`",
+        "checked": "`${enabled}[data-checked]::before` borderColor brand; dot uses currentColor"
+      }
+    },
+    "Badge": {
+      "styleFiles": ["libs/ui/src/components/badge/Badge.css.ts"],
+      "hover": false,
+      "focusVisible": false,
+      "pressed": false,
+      "disabled": true,
+      "checked": false,
+      "evidence": {
+        "hover": "No `:hover` or `[data-hover]` — display-only status label",
+        "focusVisible": "Comments note 'Badge has no focus ring'; no focus selectors",
+        "pressed": "No pressed/active selectors",
+        "disabled": "`&[data-disabled]` in badgeRecipe base (background, color, dotColor var)",
+        "checked": "No checked/selected selectors"
+      }
+    },
+    "Button": {
+      "styleFiles": ["libs/ui/src/components/button/Button.css.ts"],
+      "hover": true,
+      "focusVisible": true,
+      "pressed": true,
+      "disabled": true,
+      "checked": false,
+      "evidence": {
+        "hover": "`&:hover${NOT_INTERACTIVE}` in compoundVariants and unfilledInteraction (secondary hover / surface.subtle)",
+        "focusVisible": "`&:focus-visible` outline 2px per tone (brand/danger/success) in tone variants",
+        "pressed": "`&&:active${NOT_INTERACTIVE}` in compoundVariants and unfilledInteraction (primary.pressed, secondary.pressed, etc.)",
+        "disabled": "`:disabled` in base + variant rules (contained/outlined/text) and compound `:not(:disabled)` guards",
+        "checked": "No checked/selected selectors"
+      }
+    },
+    "Chip": {
+      "styleFiles": ["libs/ui/src/components/chip/Chip.css.ts"],
+      "hover": true,
+      "focusVisible": true,
+      "pressed": false,
+      "disabled": true,
+      "checked": false,
+      "evidence": {
+        "hover": "chipRecipe root is inert (no hover); dismissStyle `&:enabled:hover` background action.secondary.hover",
+        "focusVisible": "dismissStyle `&:focus-visible` background + `&:focus-visible::after` inset focus ring; chip root has no focus ring",
+        "pressed": "No `:active` or `[data-pressed]` on chip root or dismiss button",
+        "disabled": "chipRecipe `&[data-disabled]`; dismissStyle `&:disabled`",
+        "checked": "No checked/selected selectors"
+      }
+    },
+    "Link": {
+      "styleFiles": ["libs/ui/src/components/link/Link.css.ts"],
+      "hover": true,
+      "focusVisible": true,
+      "pressed": true,
+      "disabled": false,
+      "checked": false,
+      "evidence": {
+        "hover": "`&:hover` color text.link.hover",
+        "focusVisible": "`:focus-visible` boxShadow 2px focus.ring.base + outline:none",
+        "pressed": "`&:active` color text.link.hover",
+        "disabled": "No `:disabled` or `[data-disabled]` — anchor has no disabled styling in CSS",
+        "checked": "No checked/selected selectors"
+      }
+    },
+    "Field": {
+      "styleFiles": ["libs/ui/src/components/field/Field.css.ts"],
+      "hover": false,
+      "focusVisible": false,
+      "pressed": false,
+      "disabled": true,
+      "checked": false,
+      "evidence": {
+        "hover": "Layout/typography only — no interactive hover rules",
+        "focusVisible": "No focus ring styles; focus handled by child controls",
+        "pressed": "No pressed selectors",
+        "disabled": "`${rootStyle}[data-disabled] &` on labelStyle, requiredMarkerStyle, descriptionStyle",
+        "checked": "No checked/selected selectors"
+      }
+    },
+    "TextInput": {
+      "styleFiles": ["libs/ui/src/components/text-input/TextInput.css.ts"],
+      "hover": true,
+      "focusVisible": true,
+      "pressed": false,
+      "disabled": true,
+      "checked": false,
+      "evidence": {
+        "hover": "`${enabledValid}:hover:not(:focus-visible)` borderColor border.strong.hover",
+        "focusVisible": "`${enabledValid}:focus-visible` thickens border to 2px focus.ring.base + padding compensation",
+        "pressed": "No `:active` or `[data-pressed]`",
+        "disabled": "`&:disabled` background/border/color + `&:disabled::placeholder`",
+        "checked": "No checked/selected selectors"
+      }
+    },
+    "TextField": {
+      "styleFiles": [
+        "libs/ui/src/components/field/Field.css.ts",
+        "libs/ui/src/components/text-input/TextInput.css.ts"
+      ],
+      "hover": true,
+      "focusVisible": true,
+      "pressed": false,
+      "disabled": true,
+      "checked": false,
+      "evidence": {
+        "hover": "Composes TextInput — inherits `${enabledValid}:hover:not(:focus-visible)` border hover",
+        "focusVisible": "Composes TextInput — inherits `${enabledValid}:focus-visible` 2px focus border",
+        "pressed": "No own .css.ts; TextInput has no pressed state",
+        "disabled": "Field `[data-disabled]` mutes label/description; TextInput `&:disabled` mutes input chrome",
+        "checked": "No checked/selected selectors"
+      }
+    },
+    "Select": {
+      "styleFiles": ["libs/ui/src/components/select/Select.css.ts"],
+      "hover": true,
+      "focusVisible": true,
+      "pressed": false,
+      "disabled": true,
+      "checked": true,
+      "evidence": {
+        "hover": "triggerRecipe `${enabledValid}:hover:not(:focus-visible)` border hover; itemStyle `&[data-highlighted]:not([data-disabled])` hover fill (Base UI unified pointer+keyboard highlight)",
+        "focusVisible": "triggerRecipe `${enabledValid}:focus-visible` 2px focus border; items use `[data-highlighted]` with focus ring borderColor (merged hover+focus per README)",
+        "pressed": "No `:active` or `[data-pressed]` on trigger or items",
+        "disabled": "trigger `&[data-disabled]`; item `&[data-disabled]`; chevron/indicator `[data-disabled] &`",
+        "checked": "Selection styled structurally (itemIndicator check glyph when selected); itemIndicatorStyle brand color; comments reference `aria-selected` but no `[data-selected]` CSS selector"
+      }
+    },
+    "SelectField": {
+      "styleFiles": [
+        "libs/ui/src/components/field/Field.css.ts",
+        "libs/ui/src/components/select/Select.css.ts"
+      ],
+      "hover": true,
+      "focusVisible": true,
+      "pressed": false,
+      "disabled": true,
+      "checked": true,
+      "evidence": {
+        "hover": "Composes Select trigger + popup item hover/highlight rules",
+        "focusVisible": "Composes Select trigger focus-visible border + item `[data-highlighted]` focus ring",
+        "pressed": "No own .css.ts; Select has no pressed state",
+        "disabled": "Field `[data-disabled]` + Select `[data-disabled]` on trigger/items",
+        "checked": "Composes Select selection indicator styling (check glyph, brand color)"
+      }
+    },
+    "Avatar": {
+      "styleFiles": ["libs/ui/src/components/avatar/Avatar.css.ts"],
+      "hover": false,
+      "focusVisible": false,
+      "pressed": false,
+      "disabled": false,
+      "checked": false,
+      "evidence": {
+        "hover": "Display-only identity component — no hover selectors",
+        "focusVisible": "No focus ring styles",
+        "pressed": "No pressed selectors",
+        "disabled": "No disabled styling",
+        "checked": "No checked/selected selectors (presence dot uses presence recipe variants, not selection)"
+      }
+    },
+    "Card": {
+      "styleFiles": ["libs/ui/src/components/card/Card.css.ts"],
+      "hover": false,
+      "focusVisible": false,
+      "pressed": false,
+      "disabled": false,
+      "checked": false,
+      "evidence": {
+        "hover": "Static surface/layout chrome only",
+        "focusVisible": "No focus styles on card parts",
+        "pressed": "No pressed selectors",
+        "disabled": "No disabled styling",
+        "checked": "No checked/selected selectors"
+      }
+    },
+    "Tooltip": {
+      "styleFiles": ["libs/ui/src/components/tooltip/Tooltip.css.ts"],
+      "hover": false,
+      "focusVisible": false,
+      "pressed": false,
+      "disabled": false,
+      "checked": false,
+      "evidence": {
+        "hover": "Popup positioning/typography only — no interactive hover on tooltip surface",
+        "focusVisible": "No focus ring (trigger focus handled by anchor/control, not tooltip popup CSS)",
+        "pressed": "No pressed selectors",
+        "disabled": "No disabled styling",
+        "checked": "No checked/selected selectors"
+      }
+    },
+    "Pagination": {
+      "styleFiles": ["libs/ui/src/components/pagination/Pagination.css.ts"],
+      "hover": true,
+      "focusVisible": true,
+      "pressed": false,
+      "disabled": true,
+      "checked": true,
+      "evidence": {
+        "hover": "pageNumberRecipe `&:hover:not(:disabled)` surface.subtle; current page overrides hover to keep primary fill; arrowRecipe has NO hover (README: open work)",
+        "focusVisible": "arrowRecipe and pageNumberRecipe both `&:focus-visible` 2px outline + offset",
+        "pressed": "No `:active` or `[data-pressed]` on arrows or page numbers",
+        "disabled": "arrowRecipe `&:disabled` disabled surface/icon; page numbers rely on `:hover:not(:disabled)` guard only",
+        "checked": "pageNumberRecipe `current: true` variant — primary background for current page (`aria-current=\"page\"` in TSX)"
+      }
+    },
+    "Progress": {
+      "styleFiles": ["libs/ui/src/components/progress/Progress.css.ts"],
+      "hover": false,
+      "focusVisible": false,
+      "pressed": false,
+      "disabled": true,
+      "checked": false,
+      "evidence": {
+        "hover": "Read-only determinate bar — no hover",
+        "focusVisible": "No focus styles (non-interactive)",
+        "pressed": "No pressed selectors",
+        "disabled": "`${rootStyle}[data-disabled]` scoped to track, indicator, value descendants",
+        "checked": "No checked/selected selectors"
+      }
+    },
+    "Table": {
+      "styleFiles": ["libs/ui/src/components/table/Table.css.ts"],
+      "hover": true,
+      "focusVisible": false,
+      "pressed": false,
+      "disabled": false,
+      "checked": true,
+      "evidence": {
+        "hover": "rowStyle `${groupStyle}[data-table-group=\"body\"] &:hover` secondary.hover; selected row hover keeps brand.subtle",
+        "focusVisible": "No `:focus-visible` or focus ring on rows/cells",
+        "pressed": "No `:active` or `[data-pressed]`",
+        "disabled": "No disabled row/cell styling in CSS",
+        "checked": "`&[aria-selected=\"true\"]` and `&[aria-selected=\"true\"]:hover` brand.subtle background on body rows"
+      }
+    },
+    "IconButton": {
+      "styleFiles": ["libs/ui/src/components/button/Button.css.ts"],
+      "hover": true,
+      "focusVisible": true,
+      "pressed": true,
+      "disabled": true,
+      "checked": false,
+      "evidence": {
+        "hover": "Shares buttonRecipe via ButtonBase with iconOnly:true — same `&:hover${NOT_INTERACTIVE}` compound rules",
+        "focusVisible": "Shares buttonRecipe tone `&:focus-visible` outline rules",
+        "pressed": "Shares buttonRecipe `&&:active${NOT_INTERACTIVE}` pressed fills",
+        "disabled": "Shares buttonRecipe `:disabled` and `:not(:disabled)` guards",
+        "checked": "No checked/selected selectors"
+      }
+    },
+    "ButtonLink": {
+      "styleFiles": [
+        "libs/ui/src/components/link/Link.css.ts",
+        "libs/ui/src/components/button-link/ButtonLink.css.ts"
+      ],
+      "hover": true,
+      "focusVisible": true,
+      "pressed": true,
+      "disabled": true,
+      "checked": false,
+      "evidence": {
+        "hover": "linkStyle `&:hover` text.link.hover color",
+        "focusVisible": "linkStyle `:focus-visible` boxShadow focus ring",
+        "pressed": "linkStyle `&:active` text.link.hover color",
+        "disabled": "resetHost `:disabled` color/cursor + `&:disabled:active, &:disabled:hover` override beats link hover/active",
+        "checked": "No checked/selected selectors"
+      }
+    },
+    "LinkButton": {
+      "styleFiles": [
+        "libs/ui/src/components/button/Button.css.ts",
+        "libs/ui/src/components/link-button/LinkButton.css.ts"
+      ],
+      "hover": true,
+      "focusVisible": true,
+      "pressed": true,
+      "disabled": true,
+      "checked": false,
+      "evidence": {
+        "hover": "Uses buttonRecipe — `&:hover${NOT_INTERACTIVE}` hover fills/colors",
+        "focusVisible": "Uses buttonRecipe tone `&:focus-visible` outlines",
+        "pressed": "Uses buttonRecipe `&&:active${NOT_INTERACTIVE}` pressed states",
+        "disabled": "Uses buttonRecipe `:disabled` variant rules",
+        "checked": "No checked/selected selectors"
+      }
+    },
+    "Menu": {
+      "styleFiles": [],
+      "shipped": false,
+      "hover": false,
+      "focusVisible": false,
+      "pressed": false,
+      "disabled": false,
+      "checked": false,
+      "evidence": {
+        "hover": "Not shipped — Select README explicitly notes 'Not a Menu'; no Menu component or .css.ts in libs/ui/src",
+        "focusVisible": "Not shipped",
+        "pressed": "Not shipped",
+        "disabled": "Not shipped",
+        "checked": "Not shipped"
+      }
+    }
+  }
+}

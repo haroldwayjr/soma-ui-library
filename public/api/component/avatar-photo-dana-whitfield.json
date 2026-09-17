@@ -1,0 +1,25 @@
+{
+  "name": "Avatar / Photo / Dana Whitfield",
+  "figmaComponentName": "Avatar / Photo / Dana Whitfield",
+  "category": "Data display",
+  "page": "Avatars",
+  "nodeId": "3708:363",
+  "description": "TODO",
+  "buildStatus": "In progress",
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [],
+  "variants": [
+    {
+      "properties": {},
+      "nodeId": "3708:363",
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [
+    "Library photo asset for Avatar.Image; not a UI control component"
+  ],
+  "notApplicable": []
+}

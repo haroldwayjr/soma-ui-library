@@ -1,0 +1,219 @@
+{
+  "name": "View switcher",
+  "figmaComponentName": "View switcher",
+  "category": "Forms & inputs",
+  "page": "View switcher (WIP)",
+  "nodeId": "3281:237",
+  "description": "TODO",
+  "buildStatus": null,
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [
+    {
+      "name": "Style",
+      "figmaValues": [
+        "Elevated",
+        "Soft track"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Border",
+      "figmaValues": [
+        "True",
+        "False"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Selected",
+      "figmaValues": [
+        "Case View",
+        "Task View",
+        "View 3",
+        "View 4"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show leading icon",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show view 3",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show view 4",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Style": "Elevated",
+        "Border": "True",
+        "Selected": "Case View"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Style": "Elevated",
+        "Border": "True",
+        "Selected": "Task View"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Style": "Elevated",
+        "Border": "True",
+        "Selected": "View 3"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Style": "Elevated",
+        "Border": "True",
+        "Selected": "View 4"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Style": "Elevated",
+        "Border": "False",
+        "Selected": "Case View"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Style": "Elevated",
+        "Border": "False",
+        "Selected": "Task View"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Style": "Elevated",
+        "Border": "False",
+        "Selected": "View 3"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Style": "Elevated",
+        "Border": "False",
+        "Selected": "View 4"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Style": "Soft track",
+        "Border": "True",
+        "Selected": "Case View"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Style": "Soft track",
+        "Border": "True",
+        "Selected": "Task View"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Style": "Soft track",
+        "Border": "True",
+        "Selected": "View 3"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Style": "Soft track",
+        "Border": "True",
+        "Selected": "View 4"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Style": "Soft track",
+        "Border": "False",
+        "Selected": "Case View"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Style": "Soft track",
+        "Border": "False",
+        "Selected": "Task View"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Style": "Soft track",
+        "Border": "False",
+        "Selected": "View 3"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Style": "Soft track",
+        "Border": "False",
+        "Selected": "View 4"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

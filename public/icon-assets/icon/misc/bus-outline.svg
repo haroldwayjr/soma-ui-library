@@ -1,0 +1,13 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="22.125" height="22.125" viewBox="0 0 22.125 22.125" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="_outline">
+<path id="Vector" d="M4.875 18.625V20C4.875 20.3647 5.01987 20.7144 5.27773 20.9723C5.53559 21.2301 5.88533 21.375 6.25 21.375C6.61467 21.375 6.96441 21.2301 7.22227 20.9723C7.48013 20.7144 7.625 20.3647 7.625 20V18.625" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M17.25 18.625V20C17.25 20.3647 17.1051 20.7144 16.8473 20.9723C16.5894 21.2301 16.2397 21.375 15.875 21.375C15.5103 21.375 15.1606 21.2301 14.9027 20.9723C14.6449 20.7144 14.5 20.3647 14.5 20V18.625" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M18.625 17.25C18.625 17.6147 18.4801 17.9644 18.2223 18.2223C17.9644 18.4801 17.6147 18.625 17.25 18.625H4.875C4.51033 18.625 4.16059 18.4801 3.90273 18.2223C3.64487 17.9644 3.5 17.6147 3.5 17.25V4.875C3.5 3.78098 3.9346 2.73177 4.70818 1.95818C5.48177 1.1846 6.53098 0.75 7.625 0.75H14.5C15.594 0.75 16.6432 1.1846 17.4168 1.95818C18.1904 2.73177 18.625 3.78098 18.625 4.875V17.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M9 3.5H13.125" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M3.5 6.25H18.625V13.125H3.5V6.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M6.25 15.875H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_7" d="M13.125 15.875H15.875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_8" d="M3.5 7.625H2.125C1.76033 7.625 1.41059 7.76987 1.15273 8.02773C0.894866 8.28559 0.75 8.63533 0.75 9V13.125" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_9" d="M18.625 7.625H20C20.3647 7.625 20.7144 7.76987 20.9723 8.02773C21.2301 8.28559 21.375 8.63533 21.375 9V13.125" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

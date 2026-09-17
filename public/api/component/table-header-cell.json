@@ -1,0 +1,63 @@
+{
+  "name": "Table / Header cell",
+  "figmaComponentName": "Table / Header cell",
+  "category": "Data display",
+  "page": "Tables",
+  "nodeId": "1401:518",
+  "description": "`Table` is the Soma table element set. Use it when the markup _is_ the table: a short composed list, a dashboard preview, anything that does not need sort, column drag, or virtualization.",
+  "buildStatus": "Done",
+  "importPath": "@nova/ui",
+  "implementationStatus": "partial",
+  "props": [
+    {
+      "name": "Sort",
+      "figmaValues": [
+        "Off",
+        "None",
+        "Asc",
+        "Desc"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Sort": "Off"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Sort": "None"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Sort": "Asc"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Sort": "Desc"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    }
+  ],
+  "codeExample": "<Table.Root />",
+  "a11yNotes": null,
+  "gaps": [
+    "Sort=Off",
+    "Sort=None",
+    "Sort=Asc",
+    "Sort=Desc"
+  ],
+  "notApplicable": []
+}

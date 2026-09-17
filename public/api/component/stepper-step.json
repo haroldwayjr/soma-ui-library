@@ -1,0 +1,219 @@
+{
+  "name": "Stepper / Step",
+  "figmaComponentName": "Stepper / Step",
+  "category": "Steppers",
+  "page": "Steppers",
+  "nodeId": "3318:386",
+  "description": "TODO",
+  "buildStatus": null,
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [
+    {
+      "name": "Layout",
+      "figmaValues": [
+        "Center",
+        "Inline",
+        "Vertical"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "State",
+      "figmaValues": [
+        "Completed",
+        "Current",
+        "Upcoming"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Tone",
+      "figmaValues": [
+        "Success",
+        "Brand"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show description",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Layout": "Center",
+        "State": "Completed",
+        "Tone": "Success"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Layout": "Center",
+        "State": "Completed",
+        "Tone": "Brand"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Layout": "Center",
+        "State": "Current",
+        "Tone": "Success"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Layout": "Center",
+        "State": "Current",
+        "Tone": "Brand"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Layout": "Center",
+        "State": "Upcoming",
+        "Tone": "Success"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Layout": "Center",
+        "State": "Upcoming",
+        "Tone": "Brand"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Layout": "Inline",
+        "State": "Completed",
+        "Tone": "Success"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Layout": "Inline",
+        "State": "Completed",
+        "Tone": "Brand"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Layout": "Inline",
+        "State": "Current",
+        "Tone": "Success"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Layout": "Inline",
+        "State": "Current",
+        "Tone": "Brand"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Layout": "Inline",
+        "State": "Upcoming",
+        "Tone": "Success"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Layout": "Inline",
+        "State": "Upcoming",
+        "Tone": "Brand"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Layout": "Vertical",
+        "State": "Completed",
+        "Tone": "Success"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Layout": "Vertical",
+        "State": "Completed",
+        "Tone": "Brand"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Layout": "Vertical",
+        "State": "Current",
+        "Tone": "Success"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Layout": "Vertical",
+        "State": "Current",
+        "Tone": "Brand"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Layout": "Vertical",
+        "State": "Upcoming",
+        "Tone": "Success"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Layout": "Vertical",
+        "State": "Upcoming",
+        "Tone": "Brand"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

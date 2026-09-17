@@ -1,0 +1,71 @@
+{
+  "name": "Radio / Group",
+  "figmaComponentName": "Radio / Group",
+  "category": "Forms & inputs",
+  "page": "Radio",
+  "nodeId": "1707:9097",
+  "description": "Radio is the Soma Radio / Control: a 16×16 circle expressing one choice in a mutually exclusive set. Exactly one member of a group is selected, and selecting one deselects the rest. Phase 1 is the control plus the group that owns its value — default tone, one size — per the Soma Radio page.",
+  "buildStatus": "In progress",
+  "importPath": "@nova/ui",
+  "implementationStatus": "partial",
+  "props": [
+    {
+      "name": "State",
+      "figmaValues": [
+        "Default",
+        "Error",
+        "Disabled"
+      ],
+      "codeProp": "disabled",
+      "implementationStatus": "partial"
+    },
+    {
+      "name": "Required",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": "required",
+      "implementationStatus": "matched"
+    },
+    {
+      "name": "Show message",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "State": "Default"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "State": "Error"
+      },
+      "nodeId": null,
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    }
+  ],
+  "codeExample": "<RadioGroup />",
+  "a11yNotes": null,
+  "gaps": [
+    "State=Error",
+    "Show message"
+  ],
+  "notApplicable": []
+}

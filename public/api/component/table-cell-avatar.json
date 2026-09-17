@@ -1,0 +1,35 @@
+{
+  "name": "Table / Cell · avatar",
+  "figmaComponentName": "Table / Cell · avatar",
+  "category": "Data display",
+  "page": "Tables",
+  "nodeId": "1401:8174",
+  "description": "`Table` is the Soma table element set. Use it when the markup _is_ the table: a short composed list, a dashboard preview, anything that does not need sort, column drag, or virtualization.",
+  "buildStatus": "Done",
+  "importPath": "@nova/ui",
+  "implementationStatus": "partial",
+  "props": [
+    {
+      "name": "Show avatar",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {},
+      "nodeId": "1401:8174",
+      "implementationStatus": "matched"
+    }
+  ],
+  "codeExample": "<Table.Root />",
+  "a11yNotes": null,
+  "gaps": [
+    "Show avatar"
+  ],
+  "notApplicable": []
+}

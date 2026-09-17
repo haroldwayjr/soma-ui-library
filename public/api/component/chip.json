@@ -1,0 +1,2062 @@
+{
+  "name": "Chip",
+  "figmaComponentName": "Chip",
+  "category": "Data display",
+  "page": "Chips",
+  "nodeId": "500:207",
+  "description": "Chip is the Soma Chip: a compact pill that labels a discrete value the user has already supplied or the system has already applied — a selected filter, a recipient, an applied tag. Its job is to make that value visible and, when the value is removable, to carry the control that removes it.",
+  "buildStatus": "In progress",
+  "importPath": "@nova/ui",
+  "implementationStatus": "partial",
+  "props": [
+    {
+      "name": "Variant",
+      "figmaValues": [
+        "Filled",
+        "Outlined"
+      ],
+      "codeProp": "variant",
+      "implementationStatus": "matched"
+    },
+    {
+      "name": "Leading",
+      "figmaValues": [
+        "None",
+        "Icon",
+        "Avatar"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Trailing",
+      "figmaValues": [
+        "None",
+        "Dismiss",
+        "Chevron"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "State",
+      "figmaValues": [
+        "Rest",
+        "Disabled",
+        "Hover",
+        "Focus visible",
+        "Pressed"
+      ],
+      "codeProp": "disabled",
+      "implementationStatus": "partial",
+      "notes": "Hover has no matching prop and no CSS/:pseudo handling found; Focus visible has no matching prop and no CSS/:pseudo handling found; Pressed has no matching prop and no CSS/:pseudo handling found"
+    },
+    {
+      "name": "Size",
+      "figmaValues": [
+        "Medium",
+        "Small"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "None",
+        "State": "Rest",
+        "Size": "Medium"
+      },
+      "nodeId": "500:15",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "None",
+        "State": "Disabled",
+        "Size": "Medium"
+      },
+      "nodeId": "500:17",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "Dismiss",
+        "State": "Rest",
+        "Size": "Medium"
+      },
+      "nodeId": "500:19",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "Dismiss",
+        "State": "Disabled",
+        "Size": "Medium"
+      },
+      "nodeId": "500:25",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "None",
+        "State": "Rest",
+        "Size": "Medium"
+      },
+      "nodeId": "500:31",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "None",
+        "State": "Disabled",
+        "Size": "Medium"
+      },
+      "nodeId": "500:41",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "Dismiss",
+        "State": "Rest",
+        "Size": "Medium"
+      },
+      "nodeId": "500:51",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "Dismiss",
+        "State": "Disabled",
+        "Size": "Medium"
+      },
+      "nodeId": "500:65",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "None",
+        "State": "Rest",
+        "Size": "Medium"
+      },
+      "nodeId": "500:79",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "None",
+        "State": "Disabled",
+        "Size": "Medium"
+      },
+      "nodeId": "500:85",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "Dismiss",
+        "State": "Rest",
+        "Size": "Medium"
+      },
+      "nodeId": "500:91",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "Dismiss",
+        "State": "Disabled",
+        "Size": "Medium"
+      },
+      "nodeId": "500:101",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "None",
+        "State": "Rest",
+        "Size": "Medium"
+      },
+      "nodeId": "500:111",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "None",
+        "State": "Disabled",
+        "Size": "Medium"
+      },
+      "nodeId": "500:113",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "Dismiss",
+        "State": "Rest",
+        "Size": "Medium"
+      },
+      "nodeId": "500:115",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "Dismiss",
+        "State": "Disabled",
+        "Size": "Medium"
+      },
+      "nodeId": "500:121",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "None",
+        "State": "Rest",
+        "Size": "Medium"
+      },
+      "nodeId": "500:127",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "None",
+        "State": "Disabled",
+        "Size": "Medium"
+      },
+      "nodeId": "500:137",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "Dismiss",
+        "State": "Rest",
+        "Size": "Medium"
+      },
+      "nodeId": "500:147",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "Dismiss",
+        "State": "Disabled",
+        "Size": "Medium"
+      },
+      "nodeId": "500:161",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "None",
+        "State": "Rest",
+        "Size": "Medium"
+      },
+      "nodeId": "500:175",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "None",
+        "State": "Disabled",
+        "Size": "Medium"
+      },
+      "nodeId": "500:181",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "Dismiss",
+        "State": "Rest",
+        "Size": "Medium"
+      },
+      "nodeId": "500:187",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "Dismiss",
+        "State": "Disabled",
+        "Size": "Medium"
+      },
+      "nodeId": "500:197",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "None",
+        "State": "Rest",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15175",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "None",
+        "State": "Disabled",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15177",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "Dismiss",
+        "State": "Rest",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15179",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "Dismiss",
+        "State": "Disabled",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15182",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "None",
+        "State": "Rest",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15185",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "None",
+        "State": "Disabled",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15188",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "Dismiss",
+        "State": "Rest",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15191",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "Dismiss",
+        "State": "Disabled",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15195",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "None",
+        "State": "Rest",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15199",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "None",
+        "State": "Disabled",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15202",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "Dismiss",
+        "State": "Rest",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15205",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "Dismiss",
+        "State": "Disabled",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15209",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "None",
+        "State": "Rest",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15213",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "None",
+        "State": "Disabled",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15215",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "Dismiss",
+        "State": "Rest",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15217",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "Dismiss",
+        "State": "Disabled",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15220",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "None",
+        "State": "Rest",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15223",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "None",
+        "State": "Disabled",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15226",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "Dismiss",
+        "State": "Rest",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15229",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "Dismiss",
+        "State": "Disabled",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15233",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "None",
+        "State": "Rest",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15237",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "None",
+        "State": "Disabled",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15240",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "Dismiss",
+        "State": "Rest",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15243",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "Dismiss",
+        "State": "Disabled",
+        "Size": "Small"
+      },
+      "nodeId": "2350:15247",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "None",
+        "State": "Hover",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:1383",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "Dismiss",
+        "State": "Hover",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:1385",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "None",
+        "State": "Hover",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:1398",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "Dismiss",
+        "State": "Hover",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:1403",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "None",
+        "State": "Hover",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:1419",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "Dismiss",
+        "State": "Hover",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:1424",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "None",
+        "State": "Hover",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:1440",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "Dismiss",
+        "State": "Hover",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:1442",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "None",
+        "State": "Hover",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:1455",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "Dismiss",
+        "State": "Hover",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:1460",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "None",
+        "State": "Hover",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:1476",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "Dismiss",
+        "State": "Hover",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:1481",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "None",
+        "State": "Hover",
+        "Size": "Small"
+      },
+      "nodeId": "2751:1497",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "Dismiss",
+        "State": "Hover",
+        "Size": "Small"
+      },
+      "nodeId": "2751:1499",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "None",
+        "State": "Hover",
+        "Size": "Small"
+      },
+      "nodeId": "2751:1512",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "Dismiss",
+        "State": "Hover",
+        "Size": "Small"
+      },
+      "nodeId": "2751:1517",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "None",
+        "State": "Hover",
+        "Size": "Small"
+      },
+      "nodeId": "2751:1533",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "Dismiss",
+        "State": "Hover",
+        "Size": "Small"
+      },
+      "nodeId": "2751:1538",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "None",
+        "State": "Hover",
+        "Size": "Small"
+      },
+      "nodeId": "2751:1554",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "Dismiss",
+        "State": "Hover",
+        "Size": "Small"
+      },
+      "nodeId": "2751:1556",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "None",
+        "State": "Hover",
+        "Size": "Small"
+      },
+      "nodeId": "2751:1569",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "Dismiss",
+        "State": "Hover",
+        "Size": "Small"
+      },
+      "nodeId": "2751:1574",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "None",
+        "State": "Hover",
+        "Size": "Small"
+      },
+      "nodeId": "2751:1590",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "Dismiss",
+        "State": "Hover",
+        "Size": "Small"
+      },
+      "nodeId": "2751:1595",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "None",
+        "State": "Focus visible",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:22505",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "Dismiss",
+        "State": "Focus visible",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:22507",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "None",
+        "State": "Focus visible",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:22520",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "Dismiss",
+        "State": "Focus visible",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:22525",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "None",
+        "State": "Focus visible",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:22541",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "Dismiss",
+        "State": "Focus visible",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:22546",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "None",
+        "State": "Focus visible",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:22562",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "Dismiss",
+        "State": "Focus visible",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:22564",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "None",
+        "State": "Focus visible",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:22577",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "Dismiss",
+        "State": "Focus visible",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:22582",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "None",
+        "State": "Focus visible",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:22598",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "Dismiss",
+        "State": "Focus visible",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:22603",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "None",
+        "State": "Focus visible",
+        "Size": "Small"
+      },
+      "nodeId": "2751:22619",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "Dismiss",
+        "State": "Focus visible",
+        "Size": "Small"
+      },
+      "nodeId": "2751:22621",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "None",
+        "State": "Focus visible",
+        "Size": "Small"
+      },
+      "nodeId": "2751:22634",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "Dismiss",
+        "State": "Focus visible",
+        "Size": "Small"
+      },
+      "nodeId": "2751:22639",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "None",
+        "State": "Focus visible",
+        "Size": "Small"
+      },
+      "nodeId": "2751:22655",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "Dismiss",
+        "State": "Focus visible",
+        "Size": "Small"
+      },
+      "nodeId": "2751:22660",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "None",
+        "State": "Focus visible",
+        "Size": "Small"
+      },
+      "nodeId": "2751:22676",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "Dismiss",
+        "State": "Focus visible",
+        "Size": "Small"
+      },
+      "nodeId": "2751:22678",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "None",
+        "State": "Focus visible",
+        "Size": "Small"
+      },
+      "nodeId": "2751:22691",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "Dismiss",
+        "State": "Focus visible",
+        "Size": "Small"
+      },
+      "nodeId": "2751:22696",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "None",
+        "State": "Focus visible",
+        "Size": "Small"
+      },
+      "nodeId": "2751:22712",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "Dismiss",
+        "State": "Focus visible",
+        "Size": "Small"
+      },
+      "nodeId": "2751:22717",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "None",
+        "State": "Pressed",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:23873",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "Dismiss",
+        "State": "Pressed",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:23875",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "None",
+        "State": "Pressed",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:23888",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "Dismiss",
+        "State": "Pressed",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:23893",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "None",
+        "State": "Pressed",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:23909",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "Dismiss",
+        "State": "Pressed",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:23914",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "None",
+        "State": "Pressed",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:23930",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "Dismiss",
+        "State": "Pressed",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:23932",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "None",
+        "State": "Pressed",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:23945",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "Dismiss",
+        "State": "Pressed",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:23950",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "None",
+        "State": "Pressed",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:23966",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "Dismiss",
+        "State": "Pressed",
+        "Size": "Medium"
+      },
+      "nodeId": "2751:23971",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "None",
+        "State": "Pressed",
+        "Size": "Small"
+      },
+      "nodeId": "2751:23987",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "Dismiss",
+        "State": "Pressed",
+        "Size": "Small"
+      },
+      "nodeId": "2751:23989",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "None",
+        "State": "Pressed",
+        "Size": "Small"
+      },
+      "nodeId": "2751:24002",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "Dismiss",
+        "State": "Pressed",
+        "Size": "Small"
+      },
+      "nodeId": "2751:24007",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "None",
+        "State": "Pressed",
+        "Size": "Small"
+      },
+      "nodeId": "2751:24023",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "Dismiss",
+        "State": "Pressed",
+        "Size": "Small"
+      },
+      "nodeId": "2751:24028",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "None",
+        "State": "Pressed",
+        "Size": "Small"
+      },
+      "nodeId": "2751:24044",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "Dismiss",
+        "State": "Pressed",
+        "Size": "Small"
+      },
+      "nodeId": "2751:24046",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "None",
+        "State": "Pressed",
+        "Size": "Small"
+      },
+      "nodeId": "2751:24059",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "Dismiss",
+        "State": "Pressed",
+        "Size": "Small"
+      },
+      "nodeId": "2751:24064",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "None",
+        "State": "Pressed",
+        "Size": "Small"
+      },
+      "nodeId": "2751:24080",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "Dismiss",
+        "State": "Pressed",
+        "Size": "Small"
+      },
+      "nodeId": "2751:24085",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "Chevron",
+        "State": "Rest",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:28888",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "Chevron",
+        "State": "Disabled",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:28899",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "Chevron",
+        "State": "Rest",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:28910",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "Chevron",
+        "State": "Disabled",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:28924",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "Chevron",
+        "State": "Rest",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:28938",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "Chevron",
+        "State": "Disabled",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:28952",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "Chevron",
+        "State": "Rest",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:28966",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "Chevron",
+        "State": "Disabled",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:28977",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "Chevron",
+        "State": "Rest",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:28988",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "Chevron",
+        "State": "Disabled",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:29002",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "Chevron",
+        "State": "Rest",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:29016",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "Chevron",
+        "State": "Disabled",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:29030",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "Chevron",
+        "State": "Rest",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29044",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "Chevron",
+        "State": "Disabled",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29055",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "Chevron",
+        "State": "Rest",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29066",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "Chevron",
+        "State": "Disabled",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29080",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "Chevron",
+        "State": "Rest",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29094",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "Chevron",
+        "State": "Disabled",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29108",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "Chevron",
+        "State": "Rest",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29122",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "Chevron",
+        "State": "Disabled",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29133",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "Chevron",
+        "State": "Rest",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29144",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "Chevron",
+        "State": "Disabled",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29158",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "Chevron",
+        "State": "Rest",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29172",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "Chevron",
+        "State": "Disabled",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29186",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "Chevron",
+        "State": "Hover",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:29200",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "Chevron",
+        "State": "Hover",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:29211",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "Chevron",
+        "State": "Hover",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:29225",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "Chevron",
+        "State": "Hover",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:29239",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "Chevron",
+        "State": "Hover",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:29250",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "Chevron",
+        "State": "Hover",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:29264",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "Chevron",
+        "State": "Hover",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29278",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "Chevron",
+        "State": "Hover",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29289",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "Chevron",
+        "State": "Hover",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29303",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "Chevron",
+        "State": "Hover",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29317",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "Chevron",
+        "State": "Hover",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29328",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "Chevron",
+        "State": "Hover",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29342",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "Chevron",
+        "State": "Focus visible",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:29356",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "Chevron",
+        "State": "Focus visible",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:29367",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "Chevron",
+        "State": "Focus visible",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:29381",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "Chevron",
+        "State": "Focus visible",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:29395",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "Chevron",
+        "State": "Focus visible",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:29406",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "Chevron",
+        "State": "Focus visible",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:29420",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "Chevron",
+        "State": "Focus visible",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29434",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "Chevron",
+        "State": "Focus visible",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29445",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "Chevron",
+        "State": "Focus visible",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29459",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "Chevron",
+        "State": "Focus visible",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29490",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "Chevron",
+        "State": "Focus visible",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29501",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "Chevron",
+        "State": "Focus visible",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29515",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "Chevron",
+        "State": "Pressed",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:29529",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "Chevron",
+        "State": "Pressed",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:29540",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "Chevron",
+        "State": "Pressed",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:29554",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "Chevron",
+        "State": "Pressed",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:29568",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "Chevron",
+        "State": "Pressed",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:29579",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "Chevron",
+        "State": "Pressed",
+        "Size": "Medium"
+      },
+      "nodeId": "3637:29593",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "None",
+        "Trailing": "Chevron",
+        "State": "Pressed",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29607",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Icon",
+        "Trailing": "Chevron",
+        "State": "Pressed",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29618",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Filled",
+        "Leading": "Avatar",
+        "Trailing": "Chevron",
+        "State": "Pressed",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29632",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "None",
+        "Trailing": "Chevron",
+        "State": "Pressed",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29646",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Icon",
+        "Trailing": "Chevron",
+        "State": "Pressed",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29657",
+      "implementationStatus": "partial"
+    },
+    {
+      "properties": {
+        "Variant": "Outlined",
+        "Leading": "Avatar",
+        "Trailing": "Chevron",
+        "State": "Pressed",
+        "Size": "Small"
+      },
+      "nodeId": "3637:29671",
+      "implementationStatus": "partial"
+    }
+  ],
+  "codeExample": "<Chip />",
+  "a11yNotes": null,
+  "gaps": [
+    "Leading=None",
+    "Leading=Icon",
+    "Leading=Avatar",
+    "Trailing=None",
+    "Trailing=Dismiss",
+    "Trailing=Chevron",
+    "State=Hover",
+    "State=Focus visible",
+    "State=Pressed",
+    "Size=Medium",
+    "Size=Small"
+  ],
+  "notApplicable": []
+}

@@ -1,0 +1,2810 @@
+{
+  "generatedAt": "2026-09-16T21:33:11.544406+00:00",
+  "sourceRoot": "/Users/harold.wayjr/Documents/GitHub/nova-care-app/libs/ui/src",
+  "exportsFromBarrel": [
+    "AppContent",
+    "AppContentBackground",
+    "AppContentPadding",
+    "AppContentProps",
+    "AppFrame",
+    "AppFrameProps",
+    "AppHeader",
+    "AppHeaderActionProps",
+    "AppHeaderBrand",
+    "AppHeaderBrandProps",
+    "AppHeaderProps",
+    "AppHeaderTab",
+    "AppHeaderTabProps",
+    "AppHeaderTabsProps",
+    "AppHeaderThemeToggle",
+    "Avatar",
+    "AvatarProps",
+    "Badge",
+    "BadgeProps",
+    "Button",
+    "ButtonAvatar",
+    "ButtonAvatarProps",
+    "ButtonIcon",
+    "ButtonLink",
+    "ButtonLinkProps",
+    "ButtonProps",
+    "Card",
+    "CardBodyProps",
+    "CardFooterProps",
+    "CardHeaderProps",
+    "CardHeaderTitleProps",
+    "CardRootProps",
+    "Checkbox",
+    "CheckboxProps",
+    "Chip",
+    "ChipProps",
+    "Field",
+    "FieldControlProps",
+    "FieldProps",
+    "IconBell",
+    "IconButton",
+    "IconButtonProps",
+    "IconCheck",
+    "IconClose",
+    "IconExternalLink",
+    "IconFilter",
+    "IconHome",
+    "IconMoon",
+    "IconMoreVertical",
+    "IconProps",
+    "IconRefresh",
+    "IconSettings",
+    "IconSize",
+    "IconSun",
+    "Link",
+    "LinkButton",
+    "LinkButtonProps",
+    "LinkProps",
+    "Logomark",
+    "LogomarkProps",
+    "Pagination",
+    "PaginationProps",
+    "Progress",
+    "ProgressProps",
+    "Radio",
+    "RadioGroup",
+    "RadioGroupProps",
+    "RadioProps",
+    "Select",
+    "SelectChangeEventDetails",
+    "SelectField",
+    "SelectFieldProps",
+    "SelectItem",
+    "SelectProps",
+    "Stack",
+    "StackAlign",
+    "StackDisplay",
+    "StackElement",
+    "StackGap",
+    "StackJustify",
+    "StackProps",
+    "Switch",
+    "SwitchProps",
+    "Table",
+    "TableBodyProps",
+    "TableCellProps",
+    "TableColumn",
+    "TableHeadProps",
+    "TableHeaderCellProps",
+    "TablePagination",
+    "TablePaginationPageSizeChangeDetails",
+    "TablePaginationProps",
+    "TableRootProps",
+    "TableRowProps",
+    "TextField",
+    "TextFieldProps",
+    "TextFieldType",
+    "Tooltip",
+    "TooltipAlign",
+    "TooltipProps",
+    "TooltipProvider",
+    "TooltipProviderProps",
+    "TooltipSide",
+    "Typography",
+    "TypographyLevel",
+    "TypographyProps",
+    "TypographyVariant",
+    "initColorScheme",
+    "type",
+    "useFieldControlProps"
+  ],
+  "componentCount": 31,
+  "components": [
+    {
+      "codeName": "Avatar",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/avatar/Avatar.tsx",
+      "readmePath": "libs/ui/src/components/avatar/README.md",
+      "storyPath": "libs/ui/src/components/avatar/Avatar.stories.tsx",
+      "description": "Avatar represents who — one person's identity in a compact circular form. It renders a photo when one is available and otherwise falls back to initials (a known user with no photo) or a person silhouette (unknown, anonymous, or pending identity), per the Soma Avatars page.",
+      "statusFromReadme": "Implemented; browser verification incomplete.",
+      "props": [
+        {
+          "name": "alt",
+          "type": "string",
+          "required": false,
+          "default": "''",
+          "description": "Passed to the underlying `<img>`. Defaults to decorative — the identity is expected to be named in surrounding text",
+          "source": "both"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Merged after the recipe class on the root",
+          "source": "both"
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Passed to the root",
+          "source": "both"
+        },
+        {
+          "name": "initials",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Fallback text shown while there is no photo (or the photo errors). Capped to 1 character at `sm`, 2 at `md`/`lg`",
+          "source": "both"
+        },
+        {
+          "name": "presence",
+          "type": "'online' | 'offline' | 'busy'",
+          "required": false,
+          "default": null,
+          "description": "Optional status dot. **Ignored at `size=\"sm\"`** (development warns) — see Appearance",
+          "source": "both"
+        },
+        {
+          "name": "ref",
+          "type": "Ref<HTMLSpanElement>",
+          "required": false,
+          "default": null,
+          "description": "Resolves to the root `<span>`",
+          "source": "both"
+        },
+        {
+          "name": "size",
+          "type": "'sm' | 'md' | 'lg'",
+          "required": true,
+          "default": null,
+          "description": "**Required.** Selects the container diameter, the initials type scale, and whether `presence` is honored",
+          "source": "both"
+        },
+        {
+          "name": "src",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Photo URL. Omit to skip straight to a fallback",
+          "source": "both"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": false,
+          "default": null,
+          "description": "Placement styles on the root",
+          "source": "both"
+        }
+      ],
+      "variantLikeProps": [
+        "size"
+      ],
+      "notes": "",
+      "category": "components",
+      "folderName": "avatar"
+    },
+    {
+      "codeName": "Badge",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/badge/Badge.tsx",
+      "readmePath": "libs/ui/src/components/badge/README.md",
+      "storyPath": "libs/ui/src/components/badge/Badge.stories.tsx",
+      "description": "Badge is the Soma Badge: a passive status label, tag, or count indicator — `Completed`, `In progress`, `Draft`. It communicates status or classification at a glance and is never interactive, per the Soma Badges page.",
+      "statusFromReadme": "Done (Soft v1)",
+      "props": [
+        {
+          "name": "children",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Required. The label text",
+          "source": "both"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Merged after the recipe class on the root",
+          "source": "both"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Visual only — mutes the label and dot, de-tones the fill",
+          "source": "both"
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Passed to the root",
+          "source": "both"
+        },
+        {
+          "name": "leading",
+          "type": "'none' | 'dot'",
+          "required": false,
+          "default": "'none'",
+          "description": "Optional decorative status dot before the label",
+          "source": "both"
+        },
+        {
+          "name": "ref",
+          "type": "Ref<HTMLSpanElement>",
+          "required": false,
+          "default": null,
+          "description": "Resolves to the root `<span>`",
+          "source": "both"
+        },
+        {
+          "name": "size",
+          "type": "'small' | 'medium'",
+          "required": true,
+          "default": null,
+          "description": "**Required.** Selects padding, label type, and dot size",
+          "source": "both"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": false,
+          "default": null,
+          "description": "Placement styles on the root",
+          "source": "both"
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Passed to the root",
+          "source": "both"
+        },
+        {
+          "name": "tone",
+          "type": "'neutral' | 'brand' | 'accent' | 'success' | 'warning' | 'danger'",
+          "required": true,
+          "default": null,
+          "description": "**Required.** Selects the tone quartet",
+          "source": "both"
+        },
+        {
+          "name": "variant",
+          "type": "'soft'",
+          "required": true,
+          "default": null,
+          "description": "**Required.** Only `'soft'` exists; see above for why",
+          "source": "both"
+        }
+      ],
+      "variantLikeProps": [
+        "disabled",
+        "leading",
+        "size",
+        "tone",
+        "variant"
+      ],
+      "notes": "",
+      "category": "components",
+      "folderName": "badge"
+    },
+    {
+      "codeName": "Button",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/button/Button.tsx",
+      "readmePath": "libs/ui/src/components/button/README.md",
+      "storyPath": "libs/ui/src/components/button/Button.stories.tsx",
+      "description": "Button renders a native `<button>` for actions.",
+      "statusFromReadme": "Implemented; verification incomplete",
+      "props": [
+        {
+          "name": "children",
+          "type": "string",
+          "required": false,
+          "default": "required",
+          "description": "The label, and the accessible name",
+          "source": "both"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Merged after the recipe class",
+          "source": "readme"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Uses native disabled behavior",
+          "source": "readme"
+        },
+        {
+          "name": "endIcon",
+          "type": "ButtonIcon",
+          "required": true,
+          "default": null,
+          "description": "Trailing `Icon` component; sized from `size`; hidden if loading",
+          "source": "both"
+        },
+        {
+          "name": "loading",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "`aria-busy`; suppresses activation",
+          "source": "both"
+        },
+        {
+          "name": "size",
+          "type": "'small' | 'medium'",
+          "required": false,
+          "default": "required",
+          "description": "Control and label size",
+          "source": "both"
+        },
+        {
+          "name": "startIcon",
+          "type": "ButtonIcon",
+          "required": true,
+          "default": null,
+          "description": "Leading `Icon` component; sized from `size`; hidden if loading",
+          "source": "both"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": true,
+          "default": null,
+          "description": "Passed to the root",
+          "source": "readme"
+        },
+        {
+          "name": "tone",
+          "type": "'brand' | 'danger' | 'success'",
+          "required": false,
+          "default": "required",
+          "description": "Semantic intent; danger is destructive",
+          "source": "both"
+        },
+        {
+          "name": "type",
+          "type": "'button' | 'submit' | 'reset'",
+          "required": false,
+          "default": "'button'",
+          "description": "Avoids accidental form submission",
+          "source": "readme"
+        },
+        {
+          "name": "variant",
+          "type": "'contained' | 'outlined' | 'text'",
+          "required": false,
+          "default": "required",
+          "description": "Visual emphasis",
+          "source": "both"
+        }
+      ],
+      "variantLikeProps": [
+        "disabled",
+        "loading",
+        "size",
+        "tone",
+        "variant"
+      ],
+      "notes": "Props type wraps BaseUiProps/Omit — merged with README API contract table",
+      "category": "components",
+      "folderName": "button"
+    },
+    {
+      "codeName": "ButtonAvatar",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/button-avatar/ButtonAvatar.tsx",
+      "readmePath": "libs/ui/src/components/button-avatar/README.md",
+      "storyPath": "libs/ui/src/components/button-avatar/ButtonAvatar.stories.tsx",
+      "description": "Avatar's own README says it plainly: Avatar is not its own interactive control — it has no hover, focus, or pressed state, and a clickable avatar has to fall back to a native `<button>` / `<a>` wrapping the inert `Avatar`. ButtonAvatar is that `<button>` wrapper.",
+      "statusFromReadme": "Done",
+      "props": [
+        {
+          "name": "aria-label",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "**One required, never both, never neither** — see below. Dev warns if the value is blank",
+          "source": "both"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Merged after the trigger's own class, on the `<button>`",
+          "source": "readme"
+        },
+        {
+          "name": "onClick",
+          "type": "native `<button>` types",
+          "required": true,
+          "default": null,
+          "description": "Native `<button>` props pass through to the trigger",
+          "source": "readme"
+        },
+        {
+          "name": "size",
+          "type": "'sm' | 'md' | 'lg'",
+          "required": true,
+          "default": null,
+          "description": "**Required.** Forwarded to `Avatar`, and sizes the trigger to the same diameter",
+          "source": "readme"
+        },
+        {
+          "name": "src",
+          "type": "Avatar's own types",
+          "required": true,
+          "default": null,
+          "description": "Forwarded to the wrapped `Avatar` unchanged",
+          "source": "readme"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": false,
+          "default": null,
+          "description": "Placement styles on the `<button>`",
+          "source": "readme"
+        },
+        {
+          "name": "type",
+          "type": "'button' | 'reset' | 'submit'",
+          "required": false,
+          "default": "'button'",
+          "description": "Defaults to `'button'` so an accidental form submit is not the surprise",
+          "source": "readme"
+        }
+      ],
+      "variantLikeProps": [
+        "size"
+      ],
+      "notes": "Props type wraps BaseUiProps/Omit — merged with README API contract table",
+      "category": "components",
+      "folderName": "button-avatar"
+    },
+    {
+      "codeName": "ButtonLink",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/button-link/ButtonLink.tsx",
+      "readmePath": "libs/ui/src/components/button-link/README.md",
+      "storyPath": "libs/ui/src/components/button-link/ButtonLink.stories.tsx",
+      "description": "ButtonLink is an in-page action that looks like a Link. Its job is to be a real button — `type=\"button\"`, native button role, `Enter` / `Space` to activate — and to look like `Link` so a toolbar \"Deselect all\" and an inline \"privacy policy\" read as the same family without one of them lying about its element.",
+      "statusFromReadme": "Implemented; verification incomplete",
+      "props": [
+        {
+          "name": "children",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "**Required.** The label, and the accessible name",
+          "source": "both"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Merged after the internal style classes",
+          "source": "both"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Native",
+          "source": "readme"
+        },
+        {
+          "name": "ref",
+          "type": "Ref<HTMLButtonElement>",
+          "required": false,
+          "default": null,
+          "description": "Resolves to the root `<button>`",
+          "source": "readme"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": false,
+          "default": null,
+          "description": "Placement styles on the root",
+          "source": "readme"
+        },
+        {
+          "name": "type",
+          "type": "'button' | 'reset' | 'submit'",
+          "required": false,
+          "default": "'button'",
+          "description": "Native. Default is `button` so a form cannot submit it",
+          "source": "both"
+        }
+      ],
+      "variantLikeProps": [
+        "disabled"
+      ],
+      "notes": "Props type wraps BaseUiProps/Omit — merged with README API contract table",
+      "category": "components",
+      "folderName": "button-link"
+    },
+    {
+      "codeName": "Card",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/card/CardRoot.tsx",
+      "readmePath": "libs/ui/src/components/card/README.md",
+      "storyPath": "libs/ui/src/components/card/Card.stories.tsx",
+      "description": "`Card` is the first compound API in `libs/ui`. Every other component here flattens to a single function — even ones with a Base UI primitive underneath that is itself namespaced (`Switch` wraps `Switch.Root` / `Switch.Thumb` into one component). Card has no Base UI primitive at all — there is no accessible \"card\" role, so nothing is lost by not flattening it — and Soma's own sheet already models it as independent regions (a header with an optional trailing action, a body slot, an optional footer), not a fixed set of props. Exposing `Card.Root` / `Card.Header` / `Card.HeaderTitle` / `Card.Body` / `Card.Footer` as parts lets a consumer:",
+      "statusFromReadme": "Done",
+      "props": [
+        {
+          "name": "children",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "source": "tsx"
+        },
+        {
+          "name": "className",
+          "type": "string | undefined",
+          "required": true,
+          "default": null,
+          "source": "tsx"
+        },
+        {
+          "name": "id",
+          "type": "string | undefined",
+          "required": true,
+          "default": null,
+          "source": "tsx"
+        },
+        {
+          "name": "ref",
+          "type": "Ref<HTMLParagraphElement>",
+          "required": true,
+          "default": null,
+          "source": "tsx"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties | undefined",
+          "required": true,
+          "default": null,
+          "source": "tsx"
+        }
+      ],
+      "variantLikeProps": [],
+      "notes": "Compound API: Card.Root, Card.Header, Card.HeaderTitle, Card.Body, Card.Footer",
+      "category": "components",
+      "folderName": "card"
+    },
+    {
+      "codeName": "Checkbox",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/checkbox/Checkbox.tsx",
+      "readmePath": "libs/ui/src/components/checkbox/README.md",
+      "storyPath": "libs/ui/src/components/checkbox/Checkbox.stories.tsx",
+      "description": "Checkbox is the Soma Checkbox / Control: a 16×16 selection box that the user ticks, unticks, or leaves mixed. Phase 1 is that control only — default tone, one size — as documented on the Soma Checkboxes page.",
+      "statusFromReadme": "Implemented; checked hover fill open with design",
+      "props": [
+        {
+          "name": "checked",
+          "type": "boolean",
+          "required": false,
+          "default": null,
+          "description": "Controlled ticked state. Omit for uncontrolled.",
+          "source": "readme"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Merged after the recipe class on the visible root",
+          "source": "readme"
+        },
+        {
+          "name": "defaultChecked",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Initial ticked state when uncontrolled",
+          "source": "readme"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Ignores interaction; native disabled on the hidden input",
+          "source": "readme"
+        },
+        {
+          "name": "indeterminate",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Mixed visual and `aria-checked=\"mixed\"`. Independent of `checked`",
+          "source": "both"
+        },
+        {
+          "name": "inputRef",
+          "type": "Ref<HTMLInputElement>",
+          "required": false,
+          "default": null,
+          "description": "Resolves to the hidden native checkbox",
+          "source": "readme"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Field name used for form submission",
+          "source": "readme"
+        },
+        {
+          "name": "onCheckedChange",
+          "type": "(checked: boolean, details: Checkbox.Root.ChangeEventDetails) => void",
+          "required": false,
+          "default": null,
+          "description": "Called when Base UI requests a ticked-state change",
+          "source": "readme"
+        },
+        {
+          "name": "readOnly",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Visible and focusable; cannot be toggled",
+          "source": "readme"
+        },
+        {
+          "name": "ref",
+          "type": "Ref<HTMLSpanElement>",
+          "required": false,
+          "default": null,
+          "description": "Resolves to the visible `<span>`",
+          "source": "readme"
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Native required on the hidden input",
+          "source": "readme"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": false,
+          "default": null,
+          "description": "Placement styles on the visible root",
+          "source": "readme"
+        },
+        {
+          "name": "uncheckedValue",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Value submitted when unchecked. Default matches native checkboxes: nothing",
+          "source": "readme"
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "required": false,
+          "default": "native `\"on\"",
+          "description": "Value submitted when checked. Unchecked submits nothing unless `uncheckedValue` is set",
+          "source": "readme"
+        }
+      ],
+      "variantLikeProps": [
+        "checked",
+        "defaultChecked",
+        "disabled",
+        "indeterminate",
+        "readOnly",
+        "required"
+      ],
+      "notes": "Props type wraps BaseUiProps/Omit — merged with README API contract table",
+      "category": "components",
+      "folderName": "checkbox"
+    },
+    {
+      "codeName": "Chip",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/chip/Chip.tsx",
+      "readmePath": "libs/ui/src/components/chip/README.md",
+      "storyPath": "libs/ui/src/components/chip/Chip.stories.tsx",
+      "description": "Chip is the Soma Chip: a compact pill that labels a discrete value the user has already supplied or the system has already applied — a selected filter, a recipient, an applied tag. Its job is to make that value visible and, when the value is removable, to carry the control that removes it.",
+      "statusFromReadme": "Implemented; visually confirmed. Remaining for Done:",
+      "props": [
+        {
+          "name": "children",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "**Required.** The chip label",
+          "source": "both"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Merged after the recipe class on the root",
+          "source": "both"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Mutes the chip; natively disables the dismiss button when present",
+          "source": "both"
+        },
+        {
+          "name": "dismissLabel",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "**Required with `onDismiss`.** Accessible name for that button",
+          "source": "readme"
+        },
+        {
+          "name": "dismissRef",
+          "type": "Ref<HTMLButtonElement>",
+          "required": false,
+          "default": null,
+          "description": "Only with `onDismiss`. The handle focus management needs",
+          "source": "readme"
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Passed to the root",
+          "source": "both"
+        },
+        {
+          "name": "onDismiss",
+          "type": "() => void",
+          "required": false,
+          "default": null,
+          "description": "Passing it renders the dismiss button; called on activation",
+          "source": "readme"
+        },
+        {
+          "name": "ref",
+          "type": "Ref<HTMLSpanElement>",
+          "required": false,
+          "default": null,
+          "description": "Resolves to the root `<span>`",
+          "source": "both"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": false,
+          "default": null,
+          "description": "Placement styles on the root",
+          "source": "both"
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Passed to the root",
+          "source": "both"
+        },
+        {
+          "name": "variant",
+          "type": "'filled' | 'outlined'",
+          "required": true,
+          "default": null,
+          "description": "**Required.** Selects the fill / stroke / label triple",
+          "source": "both"
+        }
+      ],
+      "variantLikeProps": [
+        "disabled",
+        "variant"
+      ],
+      "notes": "Props type wraps BaseUiProps/Omit — merged with README API contract table",
+      "category": "components",
+      "folderName": "chip"
+    },
+    {
+      "codeName": "Field",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/field/Field.tsx",
+      "readmePath": "libs/ui/src/components/field/README.md",
+      "storyPath": "libs/ui/src/components/field/Field.stories.tsx",
+      "description": "Field composes the parts every labeled form control shares: a visible label, one control, and one supporting line — description or error. Controls own their own chrome and behavior; Field owns everything around them.",
+      "statusFromReadme": "Done",
+      "props": [
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": false,
+          "default": "required",
+          "description": "Exactly one Base UI based control",
+          "source": "both"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Root layout class",
+          "source": "both"
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Helper text in the supporting slot. Unmounted when `error` is a non-empty string",
+          "source": "both"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Disables the complete field",
+          "source": "both"
+        },
+        {
+          "name": "error",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "External error text; presence controls invalid state. Non-empty text replaces helper text",
+          "source": "both"
+        },
+        {
+          "name": "indicateRequired",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "`aria-required` on the control, and a decorative `*` after the label. No native constraint",
+          "source": "both"
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "required": false,
+          "default": "required",
+          "description": "Visible accessible name",
+          "source": "both"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Field name used for form submission",
+          "source": "both"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": false,
+          "default": null,
+          "description": "Root placement styles",
+          "source": "both"
+        }
+      ],
+      "variantLikeProps": [
+        "disabled",
+        "error",
+        "indicateRequired"
+      ],
+      "notes": "Field wraps a single control; useFieldControlProps bridges Field context to controls like Select",
+      "category": "components",
+      "folderName": "field"
+    },
+    {
+      "codeName": "Icon",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/icon/createIcon.tsx",
+      "readmePath": "libs/ui/src/components/icon/README.md",
+      "storyPath": "libs/ui/src/components/icon/Icon.stories.tsx",
+      "description": "Icon renders one Soma glyph at a published Icon Size (16 / 20 / 24 / 32), in the current text color. It is the mechanism for product glyphs — artwork a consumer or a component slot chooses: `Badge` and `Chip`'s leading slots, `Link`'s trailing external-link indicator, `IconButton`, `Menu`, `Pagination`, `Combobox`, `SearchField`.",
+      "statusFromReadme": "**Implemented** — factory, `size.icon` role, and committed glyphs",
+      "props": [
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Merged after the recipe class. Placement / display overrides for a composing host.",
+          "source": "readme"
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Omit for decorative (the default). Supply only when the glyph is the sole carrier of meaning.",
+          "source": "readme"
+        },
+        {
+          "name": "ref",
+          "type": "Ref<SVGSVGElement>",
+          "required": true,
+          "default": null,
+          "source": "tsx"
+        },
+        {
+          "name": "size",
+          "type": "'xs' | 'sm' | 'md' | 'lg'",
+          "required": false,
+          "default": "**required**",
+          "description": "Selects the rendered box, and on a glyph that ships one, the filled `xs` drawing.",
+          "source": "both"
+        }
+      ],
+      "variantLikeProps": [
+        "size"
+      ],
+      "notes": "Icon exports multiple glyph components via createIcon(IconProps pattern): IconBell, IconButton, IconButtonProps, IconCheck, IconClose, IconExternalLink, IconFilter, IconHome, IconMoon, IconMoreVertical, IconRefresh, IconSettings, IconSun",
+      "category": "components",
+      "folderName": "icon"
+    },
+    {
+      "codeName": "IconButton",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/icon-button/IconButton.tsx",
+      "readmePath": "libs/ui/src/components/icon-button/README.md",
+      "storyPath": "libs/ui/src/components/icon-button/IconButton.stories.tsx",
+      "description": "IconButton is `Button` with only the start icon. Soma publishes Icon buttons guidance on the same Button recipe (Show label off) and a circular 40×40 target at medium. Nova's public API is still two components, because the name contracts cannot share a `children` type:",
+      "statusFromReadme": "Implemented; browser verification incomplete",
+      "props": [
+        {
+          "name": "className",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Merged after the recipe class",
+          "source": "readme"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Native disabled",
+          "source": "readme"
+        },
+        {
+          "name": "icon",
+          "type": "ButtonIcon",
+          "required": false,
+          "default": "required",
+          "description": "Start-slot `Icon` component; sized from `size`; wrapper `aria-hidden`",
+          "source": "both"
+        },
+        {
+          "name": "loading",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "`aria-busy`; suppresses activation; spinner replaces `icon`",
+          "source": "both"
+        },
+        {
+          "name": "size",
+          "type": "ButtonSize",
+          "required": false,
+          "default": "required",
+          "description": "Button height + icon slot (`icon.xs` small / `icon.sm` medium)",
+          "source": "both"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": true,
+          "default": null,
+          "description": "Passed to the root",
+          "source": "readme"
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": false,
+          "default": "required",
+          "description": "Native tooltip and `aria-label`",
+          "source": "both"
+        },
+        {
+          "name": "tone",
+          "type": "ButtonTone",
+          "required": false,
+          "default": "required",
+          "description": "Semantic intent; danger is destructive",
+          "source": "both"
+        },
+        {
+          "name": "type",
+          "type": "'button' | 'submit' | 'reset'",
+          "required": false,
+          "default": "'button'",
+          "description": "Avoids accidental form submission",
+          "source": "both"
+        },
+        {
+          "name": "variant",
+          "type": "ButtonVariant",
+          "required": false,
+          "default": "required",
+          "description": "Visual emphasis",
+          "source": "both"
+        }
+      ],
+      "variantLikeProps": [
+        "disabled",
+        "loading",
+        "size",
+        "tone",
+        "variant"
+      ],
+      "notes": "Props type wraps BaseUiProps/Omit — merged with README API contract table",
+      "category": "components",
+      "folderName": "icon-button"
+    },
+    {
+      "codeName": "Link",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/link/Link.tsx",
+      "readmePath": "libs/ui/src/components/link/README.md",
+      "storyPath": "libs/ui/src/components/link/Link.stories.tsx",
+      "description": "Link is the Soma inline hyperlink: text that takes the user somewhere else. Its job is to look like a link — color, underline, hover, focus — and to leave navigation itself to the element that owns the destination.",
+      "statusFromReadme": "Implemented; verification incomplete",
+      "props": [
+        {
+          "name": "children",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "**Required.** The label, and the accessible name",
+          "source": "both"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Merged after the internal style class",
+          "source": "both"
+        },
+        {
+          "name": "download",
+          "type": "boolean | string",
+          "required": true,
+          "default": null,
+          "description": "Native",
+          "source": "readme"
+        },
+        {
+          "name": "href",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "**Required.** The destination. `''` or a missing `href` returns `null`",
+          "source": "both"
+        },
+        {
+          "name": "ref",
+          "type": "Ref<HTMLAnchorElement>",
+          "required": false,
+          "default": null,
+          "description": "Resolves to the root `<a>`. Required by `createLink`",
+          "source": "readme"
+        },
+        {
+          "name": "rel",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Native. An explicit `rel` — including `''` — is never overwritten",
+          "source": "readme"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": false,
+          "default": null,
+          "description": "Placement styles on the root",
+          "source": "readme"
+        },
+        {
+          "name": "target",
+          "type": "HTMLAttributeAnchorTarget",
+          "required": true,
+          "default": null,
+          "description": "Native. When it is `_blank` and `rel` is omitted, the component sets `rel=\"noopener noreferrer\"`",
+          "source": "readme"
+        }
+      ],
+      "variantLikeProps": [],
+      "notes": "Props type wraps BaseUiProps/Omit — merged with README API contract table",
+      "category": "components",
+      "folderName": "link"
+    },
+    {
+      "codeName": "LinkButton",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/link-button/LinkButton.tsx",
+      "readmePath": "libs/ui/src/components/link-button/README.md",
+      "storyPath": "libs/ui/src/components/link-button/LinkButton.stories.tsx",
+      "description": "LinkButton is a navigation control that looks like a Button. Its job is to be a real link — `href`, native link role, `Enter` to follow — and to look like the 18 `variant × tone × size` combinations Button already ships, so a toolbar \"View member\" and a form \"Save changes\" read as the same family without one of them lying about its element.",
+      "statusFromReadme": "Implemented; verification incomplete",
+      "props": [
+        {
+          "name": "children",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "**Required.** The label, and the accessible name. `''` returns `null`",
+          "source": "both"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Merged after the recipe class",
+          "source": "both"
+        },
+        {
+          "name": "download",
+          "type": "boolean | string",
+          "required": true,
+          "default": null,
+          "description": "Native",
+          "source": "readme"
+        },
+        {
+          "name": "href",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "**Required.** The destination. `''` or a missing `href` returns `null`",
+          "source": "both"
+        },
+        {
+          "name": "ref",
+          "type": "Ref<HTMLAnchorElement>",
+          "required": false,
+          "default": null,
+          "description": "Resolves to the root `<a>`. Required by `createLink`",
+          "source": "readme"
+        },
+        {
+          "name": "rel",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Native. An explicit `rel` — including `''` — is never overwritten",
+          "source": "readme"
+        },
+        {
+          "name": "size",
+          "type": "'small' | 'medium'",
+          "required": true,
+          "default": null,
+          "description": "**Required.** Control and label size",
+          "source": "both"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": false,
+          "default": null,
+          "description": "Placement styles on the root",
+          "source": "readme"
+        },
+        {
+          "name": "target",
+          "type": "HTMLAttributeAnchorTarget",
+          "required": true,
+          "default": null,
+          "description": "Native. When it is `_blank` and `rel` is omitted, the component sets `rel=\"noopener noreferrer\"`",
+          "source": "readme"
+        },
+        {
+          "name": "tone",
+          "type": "'brand' | 'danger' | 'success'",
+          "required": true,
+          "default": null,
+          "description": "**Required.** Semantic intent; danger is destructive navigation",
+          "source": "both"
+        },
+        {
+          "name": "variant",
+          "type": "'contained' | 'outlined' | 'text'",
+          "required": true,
+          "default": null,
+          "description": "**Required.** Visual emphasis",
+          "source": "both"
+        }
+      ],
+      "variantLikeProps": [
+        "size",
+        "tone",
+        "variant"
+      ],
+      "notes": "Props type wraps BaseUiProps/Omit — merged with README API contract table",
+      "category": "components",
+      "folderName": "link-button"
+    },
+    {
+      "codeName": "Logomark",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/logomark/Logomark.tsx",
+      "readmePath": "libs/ui/src/components/logomark/README.md",
+      "storyPath": "libs/ui/src/components/logomark/Logomark.stories.tsx",
+      "description": "Logomark is the Included Health brand mark used next to a product wordmark (Care App in the App Shell). It is a committed SVG, not a Streamline glyph and not a remote asset.",
+      "statusFromReadme": "Done",
+      "props": [
+        {
+          "name": "className",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Placement",
+          "source": "both"
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Accessible name; omit beside a visible wordmark",
+          "source": "both"
+        },
+        {
+          "name": "ref",
+          "type": "Ref<SVGSVGElement>",
+          "required": true,
+          "default": null,
+          "description": "Lands on the `<svg>`",
+          "source": "both"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": true,
+          "default": null,
+          "description": "Placement",
+          "source": "both"
+        }
+      ],
+      "variantLikeProps": [],
+      "notes": "",
+      "category": "components",
+      "folderName": "logomark"
+    },
+    {
+      "codeName": "Pagination",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/pagination/Pagination.tsx",
+      "readmePath": "libs/ui/src/components/pagination/README.md",
+      "storyPath": "libs/ui/src/components/pagination/Pagination.stories.tsx",
+      "description": "`Pagination` is the control that moves a user through a numbered page sequence. Use it anywhere a bounded list is split into pages — table footers (via `TablePagination`), card grids, search results — when the caller owns `page`, `pageCount`, and the fetch/slice logic.",
+      "statusFromReadme": "Complete",
+      "props": [
+        {
+          "name": "aria-label",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Names the `<nav>`. Default `\"Pagination\"` if neither label prop is set.",
+          "source": "both"
+        },
+        {
+          "name": "aria-labelledby",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Alternate naming path; never both with `aria-label`.",
+          "source": "both"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Placement on `<nav>`.",
+          "source": "both"
+        },
+        {
+          "name": "onPageChange",
+          "type": "(page: number) => void",
+          "required": true,
+          "default": null,
+          "description": "**Required.** Called when the user requests a **different** page via prev, next, or a non-current page button.",
+          "source": "both"
+        },
+        {
+          "name": "page",
+          "type": "number",
+          "required": true,
+          "default": null,
+          "description": "**Required.** Active page, **1-based**, finite integer.",
+          "source": "both"
+        },
+        {
+          "name": "pageCount",
+          "type": "number",
+          "required": true,
+          "default": null,
+          "description": "**Required.** Total pages, finite integer **≥ 1**.",
+          "source": "both"
+        }
+      ],
+      "variantLikeProps": [],
+      "notes": "Flat Pagination nav; internal sub-parts (arrow, page number, ellipsis) are not exported separately",
+      "category": "components",
+      "folderName": "pagination"
+    },
+    {
+      "codeName": "Progress",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/progress/Progress.tsx",
+      "readmePath": "libs/ui/src/components/progress/README.md",
+      "storyPath": "libs/ui/src/components/progress/Progress.stories.tsx",
+      "description": "Progress is the Soma Progress Bar: a determinate, horizontal indicator that shows how much of a known-length task has completed — an upload, a multi-step form, a wizard. Phase 1 is the determinate bar only, per the Soma Progress Indicators page; the file groups the bar and an indeterminate Spinner under the same page, and only the bar is in scope here.",
+      "statusFromReadme": "Done",
+      "props": [
+        {
+          "name": "aria-labelledby",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Points at existing visible copy (a filename, a step title) to use as the name instead of `children`",
+          "source": "both"
+        },
+        {
+          "name": "children",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Accessible name, rendered as a visually hidden `Progress.Label`. Omit only when `aria-labelledby` is supplied instead",
+          "source": "both"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Merged after the recipe class on `Root`",
+          "source": "both"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Visual only — mutes track, indicator, and value; see Foundation",
+          "source": "both"
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Passed to `Root`",
+          "source": "both"
+        },
+        {
+          "name": "layout",
+          "type": "'bare' | 'labeled'",
+          "required": true,
+          "default": null,
+          "description": "**Required.** Whether the trailing `Value` renders",
+          "source": "both"
+        },
+        {
+          "name": "ref",
+          "type": "Ref<HTMLDivElement>",
+          "required": false,
+          "default": null,
+          "description": "Resolves to `Root`",
+          "source": "both"
+        },
+        {
+          "name": "size",
+          "type": "'small' | 'medium'",
+          "required": true,
+          "default": null,
+          "description": "**Required.** Selects track/indicator height",
+          "source": "both"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": false,
+          "default": null,
+          "description": "Placement styles on `Root`",
+          "source": "both"
+        },
+        {
+          "name": "value",
+          "type": "number",
+          "required": true,
+          "default": null,
+          "description": "**Required.** 0–100. Determinate only — `null` (Base UI's indeterminate) is not accepted; see Deliberately absent. Out of range is a development warning, not a clamp — clamping would hide the caller's mapping bug",
+          "source": "both"
+        }
+      ],
+      "variantLikeProps": [
+        "disabled",
+        "size"
+      ],
+      "notes": "",
+      "category": "components",
+      "folderName": "progress"
+    },
+    {
+      "codeName": "RadioGroup",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/radio/RadioGroup.tsx",
+      "readmePath": "libs/ui/src/components/radio/README.md",
+      "storyPath": "libs/ui/src/components/radio/Radio.stories.tsx",
+      "description": "Radio is the Soma Radio / Control: a 16×16 circle expressing one choice in a mutually exclusive set. Exactly one member of a group is selected, and selecting one deselects the rest. Phase 1 is the control plus the group that owns its value — default tone, one size — per the Soma Radio page.",
+      "statusFromReadme": "Implemented; browser AC open",
+      "props": [
+        {
+          "name": "aria-label",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "**Required** unless `aria-labelledby` is set. The group's accessible name",
+          "source": "readme"
+        },
+        {
+          "name": "aria-labelledby",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "**Required** unless `aria-label` is set. Points at a visible heading",
+          "source": "readme"
+        },
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": false,
+          "default": "required",
+          "description": "Radio items, and whatever layout the consumer uses",
+          "source": "readme"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Merged after the recipe class",
+          "source": "readme"
+        },
+        {
+          "name": "defaultValue",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Initial selected value when uncontrolled",
+          "source": "both"
+        },
+        {
+          "name": "details",
+          "type": "BaseRadioGroup.ChangeEventDetails",
+          "required": true,
+          "default": null,
+          "source": "tsx"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Disables every item in the group",
+          "source": "readme"
+        },
+        {
+          "name": "form",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Associates the group with a form by id",
+          "source": "readme"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Field name used for form submission",
+          "source": "readme"
+        },
+        {
+          "name": "onValueChange",
+          "type": "(value: string, details: RadioGroup.ChangeEventDetails) => void",
+          "required": false,
+          "default": null,
+          "description": "Called when Base UI requests a selection change",
+          "source": "both"
+        },
+        {
+          "name": "readOnly",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Items stay focusable but selection cannot change",
+          "source": "readme"
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "A choice is required before submitting",
+          "source": "readme"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": false,
+          "default": null,
+          "description": "Placement styles on the group root",
+          "source": "readme"
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Controlled selected value",
+          "source": "both"
+        }
+      ],
+      "variantLikeProps": [
+        "disabled",
+        "readOnly",
+        "required"
+      ],
+      "notes": "Props type wraps BaseUiProps/Omit — merged with README API contract table; Co-exported from radio/ with sibling components",
+      "category": "components",
+      "folderName": "radio"
+    },
+    {
+      "codeName": "Radio",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/radio/Radio.tsx",
+      "readmePath": "libs/ui/src/components/radio/README.md",
+      "storyPath": "libs/ui/src/components/radio/Radio.stories.tsx",
+      "description": "Radio is the Soma Radio / Control: a 16×16 circle expressing one choice in a mutually exclusive set. Exactly one member of a group is selected, and selecting one deselects the rest. Phase 1 is the control plus the group that owns its value — default tone, one size — per the Soma Radio page.",
+      "statusFromReadme": "Implemented; browser AC open",
+      "props": [
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Merged after the recipe class",
+          "source": "readme"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Disables this item only",
+          "source": "readme"
+        },
+        {
+          "name": "inputRef",
+          "type": "Ref<HTMLInputElement>",
+          "required": false,
+          "default": null,
+          "description": "Resolves to the hidden native radio",
+          "source": "readme"
+        },
+        {
+          "name": "readOnly",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Item cannot be selected",
+          "source": "readme"
+        },
+        {
+          "name": "ref",
+          "type": "Ref<HTMLSpanElement>",
+          "required": false,
+          "default": null,
+          "description": "Resolves to the visible `<span>`",
+          "source": "readme"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": false,
+          "default": null,
+          "description": "Placement styles on the visible root",
+          "source": "readme"
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "required": false,
+          "default": "required",
+          "description": "This item's identifying value within the group",
+          "source": "both"
+        }
+      ],
+      "variantLikeProps": [
+        "disabled",
+        "readOnly"
+      ],
+      "notes": "Props type wraps BaseUiProps/Omit — merged with README API contract table; Co-exported from radio/ with sibling components",
+      "category": "components",
+      "folderName": "radio"
+    },
+    {
+      "codeName": "Select",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/select/Select.tsx",
+      "readmePath": "libs/ui/src/components/select/README.md",
+      "storyPath": "libs/ui/src/components/select/Select.stories.tsx",
+      "description": "Select is the Soma Select: choose exactly one value from a known, finite list, collapsed behind a trigger until it is needed. It is the right control when the options are enumerable and the user does not need to see them all at once — a country, an assignee, a status.",
+      "statusFromReadme": "Implemented — unit-verified; browser verification outstanding",
+      "props": [
+        {
+          "name": "aria-label",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Names the trigger when there is no `Field` and no labeling text.",
+          "source": "both"
+        },
+        {
+          "name": "aria-labelledby",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Names the trigger from existing text. Field supplies this itself.",
+          "source": "both"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Placement only. Lands on the **trigger** — Select emits no wrapper.",
+          "source": "both"
+        },
+        {
+          "name": "defaultValue",
+          "type": "T | null",
+          "required": false,
+          "default": "null",
+          "description": "Uncontrolled initial value.",
+          "source": "both"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Disables the trigger. A surrounding `Field` can also disable it.",
+          "source": "both"
+        },
+        {
+          "name": "items",
+          "type": "readonly SelectItem<T>[]",
+          "required": true,
+          "default": null,
+          "description": "**Required.** The options, in display order. `disabled` makes one unselectable.",
+          "source": "both"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Names the hidden input for form submission.",
+          "source": "both"
+        },
+        {
+          "name": "onValueChange",
+          "type": "(value: T | null, details: ChangeEventDetails) => void",
+          "required": true,
+          "default": null,
+          "description": "Ships with `value` or `readOnly`; see [CONTROLLED-STATE](../../../docs/CONTROLLED-STATE.md).",
+          "source": "readme"
+        },
+        {
+          "name": "placeholder",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Shown when there is no value. **Not** a substitute for a label.",
+          "source": "both"
+        },
+        {
+          "name": "readOnly",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Trigger stays focusable and still submits; the popup does not open.",
+          "source": "both"
+        },
+        {
+          "name": "ref",
+          "type": "Ref<HTMLButtonElement>",
+          "required": true,
+          "default": null,
+          "description": "Lands on the **trigger button**, not the root or the popup.",
+          "source": "both"
+        },
+        {
+          "name": "size",
+          "type": "'medium' | 'small'",
+          "required": false,
+          "default": "'medium'",
+          "description": "Trigger height only.",
+          "source": "both"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": true,
+          "default": null,
+          "description": "Placement only. Lands on the **trigger** — Select emits no wrapper.",
+          "source": "both"
+        },
+        {
+          "name": "value",
+          "type": "T | null",
+          "required": true,
+          "default": null,
+          "description": "Controlled value.",
+          "source": "both"
+        }
+      ],
+      "variantLikeProps": [
+        "disabled",
+        "readOnly",
+        "size"
+      ],
+      "notes": "Flat Select component; SelectField is a separate composed field wrapper in select-field/",
+      "category": "components",
+      "folderName": "select"
+    },
+    {
+      "codeName": "SelectField",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/select-field/SelectField.tsx",
+      "readmePath": "libs/ui/src/components/select-field/README.md",
+      "storyPath": "libs/ui/src/components/select-field/SelectField.stories.tsx",
+      "description": "SelectField is a select with a label. It is the component product code should reach for whenever a user picks one value from a list inside a form, and it exists so that the label, the help text, the error message, and the required marker are supplied once, as strings, rather than assembled by every consumer.",
+      "statusFromReadme": "Implemented — unit-verified; browser verification outstanding",
+      "props": [
+        {
+          "name": "className",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Placement only. Lands on Field's root.",
+          "source": "both"
+        },
+        {
+          "name": "defaultValue",
+          "type": "T | null",
+          "required": false,
+          "default": "null",
+          "description": "Uncontrolled initial value.",
+          "source": "readme"
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Help text under the control.",
+          "source": "both"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Disables the whole field.",
+          "source": "readme"
+        },
+        {
+          "name": "error",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Presence marks invalid; a non-empty string renders as error text.",
+          "source": "both"
+        },
+        {
+          "name": "indicateRequired",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Renders the label asterisk and publishes `aria-required`.",
+          "source": "both"
+        },
+        {
+          "name": "items",
+          "type": "readonly SelectItem<T>[]",
+          "required": true,
+          "default": null,
+          "description": "**Required.** The options, in display order. `disabled` makes one unselectable.",
+          "source": "readme"
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "**Required.** The visible label and the accessible name.",
+          "source": "both"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Names the hidden input for form submission.",
+          "source": "readme"
+        },
+        {
+          "name": "onValueChange",
+          "type": "(value: T | null, details: ChangeEventDetails) => void",
+          "required": true,
+          "default": null,
+          "description": "Ships with `value` or `readOnly`; see [CONTROLLED-STATE](../../../docs/CONTROLLED-STATE.md).",
+          "source": "readme"
+        },
+        {
+          "name": "placeholder",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Shown when there is no value. Not a substitute for `label`.",
+          "source": "readme"
+        },
+        {
+          "name": "readOnly",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Fixed value that still submits. Forwarded to `Select`.",
+          "source": "readme"
+        },
+        {
+          "name": "ref",
+          "type": "Ref<HTMLButtonElement>",
+          "required": true,
+          "default": null,
+          "description": "Forwarded to the **trigger button**, not Field's root.",
+          "source": "both"
+        },
+        {
+          "name": "size",
+          "type": "'medium' | 'small'",
+          "required": false,
+          "default": "'medium'",
+          "description": "Trigger height only. Forwarded to `Select`.",
+          "source": "readme"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": true,
+          "default": null,
+          "description": "Placement only. Lands on Field's root.",
+          "source": "both"
+        },
+        {
+          "name": "value",
+          "type": "T | null",
+          "required": true,
+          "default": null,
+          "description": "Controlled value.",
+          "source": "readme"
+        }
+      ],
+      "variantLikeProps": [
+        "disabled",
+        "error",
+        "indicateRequired",
+        "readOnly",
+        "size"
+      ],
+      "notes": "Props type wraps BaseUiProps/Omit — merged with README API contract table",
+      "category": "components",
+      "folderName": "select-field"
+    },
+    {
+      "codeName": "Stack",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/stack/Stack.tsx",
+      "readmePath": "libs/ui/src/components/stack/README.md",
+      "storyPath": "libs/ui/src/components/stack/Stack.stories.tsx",
+      "description": "Stack arranges children along one axis with a tokenized gap. It is the standard layout primitive for repeated vertical or horizontal relationships in application UI.",
+      "statusFromReadme": "Implemented",
+      "props": [
+        {
+          "name": "align",
+          "type": "'start' | 'center' | 'end' | 'stretch'",
+          "required": false,
+          "default": "'stretch'",
+          "description": "Placement on the cross axis",
+          "source": "readme"
+        },
+        {
+          "name": "as",
+          "type": "StackElement",
+          "required": false,
+          "default": "'div'",
+          "description": "Selects the semantic root element",
+          "source": "readme"
+        },
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": false,
+          "default": "required",
+          "description": "Children arranged directly without item wrappers",
+          "source": "readme"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Root layout class merged after the recipe class",
+          "source": "readme"
+        },
+        {
+          "name": "display",
+          "type": "'block' | 'inline'",
+          "required": false,
+          "default": "'block'",
+          "description": "Outer display behavior; maps to flex or inline-flex",
+          "source": "readme"
+        },
+        {
+          "name": "gap",
+          "type": "SpaceStep",
+          "required": false,
+          "default": "required",
+          "description": "Numeric semantic-space key between rendered children",
+          "source": "readme"
+        },
+        {
+          "name": "horizontal",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Row layout when true; column layout when false or omitted",
+          "source": "readme"
+        },
+        {
+          "name": "justify",
+          "type": "'start' | 'center' | 'end' | 'between'",
+          "required": false,
+          "default": "'start'",
+          "description": "Distribution on the main axis",
+          "source": "readme"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": false,
+          "default": null,
+          "description": "Inline root styles for placement in a parent layout",
+          "source": "readme"
+        },
+        {
+          "name": "wrap",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Allows horizontal children to wrap; unavailable when vertical",
+          "source": "readme"
+        }
+      ],
+      "variantLikeProps": [
+        "horizontal",
+        "wrap"
+      ],
+      "notes": "Props type wraps BaseUiProps/Omit — merged with README API contract table",
+      "category": "components",
+      "folderName": "stack"
+    },
+    {
+      "codeName": "Switch",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/switch/Switch.tsx",
+      "readmePath": "libs/ui/src/components/switch/README.md",
+      "storyPath": "libs/ui/src/components/switch/Switch.stories.tsx",
+      "description": "Switch is the Soma Switch: a 44×24 pill that turns a setting on or off and takes effect immediately. Phase 1 is that control only — default tone, one size — per the Soma Switches page.",
+      "statusFromReadme": "Implemented;",
+      "props": [
+        {
+          "name": "checked",
+          "type": "boolean",
+          "required": false,
+          "default": null,
+          "description": "Controlled on/off. Omit for uncontrolled.",
+          "source": "readme"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Merged after the recipe class on the visible root",
+          "source": "readme"
+        },
+        {
+          "name": "defaultChecked",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Initial state when uncontrolled",
+          "source": "readme"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Ignores interaction; native disabled on the hidden input",
+          "source": "readme"
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Lands on the hidden checkbox input, not the span",
+          "source": "readme"
+        },
+        {
+          "name": "inputRef",
+          "type": "Ref<HTMLInputElement>",
+          "required": false,
+          "default": null,
+          "description": "Resolves to the hidden native input",
+          "source": "readme"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Field name used for form submission",
+          "source": "readme"
+        },
+        {
+          "name": "onCheckedChange",
+          "type": "(checked: boolean, details: Switch.Root.ChangeEventDetails) => void",
+          "required": false,
+          "default": null,
+          "description": "Called when Base UI requests a change",
+          "source": "readme"
+        },
+        {
+          "name": "readOnly",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Visible and focusable; cannot be toggled",
+          "source": "readme"
+        },
+        {
+          "name": "ref",
+          "type": "Ref<HTMLElement>",
+          "required": false,
+          "default": null,
+          "description": "Resolves to the visible root (a `<span>`)",
+          "source": "readme"
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Native required on the hidden input",
+          "source": "readme"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": false,
+          "default": null,
+          "description": "Placement styles on the visible root",
+          "source": "readme"
+        },
+        {
+          "name": "uncheckedValue",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Value submitted when off. Default matches native checkboxes: nothing",
+          "source": "readme"
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "required": false,
+          "default": "native `\"on\"",
+          "description": "Value submitted when on. Off submits nothing unless `uncheckedValue` is set",
+          "source": "readme"
+        }
+      ],
+      "variantLikeProps": [
+        "checked",
+        "defaultChecked",
+        "disabled",
+        "readOnly",
+        "required"
+      ],
+      "notes": "Props type wraps BaseUiProps/Omit — merged with README API contract table",
+      "category": "components",
+      "folderName": "switch"
+    },
+    {
+      "codeName": "Table",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/table/TableRoot.tsx",
+      "readmePath": "libs/ui/src/components/table/README.md",
+      "storyPath": "libs/ui/src/components/table/Table.stories.tsx",
+      "description": "`Table` is the Soma table element set. Use it when the markup _is_ the table: a short composed list, a dashboard preview, anything that does not need sort, column drag, or virtualization.",
+      "statusFromReadme": "Done",
+      "props": [
+        {
+          "name": "aria-label",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Names the table. Use this **or** `aria-labelledby`, never both.",
+          "source": "both"
+        },
+        {
+          "name": "aria-labelledby",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Alternate name. Use this **or** `aria-label`, never both.",
+          "source": "readme"
+        },
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": false,
+          "default": "required",
+          "description": "`Head` then `Body`",
+          "source": "readme"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Placement",
+          "source": "readme"
+        },
+        {
+          "name": "columns",
+          "type": "readonly TableColumn[]",
+          "required": false,
+          "default": "required",
+          "description": "Track list; one source of widths",
+          "source": "readme"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": true,
+          "default": null,
+          "description": "Placement. `gridTemplateColumns` is always overwritten from `columns`.",
+          "source": "readme"
+        }
+      ],
+      "variantLikeProps": [],
+      "notes": "Compound API: Table.Root, Table.Head, Table.Body, Table.Row, Table.HeaderCell, Table.Cell",
+      "category": "components",
+      "folderName": "table"
+    },
+    {
+      "codeName": "TextField",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/text-field/TextField.tsx",
+      "readmePath": "libs/ui/src/components/text-field/README.md",
+      "storyPath": "libs/ui/src/components/text-field/TextField.stories.tsx",
+      "description": "TextField combines a visible field label, one native text input, and one supporting line — description or error — into a single accessible control.",
+      "statusFromReadme": "Implemented",
+      "props": [
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Root layout class",
+          "source": "both"
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Helper text in the supporting slot. Unmounted when `error` is a non-empty string",
+          "source": "both"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Disables the complete field",
+          "source": "readme"
+        },
+        {
+          "name": "error",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "External error text; presence controls invalid state. Non-empty text replaces `description`",
+          "source": "both"
+        },
+        {
+          "name": "indicateRequired",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "`aria-required` on the input, and a decorative `*` after the label. No native constraint",
+          "source": "both"
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "required": false,
+          "default": "required",
+          "description": "Visible accessible name",
+          "source": "both"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "Field name used for form submission",
+          "source": "readme"
+        },
+        {
+          "name": "ref",
+          "type": "Ref<HTMLInputElement>",
+          "required": false,
+          "default": null,
+          "description": "Resolves to the native input",
+          "source": "both"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": false,
+          "default": null,
+          "description": "Root placement styles",
+          "source": "both"
+        },
+        {
+          "name": "type",
+          "type": "'text' | 'email' | 'password' | 'search' | 'tel' | 'url'",
+          "required": false,
+          "default": "'text'",
+          "description": "Native text-like input type",
+          "source": "readme"
+        }
+      ],
+      "variantLikeProps": [
+        "disabled",
+        "error",
+        "indicateRequired"
+      ],
+      "notes": "Props type wraps BaseUiProps/Omit — merged with README API contract table",
+      "category": "components",
+      "folderName": "text-field"
+    },
+    {
+      "codeName": "TextInput",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/text-input/TextInput.tsx",
+      "readmePath": null,
+      "storyPath": "libs/ui/src/components/text-input/TextInput.stories.tsx",
+      "description": null,
+      "statusFromReadme": null,
+      "props": [
+        {
+          "name": "ref",
+          "type": "Ref<HTMLInputElement> | undefined",
+          "required": true,
+          "default": null,
+          "source": "tsx"
+        },
+        {
+          "name": "type",
+          "type": "TextInputType | undefined",
+          "required": true,
+          "default": null,
+          "source": "tsx"
+        }
+      ],
+      "variantLikeProps": [],
+      "notes": "Internal component — not exported from @nova/ui barrel (index.ts); Props extend BaseUiProps/Omit wrapper — README API table is primary source; No README.md found",
+      "category": "components",
+      "folderName": "text-input"
+    },
+    {
+      "codeName": "Tooltip",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/tooltip/Tooltip.tsx",
+      "readmePath": "libs/ui/src/components/tooltip/README.md",
+      "storyPath": "libs/ui/src/components/tooltip/Tooltip.stories.tsx",
+      "description": "Tooltip provides a short visual label or supplementary hint when a user hovers with a mouse or focuses the trigger with a keyboard.",
+      "statusFromReadme": "Implemented — blocked on remaining token gaps (see below)",
+      "props": [
+        {
+          "name": "align",
+          "type": "'start' | 'center' | 'end'",
+          "required": false,
+          "default": "'center'",
+          "description": "Alignment along the preferred side",
+          "source": "both"
+        },
+        {
+          "name": "children",
+          "type": "ReactElement",
+          "required": false,
+          "default": "required",
+          "description": "One trigger element that accepts merged props and a ref",
+          "source": "both"
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "required": false,
+          "default": "required",
+          "description": "Short visual label or supplementary hint (Simple shape only — see below)",
+          "source": "both"
+        },
+        {
+          "name": "defaultOpen",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Initial open state when uncontrolled",
+          "source": "both"
+        },
+        {
+          "name": "disableTooltip",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "Returns the child untouched and disables only the tooltip",
+          "source": "both"
+        },
+        {
+          "name": "heading",
+          "type": "string",
+          "required": false,
+          "default": null,
+          "description": "A bold heading above `content`; selects the Rich shape. Empty or whitespace-only is treated as omitted",
+          "source": "both"
+        },
+        {
+          "name": "onOpenChange",
+          "type": "(open: boolean) => void",
+          "required": false,
+          "default": null,
+          "description": "Called when Base UI requests an open-state change",
+          "source": "both"
+        },
+        {
+          "name": "open",
+          "type": "boolean",
+          "required": false,
+          "default": null,
+          "description": "Controlled open state",
+          "source": "both"
+        },
+        {
+          "name": "side",
+          "type": "'top' | 'right' | 'bottom' | 'left'",
+          "required": false,
+          "default": "'top'",
+          "description": "Preferred side before collision handling",
+          "source": "both"
+        }
+      ],
+      "variantLikeProps": [
+        "defaultOpen",
+        "disableTooltip",
+        "open"
+      ],
+      "notes": "",
+      "category": "components",
+      "folderName": "tooltip"
+    },
+    {
+      "codeName": "Typography",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/components/typography/Typography.tsx",
+      "readmePath": "libs/ui/src/components/typography/README.md",
+      "storyPath": "libs/ui/src/components/typography/Typography.stories.tsx",
+      "description": "Typography applies Nova's semantic type scale while preserving meaningful HTML elements. Use it for headings, prose, labels, captions, and display text.",
+      "statusFromReadme": "Implemented",
+      "props": [
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": true,
+          "default": null,
+          "description": "Text or inline content",
+          "source": "readme"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Merged after the recipe class",
+          "source": "readme"
+        },
+        {
+          "name": "level",
+          "type": "TypographyLevel",
+          "required": true,
+          "default": null,
+          "description": "Native tag when it must differ from `variant` (`1`–`6` or `'p'`)",
+          "source": "both"
+        },
+        {
+          "name": "ref",
+          "type": "Ref<HTMLElement>",
+          "required": true,
+          "default": null,
+          "source": "tsx"
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "required": true,
+          "default": null,
+          "description": "Passed to the root for positioning",
+          "source": "readme"
+        },
+        {
+          "name": "variant",
+          "type": "TypographyVariant",
+          "required": false,
+          "default": "required",
+          "description": "Selects typography",
+          "source": "both"
+        }
+      ],
+      "variantLikeProps": [
+        "variant"
+      ],
+      "notes": "",
+      "category": "components",
+      "folderName": "typography"
+    },
+    {
+      "codeName": "AppContent",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/patterns/app-content/AppContent.tsx",
+      "readmePath": "libs/ui/src/patterns/app-content/README.md",
+      "storyPath": "libs/ui/src/patterns/app-content/AppContent.stories.tsx",
+      "description": "`AppContent` is the region under the app-shell bar. Routes wrap their page in it so the canvas (and how far it sits in from the viewport) is a typed choice instead of a per-page div.",
+      "statusFromReadme": "Done",
+      "props": [
+        {
+          "name": "background",
+          "type": "'default'` | `'subtle'",
+          "required": false,
+          "default": "required",
+          "description": "`surface.default` or `surface.subtle`",
+          "source": "both"
+        },
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": false,
+          "default": "required",
+          "description": "Route content",
+          "source": "both"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Placement only",
+          "source": "both"
+        },
+        {
+          "name": "padding",
+          "type": "'none'` | `'sm'` | `'md'",
+          "required": false,
+          "default": "required",
+          "description": "`0` / `space[20]` / `space[24]` on every side",
+          "source": "both"
+        }
+      ],
+      "variantLikeProps": [],
+      "notes": "",
+      "category": "patterns",
+      "folderName": "app-content"
+    },
+    {
+      "codeName": "AppHeader",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/patterns/app-header/AppHeaderRoot.tsx",
+      "readmePath": "libs/ui/src/patterns/app-header/README.md",
+      "storyPath": "libs/ui/src/patterns/app-header/AppHeader.stories.tsx",
+      "description": "`AppHeader` is the chrome at the top of a Care App page. Soma's dashboard master paints a 56px `surface.default` bar: brand, primary destinations, then notifications / settings / account. This pass ships that bar and the nav links. The page — or the router — renders whatever those links select; the header does not.",
+      "statusFromReadme": "Implemented; styling-first. Filter toolbar and last-refreshed are",
+      "props": [
+        {
+          "name": "brand",
+          "type": "ReactNode",
+          "required": true,
+          "default": null,
+          "description": "Product lockup; typically `Brand`",
+          "source": "both"
+        },
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": true,
+          "default": null,
+          "description": "`AppHeader.Tabs`",
+          "source": "both"
+        },
+        {
+          "name": "trailing",
+          "type": "ReactNode",
+          "required": true,
+          "default": null,
+          "description": "IconButtons, `ThemeToggle`; wrap Avatar in `Action`",
+          "source": "both"
+        }
+      ],
+      "variantLikeProps": [],
+      "notes": "Compound API: AppHeader (root), AppHeader.Brand, AppHeader.Tabs, AppHeader.Tab, AppHeader.Action, AppHeader.ThemeToggle",
+      "category": "patterns",
+      "folderName": "app-header"
+    },
+    {
+      "codeName": "TablePagination",
+      "importPath": "@nova/ui",
+      "sourcePath": "libs/ui/src/patterns/table-pagination/TablePagination.tsx",
+      "readmePath": "libs/ui/src/patterns/table-pagination/README.md",
+      "storyPath": "libs/ui/src/patterns/table-pagination/TablePagination.stories.tsx",
+      "description": "`TablePagination` is the composed footer Care tables use below a `Table` (or a future `DataGrid`). It wires page navigation and page size into one bar.",
+      "statusFromReadme": "Complete",
+      "props": [
+        {
+          "name": "className",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "Placement on the root row",
+          "source": "both"
+        },
+        {
+          "name": "onPageChange",
+          "type": "(page: number) => void",
+          "required": false,
+          "default": "required",
+          "description": "User changed page via pagination controls",
+          "source": "both"
+        },
+        {
+          "name": "onPageSizeChange",
+          "type": "(details: { page: number; pageSize: number }) => void",
+          "required": false,
+          "default": "required",
+          "description": "User picked a new size; **`page` is always `1`** in `details`",
+          "source": "both"
+        },
+        {
+          "name": "page",
+          "type": "number",
+          "required": false,
+          "default": "required",
+          "description": "Active page, 1-based — forwarded to `Pagination`",
+          "source": "both"
+        },
+        {
+          "name": "pageCount",
+          "type": "number",
+          "required": false,
+          "default": "required",
+          "description": "Total pages — forwarded (**≥ 1**; see below)",
+          "source": "both"
+        },
+        {
+          "name": "pageSize",
+          "type": "number",
+          "required": false,
+          "default": "required",
+          "description": "Selected rows per page",
+          "source": "both"
+        },
+        {
+          "name": "pageSizeOptions",
+          "type": "readonly number[]",
+          "required": false,
+          "default": "required",
+          "description": "Choices in display order (see invariants)",
+          "source": "both"
+        },
+        {
+          "name": "paginationLabel",
+          "type": "string",
+          "required": false,
+          "default": "'Pagination'",
+          "description": "`aria-label` on the leading `<nav>` when `paginationLabelledBy` is not set",
+          "source": "both"
+        },
+        {
+          "name": "paginationLabelledBy",
+          "type": "string",
+          "required": true,
+          "default": null,
+          "description": "`aria-labelledby` on the leading `<nav>`; do not also set `aria-label`",
+          "source": "both"
+        },
+        {
+          "name": "size",
+          "type": "'small' | 'medium'",
+          "required": false,
+          "default": "'small'",
+          "description": "Forwarded to **`Select` only**",
+          "source": "both"
+        }
+      ],
+      "variantLikeProps": [
+        "size"
+      ],
+      "notes": "",
+      "category": "patterns",
+      "folderName": "table-pagination"
+    },
+    {
+      "codeName": "RHFTextField",
+      "importPath": "@nova/ui/react-hook-form",
+      "sourcePath": "libs/ui/src/integrations/react-hook-form/rhf-text-field/RHFTextField.tsx",
+      "readmePath": "libs/ui/src/integrations/react-hook-form/rhf-text-field/README.md",
+      "storyPath": "libs/ui/src/integrations/react-hook-form/rhf-text-field/RHFTextField.stories.tsx",
+      "description": "RHFTextField is the thin React Hook Form adapter for Nova TextField. It connects one string-valued RHF field to the shipped TextField without duplicating its DOM, styles, accessibility wiring, or error presentation.",
+      "statusFromReadme": "Implemented",
+      "props": [
+        {
+          "name": "control",
+          "type": "Control<TFieldValues>",
+          "required": false,
+          "default": "form context",
+          "description": "Explicit control or nearest `FormProvider`",
+          "source": "readme"
+        },
+        {
+          "name": "defaultValue",
+          "type": "FieldPathValue<TFieldValues, TName>",
+          "required": false,
+          "default": null,
+          "description": "Caller-supplied field value. When omitted, the adapter registers empty text (`''`), which is not a field value",
+          "source": "readme"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "RHF and TextField disabled state",
+          "source": "readme"
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "required": false,
+          "default": "required",
+          "description": "Passed to TextField",
+          "source": "readme"
+        },
+        {
+          "name": "name",
+          "type": "StringFieldPath<TFieldValues>",
+          "required": false,
+          "default": "required",
+          "description": "Path whose value is exactly `string`. Literal unions, optionals, and nullables are rejected",
+          "source": "readme"
+        },
+        {
+          "name": "rules",
+          "type": "RegisterOptions<TFieldValues, TName>",
+          "required": false,
+          "default": null,
+          "description": "RHF validation rules",
+          "source": "readme"
+        },
+        {
+          "name": "shouldUnregister",
+          "type": "boolean",
+          "required": false,
+          "default": "false",
+          "description": "RHF unregistration behavior",
+          "source": "readme"
+        }
+      ],
+      "variantLikeProps": [
+        "disabled",
+        "shouldUnregister"
+      ],
+      "notes": "",
+      "category": "integrations",
+      "folderName": "rhf-text-field"
+    }
+  ],
+  "extractionFailures": [
+    "TextInput: no description extracted",
+    "TextInput: no status extracted"
+  ]
+}

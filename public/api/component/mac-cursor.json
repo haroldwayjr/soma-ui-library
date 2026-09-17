@@ -1,0 +1,194 @@
+{
+  "name": "Mac Cursor",
+  "figmaComponentName": "Mac Cursor",
+  "category": "Icons",
+  "page": "Icons",
+  "nodeId": "3232:49039",
+  "description": "TODO",
+  "buildStatus": null,
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [
+    {
+      "name": "State",
+      "figmaValues": [
+        "beachball",
+        "cross",
+        "default",
+        "move",
+        "text",
+        "default.menu",
+        "hand.pointing",
+        "hand.open",
+        "hand.grabbing",
+        "resize.left",
+        "resize.right",
+        "resize.left.right",
+        "resize.up",
+        "resize.down",
+        "resize.up.down",
+        "resize.nwse",
+        "resize.nesw",
+        "resize.east.west",
+        "resize.north.south",
+        "zoom.in",
+        "zoom.out"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "State": "beachball"
+      },
+      "nodeId": "3232:49040",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "cross"
+      },
+      "nodeId": "3232:49048",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "default"
+      },
+      "nodeId": "3232:49052",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "default.menu"
+      },
+      "nodeId": "3232:49056",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "hand.pointing"
+      },
+      "nodeId": "3232:49066",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "hand.open"
+      },
+      "nodeId": "3232:49070",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "hand.grabbing"
+      },
+      "nodeId": "3232:49074",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "move"
+      },
+      "nodeId": "3232:49078",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "resize.left"
+      },
+      "nodeId": "3232:49082",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "resize.right"
+      },
+      "nodeId": "3232:49086",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "resize.left.right"
+      },
+      "nodeId": "3232:49090",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "resize.up"
+      },
+      "nodeId": "3232:49094",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "resize.down"
+      },
+      "nodeId": "3232:49098",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "resize.up.down"
+      },
+      "nodeId": "3232:49102",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "resize.nwse"
+      },
+      "nodeId": "3232:49106",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "resize.nesw"
+      },
+      "nodeId": "3232:49110",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "resize.east.west"
+      },
+      "nodeId": "3232:49114",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "resize.north.south"
+      },
+      "nodeId": "3232:49118",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "text"
+      },
+      "nodeId": "3232:49122",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "zoom.in"
+      },
+      "nodeId": "3232:49126",
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "State": "zoom.out"
+      },
+      "nodeId": "3232:49133",
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

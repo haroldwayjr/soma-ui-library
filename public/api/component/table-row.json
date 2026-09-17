@@ -1,0 +1,70 @@
+{
+  "name": "Table / Row",
+  "figmaComponentName": "Table / Row",
+  "category": "Data display",
+  "page": "Tables",
+  "nodeId": "1401:8376",
+  "description": "`Table` is the Soma table element set. Use it when the markup _is_ the table: a short composed list, a dashboard preview, anything that does not need sort, column drag, or virtualization.",
+  "buildStatus": "Done",
+  "importPath": "@nova/ui",
+  "implementationStatus": "partial",
+  "props": [
+    {
+      "name": "State",
+      "figmaValues": [
+        "Rest",
+        "Hover",
+        "Selected",
+        "Selected Hover"
+      ],
+      "codeProp": null,
+      "implementationStatus": "matched",
+      "notes": "Hover handled in CSS/:pseudo or data-attribute styles; Selected Hover handled in CSS/:pseudo or data-attribute styles"
+    },
+    {
+      "name": "Show more menu",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "State": "Selected"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "State": "Selected Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    }
+  ],
+  "codeExample": "<Table.Root />",
+  "a11yNotes": null,
+  "gaps": [
+    "Show more menu"
+  ],
+  "notApplicable": []
+}

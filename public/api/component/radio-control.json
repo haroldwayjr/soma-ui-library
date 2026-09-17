@@ -1,0 +1,105 @@
+{
+  "name": "Radio / Control",
+  "figmaComponentName": "Radio / Control",
+  "category": "Forms & inputs",
+  "page": "Radio",
+  "nodeId": "428:46",
+  "description": "Radio is the Soma Radio / Control: a 16×16 circle expressing one choice in a mutually exclusive set. Exactly one member of a group is selected, and selecting one deselects the rest. Phase 1 is the control plus the group that owns its value — default tone, one size — per the Soma Radio page.",
+  "buildStatus": "In progress",
+  "importPath": "@nova/ui",
+  "implementationStatus": "matched",
+  "props": [
+    {
+      "name": "Checked",
+      "figmaValues": [
+        "False",
+        "True"
+      ],
+      "codeProp": "value (+ RadioGroup)",
+      "implementationStatus": "matched",
+      "notes": "Functionally equivalent to Checked; structurally uses value + RadioGroup"
+    },
+    {
+      "name": "State",
+      "figmaValues": [
+        "Rest",
+        "Disabled",
+        "Focus visible",
+        "Hover"
+      ],
+      "codeProp": "disabled",
+      "implementationStatus": "matched",
+      "notes": "Focus visible handled in CSS/:pseudo or data-attribute styles; Hover handled in CSS/:pseudo or data-attribute styles"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Checked": "False",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Checked": "False",
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Checked": "False",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Checked": "False",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Checked": "True",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Checked": "True",
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Checked": "True",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    },
+    {
+      "properties": {
+        "Checked": "True",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "matched"
+    }
+  ],
+  "codeExample": "<Radio />",
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

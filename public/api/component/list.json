@@ -1,0 +1,23 @@
+{
+  "name": "List",
+  "figmaComponentName": "List",
+  "category": "Lists",
+  "page": "Lists",
+  "nodeId": "1717:244",
+  "description": "TODO",
+  "buildStatus": null,
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [],
+  "variants": [
+    {
+      "properties": {},
+      "nodeId": "1717:244",
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

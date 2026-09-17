@@ -1,0 +1,467 @@
+{
+  "name": "ListItem",
+  "figmaComponentName": "ListItem",
+  "category": "Lists",
+  "page": "Lists",
+  "nodeId": "1707:9964",
+  "description": "TODO",
+  "buildStatus": null,
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [
+    {
+      "name": "Density",
+      "figmaValues": [
+        "Default",
+        "Compact"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Lines",
+      "figmaValues": [
+        "Multi",
+        "Single"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Divider",
+      "figmaValues": [
+        "True",
+        "False"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "State",
+      "figmaValues": [
+        "Rest",
+        "Hover",
+        "Focus visible",
+        "Selected",
+        "Disabled"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Show trailing",
+      "figmaValues": [
+        false,
+        true
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Density": "Default",
+        "Lines": "Multi",
+        "Divider": "True",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Default",
+        "Lines": "Multi",
+        "Divider": "True",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Default",
+        "Lines": "Multi",
+        "Divider": "True",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Default",
+        "Lines": "Multi",
+        "Divider": "True",
+        "State": "Selected"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Default",
+        "Lines": "Multi",
+        "Divider": "True",
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Default",
+        "Lines": "Multi",
+        "Divider": "False",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Default",
+        "Lines": "Multi",
+        "Divider": "False",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Default",
+        "Lines": "Multi",
+        "Divider": "False",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Default",
+        "Lines": "Multi",
+        "Divider": "False",
+        "State": "Selected"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Default",
+        "Lines": "Multi",
+        "Divider": "False",
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Default",
+        "Lines": "Single",
+        "Divider": "True",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Default",
+        "Lines": "Single",
+        "Divider": "True",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Default",
+        "Lines": "Single",
+        "Divider": "True",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Default",
+        "Lines": "Single",
+        "Divider": "True",
+        "State": "Selected"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Default",
+        "Lines": "Single",
+        "Divider": "True",
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Default",
+        "Lines": "Single",
+        "Divider": "False",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Default",
+        "Lines": "Single",
+        "Divider": "False",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Default",
+        "Lines": "Single",
+        "Divider": "False",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Default",
+        "Lines": "Single",
+        "Divider": "False",
+        "State": "Selected"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Default",
+        "Lines": "Single",
+        "Divider": "False",
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Compact",
+        "Lines": "Multi",
+        "Divider": "True",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Compact",
+        "Lines": "Multi",
+        "Divider": "True",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Compact",
+        "Lines": "Multi",
+        "Divider": "True",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Compact",
+        "Lines": "Multi",
+        "Divider": "True",
+        "State": "Selected"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Compact",
+        "Lines": "Multi",
+        "Divider": "True",
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Compact",
+        "Lines": "Multi",
+        "Divider": "False",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Compact",
+        "Lines": "Multi",
+        "Divider": "False",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Compact",
+        "Lines": "Multi",
+        "Divider": "False",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Compact",
+        "Lines": "Multi",
+        "Divider": "False",
+        "State": "Selected"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Compact",
+        "Lines": "Multi",
+        "Divider": "False",
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Compact",
+        "Lines": "Single",
+        "Divider": "True",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Compact",
+        "Lines": "Single",
+        "Divider": "True",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Compact",
+        "Lines": "Single",
+        "Divider": "True",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Compact",
+        "Lines": "Single",
+        "Divider": "True",
+        "State": "Selected"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Compact",
+        "Lines": "Single",
+        "Divider": "True",
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Compact",
+        "Lines": "Single",
+        "Divider": "False",
+        "State": "Rest"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Compact",
+        "Lines": "Single",
+        "Divider": "False",
+        "State": "Hover"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Compact",
+        "Lines": "Single",
+        "Divider": "False",
+        "State": "Focus visible"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Compact",
+        "Lines": "Single",
+        "Divider": "False",
+        "State": "Selected"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Density": "Compact",
+        "Lines": "Single",
+        "Divider": "False",
+        "State": "Disabled"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

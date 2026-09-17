@@ -1,0 +1,69 @@
+{
+  "name": "App Shell",
+  "figmaComponentName": "App Shell",
+  "category": "App components (WIP)",
+  "page": "App components (WIP)",
+  "nodeId": "2351:15544",
+  "description": "TODO",
+  "buildStatus": null,
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [
+    {
+      "name": "Status",
+      "figmaValues": [
+        "Off",
+        "On"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Nav",
+      "figmaValues": [
+        "Tabs",
+        "Menu"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Status": "Off",
+        "Nav": "Tabs"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Status": "Off",
+        "Nav": "Menu"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Status": "On",
+        "Nav": "Tabs"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Status": "On",
+        "Nav": "Menu"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Avatar Label Group",
+  "figmaComponentName": "Avatar Label Group",
+  "category": "Data display",
+  "page": "Avatars",
+  "nodeId": "991:1029",
+  "description": "TODO",
+  "buildStatus": "In progress",
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [
+    {
+      "name": "Size",
+      "figmaValues": [
+        "md",
+        "lg"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Size": "md"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Size": "lg"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [
+    "Figma pattern; no AvatarLabelGroup export in @nova/ui"
+  ],
+  "notApplicable": []
+}

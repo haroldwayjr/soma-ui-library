@@ -1,0 +1,210 @@
+{
+  "name": "Stepper / Indicator",
+  "figmaComponentName": "Stepper / Indicator",
+  "category": "Steppers",
+  "page": "Steppers",
+  "nodeId": "3316:278",
+  "description": "TODO",
+  "buildStatus": null,
+  "importPath": null,
+  "implementationStatus": "not-implemented",
+  "props": [
+    {
+      "name": "Content",
+      "figmaValues": [
+        "Dot",
+        "Number",
+        "Icon"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "State",
+      "figmaValues": [
+        "Completed",
+        "Current",
+        "Upcoming"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Tone",
+      "figmaValues": [
+        "Success",
+        "Brand"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "variants": [
+    {
+      "properties": {
+        "Content": "Dot",
+        "State": "Completed",
+        "Tone": "Success"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Dot",
+        "State": "Completed",
+        "Tone": "Brand"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Dot",
+        "State": "Current",
+        "Tone": "Success"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Dot",
+        "State": "Current",
+        "Tone": "Brand"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Dot",
+        "State": "Upcoming",
+        "Tone": "Success"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Dot",
+        "State": "Upcoming",
+        "Tone": "Brand"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Number",
+        "State": "Completed",
+        "Tone": "Success"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Number",
+        "State": "Completed",
+        "Tone": "Brand"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Number",
+        "State": "Current",
+        "Tone": "Success"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Number",
+        "State": "Current",
+        "Tone": "Brand"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Number",
+        "State": "Upcoming",
+        "Tone": "Success"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Number",
+        "State": "Upcoming",
+        "Tone": "Brand"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Icon",
+        "State": "Completed",
+        "Tone": "Success"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Icon",
+        "State": "Completed",
+        "Tone": "Brand"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Icon",
+        "State": "Current",
+        "Tone": "Success"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Icon",
+        "State": "Current",
+        "Tone": "Brand"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Icon",
+        "State": "Upcoming",
+        "Tone": "Success"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Content": "Icon",
+        "State": "Upcoming",
+        "Tone": "Brand"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    }
+  ],
+  "codeExample": null,
+  "a11yNotes": null,
+  "gaps": [],
+  "notApplicable": []
+}
