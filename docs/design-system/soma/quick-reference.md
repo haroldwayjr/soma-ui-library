@@ -94,6 +94,10 @@ Full rules: `component-notes.md` · token tables: `token-rules.md`.
 
 - No outer table border. Header row **36px** — `surface/subtle` + top `radius/md`; row bottom `border/hairline` only. See `component-notes.md`.
 
+## Lists / List Item
+
+- [Lists](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=1660-36665): **Compact / Single** = property rows (label · trailing value). **Compact / Multi** = Care Team person rows (**Avatar** md Leading · name · role; trailing off). No nested `surface/subtle` / outlined list well — Card/panel chrome only. See `component-notes.md`.
+
 ## Empty states
 
 - [Empty states (WIP)](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=3973-19911): `Empty state` — Size Compact · Default · Large × Media Icon · Illustration × Actions None · One · Two; root unfilled; icon well `surface/subtle` + `radius/full`; CTA outlined secondary (Two adds contained brand primary). Prefer over **Table / Empty state** for new work; **Compact · Icon · One** = table parity. See `component-notes.md`.
@@ -136,7 +140,7 @@ Full rules: `component-notes.md` · token tables: `token-rules.md`.
 
 ## Chat / Message
 
-- [Chat bubbles](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=3171-46189): `Chat / Message`; agent identity → `Logo / Dot` on Logos. Group corners + sides. See `component-notes.md`.
+- [Chat bubbles](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=3171-46189): `Chat / Message`; agent identity → `Logo / Dot` on Logos. Group corners + sides. **`Show timestamp`** (default false) + **`Timestamp`** text — caption / `text/tertiary` under the bubble. See `component-notes.md`.
 
 ## Chat / Response timer
 
@@ -144,7 +148,8 @@ Full rules: `component-notes.md` · token tables: `token-rules.md`.
 
 ## Chat composer
 
-- App components Masters — [`Chat / Composer`](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=4547-3386): **Content** Empty · Filled · Multiline; **`Show rewrite`** (default true); master width **800**. Composed **Message field** (**HUG** **40–128**, **`surface/default`** + **`border/strong`**, **`radius/xl` (12)**) — message/placeholder **`body1`** (placeholder **`text/tertiary`**, value **`text/primary`**, same typography bindings as Text Input); MCA demo copy (`Write a reply to the member...`); **Attach** Button (text / brand / **small** / iconOnly, **`add`** **xs**) inside + text slot; **Rewrite** (outlined / brand / medium / iconOnly, **`edit.sparkle`** sm) + **Send** (contained / brand / medium); row gap **8**, actions bottom-align on multiline. Not Text Input leading-icon attach. **Chat assist**, **Chat tasks**, and **APD compare plans** Composer frames instance this master. Production **circular send** still open — `open-items.md`. **`Chat / Clean up` removed 2026-10-09.** See `component-notes.md`.
+- App components Masters — [`Chat / Composer`](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=4547-3386): **Content** Empty · Filled · Multiline; **`Show rewrite`** (default true); master width **800**. Composed **Message field** (**HUG** **40–128**, **`surface/default`** + **`border/strong`**, **`radius/xl` (12)**) — message/placeholder **`body1`** (placeholder **`text/tertiary`**, value **`text/primary`**, same typography bindings as Text Input); MCA demo copy (`Write a reply to the member...`); **Attach** Button (text / brand / **small** / iconOnly, **`add`** **xs**) inside + text slot; **Rewrite** (outlined / brand / medium / iconOnly, **`edit.sparkle`** sm) + **Send** (contained / brand / medium labeled Button); row gap **8**, actions bottom-align on multiline. Not Text Input leading-icon attach. **Chat assist**, **Chat tasks**, and **APD compare plans** Composer frames instance this master. **`Chat / Clean up` removed 2026-10-09.** See `component-notes.md`.
+- **Style / Modern:** [`Chat / Composer / Modern`](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=5002-36752) (`5002:36752`) — `Chat.ComposerModern`; Content Empty · Filled · Multiline; **`Show rewrite`**; growing textarea + bottom toolbar inside one bordered **`radius/xl`** shell: Attach left, text Rewrite + circular contained Send right. Default placeholder `Write a message...`; classic remains `Chat.Composer`.
 
 ## App examples — APD compare plans
 
@@ -163,4 +168,8 @@ Full rules: `component-notes.md` · token tables: `token-rules.md`.
 | `surface/brand/soft` | `blue/100` | `surface.brand.soft` | Soft badges (chromatic), chat bubbles, AI summary, soft brand panels |
 | `surface/brand/subtle` | `blue/200` | `surface.brand.subtle` | Tinted rows, stronger brand fill |
 
-`surface/ai/gradient/1–4` — AI summary gradient only (not generic fills). Mapping rows: `surface.ai.gradient.*`.
+`surface/ai/gradient/1–4` — AI **fill wash** stops (`gradient/ai/surface`; active **/2** teal + **/4** purple). Stroke: **`border/ai/start`** · **`border/ai/end`** (`gradient/ai/border`, purple/600 → blue/500).
+
+## Card / AI
+
+- Card Style Default|AI → `Card.Root` variant default|ai; **`Card.Ai`** = composed recipe. Sparkles **xs bold** + **`icon/ai`** (purple/600). Stroke **`gradient/ai/border`**. Figma **Link** None|More|Less → `showLink` + `expanded`; collapsed max **3**. Gradients board [`5035:503`](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=5035-503). See `component-notes.md`.

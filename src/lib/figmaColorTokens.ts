@@ -1,12 +1,14 @@
 /** Sourced from Soma Figma file hB1NzwMnZt2ALeR0OslaWi
  *  Primitives / utility: node 1:2499
  *  Semantic mapping: node 1:3311
+ *  Gradients foundation: node 5035:503
  *  Regenerated from Figma MCP get_variable_defs + design context.
  */
 
 export const FIGMA_COLORS_FILE_KEY = 'hB1NzwMnZt2ALeR0OslaWi'
 export const FIGMA_PRIMITIVES_NODE = '1:2499'
 export const FIGMA_SEMANTICS_NODE = '1:3311'
+export const FIGMA_GRADIENTS_NODE = '5035:503'
 
 export const figmaBrand = {
   blue: '#0012e7',
@@ -771,7 +773,7 @@ export const figmaSemantics: FigmaSemanticRow[] = [
     darkRef: "teal/900",
     light: "#f2f9f9",
     dark: "#103131",
-    usage: "AI summary gradient, stop 1. Leading teal edge.",
+    usage: "AI fill wash family — soft teal reserve (gradient/ai/surface).",
   },
   {
     token: "surface.ai.gradient.2",
@@ -780,7 +782,7 @@ export const figmaSemantics: FigmaSemanticRow[] = [
     darkRef: "teal/800",
     light: "#d1f3f3",
     dark: "#0e5555",
-    usage: "AI summary gradient, stop 2. Teal midpoint.",
+    usage: "AI fill wash — active teal corner / linear end (Card / AI Variant A).",
   },
   {
     token: "surface.ai.gradient.3",
@@ -789,7 +791,7 @@ export const figmaSemantics: FigmaSemanticRow[] = [
     darkRef: "blue/900",
     light: "#e0eaff",
     dark: "#000b48",
-    usage: "AI summary gradient, stop 3. Blue midpoint.",
+    usage: "AI fill wash family — soft blue reserve (gradient/ai/surface).",
   },
   {
     token: "surface.ai.gradient.4",
@@ -798,7 +800,25 @@ export const figmaSemantics: FigmaSemanticRow[] = [
     darkRef: "purple/900",
     light: "#f5f2ff",
     dark: "#3b1b5b",
-    usage: "AI summary gradient, stop 4. Trailing purple edge.",
+    usage: "AI fill wash — active purple corner / linear start (Card / AI Variant A).",
+  },
+  {
+    token: "border.ai.start",
+    section: "Border",
+    lightRef: "purple/600",
+    darkRef: "purple/400",
+    light: "#9b58e6",
+    dark: "#c9a8fa",
+    usage: "AI border gradient start (gradient/ai/border). Card / AI 1px stroke.",
+  },
+  {
+    token: "border.ai.end",
+    section: "Border",
+    lightRef: "blue/500",
+    darkRef: "blue/400",
+    light: "#4b95ff",
+    dark: "#7eb6ff",
+    usage: "AI border gradient end (gradient/ai/border). Card / AI 1px stroke.",
   },
   {
     token: "border.subtle",
@@ -1015,6 +1035,15 @@ export const figmaSemantics: FigmaSemanticRow[] = [
     light: "#7d3fc0",
     dark: "#e9d5fe",
     usage: "Brand-colored icons.",
+  },
+  {
+    token: "icon.ai",
+    section: "Icon",
+    lightRef: "purple/600",
+    darkRef: "purple/400",
+    light: "#9b58e6",
+    dark: "#c9a8fa",
+    usage: "AI sparkle / generative icons (Card / AI). Vivid purple/600 — not icon/accent.",
   },
   {
     token: "icon.success",

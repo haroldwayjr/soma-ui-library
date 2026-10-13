@@ -105,6 +105,11 @@ const roles = {
       // Soft Badge stroke — Figma Soft masters bind border/*/subtle to the 300 step.
       subtle: { dark: purple[400], light: purple[300] },
     },
+    // Card / AI stroke recipe `gradient/ai/border` — stop colors (not a CSS gradient var).
+    ai: {
+      end: { dark: blue[400], light: blue[500] },
+      start: { dark: purple[400], light: purple[600] },
+    },
     brand: {
       base: { dark: blue[600], light: blue[800] },
       subtle: { dark: blue[400], light: blue[300] },
@@ -144,6 +149,8 @@ const roles = {
     },
   },
   icon: {
+    // Card / AI sparkles — vivid purple/600 (not icon/accent purple/700).
+    ai: { dark: purple[400], light: purple[600] },
     accent: { dark: purple[300], light: purple[700] },
     brand: { dark: blue[400], light: blue[800] },
     danger: { dark: red[400], light: red[700] },

@@ -103,8 +103,10 @@ Applies to every new or edited app frame — including [Chat tasks](https://www.
   - **Middle / End:** hide name; keep the 20px slot at opacity 0 so rows stay aligned. Member/Specialist Middle: both inner corners `radius/xxs`. End: inner top `radius/xxs`, inner bottom `radius/3xl`. Agent Middle/End stay text-only (no radii).
   - Specialist mirrors on the right edge.
 - **Thread gap:** `stack/xs` (4) between grouped messages; `stack/sm` (8) or more between different senders / after `End`. Do not leave instance height overrides — they overlap the next row.
+- **Timestamp:** boolean **`Show timestamp`** (default false) + text prop **`Timestamp`** (default `9:14 AM`). Optional caption under the bubble — **`caption`** style, ink **`text/tertiary`**, gap **`stack/xs`** (4) in the `Message` wrap (Bubble → Timestamp). Member/Agent left-align; Specialist right-align. Prefer on **`Group=None`** or **`End`**; keep off for **Middle** in clusters. Centered thread date dividers (Chat Assist `Timestamp` text between groups) stay separate — do not fold those into the bubble prop.
 
 **Changed 2026-10-09:** Agent — text-only across None · Start · Middle · End (no bubble fill, padding, or radii); Member and Specialist bubbles unchanged. Agent `Sender row` minHeight 20 + CENTER so Logo / Dot and caption share a vertical center. Content / Bubble / Body maxWidth **720 / 680 / 648** (was 520 / 480 / 456).
+**Added 2026-10-12:** `Show timestamp` + `Timestamp` text prop on `Chat / Message` (caption / `text/tertiary` under bubble).
 **Added 2026-08-26:** `Group` variant on `Chat / Message`.
 **Fixed 2026-08-31:** Member `Content` was FIXED ~88px; instances had stuck height overrides.
 **Fixed 2026-09-10:** Chat Assist/APD instances — cleared stuck Body height overrides and ghost Avatar photo slots after Photo INSTANCE_SWAP; restored root/Content/Bubble HUG; restored Group Middle/End identity slot opacity 0 (was reset to 1 by Avatar swap); group cluster gap stack/xs (4).
@@ -134,11 +136,22 @@ Applies to every new or edited app frame — including [Chat tasks](https://www.
 - **Type (message / placeholder):** **`body1`** (Figtree Regular 14 / 20) with typography variable bindings (`fontSize/14`, `lineHeight/20`, etc.) — same recipe as **Text Input** value and placeholder slots. Placeholder ink **`text/tertiary`**; entered value **`text/primary`**.
 - **Attach (`+`):** live **`Button`** — `Variant=text`, `Tone=brand`, `Size=small` (**36**), `Layout=iconOnly`. Leading **`icon/actions/add`** **xs** (swap exposed Leading instance). Sits **inside** the composed Message field (not Text Input leading-icon slot). Full Button states. Remove the external Attach paperclip from the composer row.
 - **Rewrite:** live **`Button`** — `Variant=outlined`, `Tone=brand`, `Size=medium`, `Layout=iconOnly`. Leading **`icon/actions/edit.sparkle`** **sm** (swap exposed Leading instance). Instance name **Rewrite**; place **left of Send**.
-- **Send:** trailing primary on the composer row; example frames still use the composed send control. Production **circular send** remains open — see `open-items.md`.
+- **Send:** trailing primary labeled Button on the classic composer row.
 - **Width:** Master variants **FIXED 800** (was 720) — Message field **FILL**s the row; Rewrite + Send stay hug/fixed. Instances should **FILL** the chat column (not stay stuck at 720).
 - **Demo copy (Content variants, MCA voice):** **Empty** — placeholder `Write a reply to the member...`. **Filled** — `I found three in-network cardiologists near Oakland — want me to share them?` **Multiline** — same opener + `Two have morning openings next week.` + `I can include telehealth options as well.` (vertical growth + bottom-aligned actions). Not member-asking-for-help copy.
 
+### Style / Modern
+
+- Figma: App components Masters — [`Chat / Composer / Modern`](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=5002-36752) (`5002:36752`).
+- `Chat.ComposerModern` is a separate code choice; it does not replace the classic `Chat.Composer` anatomy above.
+- One `surface/default` + `border/strong` + **`radius/xl` (12)** shell contains the growing textarea and an in-field bottom toolbar. Attach sits left; text/brand Rewrite and the circular contained/brand Send IconButton sit right.
+- **Shell column gap:** message text → CTA row **`inset/md` (12)** (bound).
+- **Variants:** **Content=Empty** · **Filled** · **Multiline**. **`Show rewrite`** boolean (default true).
+- Default placeholder: `Write a message...`. The roomier shell grows with content while keeping all actions inside the chrome.
+
 **Added 2026-10-09:** App master **`Chat / Composer`** — Content Empty | Filled | Multiline; **`Show rewrite`**; Message field + Rewrite + Send row (gap 8, bottom-aligned actions).
+**Added 2026-10-12:** App master + code **`Chat / Composer / Modern`** (`Chat.ComposerModern`, `5002:36752`) — in-field bottom toolbar with Attach · Rewrite · **circular Send**; classic `Chat.Composer` unchanged.
+**Changed 2026-10-12:** Modern composer shell gap message → CTA row **8 → 12** (`inset/md`) in Figma + `ChatComposer` modern shell CSS.
 **Removed 2026-10-09:** App master **`Chat / Clean up`** (circular broom + `icon/actions/clean`) — replaced by Rewrite Button + `edit.sparkle`.
 **Changed 2026-10-09:** Composed Message field (**`surface/default`**, **`border/strong`**, **`radius/xl`**, HUG **40–128**; pad **`inset/xs`** · **`inset/md`** · **`inset/xs`** · **`inset/xs`**) with **Attach** Button (text / brand / **small** / iconOnly, **`add`** **xs**) inside — Empty/Filled **CENTER** Attach; Multiline **MIN**; Text slot **`inset/sm`**; row gap **`inline/sm`**; supersedes Text Input leading-icon attach on the composer master; message/placeholder **`body1`** + Text Input typography bindings, placeholder **`text/tertiary`** / value **`text/primary`**; MCA Empty · Filled · Multiline demo copy; master width **800**; **Rewrite** → outlined / brand / iconOnly (`edit.sparkle` sm); composer rows bottom-align Rewrite + Send; Text Input master vertical scale unchanged for forms (**min 40 · max 128 · pad 10 · HUG**).
 
@@ -238,13 +251,27 @@ Applies to every new or edited app frame — including [Chat tasks](https://www.
 
 **Fixed 2026-09-14:** Warning accent and leading icon vectors rebound to **`icon/warning`** (were hardcoded gold hex).
 
+## Card / AI
+
+Composed sparkle-card recipe on the Card master for summaries, recommendations, and similar AI content. **Keep this split:** Card master **Style** Default|AI = chrome only (`Card.Root` variant); **`Card.Ai`** (`Card / AI` set [`5002:36378`](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=5002-36378)) = composed sticker recipe. Do not fold AI anatomy into generic `Card.Header` / `Card.Body` props.
+
+- **Chrome (Variant A / recipe `AI summary card` on Gradients board):** fill wash = `gradient/ai/surface` (`surface/ai/gradient/4` → `surface/default` → `surface/ai/gradient/2`). Stroke = **`gradient/ai/border`** (`purple/600` → `blue/500`; code `border.ai.start` / `border.ai.end`). Root **gap** `stack/sm` (8); body→link **`inset/md` (12)**; **pad** `inset/md`; **radius** `radius/lg` (10).
+- **Header:** **`icon/status/sparkles`** **Size=xs Style=bold** (`IconSparkles` `xs`), ink **`icon/ai`** → **purple/600** light / purple/400 dark — not `icon/accent` (purple/700). Title **14/20/600** / `text/primary`.
+- **Body:** **body2** / `text/secondary`. Bullets = instances of **`Card / AI / Bullet row`** (`5024:37318`). **4px** disc in 18px slot, optically on first line.
+- **Adding bullets:** On a Card / AI **instance**, do **not** ⌘D a row — Figma ejects it to the page. Use **Show item 4–6** (on **Link=Less**). To change master structure only: edit **Format=Bulleted, Link=Less** → `Bullets` → ⌘D there.
+- **Format:** `plain` · `bulleted`.
+- **Link (Figma):** **None | More | Less** — Expanded is not a separate control (avoids Expanded when there is no link). **More** = collapsed Show more (max **3** rows); **Less** = Show less (uncapped). Code: `showLink` + `expanded` / `defaultExpanded` / `onExpandedChange` (`Link=More` → `showLink` + `expanded={false}`; `Less` → `expanded`; `None` → no link).
+- Compose chrome-only with `Card.Root variant="ai"` when the composed props do not fit.
+
+**Added 2026-10-12:** `Card / AI` recipe. **Changed 2026-10-12:** Variant A; **`icon/ai`** (purple/600); Gradients board recipes; Bullet row + Link None|More|Less; collapsed max **3**; body→link gap 12.
+
 ## Surfaces — brand ladder
 
 **Changed 2026-09-09:** Soft Badge chromatic fills bind **`surface/{tone}/soft`** (`/100` light · `/900` dark), not **`surface/{tone}/subtle`**. Neutral and Disabled Soft stay on **`surface/subtle`**. **`surface/*/subtle`** aliases unchanged — still tinted rows, View switcher Soft track, Chat Specialist bubbles, etc.
 
 - **`surface/brand/soft`** — lightest brand tint (`blue/100` light · `blue/900` dark). Soft badges (chromatic tones), chat bubbles, AI summary cards, other soft brand washes. **Not** AI-only — do not use `surface/ai` for fills (renamed). Colors → Semantic mapping: `surface.brand.soft` (above `.subtle` in the brand tree).
 - **`surface/brand/subtle`** — one step stronger (`blue/200` light · `blue/900` dark). Tinted rows, stronger brand fill. Colors → Semantic mapping: `surface.brand.subtle`.
-- **`surface/ai/gradient/1–4`** — AI summary gradient stops only; base fill still binds `surface/brand/soft`. Gradient rows stay `surface.ai.gradient.*` in mapping.
+- **`surface/ai/gradient/1–4`** — AI card **fill wash** stops (`gradient/ai/surface`). Active Variant A: **/4** purple + **/2** teal (+ `surface/default`). Stroke semantics: **`border/ai/start`** · **`border/ai/end`** (`gradient/ai/border`). See `token-rules.md`.
 
 ## App Shell / Header actions
 
@@ -325,13 +352,25 @@ Not a conflict — different jobs. Keep both.
 
 **Changed 2026-09-14:** Table / Header row height 36px (hug; was fixed 44).
 
-## Lists / ListItem
+## Lists / List Item
 
-- Figma: [Lists](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=1660-36665). Masters: `List` + `ListItem`.
-- **`ListItem` Density=Compact / Lines=Single** — Member Information property rows. Primary = label; Trailing meta = value (right-aligned). Trailing is **horizontal**: value → Badge → **Trailing icon** (16×16). Soft Success Badge for status (CCM); `Trailing icon` = `icon/actions/edit` for editable fields, ink **`icon/tertiary`**. **Never swap Badge for an icon** — Badge’s hug size stretches glyphs. Hide Badge / Trailing icon when unused (masters keep both visible so instances retain the slots). Leading stays off for Compact.
-- **`ListItem` Density=Default / Lines=Multi** — All Tasks–style rows (leading icon + primary/secondary + trailing).
-- Stack Compact rows in a gap-0 frame (Card body). Do not freehand key/value field frames.
+- Figma: [Lists](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=1660-36665). Masters: `List` + `List Item`.
+- **`List Item` Density=Compact / Lines=Single** — Member Information property rows. Primary = label; Trailing meta = value (right-aligned). Trailing is **horizontal**: value → Badge → **Trailing icon** (16×16). Soft Success Badge for status (CCM); `Trailing icon` = `icon/actions/edit` for editable fields, ink **`icon/tertiary`**. **Never swap Badge for an icon** — Badge’s hug size stretches glyphs. Hide Badge / Trailing icon when unused (masters keep both visible so instances retain the slots). Leading stays **off** for Compact / Single.
+- **Compact / Single layout (non-negotiable):** **Content** + **Text** + **Primary** = **HUG** (label column). **Trailing** = **FILL** (remaining width; `primaryAxisAlignItems=MAX`). **Trailing meta** = **FILL** + `textAutoResize=HEIGHT` + **RIGHT** align so values use the row and wrap only when needed — never a tall skinny column. Do **not** leave Content stuck wide (old FILL width) while Trailing meta is FILL+HEIGHT — that pinches values to ~20px. Badge / Trailing icon stay HUG/FIXED (`layoutGrow=0`).
+- **`List Item` Density=Compact / Lines=Multi** — **Care Team / person rows.** Leading = **`Avatar` Size=md Content=Initials** (32×32; Leading INSTANCE_SWAP preferred values include Avatar). Primary = name (`text/primary`); Secondary = role (`text/secondary`) — **Meta icon** off (avatar already IDs the person; Default / Multi keeps Meta icon for assignee-style meta). **Show trailing** off (and badge / trailing meta / trailing icon off). **Divider** off. Pad matches Compact property rows (`8 / 0 / 8 / 0`) so Overview stacks flush with Member fields.
+- **`List Item` Density=Default / Lines=Multi** — All Tasks–style rows (leading **icon** 16×16 + primary/secondary + trailing). Swap Leading to Avatar only when the row is a person; resize the Leading instance to **32×32** after swap (instances are FIXED — not HUG).
+- **Trailing row (Default + Compact / Multi):** **HORIZONTAL** — Badge → Trailing meta → Trailing icon (`gap` 8, `primaryAxisAlignItems=MAX`, Trailing **HUG**). Never vertical stack. Content **FILL**; Primary + Secondary text **`textTruncation=ENDING`** · **`maxLines=1`** so long assignee lines ellipsis instead of crushing Trailing onto a second row. Compact / Single keeps Trailing **FILL** for right-aligned property values (separate recipe).
+- **Text / chrome props:** **Primary** · **Secondary** · **Trailing meta** · **Leading** · **Show trailing** · **Show trailing meta** · **Show badge** · **Show trailing icon** · **Divider** (booleans where noted). Bind copy through these props — Density / Lines / State / Divider swaps keep content.
+- **Trailing slot toggles:** **`Show trailing meta`** (value text) · **`Show badge`** · **`Show trailing icon`** — all boolean, default on. Masters keep all three slots visible so instances retain them; turn off unused slots per row. Parent **`Show trailing`** still hides the whole Trailing group.
+- **Container chrome:** Person lists (Care Team) and property lists (Member fields) sit **directly on Card / panel body** — **no** nested `surface/subtle` well and **no** extra outlined wrapper around the stack. Parent **Card** (raised / outlined) already supplies surface + border. Outlined nested cards (e.g. Dependent detail) are a **different** pattern: Card chrome + Compact / Single rows inside — not a list well around person rows.
+- Stack Compact rows in a gap-0 frame (Card body). Do not freehand key/value or avatar+name frames.
 
+**Fixed 2026-10-12:** Default + Compact / Multi Trailing → horizontal Badge · meta · icon; Primary/Secondary single-line ending truncate so Trailing stays one row.
+**Changed 2026-10-12:** Care Team → **`List Item` Compact / Multi** + Avatar Leading; removed freehand provider rows and Chat tasks `surface/subtle` Care Team well. No nested list container.
+**Changed 2026-10-12:** Compact / Multi masters default Leading = Avatar md initials (32); Leading swap prefers Avatar.
+**Fixed 2026-10-12:** Compact / Single — Content HUG + Trailing FILL; Trailing meta FILL/`HEIGHT`/RIGHT. Care Plans Overview Member fields (182 instances) no longer collapse values into skinny columns.
+**Changed 2026-10-12:** Added boolean **`Show trailing meta`** · **`Show badge`** · **`Show trailing icon`** on `List Item` (wired on all 20 variants; Trailing icon slot added where missing). Masters keep slots on.
+**Fixed 2026-10-12:** Renamed **`ListItem` → `List Item`**. Converted **Divider** from a sparse variant axis to a **boolean** (visibility); completed Density × Lines × State matrix (20 variants); exposed **Trailing meta** text prop so style toggles retain Primary / Secondary / Trailing meta.
 **Changed 2026-09-09:** Compact trailing horizontal + Badge + 16×16 Trailing icon slots; Care Plans Overview remapped — never swap Badge for icons.
 
 ## Tabs
@@ -458,7 +497,7 @@ Not a conflict — different jobs. Keep both.
 - **Compare panel icons:** Plan / network **Select / Trigger** chevrons — nested glyph **Size=sm**, ink **`icon/tertiary`**. **Panel header dismiss:** **`Button`** text / secondary / small / iconOnly + **`icon/navigation/close`** (Context panel recipe — not shared **Close**). Do not leave chevrons at Size=xs or use `icon/default`. IHP tips overlay dismiss stays composed shared **Close** (above).
 - **Soma used:** App Shell, Breadcrumb, Badge, Button, Avatar, Chat / Message, Text Input, Tool rail / Rail / Icon, Checkbox / Control, Close (IHP tips dismiss only), Select / Trigger · Item · Popup, Tooltip, Alert, Table / Cell · text, IHP Tips / Disclosure.
 - **Chat header:** trailing **`Chat / Response timer`** (Active turn or Closed dual stamp) on example frames.
-- **Gaps (composed, not published):** Accordion/disclosure, side Drawer chrome, plan select card, URL+Copy field, comparison Table variant (section headers + plan Select columns), Select / Item trailing status meta, chat composer — example frames document composed Message field + **Attach** / **Rewrite** Buttons; production **circular send** still open. See `open-items.md`.
+- **Gaps (composed, not published):** Accordion/disclosure, side Drawer chrome, plan select card, URL+Copy field, comparison Table variant (section headers + plan Select columns), Select / Item trailing status meta. Chat composer now ships in classic and modern code styles; see `open-items.md`.
 
 **Added 2026-09-08:** Three APD compare plans app example frames on Chat Assist shell.
 **Added 2026-09-09:** IHP tips on **Compare table** · **Compare · Select open** — Alert Soft Brand Mini re-open trigger + tips panel under the IHP plan column.
@@ -479,12 +518,13 @@ Not a conflict — different jobs. Keep both.
   - `Page · Care Plan · Activity · …` (`2941:25446`) — **Activity** active; Care Team View; info Alert; Status/Type filters; Jun expanded rows + May collapsed (strikethrough cancelled) + Pagination.
   - `Page · Care Plan · Care Pathways · …` (`2942:28182`) — **Care Pathways** active; Filter count badge; recommendation Alert; **Maternity Multifetal Pregnancy** (Active) + **Maternity Standard Care** (Not Started) objective tables (no outer border).
   - Overlay variants: **Filters** (`2945:25445`) · **Add** modal (`2945:25753`) · **Status menu** on Active (`2945:26061`).
-- **Overview:** Member Information + Care Team from **Card** — no Overview panel master. Member fields = stacked **`ListItem` Compact / Single** (Primary = label, Trailing meta = value; optional Soft Success Badge or trailing `icon/actions/edit`). Not freehand field frames. Keep Card for panel chrome.
-- **Care Team:** person list — avatar + stacked name (`text/primary`) / role (`text/secondary`); section title matches Member Information (`h4`); no Provider/Role column headers in the 340 Overview.
+- **Overview:** Member Information + Care Team from **Card** — no Overview panel master. Member fields = stacked **`List Item` Compact / Single** (Primary = label, Trailing meta = value; optional Soft Success Badge or trailing `icon/actions/edit`). Not freehand field frames. Keep Card for panel chrome.
+- **Care Team:** stacked **`List Item` Compact / Multi** — Leading **Avatar** md initials, Primary = name, Secondary = role; trailing + Divider off. Section title matches Member Information (`h4`); no Provider/Role column headers in the 340 Overview. **No** nested `surface/subtle` or outlined list well — Card body only.
 - **Pathway / objective status (interactive):** **`Chip` Filled · Small · Trailing=Chevron** — not Badge + external chevron. Opens status Menu. Read-only status (e.g. Problems Unverified) stays **Badge**.
 - Clone the workspace; do not invent a new shell.
 
-**Changed 2026-09-09:** Overview Member Information field rows → `ListItem` Compact / Single (label + trailing value; Badge / edit).
+**Changed 2026-09-09:** Overview Member Information field rows → `List Item` Compact / Single (label + trailing value; Badge / edit).
+**Changed 2026-10-12:** Overview + Chat tasks Care Team → `List Item` Compact / Multi + Avatar; no nested list well.
 **Changed 2026-09-09:** Care Pathways interactive status → Chip Filled Small · Trailing=Chevron.
 
 
