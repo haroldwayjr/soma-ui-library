@@ -1,0 +1,17 @@
+---
+description: Soma design-system docs — attach on demand for Figma token/component work
+alwaysApply: false
+---
+
+# Soma design-system docs
+
+Load these with `@docs/design-system/soma/...` when doing Soma (Figma) work. Do not treat them as always-on context.
+
+| Task | Attach |
+|---|---|
+| Figma token/component work | `@docs/design-system/soma/quick-reference.md` |
+| Color, spacing, typography, radius rules | `@docs/design-system/soma/token-rules.md` |
+| Buttons, Chips, Icons, Checkbox, Grids | `@docs/design-system/soma/component-notes.md` |
+| Open gaps, unconfirmed items | `@docs/design-system/soma/open-items.md` |
+
+Index: `@docs/design-system/README.md`
