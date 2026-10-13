@@ -2,50 +2,53 @@
 
 **When:** After adding, removing, reordering, renaming, or reparenting any row in Colors → Semantic mapping (`1:3317` inside `1:3311`).
 
-**Why:** `Tree/*` frames hold VECTOR elbows. Row shifts leave stale trunks, sharp corners, or tips that miss Token chips.
+**Target look:** Simple **L** from the **bottom** of the parent Token chip → rounded corner → **left mid** of the child Token chip.  
+Reference: classic `fg-secondary` → `fg-secondary_hover` style — **not** a leftward C/S-hook stub.
 
-## Geometry (current)
-
-Single VECTOR `connector` per tree:
+## Geometry
 
 | Constant | Value | Role |
 |---|---|---|
-| `R` | **18** | Child elbow quarter-circle |
-| `R_TOP` | **8** | Parent stub corner |
-| `GUTTER_INSET` | **8** | Trunk left of parent Token chip |
-| `TIP_OVERSHOOT` | **6** | Tip into child chip (optical) |
-| `strokeWeight` | **2** | `#BFBFBF` grey |
+| `R` | **8** | Child elbow quarter-circle |
+| `TRUNK_INSET` | **10** | Trunk X = parent chip left + 10 (under first glyphs) |
+| `TIP_OVERSHOOT` | **1** | Tip just meets child chip left |
+| `strokeWeight` | **1.5** | `#D9D9D9` |
 | `strokeCap` / `strokeJoin` | **ROUND** | |
 
 ### Layout
 
-1. Parent/children via `{parent}.` prefix (exclude `Tree/*` from the walk).
-2. `tree.y = parent.y`; height = last child span; width ≥ **96**; `clipsContent = false`.
-3. `connX = parentChipLeft - GUTTER_INSET - treeAbsX`.
-4. `conn.y = parentChip vertical center` (relative to tree). Path y=0 is that attach point.
-5. `stubX = parentChipLeft - (treeAbsX + connX)` — horizontal into parent left edge.
-6. Per child: `centerLocalY = (child.y + child.h/2 - tree.y) - conn.y`.
-7. `tipX = childChipLeft - (treeAbsX + connX) + TIP_OVERSHOOT` (must be `> R`).
+1. Children = contiguous rows below parent whose names start with `{parent}.` (skip `Tree/*`).
+2. `tree.y = parent.y`; height = last-child span; width ≥ **64**; `clipsContent = false`.
+3. `trunkAbsX = parentChipLeft + TRUNK_INSET`
+4. `conn.x = trunkAbsX - treeAbsX`
+5. `conn.y = parentChipBottom - treeAbsY` — path `(0,0)` is **parent chip bottom**
+6. Per child: `centerLocalY = (child.y + child.h/2 - tree.y) - conn.y`
+7. `tipX = childChipLeft - trunkAbsX + TIP_OVERSHOOT` (must be `> R`)
 
-### Path (connected `vectorNetwork`)
+### Path (connected `vectorNetwork` — no left stub)
 
 ```
-M stubX 0
-L R_TOP 0
-C … → (0, R_TOP)          // rounded top into trunk
+M 0 0
 L 0 (cy - R)
-C … → (R, cy)             // rounded child elbow (K = R × 0.5522847498)
+C 0 (cy - R + K), (R - K) cy, R cy     // K = R × 0.5522847498
 L tipX cy
 ```
 
-Multi-child: trunk continues through each junction; one cubic elbow per child. **No** SVG `A` (unsupported). **No** chamfer-only polylines.
+Multi-child: trunk through each junction; one cubic elbow per child.
+
+### Forbidden
+
+- Leftward stub / C-hook from parent mid-left
+- Chamfer-only polylines / sharp L only
+- SVG `A` (unsupported)
+- Legacy `conn.y = 40` with wrong tip constants
 
 ### Validate
 
-- Path contains two `C` segments per single-child tree (top + elbow)
-- Tip abs X ≈ child Token chip left + 6
-- Stub ends at parent Token chip left edge
-- Trunk does not run through the next parent row
+- Path is a simple L (`M 0 0 L 0 … C … L tipX …`) — no leading horizontal stub
+- Vertical starts at parent chip **bottom**
+- Tip abs X ≈ child Token chip left
+- No stroke into the next parent row
 
 ## Agent rule
 

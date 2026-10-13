@@ -1,5 +1,5 @@
 ---
-description: After any Semantic mapping sheet change, redraw all Tree/* elbows with rounded cubics that touch Token chips.
+description: After Semantic mapping edits, redraw Tree/* elbows as simple L from parent chip bottom to child left mid.
 alwaysApply: true
 ---
 
@@ -7,19 +7,19 @@ alwaysApply: true
 
 Whenever you **add, remove, reorder, rename, or reparent** a row on Colors → Semantic mapping (`1:3317`), redraw **every** `Tree/*` in the **same Figma session**. Helper: `scripts/figma-redraw-semantic-elbows.md`.
 
-## Child matching
+## Target look
 
-Contiguous rows below the parent whose names start with `{parent}.` (skip `Tree/*`). Orphan variants without a parent → add the parent first.
+Simple **L**: vertical from **parent Token chip bottom** (inset ~10px under left of pill) → **R=8** cubic elbow → tip at **child Token chip left mid**.  
+Like `fg-secondary` → `fg-secondary_hover`. **Not** a leftward C/S-hook from the parent mid-left.
 
-## Geometry
+## Rules
 
-- One VECTOR `connector`: parent stub + trunk + child elbows
-- **Rounded cubics** — child `R=18`, parent stub `R_TOP=8` (`K = R × 0.5522847498`)
-- Trunk in gutter **8px left** of parent Token chip; stub into parent left edge at chip mid-Y
-- Tip = child Token chip left **+ 6px**; stroke **2px**, ROUND cap/join
-- `conn.y` = parent chip mid; path local y=0 at that point (avoid Figma Y-normalization bugs)
-- **Forbidden:** chamfer-only paths, SVG `A`, sharp `L` corners only, `conn.y=40` legacy, disconnected subgraphs
+- Contiguous `{parent}.*` children only (skip `Tree/*` in the walk)
+- `conn.y` = parent chip bottom; path `(0,0)` starts there
+- Cubic elbow `R=8`; stroke 1.5 `#D9D9D9`; ROUND cap/join
+- Tip meets child chip left (+1px)
+- **Forbidden:** left stub/hook, chamfer-only, SVG `A`, disconnected subgraphs
 
-## Validate before done
+## Validate
 
-Path has `C` curves; tip meets child chip; stub meets parent chip; no bleed into the next parent.
+Path is `M 0 0 L 0 … C … L tipX …`; vertical under parent; tip on child; no bleed into next parent.
