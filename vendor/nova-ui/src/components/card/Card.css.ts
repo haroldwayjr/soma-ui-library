@@ -10,8 +10,8 @@ import { semantics } from '../../tokens/semantic.css'
 // actually rendered.
 //
 // `variant=ai` is the sparkle-card treatment (Figma Variant A): white base +
-// `surface.ai.gradient.*` wash at ~120°, and `gradient/ai/border` stroke
-// (`border.ai.start` → `border.ai.end`). Sparkles use `icon.ai` (purple/600).
+// `surface.ai.purple` / `surface.ai.teal` wash at ~120°, and `gradient/ai/border`
+// stroke (`border.ai.start` → `border.ai.end`). Sparkles use `icon.ai` (purple/600).
 export const rootRecipe = recipe({
   base: {
     borderRadius: semantics.radius.surface,
@@ -32,9 +32,9 @@ export const rootRecipe = recipe({
         padding: semantics.space[12],
         // Variant A paint stack (padding-box) + AI border gradient (border-box).
         background: [
-          `radial-gradient(120% 80% at 100% 0%, ${semantics.color.surface.ai.gradient[4]} 0%, transparent 55%) padding-box`,
-          `radial-gradient(100% 90% at 0% 100%, ${semantics.color.surface.ai.gradient[2]} 0%, transparent 55%) padding-box`,
-          `linear-gradient(120deg, ${semantics.color.surface.ai.gradient[4]} 8%, ${semantics.color.surface.default} 50%, ${semantics.color.surface.ai.gradient[2]} 92%) padding-box`,
+          `radial-gradient(120% 80% at 100% 0%, ${semantics.color.surface.ai.purple} 0%, transparent 55%) padding-box`,
+          `radial-gradient(100% 90% at 0% 100%, ${semantics.color.surface.ai.teal} 0%, transparent 55%) padding-box`,
+          `linear-gradient(120deg, ${semantics.color.surface.ai.purple} 8%, ${semantics.color.surface.default} 50%, ${semantics.color.surface.ai.teal} 92%) padding-box`,
           `linear-gradient(${semantics.color.surface.default}, ${semantics.color.surface.default}) padding-box`,
           `linear-gradient(120deg, ${semantics.color.border.ai.start} 25%, ${semantics.color.border.ai.end} 100%) border-box`,
         ].join(', '),

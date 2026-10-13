@@ -26,19 +26,22 @@ Agents: after any semantic-row mutation, run the redraw helper for **every** `Tr
 
 ### AI summary — surface wash + border (2026-10-12)
 
-**Fill wash** recipe name on Gradients board: **`gradient/ai/surface`** (Card / AI Variant A).  
-Paint stack (bottom → top in Figma): `surface/default` → linear `surface/ai/gradient/4` → default → `surface/ai/gradient/2` → radial glows from `/4` and `/2`.
+**Architecture:** Figma **paint styles** hold the multi-stop recipes; Semantic variables are **solid stop colors** only. Parent **`surface/ai`** aliases **`surface/default`** and owns the wash-stop tree (`Tree/surface.ai`) — **not** under `surface/overlayLight`.
+
+**Fill wash** paint style: **`gradient/ai/surface`** (Card / AI Variant A; Gradients board).  
+Paint stack (bottom → top in Figma): `surface/default` → linear `surface/ai/purple` → default → `surface/ai/teal` → radial glows from purple + teal.
 
 | Semantic stop | Light | Dark | Role in wash |
 |---|---|---|---|
-| `surface/ai/gradient/1` | `teal/100` | `teal/900` | Soft teal reserve (family; not required in Variant A stack) |
-| `surface/ai/gradient/2` | `teal/200` | `teal/800` | **Active** teal wash corner / linear end |
-| `surface/ai/gradient/3` | `blue/200` | `blue/900` | Soft blue reserve (family) |
-| `surface/ai/gradient/4` | `purple/100` | `purple/900` | **Active** purple wash corner / linear start |
+| `surface/ai` | `surface/default` | `surface/default` | Wash base / tree parent (code uses `surface.default`) |
+| `surface/ai/tealSoft` | `teal/100` | `teal/900` | Soft teal reserve (family; not required in Variant A) |
+| `surface/ai/teal` | `teal/200` | `teal/800` | **Active** teal corner / linear end |
+| `surface/ai/blueSoft` | `blue/200` | `blue/900` | Soft blue reserve (family) |
+| `surface/ai/purple` | `purple/100` | `purple/900` | **Active** purple corner / linear start |
 
-Do **not** use `surface/ai/gradient/*` for generic fills or the 1px stroke.
+Do **not** use `surface/ai/*` stops for generic fills or the 1px stroke. Prefer paint style **`gradient/ai/surface`** on the node (`fillStyleId`).
 
-**Border** recipe name: **`gradient/ai/border`** (Card / AI 1px inside stroke). Linear **`purple/600` → `blue/500`**.
+**Border** paint style: **`gradient/ai/border`** (Card / AI 1px inside stroke). Linear **`purple/600` → `blue/500`**.
 
 | Semantic stop | Light | Dark | Use |
 |---|---|---|---|
@@ -47,7 +50,7 @@ Do **not** use `surface/ai/gradient/*` for generic fills or the 1px stroke.
 
 Related: **`icon/ai`** → `purple/600` / `purple/400` (sparkles). Not `icon/accent` (`purple/700`).
 
-**Source of truth in git:** `docs/design-system/soma/token-rules.md` on the GitHub remote for this repo — keep that file updated when AI color recipes change; sync Figma mapping rows + `figmaColorTokens.ts` + `colors.ts` in the same change.
+**Source of truth in git:** `docs/design-system/soma/token-rules.md` on the GitHub remote for this repo — keep that file updated when AI color recipes change; sync Figma mapping rows + paint styles + `figmaColorTokens.ts` + `colors.ts` in the same change.
 
 ### Primitive ramp contrast (2026-09-01)
 
@@ -157,7 +160,7 @@ Not an accessibility fix. Soft Badge dark fills (via **`surface/{tone}/soft`**) 
 
 **Alert Soft surfaces (light `/100`, dark `/900`):** `surface/brand/soft` · `surface/success/soft` · `surface/warning/soft` · `surface/danger/soft` · `surface/accent/soft` — alias `green/100` · `yellow/100` · `red/100` · `purple/100` (light) and tone `/900` (dark). Use **`/soft`**, not `surface/{tone}/subtle` (`/200`), for Alert and **Soft Badge** chromatic fills. **Alert Soft stroke:** bind **`border/{tone}/subtle`** (light `/300`; see Soft borders table) — not grey **`border/subtle`**.
 
-`surface/*/soft` aliases tone `/900` in dark (Soft Badge visual exception). **`surface/*/subtle`** dark aliases below are unchanged — tinted rows, View switcher Soft track, etc. **`surface/ai/gradient/*`** = Card / AI **fill wash** stops only (see **AI summary — surface wash + border** above). Stroke uses **`border/ai/start`** · **`border/ai/end`**.
+`surface/*/soft` aliases tone `/900` in dark (Soft Badge visual exception). **`surface/*/subtle`** dark aliases below are unchanged — tinted rows, View switcher Soft track, etc. **`surface/ai/*`** named stops = Card / AI **fill wash** only (see **AI summary — surface wash + border** above). Stroke uses **`border/ai/start`** · **`border/ai/end`**.
 
 **Dark fills** (`surface/*/soft`; light `/100`) — Soft Badge chromatic + Alert Soft:
 

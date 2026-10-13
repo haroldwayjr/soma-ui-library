@@ -217,13 +217,13 @@ const roles = {
       soft: { dark: purple[900], light: purple[100] },
       subtle: { dark: purple[700], light: purple[200] },
     },
+    // Card / AI wash stops for paint style `gradient/ai/surface`.
+    // Parent Figma semantic `surface/ai` aliases `surface/default` (not overlay).
     ai: {
-      gradient: {
-        1: { dark: teal[900], light: teal[100] },
-        2: { dark: teal[800], light: teal[200] },
-        3: { dark: blue[900], light: blue[200] },
-        4: { dark: purple[900], light: purple[100] },
-      },
+      blueSoft: { dark: blue[900], light: blue[200] },
+      purple: { dark: purple[900], light: purple[100] },
+      teal: { dark: teal[800], light: teal[200] },
+      tealSoft: { dark: teal[900], light: teal[100] },
     },
     brand: {
       base: { dark: blue[600], light: blue[800] },

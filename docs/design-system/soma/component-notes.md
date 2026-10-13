@@ -255,7 +255,7 @@ Applies to every new or edited app frame — including [Chat tasks](https://www.
 
 Composed sparkle-card recipe on the Card master for summaries, recommendations, and similar AI content. **Keep this split:** Card master **Style** Default|AI = chrome only (`Card.Root` variant); **`Card.Ai`** (`Card / AI` set [`5002:36378`](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=5002-36378)) = composed sticker recipe. Do not fold AI anatomy into generic `Card.Header` / `Card.Body` props.
 
-- **Chrome (Variant A / recipe `AI summary card` on Gradients board):** fill wash = `gradient/ai/surface` (`surface/ai/gradient/4` → `surface/default` → `surface/ai/gradient/2`). Stroke = **`gradient/ai/border`** (`purple/600` → `blue/500`; code `border.ai.start` / `border.ai.end`). Root **gap** `stack/sm` (8); body→link **`inset/md` (12)**; **pad** `inset/md`; **radius** `radius/lg` (10).
+- **Chrome (Variant A / recipe `AI summary card` on Gradients board):** fill = paint style **`gradient/ai/surface`** (stops `surface/ai/purple` → `surface/default` → `surface/ai/teal`). Stroke = paint style **`gradient/ai/border`** (`purple/600` → `blue/500`; code `border.ai.start` / `border.ai.end`). Root **gap** `stack/sm` (8); body→link **`inset/md` (12)**; **pad** `inset/md`; **radius** `radius/lg` (10).
 - **Header:** **`icon/status/sparkles`** **Size=xs Style=bold** (`IconSparkles` `xs`), ink **`icon/ai`** → **purple/600** light / purple/400 dark — not `icon/accent` (purple/700). Title **14/20/600** / `text/primary`.
 - **Body:** **body2** / `text/secondary`. Bullets = instances of **`Card / AI / Bullet row`** (`5024:37318`). **4px** disc in 18px slot, optically on first line.
 - **Adding bullets:** On a Card / AI **instance**, do **not** ⌘D a row — Figma ejects it to the page. Use **Show item 4–6** (on **Link=Less**). To change master structure only: edit **Format=Bulleted, Link=Less** → `Bullets` → ⌘D there.
@@ -269,9 +269,9 @@ Composed sparkle-card recipe on the Card master for summaries, recommendations, 
 
 **Changed 2026-09-09:** Soft Badge chromatic fills bind **`surface/{tone}/soft`** (`/100` light · `/900` dark), not **`surface/{tone}/subtle`**. Neutral and Disabled Soft stay on **`surface/subtle`**. **`surface/*/subtle`** aliases unchanged — still tinted rows, View switcher Soft track, Chat Specialist bubbles, etc.
 
-- **`surface/brand/soft`** — lightest brand tint (`blue/100` light · `blue/900` dark). Soft badges (chromatic tones), chat bubbles, AI summary cards, other soft brand washes. **Not** AI-only — do not use `surface/ai` for fills (renamed). Colors → Semantic mapping: `surface.brand.soft` (above `.subtle` in the brand tree).
+- **`surface/brand/soft`** — lightest brand tint (`blue/100` light · `blue/900` dark). Soft badges (chromatic tones), chat bubbles, AI summary cards, other soft brand washes. Colors → Semantic mapping: `surface.brand.soft` (above `.subtle` in the brand tree).
 - **`surface/brand/subtle`** — one step stronger (`blue/200` light · `blue/900` dark). Tinted rows, stronger brand fill. Colors → Semantic mapping: `surface.brand.subtle`.
-- **`surface/ai/gradient/1–4`** — AI card **fill wash** stops (`gradient/ai/surface`). Active Variant A: **/4** purple + **/2** teal (+ `surface/default`). Stroke semantics: **`border/ai/start`** · **`border/ai/end`** (`gradient/ai/border`). See `token-rules.md`.
+- **`surface/ai`** tree — wash base (= `surface/default`) + named stops **`tealSoft` · `teal` · `blueSoft` · `purple`** for paint style **`gradient/ai/surface`**. Active Variant A: **purple** + **teal**. Stroke: **`border/ai/start`** · **`border/ai/end`** (`gradient/ai/border`). Not under overlay. See `token-rules.md`.
 
 ## App Shell / Header actions
 

@@ -168,7 +168,7 @@ Full rules: `component-notes.md` · token tables: `token-rules.md`.
 | `surface/brand/soft` | `blue/100` | `surface.brand.soft` | Soft badges (chromatic), chat bubbles, AI summary, soft brand panels |
 | `surface/brand/subtle` | `blue/200` | `surface.brand.subtle` | Tinted rows, stronger brand fill |
 
-`surface/ai/gradient/1–4` — AI **fill wash** stops (`gradient/ai/surface`; active **/2** teal + **/4** purple). Stroke: **`border/ai/start`** · **`border/ai/end`** (`gradient/ai/border`, purple/600 → blue/500).
+`surface/ai` tree (`tealSoft` · `teal` · `blueSoft` · `purple`) — stop semantics for paint style **`gradient/ai/surface`** (active **teal** + **purple**). Stroke: **`border/ai/start`** · **`border/ai/end`** (`gradient/ai/border`).
 
 ## Card / AI
 
