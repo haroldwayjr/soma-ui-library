@@ -1,0 +1,35 @@
+---
+description: After any Semantic mapping sheet change, redraw all Tree/* elbow connectors so they stay aligned to token rows.
+alwaysApply: true
+---
+
+# Soma — Semantic mapping elbows (mandatory)
+
+Whenever you **add, remove, reorder, rename, or reparent** a row on Colors → Semantic mapping (`1:3317` inside `1:3311`), you **must** redraw **every** `Tree/*` connector in the **same Figma session** before finishing. Do not leave stale elbows.
+
+## Child matching (critical)
+
+For each frame named `Tree/{parent}`:
+
+1. Find the parent token row named `{parent}`.
+2. Children = **contiguous** rows **immediately below** whose names start with `{parent}.` (e.g. `action.secondary.hover`).
+3. **Stop** at the first row that does not match. Never attach the next sibling parent (e.g. `action.ghost` is not a child of `action.secondary`).
+4. If the parent has children but no `Tree/{parent}`, create the tree. If a tree has zero children, delete it.
+5. Orphan state rows (`action.ghost.hover` with no `action.ghost` parent) are a sheet bug — add the parent row + tree, do not stretch the previous tree.
+
+## Geometry (reference: `Tree/surface.brand`)
+
+- `tree.y` = parent row `y`
+- `tree.height` = `52 × (1 + childCount)` = `lastChild.y + 52 − parent.y` (tree bottom = next block’s y)
+- Rebuild VECTOR named `connector`:
+  - One elbow per child at that child’s vertical center (≈ `72.89 + (i − 1) × 52` local Y for child index `i ≥ 1`)
+  - **Trunk ends at the last elbow Y** — never extend ~23px to tree bottom (that draws into the next parent pill)
+- Leaf tokens (no nested children) get **no** Tree
+
+## Agent checklist
+
+1. Mutate mapping rows / variables as needed.
+2. Run the full-sheet redraw (see `scripts/figma-redraw-semantic-elbows.md`).
+3. Spot-check at least one edited tree: trunk tip = last elbow; children names are prefix-only; next parent is not connected.
+
+Documented also in `docs/design-system/soma/token-rules.md` → **Semantic mapping elbows**.

@@ -1263,6 +1263,16 @@ export const figmaSemantics: FigmaSemanticRow[] = [
     usage: "Secondary action disabled.",
   },
   {
+    token: "action.ghost",
+    section: "Action",
+    lightRef: "surface/default",
+    darkRef: "surface/default",
+    light: "#ffffff",
+    dark: "#101828",
+    usage:
+      "Ghost action tree parent (mapping swatch). Product rest fill is transparent; hover/pressed use cool*Transparent.",
+  },
+  {
     token: "action.ghost.hover",
     section: "Action",
     lightRef: "coolDarkTransparent/10",
