@@ -11,9 +11,10 @@ Reference: classic `fg-secondary` → `fg-secondary_hover` style — **not** a l
 |---|---|---|
 | `R` | **8** | Child elbow quarter-circle |
 | `TRUNK_INSET` | **10** | Trunk X = parent chip left + 10 (under first glyphs) |
-| `TIP_OVERSHOOT` | **1** | Tip just meets child chip left |
-| `strokeWeight` | **1.5** | `#D9D9D9` |
-| `strokeCap` / `strokeJoin` | **ROUND** | |
+| `TIP_INTO` | **4** | Tip past child chip left into fill (flush join; no gap) |
+| `strokeWeight` | **1.5** | **`#667085`** — darker than Token chip border (`#D0D5DD`) |
+| `strokeCap` | **NONE** | Hard tip (ROUND caps left a visual gap) |
+| `strokeJoin` | **ROUND** | |
 
 ### Layout
 
@@ -23,7 +24,7 @@ Reference: classic `fg-secondary` → `fg-secondary_hover` style — **not** a l
 4. `conn.x = trunkAbsX - treeAbsX`
 5. `conn.y = parentChipBottom - treeAbsY` — path `(0,0)` is **parent chip bottom**
 6. Per child: `centerLocalY = (child.y + child.h/2 - tree.y) - conn.y`
-7. `tipX = childChipLeft - trunkAbsX + TIP_OVERSHOOT` (must be `> R`)
+7. `tipX = childChipLeft - trunkAbsX + TIP_INTO` (must be `> R`). Raise `Tree/*` above token rows so the tip paints on the chip border.
 
 ### Path (connected `vectorNetwork` — no left stub)
 
@@ -47,8 +48,9 @@ Multi-child: trunk through each junction; one cubic elbow per child.
 
 - Path is a simple L (`M 0 0 L 0 … C … L tipX …`) — no leading horizontal stub
 - Vertical starts at parent chip **bottom**
-- Tip abs X ≈ child Token chip left
-- No stroke into the next parent row
+- Tip abs X = child Token chip left **+ 4** (flush, no gap)
+- Stroke darker than chip border (`#667085` vs ~`#D0D5DD`)
+- No bleed into the next parent row
 
 ## Agent rule
 
