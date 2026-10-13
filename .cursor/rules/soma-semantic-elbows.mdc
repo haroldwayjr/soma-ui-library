@@ -1,27 +1,25 @@
 ---
-description: After any Semantic mapping sheet change, redraw all Tree/* elbow connectors using measured child centers.
+description: After any Semantic mapping sheet change, redraw all Tree/* elbows with rounded cubics that touch Token chips.
 alwaysApply: true
 ---
 
 # Soma — Semantic mapping elbows (mandatory)
 
-Whenever you **add, remove, reorder, rename, or reparent** a row on Colors → Semantic mapping (`1:3317` inside `1:3311`), redraw **every** `Tree/*` connector in the **same Figma session** before finishing. Helper: `scripts/figma-redraw-semantic-elbows.md`.
+Whenever you **add, remove, reorder, rename, or reparent** a row on Colors → Semantic mapping (`1:3317`), redraw **every** `Tree/*` in the **same Figma session**. Helper: `scripts/figma-redraw-semantic-elbows.md`.
 
 ## Child matching
 
-1. Parent row = name without `Tree/`.
-2. Children = contiguous rows below whose names start with `{parent}.` (skip other `Tree/*` in the walk).
-3. Stop at the first non-match — never attach the next sibling parent.
-4. Orphan state rows without a parent → add the parent row + Tree first.
+Contiguous rows below the parent whose names start with `{parent}.` (skip `Tree/*`). Orphan variants without a parent → add the parent first.
 
-## Geometry (rounded elbows + measured centers)
+## Geometry
 
-- `tree.y = parent.y`; `tree.height = lastChild.y + lastChild.height - parent.y`; width `44`
-- **`clipsContent = true`**
-- Fresh `connector` at **`(24, 0)`**; `centerY = child.y + child.height/2 - tree.y`
-- **Rounded elbow:** junction `(0, centerY - 8.330574)` → chamfer `(8.330574, centerY)` → tip `(20, centerY)`; connected trunk through every junction; `strokeJoin`/`strokeCap` **ROUND**
-- **Forbidden:** sharp `L 0 cy L tipX cy` only, `conn.y = 40`, trunk past last junction, disconnected subgraphs
+- One VECTOR `connector`: parent stub + trunk + child elbows
+- **Rounded cubics** — child `R=18`, parent stub `R_TOP=8` (`K = R × 0.5522847498`)
+- Trunk in gutter **8px left** of parent Token chip; stub into parent left edge at chip mid-Y
+- Tip = child Token chip left **+ 6px**; stroke **2px**, ROUND cap/join
+- `conn.y` = parent chip mid; path local y=0 at that point (avoid Figma Y-normalization bugs)
+- **Forbidden:** chamfer-only paths, SVG `A`, sharp `L` corners only, `conn.y=40` legacy, disconnected subgraphs
 
 ## Validate before done
 
-Spot-check an edited tree: every elbow on child midline (±0.5px); no stroke into the next parent; child list is prefix-only.
+Path has `C` curves; tip meets child chip; stub meets parent chip; no bleed into the next parent.
