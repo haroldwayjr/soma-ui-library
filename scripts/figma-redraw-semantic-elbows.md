@@ -18,16 +18,13 @@
      - `tree.width = 44`
      - **`tree.clipsContent = true`** (blocks bleed into the next parent)
    - Delete old `connector` VECTOR(s). Create a fresh VECTOR named `connector` at **`(24, 0)`** so vertex Y = tree-local Y.
-   - For each child: `centerY = child.y + child.height / 2 - tree.y` (typically `78, 130, 182…`). **Do not** use legacy constants `72.89` / `81.22` / `conn.y = 40`.
-   - Build a **connected** stroke path (sample stroke from a known-good connector before deleting):
-     ```
-     M 0 0
-     L 0 center0 L tipX center0
-     M 0 center0 L 0 center1 L tipX center1
-     …
-     ```
-     `tipX = 20` (reaches indented child name chip). Trunk must visit every junction; no floating subgraphs.
-   - Assert: `|elbowY - centerY| < 0.5`, `conn.y + maxVertexY ≤ tree.height`, `tree.bottom === next non-child row y`.
+   - For each child: `centerY = child.y + child.height / 2 - tree.y` (typically `78, 130, 182…`). **Do not** use legacy `conn.y = 40`.
+   - Build a **connected `vectorNetwork`** with **rounded elbows** (not sharp L paths):
+     - `CORNER = 8.330574`, `tipX = 20`
+     - Per child: trunk junction `(0, centerY - CORNER)` → chamfer `(CORNER, centerY)` → tip `(tipX, centerY)`
+     - Vertical trunk visits every junction in order from `(0, 0)`; every elbow shares its trunk vertex (no floating subgraphs)
+     - `strokeJoin = ROUND`, `strokeCap = ROUND`, 1px grey (sample from a known-good connector before delete)
+   - Assert: tip Y = `centerY` (±0.5), trunk ends at last junction (not past last tip), `tree.bottom === next non-child row y`.
 3. After any sheet-wide shift, redraw **all** trees — do not skip “unchanged” ones.
 
 ## Known failure modes (avoid)

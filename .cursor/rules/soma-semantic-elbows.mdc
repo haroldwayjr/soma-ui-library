@@ -14,13 +14,13 @@ Whenever you **add, remove, reorder, rename, or reparent** a row on Colors → S
 3. Stop at the first non-match — never attach the next sibling parent.
 4. Orphan state rows without a parent → add the parent row + Tree first.
 
-## Geometry (measured centers — not legacy constants)
+## Geometry (rounded elbows + measured centers)
 
 - `tree.y = parent.y`; `tree.height = lastChild.y + lastChild.height - parent.y`; width `44`
 - **`clipsContent = true`**
 - Fresh `connector` at **`(24, 0)`**; `centerY = child.y + child.height/2 - tree.y`
-- Connected path: trunk through each `centerY`, horizontal to `tipX = 20`
-- **Forbidden:** `conn.y = 40`, fixed `72.89` / `81.22`, trunk tip past last elbow, disconnected subgraphs
+- **Rounded elbow:** junction `(0, centerY - 8.330574)` → chamfer `(8.330574, centerY)` → tip `(20, centerY)`; connected trunk through every junction; `strokeJoin`/`strokeCap` **ROUND**
+- **Forbidden:** sharp `L 0 cy L tipX cy` only, `conn.y = 40`, trunk past last junction, disconnected subgraphs
 
 ## Validate before done
 

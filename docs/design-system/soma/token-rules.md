@@ -16,7 +16,7 @@ Whenever you **add, remove, reorder, rename, or reparent** a row on the Semantic
 2. If the token is a **parent** with nested children (e.g. `surface.brand` + `.hover` / `.soft`), ensure a `Tree/{token}` frame exists at the parent’s Y. Orphan state rows without a parent (e.g. `action.ghost.hover` with no `action.ghost`) are invalid — add the parent before redrawing.
 3. **Redraw all `Tree/*` elbow connectors** in the same session — do not leave stale vectors after a 52px row shift. Helper: `scripts/figma-redraw-semantic-elbows.md`. Cursor rule: `.cursor/rules/soma-semantic-elbows.mdc`.
 4. **Child matching:** contiguous rows below the parent whose names start with `{parent}.` — stop at the first non-match. Never attach the next sibling parent.
-5. **Geometry:** `tree.y` = parent `y`; `tree.height` = `lastChild.y + lastChild.height − parent.y`; **`clipsContent = true`**; fresh `connector` at `(24, 0)`; elbow Y = **measured** `child.y + child.height/2 − tree.y` (not legacy `72.89` / `conn.y = 40`); connected trunk through every child; horizontals to `tipX = 20`. Validate no stroke into the next parent.
+5. **Geometry:** `tree.y` = parent `y`; `tree.height` = `lastChild.y + lastChild.height − parent.y`; **`clipsContent = true`**; fresh `connector` at `(24, 0)`; measured `centerY`; **rounded** elbows (`CORNER ≈ 8.33` chamfer + ROUND stroke join) to `tipX = 20`; connected trunk through every junction. No sharp-only L paths; no bleed into the next parent.
 6. Leaf tokens (`icon.ai`, `icon.accent`, …) do **not** get a Tree; only parents with children.
 
 Agents: after any semantic-row mutation, run the redraw helper for **every** `Tree/*` under `1:3317` before finishing the turn.
