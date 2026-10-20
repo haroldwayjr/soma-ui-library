@@ -2,9 +2,9 @@
 
 **Status:** Docs-first v1 for eng adoption. Figma motion variables not published yet. Values normalized from the Care App `tool-rail-panels` prototype (not every legacy ms value).
 
-**Scope:** Duration and easing tokens only. No full stagger scale, spring, or page-transition language in this pass. Progress **reveal** (first-paint grow) is included.
+**Scope:** Duration and easing tokens only. No full stagger scale, spring, or page-transition language in this pass. Progress **reveal** (first-paint grow) and **Tooltip** enter/leave are included.
 
-**Primary consumers:** Accordion · Progress (Bar / Circle) · Switch.
+**Primary consumers:** Accordion · Progress (Bar / Circle) · Switch · Tooltip.
 
 ## Rules
 
@@ -142,6 +142,23 @@ If height is not animated (`display` toggle only), still animate the chevron wit
 
 Reduced motion: toggle open/closed instantly; chevron may snap with no rotate tween.
 
+### Tooltip
+
+Inverse hover/focus hint — Figma **`Tooltip`** (Simple | Rich). Same recipe for composed tips that share that surface (badge tips, meter info tips, rail / composer chrome tips, IHP tip show after dismiss).
+
+| Property | Duration | Easing |
+|---|---|---|
+| Enter (opacity + settle translate) | `motion.duration.normal` | `motion.easing.emphasized` |
+| Leave (opacity + settle translate) | `motion.duration.fast` | `motion.easing.exit` |
+
+**Settle:** ~4px along the open axis toward the tip’s rest position (same distance as rail / composer chrome tips). Do not invent per-surface curves or ad-hoc `ease`.
+
+**Hover-intent delay** (optional — not a duration token): dense icon chrome (tool rail, composer icon buttons) may delay *enter* ~200ms so tips don’t flash on pointer sweep. Leave has no intent delay. Badge tips and field / meter info tips show on hover/focus with no intent delay.
+
+**Reduced motion:** interactive durations → `0` (token override); tip appears/disappears with state only — no fade or settle.
+
+**Not this recipe:** Popover / menu dropdown (still out of scope). Dialog / modal overlay. Progress meter reveal.
+
 ## Prototype → token map (reference)
 
 | Prototype pattern | Approx. legacy | Token |
@@ -154,12 +171,15 @@ Reduced motion: toggle open/closed instantly; chevron may snap with no rotate tw
 | Progress meter first paint (Insurance Activity) | 900ms grow + stagger | `reveal` + `emphasized` |
 | Progress value change (post-load) | — | `moderate` + `standard` |
 | Panel content fade reveal | 200ms ease | `moderate` + `standard` |
+| Tooltip enter (opacity + 4px settle) | 150ms emphasized | `normal` + `emphasized` |
+| Tooltip leave | 100ms exit | `fast` + `exit` |
+| Tooltip hover-intent (rail / composer only) | ~200ms delay | not a duration token |
 
 ## Out of scope (later)
 
 - Formal delay / stagger token scale (pattern note above only)
 - Overlay / drawer / panel enter distances
-- Shared menu/popover recipe (values above are hints only)
+- Shared menu/popover recipe (values above are hints only; **Tooltip** is a recipe — do not reuse menu timings for tips)
 - Figma variable collection + Motions page
 - Per-component duration tokens (`duration.accordion`) — prefer roles above
 - Foundation browser page under `#/ui-library/foundation/motion` (tokens live here first)
