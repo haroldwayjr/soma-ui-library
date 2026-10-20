@@ -153,7 +153,7 @@ Inverse hover/focus hint — Figma **`Tooltip`** (Simple | Rich). Same recipe fo
 
 **Settle:** ~4px along the open axis toward the tip’s rest position (same distance as rail / composer chrome tips). Do not invent per-surface curves or ad-hoc `ease`.
 
-**Hover-intent delay** (optional — not a duration token): dense icon chrome (tool rail, composer icon buttons) may delay *enter* ~200ms so tips don’t flash on pointer sweep. Leave has no intent delay. Badge tips and field / meter info tips show on hover/focus with no intent delay.
+**Hover-intent delay** (default — not a duration token): **200ms** before *enter* on **all** tips so tips don’t flash on pointer sweep. Leave has no intent delay. Persistent / open-by-default tips (e.g. IHP coach) skip the intent delay. Reduced motion → delay `0`.
 
 **Reduced motion:** interactive durations → `0` (token override); tip appears/disappears with state only — no fade or settle.
 
@@ -173,7 +173,7 @@ Inverse hover/focus hint — Figma **`Tooltip`** (Simple | Rich). Same recipe fo
 | Panel content fade reveal | 200ms ease | `moderate` + `standard` |
 | Tooltip enter (opacity + 4px settle) | 150ms emphasized | `normal` + `emphasized` |
 | Tooltip leave | 100ms exit | `fast` + `exit` |
-| Tooltip hover-intent (rail / composer only) | ~200ms delay | not a duration token |
+| Tooltip hover-intent (default, all tips) | 200ms delay | not a duration token |
 
 ## Out of scope (later)
 

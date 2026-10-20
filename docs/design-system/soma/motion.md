@@ -14,7 +14,7 @@ Full recipe in [`docs/motion.md`](../../motion.md). Care App prototype wires the
 | Leave (opacity + settle) | `motion.duration.fast` (100ms) | `motion.easing.exit` |
 
 - **Applies to:** Figma **`Tooltip`** Simple | Rich and composed tips that share that surface (badge tips, meter info tips, rail / composer chrome tips, IHP tip show).
-- **Hover-intent:** optional ~200ms enter delay on dense icon chrome only (tool rail, composer) — not a duration token. Badge / info tips: no intent delay.
+- **Hover-intent:** default **200ms** enter delay on all tips (not a duration token). Leave immediate. Open-by-default / coach skips delay.
 - **Reduced motion:** durations → `0`; state change only (no fade/settle).
 - **Not this recipe:** Popover / menu dropdown, Dialog / modal, Progress reveal.
 
