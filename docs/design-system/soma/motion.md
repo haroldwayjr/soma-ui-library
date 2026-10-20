@@ -10,7 +10,7 @@ Full recipe in [`docs/motion.md`](../../motion.md). Care App prototype wires the
 
 | State | Duration | Easing |
 |---|---|---|
-| Enter (opacity + ~4px settle) | `motion.duration.normal` (150ms) | `motion.easing.emphasized` |
+| Enter (opacity + ~4px settle **emerging away from the parent**) | `motion.duration.normal` (150ms) | `motion.easing.emphasized` |
 | Leave (opacity + settle) | `motion.duration.fast` (100ms) | `motion.easing.exit` |
 
 - **Applies to:** Figma **`Tooltip`** Simple | Rich and composed tips that share that surface (badge tips, meter info tips, rail / composer chrome tips, IHP tip show).

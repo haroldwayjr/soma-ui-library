@@ -151,7 +151,7 @@ Inverse hover/focus hint — Figma **`Tooltip`** (Simple | Rich). Same recipe fo
 | Enter (opacity + settle translate) | `motion.duration.normal` | `motion.easing.emphasized` |
 | Leave (opacity + settle translate) | `motion.duration.fast` | `motion.easing.exit` |
 
-**Settle:** ~4px along the open axis toward the tip’s rest position (same distance as rail / composer chrome tips). Do not invent per-surface curves or ad-hoc `ease`.
+**Settle:** ~4px along the open axis, **emerging away from the parent** into the tip’s rest position (same distance for all sides). Below → start `translateY(-4px)`; above → start `translateY(4px)`; side (e.g. tool rail left) → start toward the anchor on X. Do not dock toward the parent, and do not invent per-surface curves or ad-hoc `ease`.
 
 **Hover-intent delay** (default — not a duration token): **200ms** before *enter* on **all** tips so tips don’t flash on pointer sweep. Leave has no intent delay. Persistent / open-by-default tips (e.g. IHP coach) skip the intent delay. Reduced motion → delay `0`.
 
