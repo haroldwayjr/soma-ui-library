@@ -2,9 +2,9 @@
 
 **Status:** Docs-first v1 for eng adoption. Figma motion variables not published yet. Values normalized from the Care App `tool-rail-panels` prototype (not every legacy ms value).
 
-**Scope:** Duration and easing tokens only. No full stagger scale, spring, or page-transition language in this pass. Progress **reveal** (first-paint grow) and **Tooltip** enter/leave are included.
+**Scope:** Duration and easing tokens only. No full stagger scale, spring, or page-transition language in this pass. Progress **reveal** (first-paint grow), **Tooltip** enter/leave, and **Skeleton** sheen loop are included.
 
-**Primary consumers:** Accordion · Progress (Bar / Circle) · Switch · Tooltip.
+**Primary consumers:** Accordion · Progress (Bar / Circle) · Switch · Tooltip · Skeleton.
 
 ## Rules
 
@@ -12,7 +12,7 @@
 2. Prefer the smallest duration that still reads as intentional. When unsure: `normal` for chrome, `moderate` for layout/value change. Use **`reveal`** only for first-paint / intro fills — not for every value tweak.
 3. Exits may use the same duration as enters, but must use **`motion.easing.exit`** (faster perceived leave).
 4. **`prefers-reduced-motion: reduce`** → set interactive durations to `0` (or disable transition/animation). Keep state changes instant; do not substitute a long fade.
-5. Indeterminate loops (Spinner) are out of scope here — they keep their own cycle timing; still honor reduced motion (pause or static).
+5. Indeterminate **Spinner** loops stay component-owned (no formal recipe yet). **Skeleton** sheen is documented below as a fixed cycle — not a `motion.duration.*` role. Always honor reduced motion (pause or static Rest).
 
 ## Primitives
 
@@ -159,6 +159,22 @@ Inverse hover/focus hint — Figma **`Tooltip`** (Simple | Rich). Same recipe fo
 
 **Not this recipe:** Popover / menu dropdown (still out of scope). Dialog / modal overlay. Progress meter reveal.
 
+### Skeleton
+
+Content-shaped loading placeholders (`Skeleton` Block · Line · Circle; Care recipes Panel · List row · Accordion header). Figma **Appearance=Shimmer** is a **static** sheen preview — product animates the band.
+
+| Property | Duration | Easing |
+|---|---|---|
+| Sheen band travel (loop) | **1100ms** cycle | `linear` |
+
+**Mechanics (prototype):** soft gradient band (`transparent` → `skeleton/shimmer` → `transparent`) translates across `skeleton/base` (`translateX(-100%)` → `translateX(100%)`), `animation-iteration-count: infinite`. Peak highlight stays lighter than the bone (Light ~white @ 0.75; Dark soft cool ~0.1).
+
+**Why not a semantic duration:** Loop cycles sit outside enter/leave/reveal roles (same class as Spinner). Do not map sheen to `motion.duration.reveal` or stretch `slow`. If product and prototype diverge (e.g. legacy 2.6s ease-in-out), converge on **1100ms linear**.
+
+**Reduced motion:** freeze on Rest (no traveling sheen) or pause the animation; do not substitute a long fade.
+
+**Not this recipe:** Button loading (`Icon / Spinner`). Short chrome indeterminate waits (`Spinner`). Determinate meters (`Progress` value / reveal).
+
 ## Prototype → token map (reference)
 
 | Prototype pattern | Approx. legacy | Token |
@@ -174,6 +190,7 @@ Inverse hover/focus hint — Figma **`Tooltip`** (Simple | Rich). Same recipe fo
 | Tooltip enter (opacity + 4px settle) | 150ms emphasized | `normal` + `emphasized` |
 | Tooltip leave | 100ms exit | `fast` + `exit` |
 | Tooltip hover-intent (default, all tips) | 200ms delay | not a duration token |
+| Skeleton sheen loop | 1100ms linear infinite | cycle (not a semantic duration role) |
 
 ## Out of scope (later)
 
@@ -187,5 +204,5 @@ Inverse hover/focus hint — Figma **`Tooltip`** (Simple | Rich). Same recipe fo
 ## Related
 
 - Soma UI Library: [README](../README.md)
-- Care App prototype provenance: `prototypes/tool-rail-panels/styles.css` (`.ins-progress` / `ins-meter-grow`)
+- Care App prototype provenance: `prototypes/tool-rail-panels/styles.css` (`.ins-progress` / `ins-meter-grow`; `.skeleton` / `@keyframes shimmer`)
 - Figma: [Soma Design System](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System)

@@ -19,3 +19,20 @@ Full recipe in [`docs/motion.md`](../../motion.md). Care App prototype wires the
 - **Not this recipe:** Popover / menu dropdown, Dialog / modal, Progress reveal.
 
 See also `component-notes.md` · Tooltip · Badge + hover tip.
+
+## Skeleton (recipe summary)
+
+Full recipe in [`docs/motion.md`](../../motion.md#skeleton). Care App prototype: `.skeleton` / `@keyframes shimmer` in `prototypes/tool-rail-panels/styles.css`.
+
+| Property | Duration | Easing |
+|---|---|---|
+| Sheen band travel (loop) | **1100ms** cycle | `linear` |
+
+- **Applies to:** `Skeleton` Appearance=Shimmer in product (Figma is static preview only).
+- **Not a semantic duration:** loop cycle, same class as Spinner — do not map to `motion.duration.reveal` / `slow`.
+- **Reduced motion:** Rest / pause (no traveling sheen).
+- **Converge:** product legacy 2.6s ease-in-out → **1100ms linear**.
+- **Not this recipe:** Button `Icon / Spinner`, chrome `Spinner`, Progress value / reveal.
+
+See also `component-notes.md` · Skeletons.
+
