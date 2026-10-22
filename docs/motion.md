@@ -2,9 +2,9 @@
 
 **Status:** Docs-first v1 for eng adoption. Figma motion variables not published yet. Values normalized from the Care App `tool-rail-panels` prototype (not every legacy ms value).
 
-**Scope:** Duration and easing tokens only. No full stagger scale, spring, or page-transition language in this pass. Progress **reveal** (first-paint grow), **Tooltip** enter/leave, and **Skeleton** sheen loop are included.
+**Scope:** Duration and easing tokens only. No full stagger scale, spring, or page-transition language in this pass. Progress **reveal** (first-paint grow), **Tooltip** enter/leave, **Modal / Dialog** open/close, and **Skeleton** sheen loop are included.
 
-**Primary consumers:** Accordion · Progress (Bar / Circle) · Switch · Tooltip · Skeleton.
+**Primary consumers:** Accordion · Progress (Bar / Circle) · Switch · Tooltip · Modal · Skeleton.
 
 ## Rules
 
@@ -157,7 +157,28 @@ Inverse hover/focus hint — Figma **`Tooltip`** (Simple | Rich). Same recipe fo
 
 **Reduced motion:** interactive durations → `0` (token override); tip appears/disappears with state only — no fade or settle.
 
-**Not this recipe:** Popover / menu dropdown (still out of scope). Dialog / modal overlay. Progress meter reveal.
+**Not this recipe:** Popover / menu dropdown (still out of scope). Progress meter reveal. Modal / Dialog (recipe below).
+
+### Modal
+
+Centered dialog + scrim (Figma **Modal.Popup**; Care App enrollment, confirm, manage Care Team). Same recipe for any full-scrim dialog that shares that surface.
+
+| Property | Duration | Easing |
+|---|---|---|
+| Enter — scrim opacity | `motion.duration.moderate` | `motion.easing.standard` |
+| Enter — dialog (opacity + settle) | `motion.duration.moderate` | `motion.easing.emphasized` |
+| Leave — scrim opacity | `motion.duration.moderate` | `motion.easing.exit` |
+| Leave — dialog (opacity + settle) | `motion.duration.moderate` | `motion.easing.exit` |
+
+**Settle:** **12px** on Y — dialog emerges from slightly below rest (`translateY(12px)` → `0`) on enter; reverse on leave (`0` → `translateY(12px)`). No scale. Scrim is opacity only (Light `rgba(16, 29, 56, 0.45)` / Dark heavier). Scrim and dialog start together — no stagger.
+
+**Content swap** (dialog already open; e.g. enrollment → confirm): keep scrim up; dialog only — opacity ~0.72→1 + `translateY(6px)`→0, **`motion.duration.normal`** + **`motion.easing.emphasized`**. Do not tear down `is-open` (avoids scrim flash).
+
+**Prototype note:** `tool-rail-panels` plays enter (`modal-scrim-in` / `modal-fade-up`, 200ms `ease`) and content-swap (`modal-content-swap`, 160ms emphasized). Leave currently removes `is-open` with no exit tween — eng should implement leave with the table above (same duration, `exit` easing, reverse settle).
+
+**Reduced motion:** interactive durations → `0`; show/hide dialog + scrim with state only — no fade or settle.
+
+**Not this recipe:** Drawer / side panel slide. Menu / popover. Tooltip.
 
 ### Skeleton
 
@@ -190,12 +211,15 @@ Content-shaped loading placeholders (`Skeleton` Block · Line · Circle; Care re
 | Tooltip enter (opacity + 4px settle) | 150ms emphasized | `normal` + `emphasized` |
 | Tooltip leave | 100ms exit | `fast` + `exit` |
 | Tooltip hover-intent (default, all tips) | 200ms delay | not a duration token |
+| Modal / Dialog enter (scrim + fade-up 12px) | 200ms ease | `moderate` + `standard` (scrim) / `emphasized` (dialog) |
+| Modal / Dialog leave | — (prototype snaps) | `moderate` + `exit` (implement) |
+| Modal content swap (scrim stays) | 160ms emphasized | `normal` + `emphasized` |
 | Skeleton sheen loop | 1100ms linear infinite | cycle (not a semantic duration role) |
 
 ## Out of scope (later)
 
 - Formal delay / stagger token scale (pattern note above only)
-- Overlay / drawer / panel enter distances
+- Drawer / side panel enter distances (Modal / Dialog recipe covers centered scrim dialogs only)
 - Shared menu/popover recipe (values above are hints only; **Tooltip** is a recipe — do not reuse menu timings for tips)
 - Figma variable collection + Motions page
 - Per-component duration tokens (`duration.accordion`) — prefer roles above
@@ -204,5 +228,5 @@ Content-shaped loading placeholders (`Skeleton` Block · Line · Circle; Care re
 ## Related
 
 - Soma UI Library: [README](../README.md)
-- Care App prototype provenance: `prototypes/tool-rail-panels/styles.css` (`.ins-progress` / `ins-meter-grow`; `.skeleton` / `@keyframes shimmer`)
+- Care App prototype provenance: `prototypes/tool-rail-panels/styles.css` (`.ins-progress` / `ins-meter-grow`; `.modal-layer` / `modal-fade-up` / `modal-scrim-in`; `.skeleton` / `@keyframes shimmer`)
 - Figma: [Soma Design System](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System)
