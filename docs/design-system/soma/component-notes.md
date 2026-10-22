@@ -69,8 +69,8 @@ Ramp notes below document the Colors page. **Do not bind these primitives on com
 - **`Tooltip`** — inverse hover/focus hint (`surface/inverse`). Content **Simple** | **Rich** (title + description). Side × Align arrow placements. Published name is **Tooltip** (not Popup); nested `Tooltip.Popup` frames are Base UI anatomy slots only.
 - **Text props:** **Label** (Simple) · **Title** · **Description** (Rich). Bind copy through these props — Side / Align swaps keep content. Switching Content Simple ↔ Rich uses different props (Label vs Title/Description); re-enter copy when changing Content type.
 - **Layout:** Root width **FIXED** (drag-resizable) + height **HUG**; Popup FILL × HUG; text `textAutoResize=HEIGHT` + FILL. **minWidth** Simple **120** · Rich **160** (Left/Right root +6 for arrow). No maxWidth — drag horizontal edges wider and copy reflows. Left/Right arrow track stays **FIXED 6** wide (never FILL). Never HUG width on the root (blocks drag-resize) and never FIXED skinny width on Label.
-- **Dismiss:** Default dismiss is pointer leave / blur. For **persistent tips** that open by default (e.g. IHP MCA tips), compose shared **Close** on the open Tooltip and keep Soft Brand Mini Alert as the re-open trigger — do not add a Callout component.
-- **IHP tips (APD compare):** Open by default under the IHP column as **`Tooltip`** (`Content=Rich`, Side=Bottom, Align=Start) + **Close** dismiss. Trigger **Alert Soft Brand Mini** (“Share these tips with member”) reopens the Tooltip after dismiss. No separate Callout / Popover for this pattern.
+- **Dismiss:** Default dismiss is pointer leave / blur. For **persistent tips** that open by default (e.g. IHP MCA tips), compose shared **Close** on the open Tooltip and keep **Alert Soft Info Mini (Inline)** as the re-open trigger — do not add a Callout component.
+- **IHP tips (APD compare):** Open by default under the IHP column as **`Tooltip`** (`Content=Rich`, Side=Bottom, Align=Start) + **Close** dismiss. Trigger **Alert Soft Info Mini (Inline)** (“Share these tips with member”) reopens the Tooltip after dismiss. No separate Callout / Popover for this pattern.
 - **vs Popover:** Tooltip = hint or persistent tip callout (title/body; optional composed Close). Need Accept/Cancel or links → **Popover / Popup**. Blocking confirm → **Dialog**.
 - **Do not** duplicate Simple variants (e.g. Shortcut/⌘K twins) — conflicting property combos reset instance content.
 
@@ -82,6 +82,20 @@ Ramp notes below document the Colors page. **Do not bind these primitives on com
 **Changed 2026-09-10:** Inverse hover set renamed **`Tooltip / Popup` → `Tooltip`**.
 **Changed 2026-09-10:** Removed **`Tooltip / Callout`**; IHP tips use **`Tooltip` Rich** + composed **Close**; Mini Alert reopens after dismiss.
 **Removed 2026-09-10:** `Tooltip / Callout` (duplicated Tooltip — do not reintroduce).
+
+## Accordion
+
+- Figma: [Accordions](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=5315-58202). Master: **`Accordion`**. Helpers: **`Accordion / List body`**, **`Accordion / Trailing action`**, **`Accordion / _Badge`**, **`Accordion / Group`**.
+- **Variants:** **Chevron** Leading | Trailing (**default Leading**) · **Open** False | True · **State** Rest | Hover | Focus visible | Disabled · **Body** Description | List.
+- **Header meta:** boolean **`Show meta`** (default false) + text **`Meta`** (default `Supporting text`). **`caption`** / **`text/secondary`**, under Title row in **Title stack** (`stack/xs`). Stays visible when Open=True — not the Body Description slot.
+- **Badges:** **`Show leading badge`** · **`Show trailing badge`** (both default false). Replaces former **`Show badge`**. Nested Soft Badge via **`Accordion / _Badge`** (master default Soft **Warning** · label **`0`**). **Leading** sits **after Title** in the Title row (`inline/sm`) — Soft **Warning** / **`0`**. **Trailing** sits before Trailing action — Soft **Neutral** / **`In progress`**. Swap tone/label on the nested Soft Badge instance.
+- **Trailing icon:** **`Show trailing icon`** (default true). Edit glyph ink **`icon/tertiary`** (not `icon/default`).
+- **Other booleans:** **`Show divider`** · **`Show top divider`**. Text **`Title`**. Slot **`Content`** (Body=Description).
+- **Body=List:** nested exposed **`Accordion / List body`** — Compact **`List Item`** rows with **`Show row 2`…`12`** + optional **`Show save`**. Prefer Body=List over freehand rows in the Description slot.
+- **Trigger layout (Leading):** Chevron → Title stack (**Title row** = Title · Leading badge · then Meta) → Trailing badge → Trailing action. Counter-axis **CENTER**.
+- **Width:** Masters are **FIXED** width (min **200**, default **320**) + **HUG** height — never hug width. Trigger / Title stack / Content / dividers **FILL** so the row stretches. In an auto-layout parent, set the instance to **Fill container** (horizontal); stacked **`Accordion / Group`** children are Fill by default. Do not leave instances on **Hug** width or trailing chrome collapses inward.
+
+**Changed 2026-10-22:** Default **Chevron=Leading**. Added **`Show meta`** + **`Meta`**; **`Show leading badge`** / **`Show trailing badge`** (removed **`Show badge`**). Leading badge after Title; trailing Soft Neutral; trailing icon **`icon/tertiary`**. Fill-width internals + instance Fill in auto-layout parents.
 
 ## Popover
 
@@ -223,30 +237,33 @@ Ramp notes below document the Colors page. **Do not bind these primitives on com
 
 ## Alerts
 
-- **Tones:** Brand, Success, Warning, Danger only — **Neutral** and **Solid** retired 2026-09-01.
-- **Variants:** **Soft** (default), **Outlined**. No Solid fill variant.
-- **Content:** Single line · Title + description · One action · Two actions · **One action inline** · **Two actions inline**.
+- **Tones:** **Info**, Success, Warning, Danger only — Tone **Brand** renamed **Info** 2026-10-22; **Neutral** and **Solid** retired 2026-09-01.
+- **Variants:** **Contrast** (default), **Soft**. **Outlined** retired 2026-10-22. No Solid fill variant.
+- **Placement:** **Elevated** (default), **Inline**. Variant and Placement are **coupled** — valid pairs only:
+  - **Contrast × Elevated** — inverse toast (floating status).
+  - **Soft × Inline** — tone banner (in-flow).
+  - Figma switches **Placement → Inline** forces **Soft**; **Elevated** forces **Contrast** (invalid cross-pairs are not published).
+- **Content:** Single line · Title + description · One action · Two actions · **One action inline** · **Two actions inline** · **Mini**.
 - **Booleans:**
-  - **`Show accent`** (default true) — 4px left bar; fill `action/{tone}` (Brand → `action/primary`) **except Warning → `icon/warning`** so accent matches the leading icon.
+  - **`Show accent`** (default true on **Soft Inline** only) — 4px left bar; fill `action/{tone}` (Info → **`action/info`**) **except Warning → `icon/warning`** so accent matches the leading icon. **Contrast Elevated:** accent off — not part of inverse toast chrome.
   - **`Show secondary`** (default false on One action*) — toggles Dismiss (`Button` text/brand small) in stacked **Button row** and **Actions inline**. Default true on Two actions*; on One action inline, turn on for secondary + primary on the same row.
   - **`Show leading icon`**, **`Show close`** — Close is **Medium** (24 hit), glyph `icon/tertiary`, **top-right** on multiline (title + description / stacked actions).
   - **`Inline actions`** — legacy; prefer **`One action inline`** / **`Two actions inline`** content variants (title-only row, CTAs centered).
-- **Chrome:** Root **`clipsContent = true`** so the accent peeks with the banner radius; **`shadow.lg`** still paints outside (effects are not clipped).
-  - **Soft:** 1px inside **`border/{tone}/subtle`** (light **`/300`** — blue/green/yellow/red) + **`shadow.lg`**.
-  - **Outlined:** 1px inside grey **`border/subtle`** + **`shadow.lg`** (unchanged).
-- **Surfaces:**
-  - **Soft:** `surface/{tone}/soft` — light **`/100`** tints (`blue/100`, `green/100`, `yellow/100`, `red/100`); dark **`/900`**. Not `surface/{tone}/subtle` (`/200`).
-  - **Outlined:** `surface/default` + grey **`border/subtle`** + **`shadow.lg`**.
-- **Inner frames:** **`Main`** carries the opaque surface fill (required for accent peek — `surface/{tone}/soft` on Soft; `surface/default` on Outlined). `Content`, `Body`, action rows — **no fill** (transparent). Icon wrapper frames (`_outline` / `_bold`) stay **fill-off** — never bind `icon/{tone}` (or any paint) on the 14×14 `_bold` frame; that paints a solid square over the glyph. Bind tone on **vector fills** only.
-- **Type:** **Soft** title **`text/primary`** (charcoal); **Outlined** title **`text/{tone}`**. Description **`text/secondary`** (both). Leading icon fills **`icon/{tone}`** — success/danger light **`/600`**, warning **`/700`**; **`icon/brand`** stays **`blue/800`** (navy, with outlined Brand buttons). Never **`icon/default`** on toned alerts.
-- **Leading icons by tone:** Brand → `icon/status/info`; Success → `icon/actions/check.circle`; Warning → `icon/status/warning`; Danger → `icon/status/error`. **Size=sm, Style=bold** on every alert. Sit in a **24×24 Icon slot** so the glyph centers with Close (24) and the title line.
+- **Chrome:**
+  - **Contrast · Elevated:** **`surface/inverse`** on root/Main; **`shadow.lg`** on root (`clipsContent = true`; shadow paints outside). **No root border.** **No accent.**
+  - **Soft · Inline:** 1px inside **`border/{tone}/subtle`** (light **`/300`** — blue/green/yellow/red). **No shadow.**
+- **Surfaces:** **`Main`** carries the opaque fill — **`surface/inverse`** (Contrast Elevated) or **`surface/{tone}/soft`** (Soft Inline — light **`/100`** tints; dark **`/900`**; not `surface/{tone}/subtle` `/200`). **Soft Info:** still **`surface/brand/soft`** (no **`surface/info/soft`** token) + **`border/info/subtle`**; accent **`action/info`**; leading icon **`icon/info`** (light → **`blue/600`**).
+- **Inner frames:** `Content`, `Body`, action rows — **no fill** (transparent). **Soft Inline:** absolute full-bleed **Accent** + 4px gap + opaque **Main** (accent peek with banner radius). Icon wrapper frames (`_outline` / `_bold`) stay **fill-off** — never bind `icon/{tone}` (or any paint) on the 14×14 `_bold` frame; that paints a solid square over the glyph. Bind tone on **vector fills** only.
+- **Type:** **Soft Inline** title **`text/primary`** (charcoal). **Contrast Elevated** uses inverse toast bindings on masters (title/description/close/icon on inverse ramps — match Figma). Description **`text/secondary`** where shown. Leading icon fills **`icon/{tone}`** on Soft — Info **`icon/info`** (light **`blue/600`**); success/danger light **`/600`**; warning **`/700`**. **Contrast Info** leading icon **`icon/info`** (semantic token — not raw **`blue/600`**, not **`icon/brand`** navy). Never **`icon/default`** on toned Soft alerts.
+- **Leading icons by tone:** Info → `icon/status/info` (ink **`icon/info`**); Success → `icon/actions/check.circle`; Warning → `icon/status/warning`; Danger → `icon/status/error`. **Size=sm, Style=bold** on every alert. Sit in a **24×24 Icon slot** so the glyph centers with Close (24) and the title line.
 - **Actions (Buttons):** **Small text** only — both primary and secondary are Button **text / brand / small** (link-weight CTAs; no outlined or contained). Alert chrome already carries emphasis; outlined pills read heavy. Labels use **`text/brand`**. Gap `inline/sm` (8). Order: Dismiss · primary CTA.
 - **Stacked actions** (One action / Two actions): `Body` = **Copy** (Title → Description, gap `space4` / 4) → **Actions stacked**, with Body gap **`stack/md`** (16) before the CTA row — same body→CTA rhythm as Empty state.
 - **Inline actions** (One action inline / Two actions inline): **Title only** (single line — no description). CTAs on the same row, **vertically centered** with copy (`Main` / `Content` counter-axis `CENTER`). Two actions inline = secondary + primary; One action inline + **`Show secondary`** = optional Dismiss + primary.
-- **Layout:** Root `radius/md` (8). `[Accent absolute full-bleed][Accent gap 4][Main: Icon slot | Body/Content | Close]` — Main opaque surface; Main pad 12, gap 12. **`Show leading icon` binds the Icon slot** (not the nested glyph) so the 24 slot + gap collapse and copy shifts left when off. **Title + description / stacked actions:** `Main` counter-axis **MIN**; title sits in a **24 Title row** (2px vertical pad) so Icon slot, title, and Close share one centerline. **Single line and inline:** `Main` counter-axis **CENTER** so Icon, title, CTA, and Close share one centerline.
-- **Docs style variations:** Patterns → Alerts shows Soft / Outlined × Accent on / off (Brand · Title + description). Accent is a boolean, not a third variant.
-- **App-composed IHP tips (not Alert):** Two **coexisting** patterns — (1) **Tooltip + Alert trigger:** **`Tooltip`** Rich open by default (`Tooltip · IHP tips`) + composed **Close** dismiss; **Alert Soft Brand Mini** (“Share these tips with member”) reopens after dismiss on **Compare table** · **Compare · Select open**; (2) **Inline disclosure:** **`IHP Tips / Disclosure`** (Expanded | Collapsed) under the plan column. Do not add as Alert content variants. **`Tooltip / Callout` removed 2026-09-10** — do not reintroduce.
-- **Figma:** set [`1152:1533`](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=1152-1533) · sticker [`899:10977`](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=899-10977) · docs [`899:10790`](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=899-10790). **48** variants (4 tones × 2 variants × 6 content). Sticker = **Soft** and **Outlined** as side-by-side vertical grids (tone columns × content rows), beside **Dark · Soft**. No light Soft/Outlined instance gallery.
+- **Layout:** Root `radius/md` (8). Soft Inline: `[Accent absolute full-bleed][Accent gap 4][Main: Icon slot | Body/Content | Close]`. Main pad 12, gap 12. **`Show leading icon` binds the Icon slot** (not the nested glyph) so the 24 slot + gap collapse and copy shifts left when off. **Title + description / stacked actions:** `Main` counter-axis **MIN**; title sits in a **24 Title row** (2px vertical pad) so Icon slot, title, and Close share one centerline. **Single line and inline:** `Main` counter-axis **CENTER** so Icon, title, CTA, and Close share one centerline.
+- **Docs style variations:** Patterns → Alerts shows **Soft Inline** × Accent on / off (Info · Title + description). Accent is a boolean, not a third variant.
+- **Dark:** sticker/docs examples — **Soft Inline** + **Contrast Elevated** (no light Outlined gallery).
+- **App-composed IHP tips (not Alert):** Two **coexisting** patterns — (1) **Tooltip + Alert trigger:** **`Tooltip`** Rich open by default (`Tooltip · IHP tips`) + composed **Close** dismiss; **Alert Soft Info Mini (Inline)** (“Share these tips with member”) reopens after dismiss on **Compare table** · **Compare · Select open**; (2) **Inline disclosure:** **`IHP Tips / Disclosure`** (Expanded | Collapsed) under the plan column. Do not add as Alert content variants. **`Tooltip / Callout` removed 2026-09-10** — do not reintroduce.
+- **Figma:** set [`1152:1533`](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=1152-1533) · sticker [`899:10977`](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=899-10977) · docs [`899:10790`](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=899-10790). **56** variants (4 tones × 2 valid Variant/Placement pairs × 7 content).
 
 **Changed 2026-09-01:** grey `border/subtle` + `shadow.sm`; `/100` soft surfaces; Brand/Danger contained only; inline title-only content variants + `Show secondary`.
 
@@ -269,6 +286,10 @@ Ramp notes below document the Colors page. **Do not bind these primitives on com
 **Changed 2026-09-14:** **`yellow/700`** `#A3890B` · **`/800`** `#75600A`; Light **`icon/warning`** → `yellow/700`.
 
 **Fixed 2026-09-14:** Warning accent and leading icon vectors rebound to **`icon/warning`** (were hardcoded gold hex).
+
+**Changed 2026-10-22:** **Outlined** retired. **Variant** = **Contrast** (default) · **Soft**; **Placement** = **Elevated** (default) · **Inline** (Inline ↔ Soft, Elevated ↔ Contrast). **Contrast × Elevated** = inverse toast (`surface/inverse`, **`shadow.lg`**, no accent, no root border). **Soft × Inline** = tone banner (`surface/{tone}/soft`, **`border/{tone}/subtle`**, no shadow; **`Show accent`** Soft only). **Mini** content added. **56** masters (4 × 2 × 7).
+
+**Changed 2026-10-22:** Alert Tone **Brand → Info**; Contrast/Soft Info icons bind **`icon/info`** (`blue/600` light).
 
 ## Card / AI
 
@@ -511,18 +532,18 @@ Not a conflict — different jobs. Keep both.
 - **Select plans sticky footer:** Match Care Pathways **Pathway header** recipe — title left (`text/primary`, Figtree SemiBold 16/24) + spacer FILL + primary CTA right; `border/subtle` hairline **above** the sticky block. **Task list** accordion sits under the CTA with its own top `border/subtle` hairline (same as other Care Plan accordions). Do not run Task list chrome into the CTA row.
 - **Hairlines (Select plans):** `border/subtle` 1px above **Additional Plans** (accordion) and above the **Compare Plans** sticky CTA bar.
 - **IHP tips (two coexisting patterns):**
-  - **Tooltip + Alert trigger** (Compare table · Compare · Select open): **Open by default** — **`Tooltip`** instance `Content=Rich`, `Side=Bottom`, `Align=Start`, named **`Tooltip · IHP tips`** (inverse surface). Title: *Don't forget to share these tips with the member*; description: three bulleted tips (MCA copy). **Dismiss:** composed shared **Close** (`Close · dismiss tips`). **Re-open:** **Alert Soft Brand Mini** (“Share these tips with member”) under the IHP column. Open state is an absolute overlay on the Context panel, anchored under the IHP column; Premiums sit directly under plan selectors.
+  - **Tooltip + Alert trigger** (Compare table · Compare · Select open): **Open by default** — **`Tooltip`** instance `Content=Rich`, `Side=Bottom`, `Align=Start`, named **`Tooltip · IHP tips`** (inverse surface). Title: *Don't forget to share these tips with the member*; description: three bulleted tips (MCA copy). **Dismiss:** composed shared **Close** (`Close · dismiss tips`). **Re-open:** **Alert Soft Info Mini (Inline)** (“Share these tips with member”) under the IHP column. Open state is an absolute overlay on the Context panel, anchored under the IHP column; Premiums sit directly under plan selectors.
   - **Inline disclosure — IHP Tips / Disclosure** (App component [`3634:1700`](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=3634-1700)): **State=Expanded | Collapsed**. Quiet panel — `surface/subtle` + `border/subtle` + `radius.md` + `inset/sm`; **not** Alert Mini. Type: title **subtitle4** (12/16 SemiBold); tips **caption** (12/16) with SemiBold lead-ins (`text/primary`) + Regular rest (`text/secondary`). **Expanded:** full tips + **Hide** (subtitle3/`text/brand`) + chevron.up. **Collapsed:** same chrome; lead-ins only (`text/secondary` Medium) + **Show** + chevron.down. 225px plan-column width. Frames: **Compare · IHP tips inline** · **Compare · IHP tips collapsed**. Do not invent a new Popover for inline show/hide.
 - **Compare panel icons:** Plan / network **Select / Trigger** chevrons — nested glyph **Size=sm**, ink **`icon/tertiary`**. **Panel header dismiss:** **`Button`** text / secondary / small / iconOnly + **`icon/navigation/close`** (Context panel recipe — not shared **Close**). Do not leave chevrons at Size=xs or use `icon/default`. IHP tips overlay dismiss stays composed shared **Close** (above).
 - **Soma used:** App Shell, Breadcrumb, Badge, Button, Avatar, Chat / Message, Text Input, Tool rail / Rail / Icon, Checkbox / Control, Close (IHP tips dismiss only), Select / Trigger · Item · Popup, Tooltip, Alert, Table / Cell · text, IHP Tips / Disclosure.
 - **Chat header:** trailing **`Chat / Response timer`** (Active turn or Closed dual stamp) on example frames.
-- **Gaps (composed, not published):** Accordion/disclosure, side Drawer chrome, plan select card, URL+Copy field, comparison Table variant (section headers + plan Select columns), Select / Item trailing status meta. Chat composer now ships in classic and modern code styles; see `open-items.md`.
+- **Gaps (composed, not published):** side Drawer chrome, plan select card, URL+Copy field, comparison Table variant (section headers + plan Select columns), Select / Item trailing status meta. Chat composer now ships in classic and modern code styles; see `open-items.md`. Accordion is published on Base Components — see **Accordion** above.
 
 **Added 2026-09-08:** Three APD compare plans app example frames on Chat Assist shell.
-**Added 2026-09-09:** IHP tips on **Compare table** · **Compare · Select open** — Alert Soft Brand Mini re-open trigger + tips panel under the IHP plan column.
+**Added 2026-09-09:** IHP tips on **Compare table** · **Compare · Select open** — Alert Soft Info Mini (Inline) re-open trigger + tips panel under the IHP plan column.
 **Added 2026-09-09:** **`IHP Tips / Disclosure`** inline pattern (Expanded | Collapsed) + **Compare · IHP tips inline** · **Compare · IHP tips collapsed** frames; Tooltip pattern unchanged on compare frames.
 **Changed 2026-09-09:** IHP Tips / Disclosure — quiet `surface/subtle` panel; **subtitle4** title + **caption** tips; Collapsed matches Expanded chrome (lead-ins only).
-**Changed 2026-09-10:** IHP tips open state → **`Tooltip` Rich** + composed **Close** dismiss; Alert Soft Brand Mini reopens after dismiss. **`Tooltip / Callout` removed** — do not document or reintroduce.
+**Changed 2026-09-10:** IHP tips open state → **`Tooltip` Rich** + composed **Close** dismiss; Alert Soft Info Mini (Inline) reopens after dismiss. **`Tooltip / Callout` removed** — do not document or reintroduce.
 
 **Changed 2026-09-09:** Select plans sticky Compare CTA title row aligned to Care Pathways pathway-header pattern; hairlines above Additional Plans accordion and sticky footer.
 **Changed 2026-09-09:** Compare panel Select chevrons + Close dismiss use **Size=sm** + **`icon/tertiary`**.

@@ -127,13 +127,17 @@ Full rules: `component-notes.md` · token tables: `token-rules.md`.
 
 - [App components · Tool rail](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=3171-48231): `Tool rail` (56) + `Rail / Icon` + states matrix. See `component-notes.md`.
 
+## Accordions
+
+- [Accordions](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=5315-58202): **`Accordion`** — Chevron **Leading** (default) | Trailing; Open; State; Body Description | List. **`Show meta`** + **`Meta`**. **`Show leading badge`** (after Title, Soft Warning) / **`Show trailing badge`** (Soft Neutral). Trailing edit icon **`icon/tertiary`**. Width: Fill in auto-layout parents (masters FIXED/min 200, internals FILL). Body=List → exposed **`Accordion / List body`**. See `component-notes.md`.
+
 ## Modals / Dialog
 
 - [Modals](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=1427-23823): `Dialog` Intent=Default | Destructive. Default = info + brand CTA; Destructive = error + danger CTA. No Warning/Success Dialog — use Alert for non-blocking status. See `component-notes.md`.
 
 ## Tooltips
 
-- [Tooltips](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=702-6775): **`Tooltip`** (inverse hover/focus Simple | Rich). Text props **Label** · **Title** · **Description** (Side/Align keep copy). Root **FIXED** width (**minWidth** Simple 120 · Rich 160) + HUG height — drag edges wider to reflow. Persistent tips (e.g. IHP MCA) — **`Tooltip` Rich** open by default + composed **Close** dismiss; **Alert Soft Brand Mini** reopens after dismiss. **`Tooltip / Callout` removed 2026-09-10** — do not use. Footer actions → Popover. See `component-notes.md`.
+- [Tooltips](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=702-6775): **`Tooltip`** (inverse hover/focus Simple | Rich). Text props **Label** · **Title** · **Description** (Side/Align keep copy). Root **FIXED** width (**minWidth** Simple 120 · Rich 160) + HUG height — drag edges wider to reflow. Persistent tips (e.g. IHP MCA) — **`Tooltip` Rich** open by default + composed **Close** dismiss; **Alert Soft Info Mini (Inline)** reopens after dismiss. **`Tooltip / Callout` removed 2026-09-10** — do not use. Footer actions → Popover. See `component-notes.md`.
 
 ## Logos
 
@@ -154,7 +158,7 @@ Full rules: `component-notes.md` · token tables: `token-rules.md`.
 
 ## App examples — APD compare plans
 
-- [APD compare plans (WIP)](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=3535-18169): Chat Assist shell + Compare panel. Frames — **Select plans** · **Compare table** · **Compare · Select open** · **Compare · IHP tips inline** · **Compare · IHP tips collapsed**. **IHP tips — two patterns:** (1) **Tooltip + Alert trigger** — **`Tooltip` Rich** open by default (`Tooltip · IHP tips`) + **Close** dismiss; **Alert Soft Brand Mini** reopens on Compare table · Select open; (2) **Inline disclosure** — **`IHP Tips / Disclosure`** (Expanded | Collapsed) on inline/collapsed frames. Gaps in `open-items.md`. See `component-notes.md`.
+- [APD compare plans (WIP)](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=3535-18169): Chat Assist shell + Compare panel. Frames — **Select plans** · **Compare table** · **Compare · Select open** · **Compare · IHP tips inline** · **Compare · IHP tips collapsed**. **IHP tips — two patterns:** (1) **Tooltip + Alert trigger** — **`Tooltip` Rich** open by default (`Tooltip · IHP tips`) + **Close** dismiss; **Alert Soft Info Mini (Inline)** reopens on Compare table · Select open; (2) **Inline disclosure** — **`IHP Tips / Disclosure`** (Expanded | Collapsed) on inline/collapsed frames. Gaps in `open-items.md`. See `component-notes.md`.
 
 ## App examples — Care Plans
 

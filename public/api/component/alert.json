@@ -4,7 +4,7 @@
   "category": "Communication",
   "page": "Alerts (WIP)",
   "nodeId": "1152:1533",
-  "description": "TODO",
+  "description": "Status messaging: Contrast\u00d7Elevated inverse toast or Soft\u00d7Inline tone banner. Tones Info, Success, Warning, Danger.",
   "buildStatus": "Not started",
   "importPath": null,
   "implementationStatus": "not-implemented",
@@ -12,7 +12,7 @@
     {
       "name": "Tone",
       "figmaValues": [
-        "Brand",
+        "Info",
         "Success",
         "Warning",
         "Danger"
@@ -23,8 +23,17 @@
     {
       "name": "Variant",
       "figmaValues": [
-        "Soft",
-        "Outlined"
+        "Contrast",
+        "Soft"
+      ],
+      "codeProp": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "name": "Placement",
+      "figmaValues": [
+        "Elevated",
+        "Inline"
       ],
       "codeProp": null,
       "implementationStatus": "not-implemented"
@@ -92,8 +101,9 @@
   "variants": [
     {
       "properties": {
-        "Tone": "Brand",
-        "Variant": "Soft",
+        "Tone": "Info",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
         "Content": "Two actions"
       },
       "nodeId": null,
@@ -101,8 +111,19 @@
     },
     {
       "properties": {
-        "Tone": "Brand",
+        "Tone": "Info",
         "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "Two actions"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Info",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
         "Content": "Single line"
       },
       "nodeId": null,
@@ -110,8 +131,19 @@
     },
     {
       "properties": {
-        "Tone": "Brand",
+        "Tone": "Info",
         "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "Single line"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Info",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
         "Content": "Title + description"
       },
       "nodeId": null,
@@ -119,8 +151,19 @@
     },
     {
       "properties": {
-        "Tone": "Brand",
+        "Tone": "Info",
         "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "Title + description"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Info",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
         "Content": "One action"
       },
       "nodeId": null,
@@ -128,8 +171,19 @@
     },
     {
       "properties": {
-        "Tone": "Brand",
+        "Tone": "Info",
         "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "One action"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Info",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
         "Content": "One action inline"
       },
       "nodeId": null,
@@ -137,8 +191,19 @@
     },
     {
       "properties": {
-        "Tone": "Brand",
+        "Tone": "Info",
         "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "One action inline"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Info",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
         "Content": "Two actions inline"
       },
       "nodeId": null,
@@ -146,8 +211,19 @@
     },
     {
       "properties": {
-        "Tone": "Brand",
+        "Tone": "Info",
         "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "Two actions inline"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Info",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
         "Content": "Mini"
       },
       "nodeId": null,
@@ -155,125 +231,9 @@
     },
     {
       "properties": {
-        "Tone": "Brand",
-        "Variant": "Outlined",
-        "Content": "Two actions"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Brand",
-        "Variant": "Outlined",
-        "Content": "Single line"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Brand",
-        "Variant": "Outlined",
-        "Content": "Title + description"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Brand",
-        "Variant": "Outlined",
-        "Content": "One action"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Brand",
-        "Variant": "Outlined",
-        "Content": "One action inline"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Brand",
-        "Variant": "Outlined",
-        "Content": "Two actions inline"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Brand",
-        "Variant": "Outlined",
-        "Content": "Mini"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Success",
+        "Tone": "Info",
         "Variant": "Soft",
-        "Content": "Two actions"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Success",
-        "Variant": "Soft",
-        "Content": "Single line"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Success",
-        "Variant": "Soft",
-        "Content": "Title + description"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Success",
-        "Variant": "Soft",
-        "Content": "One action"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Success",
-        "Variant": "Soft",
-        "Content": "One action inline"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Success",
-        "Variant": "Soft",
-        "Content": "Two actions inline"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Success",
-        "Variant": "Soft",
+        "Placement": "Inline",
         "Content": "Mini"
       },
       "nodeId": null,
@@ -282,7 +242,8 @@
     {
       "properties": {
         "Tone": "Success",
-        "Variant": "Outlined",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
         "Content": "Two actions"
       },
       "nodeId": null,
@@ -291,7 +252,18 @@
     {
       "properties": {
         "Tone": "Success",
-        "Variant": "Outlined",
+        "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "Two actions"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Success",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
         "Content": "Single line"
       },
       "nodeId": null,
@@ -300,7 +272,18 @@
     {
       "properties": {
         "Tone": "Success",
-        "Variant": "Outlined",
+        "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "Single line"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Success",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
         "Content": "Title + description"
       },
       "nodeId": null,
@@ -309,7 +292,18 @@
     {
       "properties": {
         "Tone": "Success",
-        "Variant": "Outlined",
+        "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "Title + description"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Success",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
         "Content": "One action"
       },
       "nodeId": null,
@@ -318,7 +312,18 @@
     {
       "properties": {
         "Tone": "Success",
-        "Variant": "Outlined",
+        "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "One action"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Success",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
         "Content": "One action inline"
       },
       "nodeId": null,
@@ -327,7 +332,18 @@
     {
       "properties": {
         "Tone": "Success",
-        "Variant": "Outlined",
+        "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "One action inline"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Success",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
         "Content": "Two actions inline"
       },
       "nodeId": null,
@@ -336,7 +352,158 @@
     {
       "properties": {
         "Tone": "Success",
-        "Variant": "Outlined",
+        "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "Two actions inline"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Success",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
+        "Content": "Mini"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Success",
+        "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "Mini"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Warning",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
+        "Content": "Two actions"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Warning",
+        "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "Two actions"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Warning",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
+        "Content": "Single line"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Warning",
+        "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "Single line"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Warning",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
+        "Content": "Title + description"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Warning",
+        "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "Title + description"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Warning",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
+        "Content": "One action"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Warning",
+        "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "One action"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Warning",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
+        "Content": "One action inline"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Warning",
+        "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "One action inline"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Warning",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
+        "Content": "Two actions inline"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Warning",
+        "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "Two actions inline"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Warning",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
         "Content": "Mini"
       },
       "nodeId": null,
@@ -346,123 +513,7 @@
       "properties": {
         "Tone": "Warning",
         "Variant": "Soft",
-        "Content": "Two actions"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Warning",
-        "Variant": "Soft",
-        "Content": "Single line"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Warning",
-        "Variant": "Soft",
-        "Content": "Title + description"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Warning",
-        "Variant": "Soft",
-        "Content": "One action"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Warning",
-        "Variant": "Soft",
-        "Content": "One action inline"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Warning",
-        "Variant": "Soft",
-        "Content": "Two actions inline"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Warning",
-        "Variant": "Soft",
-        "Content": "Mini"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Warning",
-        "Variant": "Outlined",
-        "Content": "Two actions"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Warning",
-        "Variant": "Outlined",
-        "Content": "Single line"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Warning",
-        "Variant": "Outlined",
-        "Content": "Title + description"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Warning",
-        "Variant": "Outlined",
-        "Content": "One action"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Warning",
-        "Variant": "Outlined",
-        "Content": "One action inline"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Warning",
-        "Variant": "Outlined",
-        "Content": "Two actions inline"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Warning",
-        "Variant": "Outlined",
+        "Placement": "Inline",
         "Content": "Mini"
       },
       "nodeId": null,
@@ -471,7 +522,8 @@
     {
       "properties": {
         "Tone": "Danger",
-        "Variant": "Soft",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
         "Content": "Two actions"
       },
       "nodeId": null,
@@ -481,6 +533,17 @@
       "properties": {
         "Tone": "Danger",
         "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "Two actions"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Danger",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
         "Content": "Single line"
       },
       "nodeId": null,
@@ -490,6 +553,17 @@
       "properties": {
         "Tone": "Danger",
         "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "Single line"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Danger",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
         "Content": "Title + description"
       },
       "nodeId": null,
@@ -499,6 +573,17 @@
       "properties": {
         "Tone": "Danger",
         "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "Title + description"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Danger",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
         "Content": "One action"
       },
       "nodeId": null,
@@ -508,6 +593,17 @@
       "properties": {
         "Tone": "Danger",
         "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "One action"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Danger",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
         "Content": "One action inline"
       },
       "nodeId": null,
@@ -517,6 +613,17 @@
       "properties": {
         "Tone": "Danger",
         "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "One action inline"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Danger",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
         "Content": "Two actions inline"
       },
       "nodeId": null,
@@ -526,6 +633,17 @@
       "properties": {
         "Tone": "Danger",
         "Variant": "Soft",
+        "Placement": "Inline",
+        "Content": "Two actions inline"
+      },
+      "nodeId": null,
+      "implementationStatus": "not-implemented"
+    },
+    {
+      "properties": {
+        "Tone": "Danger",
+        "Variant": "Contrast",
+        "Placement": "Elevated",
         "Content": "Mini"
       },
       "nodeId": null,
@@ -534,61 +652,8 @@
     {
       "properties": {
         "Tone": "Danger",
-        "Variant": "Outlined",
-        "Content": "Two actions"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Danger",
-        "Variant": "Outlined",
-        "Content": "Single line"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Danger",
-        "Variant": "Outlined",
-        "Content": "Title + description"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Danger",
-        "Variant": "Outlined",
-        "Content": "One action"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Danger",
-        "Variant": "Outlined",
-        "Content": "One action inline"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Danger",
-        "Variant": "Outlined",
-        "Content": "Two actions inline"
-      },
-      "nodeId": null,
-      "implementationStatus": "not-implemented"
-    },
-    {
-      "properties": {
-        "Tone": "Danger",
-        "Variant": "Outlined",
+        "Variant": "Soft",
+        "Placement": "Inline",
         "Content": "Mini"
       },
       "nodeId": null,
