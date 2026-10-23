@@ -127,6 +127,10 @@ Full rules: `component-notes.md` · token tables: `token-rules.md`.
 
 - [App components · Tool rail](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=3171-48231): `Tool rail` (56) + `Rail / Icon` + states matrix. See `component-notes.md`.
 
+## Text links
+
+- [Text links](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=1253-6995): **`Link`** Size **small** (`subtitle3` 12) · **medium** (`subtitle2` 14) · **large** (`h5`) — Hover = label underline + `action/primary/hover` (no fill); Rest / Focus / Disabled plain; Focus = `focus/ring` only. See `component-notes.md`.
+
 ## Accordions
 
 - [Accordions](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=5315-58202): **`Accordion`** — Chevron **Leading** (default) | Trailing; Open; State; Body Description | List. **`Show meta`** + **`Meta`**. **`Show leading badge`** (after Title, Soft Warning) / **`Show trailing badge`** (Soft Neutral). Trailing edit icon **`icon/tertiary`**. Width: Fill in auto-layout parents (masters FIXED/min 200, internals FILL). Body=List → exposed **`Accordion / List body`**. See `component-notes.md`.
@@ -178,3 +182,10 @@ Full rules: `component-notes.md` · token tables: `token-rules.md`.
 ## Card / AI
 
 - Card Style Default|AI → `Card.Root` variant default|ai; **`Card.Ai`** = composed recipe. Sparkles **xs bold** + **`icon/ai`** (purple/600). Stroke **`gradient/ai/border`**. Figma **Link** None|More|Less → `showLink` + `expanded`; collapsed max **3**. Gradients board [`5035:503`](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=5035-503). See `component-notes.md`.
+
+## Card / Plan · Card / Provider
+
+- Composed selectable tiles on [Cards](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=1388-22329) — not base `Card` axes. **Selected** False|True; chrome unselected `surface/raised` + `border/subtle` → selected `surface/brand/soft` + `border/brand`; pad **`inset/lg`**; **`radius/md`**; **`shadow.sm`**; nested **Checkbox / Control**.
+- **Card / Plan** [`6596:592`](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=6596-592): Title `h5` + Meta `caption`; optional Soft Accent Badge (`Show badge`). APD Select plans.
+- **Card / Provider** [`6606:937`](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=6606-937): Avatar **lg**; Header **MIN** (Avatar centers with checkbox); **`Link` large** (`h5`) + **`Button`** text/**tertiary**/small/iconOnly **`icon/actions/copy`** (`icon/tertiary` — rebind after Leading swap); Specialty `caption` (gap **0**); Soft Success + Neutral badges; Practice **`subtitle3`** **`•`** Address/distance **`caption`**; Phone **`caption`**/`text/brand`. Gaps: header→badges **8**, badges→details **16**. See `component-notes.md`.
+- **Link** sizes: **large** (`h5`) · medium (`subtitle2`) · small. **Button** quiet icon actions: text / **tertiary** / small / iconOnly (`icon/tertiary`).

@@ -245,18 +245,18 @@ Ramp notes below document the Colors page. **Do not bind these primitives on com
   - Figma switches **Placement → Inline** forces **Soft**; **Elevated** forces **Contrast** (invalid cross-pairs are not published).
 - **Content:** Single line · Title + description · One action · Two actions · **One action inline** · **Two actions inline** · **Mini**.
 - **Booleans:**
-  - **`Show accent`** (default true on **Soft Inline** only) — 4px left bar; fill `action/{tone}` (Info → **`action/info`**) **except Warning → `icon/warning`** so accent matches the leading icon. **Contrast Elevated:** accent off — not part of inverse toast chrome.
+  - **`Show accent`** (default true on **Soft Inline** only) — 4px left bar; fill **`action/{tone}`** (Info → **`action/info`**, Warning → **`action/warning`**, etc.) so accent matches the leading icon. **Contrast Elevated:** accent off — not part of inverse toast chrome.
   - **`Show secondary`** (default false on One action*) — toggles Dismiss (`Button` text/brand small) in stacked **Button row** and **Actions inline**. Default true on Two actions*; on One action inline, turn on for secondary + primary on the same row.
   - **`Show leading icon`**, **`Show close`** — Close is **Medium** (24 hit), glyph `icon/tertiary`, **top-right** on multiline (title + description / stacked actions).
   - **`Inline actions`** — legacy; prefer **`One action inline`** / **`Two actions inline`** content variants (title-only row, CTAs centered).
 - **Chrome:**
   - **Contrast · Elevated:** **`surface/inverse`** on root/Main; **`shadow.lg`** on root (`clipsContent = true`; shadow paints outside). **No root border.** **No accent.**
   - **Soft · Inline:** 1px inside **`border/{tone}/subtle`** (light **`/300`** — blue/green/yellow/red). **No shadow.**
-- **Surfaces:** **`Main`** carries the opaque fill — **`surface/inverse`** (Contrast Elevated) or **`surface/{tone}/soft`** (Soft Inline — light **`/100`** tints; dark **`/900`**; not `surface/{tone}/subtle` `/200`). **Soft Info:** still **`surface/brand/soft`** (no **`surface/info/soft`** token) + **`border/info/subtle`**; accent **`action/info`**; leading icon **`icon/info`** (light → **`blue/600`**).
+- **Surfaces:** **`Main`** carries the opaque fill — **`surface/inverse`** (Contrast Elevated) or **`surface/{tone}/soft`** (Soft Inline — light **`/100`** tints; dark **`/900`**; not `surface/{tone}/subtle` `/200`). **Soft Info:** still **`surface/brand/soft`** (no **`surface/info/soft`** token) + **`border/info/subtle`**; accent **`action/info`**.
 - **Inner frames:** `Content`, `Body`, action rows — **no fill** (transparent). **Soft Inline:** absolute full-bleed **Accent** + 4px gap + opaque **Main** (accent peek with banner radius). Icon wrapper frames (`_outline` / `_bold`) stay **fill-off** — never bind `icon/{tone}` (or any paint) on the 14×14 `_bold` frame; that paints a solid square over the glyph. Bind tone on **vector fills** only.
-- **Type:** **Soft Inline** title **`text/primary`** (charcoal). **Contrast Elevated** uses inverse toast bindings on masters (title/description/close/icon on inverse ramps — match Figma). Description **`text/secondary`** where shown. Leading icon fills **`icon/{tone}`** on Soft — Info **`icon/info`** (light **`blue/600`**); success/danger light **`/600`**; warning **`/700`**. **Contrast Info** leading icon **`icon/info`** (semantic token — not raw **`blue/600`**, not **`icon/brand`** navy). Never **`icon/default`** on toned Soft alerts.
-- **Leading icons by tone:** Info → `icon/status/info` (ink **`icon/info`**); Success → `icon/actions/check.circle`; Warning → `icon/status/warning`; Danger → `icon/status/error`. **Size=sm, Style=bold** on every alert. Sit in a **24×24 Icon slot** so the glyph centers with Close (24) and the title line.
-- **Actions (Buttons):** **Small text** only — both primary and secondary are Button **text / brand / small** (link-weight CTAs; no outlined or contained). Alert chrome already carries emphasis; outlined pills read heavy. Labels use **`text/brand`**. Gap `inline/sm` (8). Order: Dismiss · primary CTA.
+- **Type:** **Soft Inline** title **`text/primary`** (charcoal). **Contrast Elevated** uses inverse toast bindings on masters (title/description/close on inverse ramps — match Figma). Description **`text/secondary`** where shown. Never **`icon/default`** on toned Soft alerts.
+- **Leading icons (ink):** bind **`action/{tone}`** on glyph vectors — Info **`action/info`**, Success **`action/success`**, Warning **`action/warning`**, Danger **`action/danger`**. Prefer **`action/*`** over **`icon/{tone}`**: dark **`icon/*`** pastels (`/300`–`/400`) wash out on light Soft `/100` and dark-mode **`surface/inverse`** (white); **`action/*`** stays mid-chroma in both modes (`/600`–`/700`). Glyphs: Info → `icon/status/info`; Success → `icon/actions/check.circle`; Warning → `icon/status/warning`; Danger → `icon/status/error`. **Size=sm, Style=bold**. Sit in a **24×24 Icon slot**.
+- **Actions (Buttons):** **Small text** only — both primary and secondary are Button **text / brand / small** (link-weight CTAs; no outlined or contained). Alert chrome already carries emphasis; outlined pills read heavy. Label ink on Soft/Contrast masters overrides to **`action/primary`** (not **`text/brand`**) so Dark Soft / light Soft stays mid blue (`blue/600` dark · `blue/800` light) — **`text/brand`** dark (`blue/400`) washes out on Soft `/100`. Gap `inline/sm` (8). Order: Dismiss · primary CTA.
 - **Stacked actions** (One action / Two actions): `Body` = **Copy** (Title → Description, gap `space4` / 4) → **Actions stacked**, with Body gap **`stack/md`** (16) before the CTA row — same body→CTA rhythm as Empty state.
 - **Inline actions** (One action inline / Two actions inline): **Title only** (single line — no description). CTAs on the same row, **vertically centered** with copy (`Main` / `Content` counter-axis `CENTER`). Two actions inline = secondary + primary; One action inline + **`Show secondary`** = optional Dismiss + primary.
 - **Layout:** Root `radius/md` (8). Soft Inline: `[Accent absolute full-bleed][Accent gap 4][Main: Icon slot | Body/Content | Close]`. Main pad 12, gap 12. **`Show leading icon` binds the Icon slot** (not the nested glyph) so the 24 slot + gap collapse and copy shifts left when off. **Title + description / stacked actions:** `Main` counter-axis **MIN**; title sits in a **24 Title row** (2px vertical pad) so Icon slot, title, and Close share one centerline. **Single line and inline:** `Main` counter-axis **CENTER** so Icon, title, CTA, and Close share one centerline.
@@ -291,6 +291,12 @@ Ramp notes below document the Colors page. **Do not bind these primitives on com
 
 **Changed 2026-10-22:** Alert Tone **Brand → Info**; Contrast/Soft Info icons bind **`icon/info`** (`blue/600` light).
 
+**Changed 2026-10-22:** Alert leading icons (all tones, Soft + Contrast) bind **`action/{tone}`** instead of **`icon/{tone}`** — dark **`icon/*`** pastels failed on light Soft `/100` and dark-mode inverse (white). Soft Warning accent → **`action/warning`** to match.
+
+**Changed 2026-10-22:** Soft/Contrast Alert CTA labels override Button **`text/brand`** → **`action/primary`** — dark **`text/brand`** (`blue/400`) washed out on Soft `/100` (Undo action).
+
+**Fixed 2026-10-22:** Contrast Alert primary CTAs (Undo) were raw **`blue/400`** — rebound to **`action/primary`**. Dismiss on Contrast stays **`text/secondary/onInverse`**.
+
 ## Card / AI
 
 Composed sparkle-card recipe on the Card master for summaries, recommendations, and similar AI content. **Keep this split:** Card master **Style** Default|AI = chrome only (`Card.Root` variant); **`Card.Ai`** (`Card / AI` set [`5002:36378`](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=5002-36378)) = composed sticker recipe. Do not fold AI anatomy into generic `Card.Header` / `Card.Body` props.
@@ -304,6 +310,37 @@ Composed sparkle-card recipe on the Card master for summaries, recommendations, 
 - Compose chrome-only with `Card.Root variant="ai"` when the composed props do not fit.
 
 **Added 2026-10-12:** `Card / AI` recipe. **Changed 2026-10-12:** Variant A; **`icon/ai`** (purple/600); Gradients board recipes; Bullet row + Link None|More|Less; collapsed max **3**; body→link gap 12.
+
+## Card / Plan
+
+Selectable plan tile for multi-select pickers (APD Select plans). **Keep this split:** composed sticker on Cards — do not fold into base `Card` Header/Body props or make `Card.Root` interactive.
+
+- Figma: [Card / Plan](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=6596-592) on [Cards](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=1388-22329).
+- **Axes:** **Selected** False | True. Nested **`Checkbox / Control`** matches Selected (Checked False|True, State=Rest); checkbox **CENTER** on the row.
+- **Chrome:** pad **`inset/lg` (16)**; gap checkbox→content **`inline/md` (12)**; **`radius/md` (8)**; elevation **`shadow.sm`**. Unselected — fill **`surface/raised`**, stroke **`border/subtle`**. Selected — fill **`surface/brand/soft`**, stroke **`border/brand`**.
+- **Content:** Title **`h5`** / **`text/primary`**; Meta **`caption`** / **`text/secondary`** (`stack/xs` between). Optional Soft **Accent** Badge (e.g. `IHP`) via boolean **`Show badge`** (default false) on the name row after Title (`inline/sm`).
+- **Text props:** **Title** · **Meta**. Width FIXED (sticker **400**) or FILL in auto-layout parents (APD **613**); height HUG.
+- **vs List Item / base Card:** Use for checkbox multi-select plan tiles. Property rows stay **`List Item`**; panel chrome stays **`Card`**.
+
+**Added 2026-10-22:** `Card / Plan` recipe; APD Select plans remounted from freehand checkbox cards.
+**Changed 2026-10-22:** Pad **`inset/lg`**; **`shadow.sm`**; sticker masters stacked Selected False|True. Meta → **`caption`**.
+
+## Card / Provider
+
+Selectable provider tile (search / compare pickers). Same composed-set pattern as **Card / Plan** — not a base `Card` variant.
+
+- Figma: [Card / Provider](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=6606-937) on [Cards](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=1388-22329).
+- **Axes:** **Selected** False | True. Nested **`Checkbox / Control`** matches Selected; sit in a **Control** well sized to Avatar height so the checkbox **centers on the Avatar** (not the full card).
+- **Chrome:** same Selected/unselected recipe as **Card / Plan** (`inset/lg`, `inline/md`, `radius/md`, **`shadow.sm`**).
+- **Anatomy:**
+  1. **Control** well — **`Checkbox / Control`** vertically centered to Avatar height.
+  2. **Top** (`stack/sm` **8**): **Header** (`inline/md`, counter-axis **MIN**) — optional **`Avatar`** Size=**lg** (`Show avatar`) top-aligned so Avatar centers with **Checkbox / Control**; Identity (gap **0** name→specialty, hugs **20+16**): Name row hugs **`Link`** Size=**large** (`h5`); copy **`Button`** text / **tertiary** / small / iconOnly is **absolute** (keeps 36 hit without inflating name→specialty gap) Leading **`icon/actions/copy`** / **`icon/tertiary`** (`Show copy`) → Specialty (**`caption`** / **`text/secondary`**). **Badge row** (`inline/sm`) — Soft **Success** + **`check.circle`** · Soft **Neutral** + **`heart`**.
+  3. **Details** after Top with **`stack/md` (16)** gap. One wrapping line: Practice name **`subtitle3`** / **`text/primary`** + **` • `** + Address + **` • `** + distance (**`caption`** / **`text/secondary`**). Phone below (**`caption`** / **`text/brand`**). Bind text styles (not raw fontFamily) — Mixed on the practice line is expected (subtitle3 + caption ranges).
+- **Text props:** **Specialty** · **Practice** · **Address** · **Phone** (name via Link instance label).
+- **vs Care Team List Item:** Compact person rows stay **`List Item`**. Use **Card / Provider** for selectable tiles with Link + tertiary copy + dual badges.
+
+**Added 2026-10-22:** `Card / Provider` recipe.
+**Changed 2026-10-22:** Avatar **lg**; Header **MIN** so Avatar centers with checkbox; Link **large**/`h5`; copy Button **tertiary** iconOnly (`icon/actions/copy`, **`icon/tertiary`** ink — rebind after Leading swap); name→specialty gap **0**; Top **8** / Top→Details **16**; practice • address • distance wrapping `caption` with enlarged **`•`**.
 
 ## Surfaces — brand ladder
 
@@ -429,6 +466,19 @@ Not a conflict — different jobs. Keep both.
 **Changed 2026-09-14:** Active / selected tab label uses **`h5`** + **`text/brand`**.
 **Fixed 2026-09-11:** `Tabs.Indicator` spans full tab width (removed horizontal inset); Active underline aligns with `Tabs.Hairline` edge on the first tab. Focus visible ring — uniform `radius.sm` all corners (replaces sharp-top / soft-bottom). Label padding unchanged (Compact 7/12/7/12, Nav 0/12/0/12).
 
+## Text links / Link
+
+- Figma: [Text links](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=1253-6995). Master: **`Link`**. Size **small** | **medium** | **large** × State × **External icon**.
+- **Type / Size:** **small** → **`subtitle3`** (12/16 Medium) · **medium** → **`subtitle2`** (14/20 Medium) · **large** → **`h5`** (14/20 SemiBold) — provider / title links (e.g. **Card / Provider** name).
+- **Ink:** Rest / Focus **`text/brand`** · Hover **`action/primary/hover`** · Disabled **`text/brand/disabled`**.
+- **Hover:** solid underline on the **label only** (`currentcolor` / decoration AUTO) + darker ink. **No hover fill.**
+- **Focus visible:** 2px **`focus/ring`** frame (`radius/xs`) — no underline.
+- **Rest / Disabled:** no underline. External icon is never underlined.
+- **Do not** confuse with **Breadcrumb / Link** (`text/secondary`) or **ButtonLink** (same family ink, no underline).
+
+**Changed 2026-10-22:** Hover underline on label (no fill); Rest / Focus / Disabled stay plain.
+**Added 2026-10-22:** Size **large** (`h5`) for title-weight text links. Size sticker: **small (12px)** · **medium (14px)** · **large (h5)**.
+
 ## Breadcrumb
 
 - **Patterns** — hierarchical location trail (page / section ancestry). Not a Back Link (single-step return).
@@ -524,7 +574,7 @@ Not a conflict — different jobs. Keep both.
 - **Page:** [APD compare plans (WIP)](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=3535-18169).
 - **Shell recipe:** Chat Assist pattern — App Shell → member header → Workspace = **Chat column (FILL)** + **Compare panel (420 select / 520 table)** + **Tool rail (56)** with Coverage selected.
 - **Frames:**
-  - `Page · APD · Select plans` — plan picker (checkbox cards, employer link + Copy, Compare Plans CTA).
+  - `Page · APD · Select plans` — plan picker (**`Card / Plan`** instances, employer link + Copy, Compare Plans CTA).
   - `Page · APD · Compare table` — side-by-side premiums/summary table, In Network filter, Export + Close.
   - `Page · APD · Compare · Select open` — same table + Select / Popup on plan column (Current / in use meta composed).
   - `Page · APD · Compare · IHP tips inline` ([`3634:3048`](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=3634-3048)) — **IHP Tips / Disclosure** Expanded under IHP column (no popover).
@@ -535,9 +585,9 @@ Not a conflict — different jobs. Keep both.
   - **Tooltip + Alert trigger** (Compare table · Compare · Select open): **Open by default** — **`Tooltip`** instance `Content=Rich`, `Side=Bottom`, `Align=Start`, named **`Tooltip · IHP tips`** (inverse surface). Title: *Don't forget to share these tips with the member*; description: three bulleted tips (MCA copy). **Dismiss:** composed shared **Close** (`Close · dismiss tips`). **Re-open:** **Alert Soft Info Mini (Inline)** (“Share these tips with member”) under the IHP column. Open state is an absolute overlay on the Context panel, anchored under the IHP column; Premiums sit directly under plan selectors.
   - **Inline disclosure — IHP Tips / Disclosure** (App component [`3634:1700`](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System?node-id=3634-1700)): **State=Expanded | Collapsed**. Quiet panel — `surface/subtle` + `border/subtle` + `radius.md` + `inset/sm`; **not** Alert Mini. Type: title **subtitle4** (12/16 SemiBold); tips **caption** (12/16) with SemiBold lead-ins (`text/primary`) + Regular rest (`text/secondary`). **Expanded:** full tips + **Hide** (subtitle3/`text/brand`) + chevron.up. **Collapsed:** same chrome; lead-ins only (`text/secondary` Medium) + **Show** + chevron.down. 225px plan-column width. Frames: **Compare · IHP tips inline** · **Compare · IHP tips collapsed**. Do not invent a new Popover for inline show/hide.
 - **Compare panel icons:** Plan / network **Select / Trigger** chevrons — nested glyph **Size=sm**, ink **`icon/tertiary`**. **Panel header dismiss:** **`Button`** text / secondary / small / iconOnly + **`icon/navigation/close`** (Context panel recipe — not shared **Close**). Do not leave chevrons at Size=xs or use `icon/default`. IHP tips overlay dismiss stays composed shared **Close** (above).
-- **Soma used:** App Shell, Breadcrumb, Badge, Button, Avatar, Chat / Message, Text Input, Tool rail / Rail / Icon, Checkbox / Control, Close (IHP tips dismiss only), Select / Trigger · Item · Popup, Tooltip, Alert, Table / Cell · text, IHP Tips / Disclosure.
+- **Soma used:** App Shell, Breadcrumb, Badge, Button, Avatar, Chat / Message, Text Input, Tool rail / Rail / Icon, **Card / Plan**, Checkbox / Control, Close (IHP tips dismiss only), Select / Trigger · Item · Popup, Tooltip, Alert, Table / Cell · text, IHP Tips / Disclosure.
 - **Chat header:** trailing **`Chat / Response timer`** (Active turn or Closed dual stamp) on example frames.
-- **Gaps (composed, not published):** side Drawer chrome, plan select card, URL+Copy field, comparison Table variant (section headers + plan Select columns), Select / Item trailing status meta. Chat composer now ships in classic and modern code styles; see `open-items.md`. Accordion is published on Base Components — see **Accordion** above.
+- **Gaps (composed, not published):** side Drawer chrome, URL+Copy field, comparison Table variant (section headers + plan Select columns), Select / Item trailing status meta. Chat composer now ships in classic and modern code styles; see `open-items.md`. Accordion is published on Base Components — see **Accordion** above. **Card / Plan** published 2026-10-22.
 
 **Added 2026-09-08:** Three APD compare plans app example frames on Chat Assist shell.
 **Added 2026-09-09:** IHP tips on **Compare table** · **Compare · Select open** — Alert Soft Info Mini (Inline) re-open trigger + tips panel under the IHP plan column.
@@ -548,6 +598,7 @@ Not a conflict — different jobs. Keep both.
 **Changed 2026-09-09:** Select plans sticky Compare CTA title row aligned to Care Pathways pathway-header pattern; hairlines above Additional Plans accordion and sticky footer.
 **Changed 2026-09-09:** Compare panel Select chevrons + Close dismiss use **Size=sm** + **`icon/tertiary`**.
 **Changed 2026-10-12:** Compare Context panel header dismiss → Button text/secondary/small/iconOnly (same as Chat Assist / Chat tasks); tip dismiss stays Close.
+**Changed 2026-10-22:** Select plans freehand checkbox cards → **`Card / Plan`** instances (IHP compare + Chat tasks frames).
 
 ## App examples — Care Plans
 
@@ -637,9 +688,10 @@ When a badge holds truncated or secondary metadata, compose shared **`Tooltip`**
 
 ## Buttons
 
-- Tones: **brand**, **danger** only — Success removed 2026-08-31. Variants: contained, outlined, text (ghost).
+- Tones: **brand**, **danger** for CTAs — Success removed 2026-08-31. **`tertiary`** for quiet **text / iconOnly** actions (copy, overflow, de-emphasized utilities) — glyph ink **`icon/tertiary`** (disabled → **`icon/disabled`**). Do not use tertiary for primary/destructive CTAs. Variants: contained, outlined, text (ghost).
+- **Icon tint (mask):** Leading glyphs sit in an **Icon mask** with an **Icon tint** rect behind — ink comes from the tint (`icon/brand` · `icon/danger` · **`icon/tertiary`** · disabled **`icon/disabled`**), not the library icon’s own strokes. Swapping **Leading icon** keeps the tint, so **Tone → tertiary** automatically shows **`icon/tertiary`**. Do not hand-bind vector strokes on Button leadings (fights the mask).
 - States: default, hover, `focus.visible`, pressed, disabled, loading.
-- **Foreground family:** Contained brand uses `text/onBrand` / `icon/onBrand`. Outlined and text (ghost) brand use `text/brand` / `icon/brand` — not `action/primary` (fill) and not `text/primary` (body). Danger outlined and text follow `text/danger` / `icon/danger`. Disabled outlined and text use `text/{tone}/disabled` / `icon/{tone}/disabled` (faded brand/danger, not mid-ramp). **Contained disabled** keeps `text/onBrand` / `icon/onBrand` (or onDanger) — solid white on `action/{tone}/disabled` fill.
+- **Foreground family:** Contained brand uses `text/onBrand` / `icon/onBrand`. Outlined and text (ghost) brand use `text/brand` / `icon/brand` — not `action/primary` (fill) and not `text/primary` (body). Danger outlined and text follow `text/danger` / `icon/danger`. Text **tertiary** iconOnly uses **`icon/tertiary`**. Disabled outlined and text use `text/{tone}/disabled` / `icon/{tone}/disabled` (faded brand/danger, not mid-ramp); tertiary disabled → **`icon/disabled`**. **Contained disabled** keeps `text/onBrand` / `icon/onBrand` (or onDanger) — solid white on `action/{tone}/disabled` fill.
 - **Fill by variant:** Contained uses opaque `action/{tone}/*` (rest / hover / pressed). Outlined and text (ghost): hover → `action/ghost/hover`; pressed → `action/ghost/pressed`. Never layer `action/pressed/overlay` — deprecated and hidden from publishing; do not export or implement it.
 - **`action/ghost/*` mapping:** Light `coolDarkTransparent/10` (hover) · `/20` (pressed). Dark `coolLightTransparent/10` · `/20`. Utility ramp steps are grey-parity weights, not literal opacity (see `token-rules.md`).
 - **A11y (WCAG 2.2):** Brand outlined/text — AAA on white and `surface/subtle` (hover/pressed, light); AAA/AA dark. Danger hover — AA on white and subtle (light). Danger pressed on `surface/subtle` (light) — **4.48, AA Large only** (~0.02 below normal AA 4.5); passes AA on white (4.93). Dark danger — AAA/AA all states.
@@ -656,6 +708,7 @@ When a badge holds truncated or secondary metadata, compose shared **`Tooltip`**
 **Audit 2026-08-24:** 48 pressed Button variants — contained opaque fill/stroke, no overlay. 640 Button instances on the Buttons page (7 pressed). Overlay token not bound on Dashboard, Member profile, Chat Assist, App components, Chips, Tables, Pagination, Select, Text links, Inputs, Dropdowns, Cards, Modals, Lists, Tabs. Colors page swatches are primitive docs only. **2026-08-31:** outlined/text hover/pressed bind `action/ghost/*` (32 variants; was `surface/subtle`). Utility ramp recalibration — `/10`–`/20` match `grey/100`–`/200` visual weight when composited (not literal 10%/20% opacity); elevation shadows lighten accordingly. `coolDarkTransparent` / `coolLightTransparent` valid for **elevation/scrims** and **action/ghost** fills — not contained pressed.
 
 **Changed 2026-09-03:** Disabled is tone-step — not shared grey disabled.
+**Added 2026-10-22:** Tone **tertiary** on **text / small / iconOnly** (default·hover·focus·pressed·disabled) for quiet icon actions — e.g. **Card / Provider** copy. Tertiary **Icon tint** binds **`icon/tertiary`** (disabled → **`icon/disabled`**) so Leading swaps inherit tertiary ink.
 
 **Changed 2026-09-04:** Contained disabled — `action/{tone}/disabled` fill (primary@40%) + white `onBrand`/`onDanger` text; outlined/text use transparent ink via `brand*Transparent/40` / `danger*Transparent/40`; text (ghost) disabled has no soft fill.
 

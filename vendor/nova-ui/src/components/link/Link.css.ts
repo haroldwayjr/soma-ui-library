@@ -17,6 +17,10 @@ import { semantics } from '../../tokens/semantic.css'
 // host reset zeros `border`, so the ring is an outer `box-shadow` — same
 // 2px width Button / Chip / Checkbox record as a literal. No padding: an
 // inset would open gaps in the surrounding text.
+//
+// Underline is hover-only (Soma Link masters): Rest / Focus / Disabled stay
+// plain ink; Hover adds a solid underline in `currentcolor` with no fill.
+// Decoration sits on `labelStyle` so the external icon is not underlined.
 const FOCUS_RING = '2px'
 
 export const linkStyle = style({
@@ -35,8 +39,21 @@ export const linkStyle = style({
       color: semantics.color.text.link.hover,
     },
   },
+  textDecorationLine: 'none',
+})
+
+// Label span — hover underline only (not the trailing external icon).
+export const labelStyle = style({
   textDecorationColor: 'currentcolor',
-  textDecorationLine: 'underline',
+  textDecorationLine: 'none',
+  selectors: {
+    [`${linkStyle}:active &`]: {
+      textDecorationLine: 'underline',
+    },
+    [`${linkStyle}:hover &`]: {
+      textDecorationLine: 'underline',
+    },
+  },
 })
 
 // On the trailing `IconExternalLink` when `target="_blank"`. `inline-block`
