@@ -2,8 +2,8 @@
   "generatedAt": "2026-09-16T22:00:30.652501+00:00",
   "components": [
     {
-      "name": "_deleted · Tooltip Callout (do not use)",
-      "figmaComponentName": "_deleted · Tooltip Callout (do not use)",
+      "name": "_deleted \u00b7 Tooltip Callout (do not use)",
+      "figmaComponentName": "_deleted \u00b7 Tooltip Callout (do not use)",
       "category": "Communication",
       "page": "Tooltips",
       "nodeId": "3679:321",
@@ -40,7 +40,7 @@
       "category": "Communication",
       "page": "Alerts (WIP)",
       "nodeId": "1152:1533",
-      "description": "TODO",
+      "description": "Status messaging: Contrast\u00d7Elevated inverse toast or Soft\u00d7Inline tone banner. Tones Info, Success, Warning, Danger.",
       "buildStatus": "Not started",
       "importPath": null,
       "implementationStatus": "not-implemented",
@@ -48,7 +48,7 @@
         {
           "name": "Tone",
           "figmaValues": [
-            "Brand",
+            "Info",
             "Success",
             "Warning",
             "Danger"
@@ -59,8 +59,17 @@
         {
           "name": "Variant",
           "figmaValues": [
-            "Soft",
-            "Outlined"
+            "Contrast",
+            "Soft"
+          ],
+          "codeProp": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "name": "Placement",
+          "figmaValues": [
+            "Elevated",
+            "Inline"
           ],
           "codeProp": null,
           "implementationStatus": "not-implemented"
@@ -128,8 +137,9 @@
       "variants": [
         {
           "properties": {
-            "Tone": "Brand",
-            "Variant": "Soft",
+            "Tone": "Info",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
             "Content": "Two actions"
           },
           "nodeId": null,
@@ -137,8 +147,19 @@
         },
         {
           "properties": {
-            "Tone": "Brand",
+            "Tone": "Info",
             "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "Two actions"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Info",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
             "Content": "Single line"
           },
           "nodeId": null,
@@ -146,8 +167,19 @@
         },
         {
           "properties": {
-            "Tone": "Brand",
+            "Tone": "Info",
             "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "Single line"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Info",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
             "Content": "Title + description"
           },
           "nodeId": null,
@@ -155,8 +187,19 @@
         },
         {
           "properties": {
-            "Tone": "Brand",
+            "Tone": "Info",
             "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "Title + description"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Info",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
             "Content": "One action"
           },
           "nodeId": null,
@@ -164,8 +207,19 @@
         },
         {
           "properties": {
-            "Tone": "Brand",
+            "Tone": "Info",
             "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "One action"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Info",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
             "Content": "One action inline"
           },
           "nodeId": null,
@@ -173,8 +227,19 @@
         },
         {
           "properties": {
-            "Tone": "Brand",
+            "Tone": "Info",
             "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "One action inline"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Info",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
             "Content": "Two actions inline"
           },
           "nodeId": null,
@@ -182,8 +247,19 @@
         },
         {
           "properties": {
-            "Tone": "Brand",
+            "Tone": "Info",
             "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "Two actions inline"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Info",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
             "Content": "Mini"
           },
           "nodeId": null,
@@ -191,125 +267,9 @@
         },
         {
           "properties": {
-            "Tone": "Brand",
-            "Variant": "Outlined",
-            "Content": "Two actions"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Brand",
-            "Variant": "Outlined",
-            "Content": "Single line"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Brand",
-            "Variant": "Outlined",
-            "Content": "Title + description"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Brand",
-            "Variant": "Outlined",
-            "Content": "One action"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Brand",
-            "Variant": "Outlined",
-            "Content": "One action inline"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Brand",
-            "Variant": "Outlined",
-            "Content": "Two actions inline"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Brand",
-            "Variant": "Outlined",
-            "Content": "Mini"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Success",
+            "Tone": "Info",
             "Variant": "Soft",
-            "Content": "Two actions"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Success",
-            "Variant": "Soft",
-            "Content": "Single line"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Success",
-            "Variant": "Soft",
-            "Content": "Title + description"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Success",
-            "Variant": "Soft",
-            "Content": "One action"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Success",
-            "Variant": "Soft",
-            "Content": "One action inline"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Success",
-            "Variant": "Soft",
-            "Content": "Two actions inline"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Success",
-            "Variant": "Soft",
+            "Placement": "Inline",
             "Content": "Mini"
           },
           "nodeId": null,
@@ -318,7 +278,8 @@
         {
           "properties": {
             "Tone": "Success",
-            "Variant": "Outlined",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
             "Content": "Two actions"
           },
           "nodeId": null,
@@ -327,7 +288,18 @@
         {
           "properties": {
             "Tone": "Success",
-            "Variant": "Outlined",
+            "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "Two actions"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Success",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
             "Content": "Single line"
           },
           "nodeId": null,
@@ -336,7 +308,18 @@
         {
           "properties": {
             "Tone": "Success",
-            "Variant": "Outlined",
+            "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "Single line"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Success",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
             "Content": "Title + description"
           },
           "nodeId": null,
@@ -345,7 +328,18 @@
         {
           "properties": {
             "Tone": "Success",
-            "Variant": "Outlined",
+            "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "Title + description"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Success",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
             "Content": "One action"
           },
           "nodeId": null,
@@ -354,7 +348,18 @@
         {
           "properties": {
             "Tone": "Success",
-            "Variant": "Outlined",
+            "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "One action"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Success",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
             "Content": "One action inline"
           },
           "nodeId": null,
@@ -363,7 +368,18 @@
         {
           "properties": {
             "Tone": "Success",
-            "Variant": "Outlined",
+            "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "One action inline"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Success",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
             "Content": "Two actions inline"
           },
           "nodeId": null,
@@ -372,7 +388,158 @@
         {
           "properties": {
             "Tone": "Success",
-            "Variant": "Outlined",
+            "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "Two actions inline"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Success",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
+            "Content": "Mini"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Success",
+            "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "Mini"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Warning",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
+            "Content": "Two actions"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Warning",
+            "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "Two actions"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Warning",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
+            "Content": "Single line"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Warning",
+            "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "Single line"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Warning",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
+            "Content": "Title + description"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Warning",
+            "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "Title + description"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Warning",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
+            "Content": "One action"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Warning",
+            "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "One action"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Warning",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
+            "Content": "One action inline"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Warning",
+            "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "One action inline"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Warning",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
+            "Content": "Two actions inline"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Warning",
+            "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "Two actions inline"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Warning",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
             "Content": "Mini"
           },
           "nodeId": null,
@@ -382,123 +549,7 @@
           "properties": {
             "Tone": "Warning",
             "Variant": "Soft",
-            "Content": "Two actions"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Warning",
-            "Variant": "Soft",
-            "Content": "Single line"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Warning",
-            "Variant": "Soft",
-            "Content": "Title + description"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Warning",
-            "Variant": "Soft",
-            "Content": "One action"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Warning",
-            "Variant": "Soft",
-            "Content": "One action inline"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Warning",
-            "Variant": "Soft",
-            "Content": "Two actions inline"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Warning",
-            "Variant": "Soft",
-            "Content": "Mini"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Warning",
-            "Variant": "Outlined",
-            "Content": "Two actions"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Warning",
-            "Variant": "Outlined",
-            "Content": "Single line"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Warning",
-            "Variant": "Outlined",
-            "Content": "Title + description"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Warning",
-            "Variant": "Outlined",
-            "Content": "One action"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Warning",
-            "Variant": "Outlined",
-            "Content": "One action inline"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Warning",
-            "Variant": "Outlined",
-            "Content": "Two actions inline"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Warning",
-            "Variant": "Outlined",
+            "Placement": "Inline",
             "Content": "Mini"
           },
           "nodeId": null,
@@ -507,7 +558,8 @@
         {
           "properties": {
             "Tone": "Danger",
-            "Variant": "Soft",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
             "Content": "Two actions"
           },
           "nodeId": null,
@@ -517,6 +569,17 @@
           "properties": {
             "Tone": "Danger",
             "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "Two actions"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Danger",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
             "Content": "Single line"
           },
           "nodeId": null,
@@ -526,6 +589,17 @@
           "properties": {
             "Tone": "Danger",
             "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "Single line"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Danger",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
             "Content": "Title + description"
           },
           "nodeId": null,
@@ -535,6 +609,17 @@
           "properties": {
             "Tone": "Danger",
             "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "Title + description"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Danger",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
             "Content": "One action"
           },
           "nodeId": null,
@@ -544,6 +629,17 @@
           "properties": {
             "Tone": "Danger",
             "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "One action"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Danger",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
             "Content": "One action inline"
           },
           "nodeId": null,
@@ -553,6 +649,17 @@
           "properties": {
             "Tone": "Danger",
             "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "One action inline"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Danger",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
             "Content": "Two actions inline"
           },
           "nodeId": null,
@@ -562,6 +669,17 @@
           "properties": {
             "Tone": "Danger",
             "Variant": "Soft",
+            "Placement": "Inline",
+            "Content": "Two actions inline"
+          },
+          "nodeId": null,
+          "implementationStatus": "not-implemented"
+        },
+        {
+          "properties": {
+            "Tone": "Danger",
+            "Variant": "Contrast",
+            "Placement": "Elevated",
             "Content": "Mini"
           },
           "nodeId": null,
@@ -570,61 +688,8 @@
         {
           "properties": {
             "Tone": "Danger",
-            "Variant": "Outlined",
-            "Content": "Two actions"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Danger",
-            "Variant": "Outlined",
-            "Content": "Single line"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Danger",
-            "Variant": "Outlined",
-            "Content": "Title + description"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Danger",
-            "Variant": "Outlined",
-            "Content": "One action"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Danger",
-            "Variant": "Outlined",
-            "Content": "One action inline"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Danger",
-            "Variant": "Outlined",
-            "Content": "Two actions inline"
-          },
-          "nodeId": null,
-          "implementationStatus": "not-implemented"
-        },
-        {
-          "properties": {
-            "Tone": "Danger",
-            "Variant": "Outlined",
+            "Variant": "Soft",
+            "Placement": "Inline",
             "Content": "Mini"
           },
           "nodeId": null,
@@ -711,7 +776,7 @@
       "category": "Data display",
       "page": "Avatars",
       "nodeId": "979:174",
-      "description": "Avatar represents who — one person's identity in a compact circular form. It renders a photo when one is available and otherwise falls back to initials (a known user with no photo) or a person silhouette (unknown, anonymous, or pending identity), per the Soma Avatars page.",
+      "description": "Avatar represents who \u2014 one person's identity in a compact circular form. It renders a photo when one is available and otherwise falls back to initials (a known user with no photo) or a person silhouette (unknown, anonymous, or pending identity), per the Soma Avatars page.",
       "buildStatus": "In progress",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",
@@ -1109,7 +1174,7 @@
       "category": "Data display",
       "page": "Avatars",
       "nodeId": "977:116",
-      "description": "Avatar represents who — one person's identity in a compact circular form. It renders a photo when one is available and otherwise falls back to initials (a known user with no photo) or a person silhouette (unknown, anonymous, or pending identity), per the Soma Avatars page.",
+      "description": "Avatar represents who \u2014 one person's identity in a compact circular form. It renders a photo when one is available and otherwise falls back to initials (a known user with no photo) or a person silhouette (unknown, anonymous, or pending identity), per the Soma Avatars page.",
       "buildStatus": "In progress",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",
@@ -1303,7 +1368,7 @@
       "category": "Navigation & misc",
       "page": "Breadcrumbs",
       "nodeId": "1739:150",
-      "description": "Link is the Soma inline hyperlink: text that takes the user somewhere else. Its job is to look like a link — color, underline, hover, focus — and to leave navigation itself to the element that owns the destination.",
+      "description": "Link is the Soma inline hyperlink: text that takes the user somewhere else. Its job is to look like a link \u2014 color, underline, hover, focus \u2014 and to leave navigation itself to the element that owns the destination.",
       "buildStatus": null,
       "importPath": "@nova/ui",
       "implementationStatus": "matched",
@@ -1354,7 +1419,7 @@
       "category": "Data display",
       "page": "Badges",
       "nodeId": "74:779",
-      "description": "Badge is the Soma Badge: a passive status label, tag, or count indicator — `Completed`, `In progress`, `Draft`. It communicates status or classification at a glance and is never interactive, per the Soma Badges page.",
+      "description": "Badge is the Soma Badge: a passive status label, tag, or count indicator \u2014 `Completed`, `In progress`, `Draft`. It communicates status or classification at a glance and is never interactive, per the Soma Badges page.",
       "buildStatus": "Done",
       "importPath": "@nova/ui",
       "implementationStatus": "matched",
@@ -3800,7 +3865,7 @@
       "category": "Data display",
       "page": "Badges",
       "nodeId": "2288:13598",
-      "description": "Badge is the Soma Badge: a passive status label, tag, or count indicator — `Completed`, `In progress`, `Draft`. It communicates status or classification at a glance and is never interactive, per the Soma Badges page.",
+      "description": "Badge is the Soma Badge: a passive status label, tag, or count indicator \u2014 `Completed`, `In progress`, `Draft`. It communicates status or classification at a glance and is never interactive, per the Soma Badges page.",
       "buildStatus": "Done",
       "importPath": "@nova/ui",
       "implementationStatus": "matched",
@@ -5780,7 +5845,7 @@
       "category": "Containers",
       "page": "Cards",
       "nodeId": "1440:8467",
-      "description": "`Card` is the first compound API in `libs/ui`. Every other component here flattens to a single function — even ones with a Base UI primitive underneath that is itself namespaced (`Switch` wraps `Switch.Root` / `Switch.Thumb` into one component). Card has no Base UI primitive at all — there is no accessible \"card\" role, so nothing is lost by not flattening it — and Soma's own sheet already models it as independent regions (a header with an optional trailing action, a body slot, an optional footer), not a fixed set of props. Exposing `Card.Root` / `Card.Header` / `Card.HeaderTitle` / `Card.Body` / `Card.Footer` as parts lets a consumer:",
+      "description": "`Card` is the first compound API in `libs/ui`. Every other component here flattens to a single function \u2014 even ones with a Base UI primitive underneath that is itself namespaced (`Switch` wraps `Switch.Root` / `Switch.Thumb` into one component). Card has no Base UI primitive at all \u2014 there is no accessible \"card\" role, so nothing is lost by not flattening it \u2014 and Soma's own sheet already models it as independent regions (a header with an optional trailing action, a body slot, an optional footer), not a fixed set of props. Exposing `Card.Root` / `Card.Header` / `Card.HeaderTitle` / `Card.Body` / `Card.Footer` as parts lets a consumer:",
       "buildStatus": "Done",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",
@@ -5845,7 +5910,7 @@
       "category": "Containers",
       "page": "Cards",
       "nodeId": "1879:436",
-      "description": "`Card` is the first compound API in `libs/ui`. Every other component here flattens to a single function — even ones with a Base UI primitive underneath that is itself namespaced (`Switch` wraps `Switch.Root` / `Switch.Thumb` into one component). Card has no Base UI primitive at all — there is no accessible \"card\" role, so nothing is lost by not flattening it — and Soma's own sheet already models it as independent regions (a header with an optional trailing action, a body slot, an optional footer), not a fixed set of props. Exposing `Card.Root` / `Card.Header` / `Card.HeaderTitle` / `Card.Body` / `Card.Footer` as parts lets a consumer:",
+      "description": "`Card` is the first compound API in `libs/ui`. Every other component here flattens to a single function \u2014 even ones with a Base UI primitive underneath that is itself namespaced (`Switch` wraps `Switch.Root` / `Switch.Thumb` into one component). Card has no Base UI primitive at all \u2014 there is no accessible \"card\" role, so nothing is lost by not flattening it \u2014 and Soma's own sheet already models it as independent regions (a header with an optional trailing action, a body slot, an optional footer), not a fixed set of props. Exposing `Card.Root` / `Card.Header` / `Card.HeaderTitle` / `Card.Body` / `Card.Footer` as parts lets a consumer:",
       "buildStatus": "Done",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",
@@ -6073,7 +6138,7 @@
       "category": "Forms & inputs",
       "page": "Checkbox",
       "nodeId": "440:80",
-      "description": "Checkbox is the Soma Checkbox / Control: a 16×16 selection box that the user ticks, unticks, or leaves mixed. Phase 1 is that control only — default tone, one size — as documented on the Soma Checkboxes page.",
+      "description": "Checkbox is the Soma Checkbox / Control: a 16\u00d716 selection box that the user ticks, unticks, or leaves mixed. Phase 1 is that control only \u2014 default tone, one size \u2014 as documented on the Soma Checkboxes page.",
       "buildStatus": "In progress",
       "importPath": "@nova/ui",
       "implementationStatus": "matched",
@@ -6320,7 +6385,7 @@
       "category": "Data display",
       "page": "Chips",
       "nodeId": "500:207",
-      "description": "Chip is the Soma Chip: a compact pill that labels a discrete value the user has already supplied or the system has already applied — a selected filter, a recipient, an applied tag. Its job is to make that value visible and, when the value is removable, to carry the control that removes it.",
+      "description": "Chip is the Soma Chip: a compact pill that labels a discrete value the user has already supplied or the system has already applied \u2014 a selected filter, a recipient, an applied tag. Its job is to make that value visible and, when the value is removable, to carry the control that removes it.",
       "buildStatus": "In progress",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",
@@ -8382,7 +8447,7 @@
       "category": "Data display",
       "page": "Chips",
       "nodeId": "500:14",
-      "description": "Chip is the Soma Chip: a compact pill that labels a discrete value the user has already supplied or the system has already applied — a selected filter, a recipient, an applied tag. Its job is to make that value visible and, when the value is removable, to carry the control that removes it.",
+      "description": "Chip is the Soma Chip: a compact pill that labels a discrete value the user has already supplied or the system has already applied \u2014 a selected filter, a recipient, an applied tag. Its job is to make that value visible and, when the value is removable, to carry the control that removes it.",
       "buildStatus": "In progress",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",
@@ -8472,7 +8537,7 @@
       "category": "Data display",
       "page": "Chips",
       "nodeId": "3823:1549",
-      "description": "Chip is the Soma Chip: a compact pill that labels a discrete value the user has already supplied or the system has already applied — a selected filter, a recipient, an applied tag. Its job is to make that value visible and, when the value is removable, to carry the control that removes it.",
+      "description": "Chip is the Soma Chip: a compact pill that labels a discrete value the user has already supplied or the system has already applied \u2014 a selected filter, a recipient, an applied tag. Its job is to make that value visible and, when the value is removable, to carry the control that removes it.",
       "buildStatus": "In progress",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",
@@ -9205,7 +9270,7 @@
       "category": "Forms & inputs",
       "page": "Inputs",
       "nodeId": "483:398",
-      "description": "Field composes the parts every labeled form control shares: a visible label, one control, and one supporting line — description or error. Controls own their own chrome and behavior; Field owns everything around them.",
+      "description": "Field composes the parts every labeled form control shares: a visible label, one control, and one supporting line \u2014 description or error. Controls own their own chrome and behavior; Field owns everything around them.",
       "buildStatus": "Done",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",
@@ -9919,7 +9984,7 @@
       "category": "Forms & inputs",
       "page": "Inputs",
       "nodeId": "466:4241",
-      "description": "TextField combines a visible field label, one native text input, and one supporting line — description or error — into a single accessible control.",
+      "description": "TextField combines a visible field label, one native text input, and one supporting line \u2014 description or error \u2014 into a single accessible control.",
       "buildStatus": "In progress",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",
@@ -10186,7 +10251,7 @@
       "category": "Forms & inputs",
       "page": "Inputs",
       "nodeId": "466:4287",
-      "description": "TextField combines a visible field label, one native text input, and one supporting line — description or error — into a single accessible control.",
+      "description": "TextField combines a visible field label, one native text input, and one supporting line \u2014 description or error \u2014 into a single accessible control.",
       "buildStatus": "In progress",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",
@@ -10321,7 +10386,7 @@
       "category": "Forms & inputs",
       "page": "Inputs",
       "nodeId": "466:4384",
-      "description": "TextField combines a visible field label, one native text input, and one supporting line — description or error — into a single accessible control.",
+      "description": "TextField combines a visible field label, one native text input, and one supporting line \u2014 description or error \u2014 into a single accessible control.",
       "buildStatus": "In progress",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",
@@ -10390,7 +10455,7 @@
       "category": "Actions",
       "page": "Text links",
       "nodeId": "1253:6995",
-      "description": "Link is the Soma inline hyperlink: text that takes the user somewhere else. Its job is to look like a link — color, underline, hover, focus — and to leave navigation itself to the element that owns the destination.",
+      "description": "Link is the Soma inline hyperlink: text that takes the user somewhere else. Its job is to look like a link \u2014 color, underline, hover, focus \u2014 and to leave navigation itself to the element that owns the destination.",
       "buildStatus": "In progress",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",
@@ -11647,7 +11712,7 @@
       "category": "Navigation & misc",
       "page": "Pagination",
       "nodeId": "1376:7529",
-      "description": "`Pagination` is the control that moves a user through a numbered page sequence. Use it anywhere a bounded list is split into pages — table footers (via `TablePagination`), card grids, search results — when the caller owns `page`, `pageCount`, and the fetch/slice logic.",
+      "description": "`Pagination` is the control that moves a user through a numbered page sequence. Use it anywhere a bounded list is split into pages \u2014 table footers (via `TablePagination`), card grids, search results \u2014 when the caller owns `page`, `pageCount`, and the fetch/slice logic.",
       "buildStatus": "Done",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",
@@ -11660,7 +11725,7 @@
           ],
           "codeProp": null,
           "implementationStatus": "not-implemented",
-          "notes": "No public size prop — controls are fixed 24×24; TablePagination owns Select size only"
+          "notes": "No public size prop \u2014 controls are fixed 24\u00d724; TablePagination owns Select size only"
         },
         {
           "name": "Position",
@@ -11742,7 +11807,7 @@
       "category": "Forms & inputs",
       "page": "Inputs",
       "nodeId": "466:3989",
-      "description": "TextField combines a visible field label, one native text input, and one supporting line — description or error — into a single accessible control.",
+      "description": "TextField combines a visible field label, one native text input, and one supporting line \u2014 description or error \u2014 into a single accessible control.",
       "buildStatus": "In progress",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",
@@ -11977,7 +12042,7 @@
       "category": "Communication",
       "page": "Progress Indicators",
       "nodeId": "1167:163",
-      "description": "Progress is the Soma Progress Bar: a determinate, horizontal indicator that shows how much of a known-length task has completed — an upload, a multi-step form, a wizard. Phase 1 is the determinate bar only, per the Soma Progress Indicators page; the file groups the bar and an indeterminate Spinner under the same page, and only the bar is in scope here.",
+      "description": "Progress is the Soma Progress Bar: a determinate, horizontal indicator that shows how much of a known-length task has completed \u2014 an upload, a multi-step form, a wizard. Phase 1 is the determinate bar only, per the Soma Progress Indicators page; the file groups the bar and an indeterminate Spinner under the same page, and only the bar is in scope here.",
       "buildStatus": "Done",
       "importPath": "@nova/ui",
       "implementationStatus": "matched",
@@ -12095,7 +12160,7 @@
       "category": "Forms & inputs",
       "page": "Radio",
       "nodeId": "428:46",
-      "description": "Radio is the Soma Radio / Control: a 16×16 circle expressing one choice in a mutually exclusive set. Exactly one member of a group is selected, and selecting one deselects the rest. Phase 1 is the control plus the group that owns its value — default tone, one size — per the Soma Radio page.",
+      "description": "Radio is the Soma Radio / Control: a 16\u00d716 circle expressing one choice in a mutually exclusive set. Exactly one member of a group is selected, and selecting one deselects the rest. Phase 1 is the control plus the group that owns its value \u2014 default tone, one size \u2014 per the Soma Radio page.",
       "buildStatus": "In progress",
       "importPath": "@nova/ui",
       "implementationStatus": "matched",
@@ -12200,7 +12265,7 @@
       "category": "Forms & inputs",
       "page": "Radio",
       "nodeId": "1707:9097",
-      "description": "Radio is the Soma Radio / Control: a 16×16 circle expressing one choice in a mutually exclusive set. Exactly one member of a group is selected, and selecting one deselects the rest. Phase 1 is the control plus the group that owns its value — default tone, one size — per the Soma Radio page.",
+      "description": "Radio is the Soma Radio / Control: a 16\u00d716 circle expressing one choice in a mutually exclusive set. Exactly one member of a group is selected, and selecting one deselects the rest. Phase 1 is the control plus the group that owns its value \u2014 default tone, one size \u2014 per the Soma Radio page.",
       "buildStatus": "In progress",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",
@@ -12379,7 +12444,7 @@
       "category": "Forms & inputs",
       "page": "Inputs",
       "nodeId": "2802:61985",
-      "description": "TextField combines a visible field label, one native text input, and one supporting line — description or error — into a single accessible control.",
+      "description": "TextField combines a visible field label, one native text input, and one supporting line \u2014 description or error \u2014 into a single accessible control.",
       "buildStatus": "Not started",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",
@@ -12440,7 +12505,7 @@
       "category": "Forms & inputs",
       "page": "Inputs",
       "nodeId": "464:4337",
-      "description": "TextField combines a visible field label, one native text input, and one supporting line — description or error — into a single accessible control.",
+      "description": "TextField combines a visible field label, one native text input, and one supporting line \u2014 description or error \u2014 into a single accessible control.",
       "buildStatus": "Not started",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",
@@ -12719,7 +12784,7 @@
       "category": "Forms & inputs",
       "page": "Select",
       "nodeId": "723:6332",
-      "description": "Select is the Soma Select: choose exactly one value from a known, finite list, collapsed behind a trigger until it is needed. It is the right control when the options are enumerable and the user does not need to see them all at once — a country, an assignee, a status.",
+      "description": "Select is the Soma Select: choose exactly one value from a known, finite list, collapsed behind a trigger until it is needed. It is the right control when the options are enumerable and the user does not need to see them all at once \u2014 a country, an assignee, a status.",
       "buildStatus": "Blocked",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",
@@ -12947,7 +13012,7 @@
       "category": "Forms & inputs",
       "page": "Select",
       "nodeId": "723:6333",
-      "description": "Select is the Soma Select: choose exactly one value from a known, finite list, collapsed behind a trigger until it is needed. It is the right control when the options are enumerable and the user does not need to see them all at once — a country, an assignee, a status.",
+      "description": "Select is the Soma Select: choose exactly one value from a known, finite list, collapsed behind a trigger until it is needed. It is the right control when the options are enumerable and the user does not need to see them all at once \u2014 a country, an assignee, a status.",
       "buildStatus": "Blocked",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",
@@ -12982,7 +13047,7 @@
       "category": "Forms & inputs",
       "page": "Multi-select",
       "nodeId": "907:12411",
-      "description": "Select is the Soma Select: choose exactly one value from a known, finite list, collapsed behind a trigger until it is needed. It is the right control when the options are enumerable and the user does not need to see them all at once — a country, an assignee, a status.",
+      "description": "Select is the Soma Select: choose exactly one value from a known, finite list, collapsed behind a trigger until it is needed. It is the right control when the options are enumerable and the user does not need to see them all at once \u2014 a country, an assignee, a status.",
       "buildStatus": "Blocked",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",
@@ -13116,7 +13181,7 @@
       "category": "Forms & inputs",
       "page": "Select",
       "nodeId": "723:5379",
-      "description": "Select is the Soma Select: choose exactly one value from a known, finite list, collapsed behind a trigger until it is needed. It is the right control when the options are enumerable and the user does not need to see them all at once — a country, an assignee, a status.",
+      "description": "Select is the Soma Select: choose exactly one value from a known, finite list, collapsed behind a trigger until it is needed. It is the right control when the options are enumerable and the user does not need to see them all at once \u2014 a country, an assignee, a status.",
       "buildStatus": "Blocked",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",
@@ -14412,7 +14477,7 @@
       "category": "Forms & inputs",
       "page": "Switches",
       "nodeId": "476:627",
-      "description": "Switch is the Soma Switch: a 44×24 pill that turns a setting on or off and takes effect immediately. Phase 1 is that control only — default tone, one size — per the Soma Switches page.",
+      "description": "Switch is the Soma Switch: a 44\u00d724 pill that turns a setting on or off and takes effect immediately. Phase 1 is that control only \u2014 default tone, one size \u2014 per the Soma Switches page.",
       "buildStatus": "In progress",
       "importPath": "@nova/ui",
       "implementationStatus": "matched",
@@ -14769,8 +14834,8 @@
       "notApplicable": []
     },
     {
-      "name": "Tab · Compact",
-      "figmaComponentName": "Tab · Compact",
+      "name": "Tab \u00b7 Compact",
+      "figmaComponentName": "Tab \u00b7 Compact",
       "category": "Navigation & misc",
       "page": "Tabs",
       "nodeId": "3068:1602",
@@ -14853,8 +14918,8 @@
       "notApplicable": []
     },
     {
-      "name": "Tab · Nav",
-      "figmaComponentName": "Tab · Nav",
+      "name": "Tab \u00b7 Nav",
+      "figmaComponentName": "Tab \u00b7 Nav",
       "category": "Navigation & misc",
       "page": "Tabs",
       "nodeId": "3068:1628",
@@ -14937,8 +15002,8 @@
       "notApplicable": []
     },
     {
-      "name": "Table / Cell · actions",
-      "figmaComponentName": "Table / Cell · actions",
+      "name": "Table / Cell \u00b7 actions",
+      "figmaComponentName": "Table / Cell \u00b7 actions",
       "category": "Data display",
       "page": "Tables",
       "nodeId": "1401:8138",
@@ -14960,8 +15025,8 @@
       "notApplicable": []
     },
     {
-      "name": "Table / Cell · avatar",
-      "figmaComponentName": "Table / Cell · avatar",
+      "name": "Table / Cell \u00b7 avatar",
+      "figmaComponentName": "Table / Cell \u00b7 avatar",
       "category": "Data display",
       "page": "Tables",
       "nodeId": "1401:8174",
@@ -14995,8 +15060,8 @@
       "notApplicable": []
     },
     {
-      "name": "Table / Cell · badge",
-      "figmaComponentName": "Table / Cell · badge",
+      "name": "Table / Cell \u00b7 badge",
+      "figmaComponentName": "Table / Cell \u00b7 badge",
       "category": "Data display",
       "page": "Tables",
       "nodeId": "1401:8131",
@@ -15018,8 +15083,8 @@
       "notApplicable": []
     },
     {
-      "name": "Table / Cell · chips",
-      "figmaComponentName": "Table / Cell · chips",
+      "name": "Table / Cell \u00b7 chips",
+      "figmaComponentName": "Table / Cell \u00b7 chips",
       "category": "Data display",
       "page": "Tables",
       "nodeId": "1401:8181",
@@ -15041,8 +15106,8 @@
       "notApplicable": []
     },
     {
-      "name": "Table / Cell · select",
-      "figmaComponentName": "Table / Cell · select",
+      "name": "Table / Cell \u00b7 select",
+      "figmaComponentName": "Table / Cell \u00b7 select",
       "category": "Data display",
       "page": "Tables",
       "nodeId": "1401:8124",
@@ -15064,8 +15129,8 @@
       "notApplicable": []
     },
     {
-      "name": "Table / Cell · text",
-      "figmaComponentName": "Table / Cell · text",
+      "name": "Table / Cell \u00b7 text",
+      "figmaComponentName": "Table / Cell \u00b7 text",
       "category": "Data display",
       "page": "Tables",
       "nodeId": "1401:8121",
@@ -15482,7 +15547,7 @@
       "category": "Forms & inputs",
       "page": "Inputs",
       "nodeId": "464:4302",
-      "description": "TextField combines a visible field label, one native text input, and one supporting line — description or error — into a single accessible control.",
+      "description": "TextField combines a visible field label, one native text input, and one supporting line \u2014 description or error \u2014 into a single accessible control.",
       "buildStatus": "In progress",
       "importPath": "@nova/ui",
       "implementationStatus": "partial",

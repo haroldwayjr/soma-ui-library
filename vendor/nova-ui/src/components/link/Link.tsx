@@ -3,7 +3,7 @@ import type { ComponentPropsWithRef, ReactElement } from 'react'
 import { externalRel, missingLabelOrHref } from '../../helper/anchor'
 import { cx } from '../../helper/cx'
 import { IconExternalLink } from '../icon'
-import { iconStyle, linkStyle } from './Link.css'
+import { iconStyle, labelStyle, linkStyle } from './Link.css'
 
 export type LinkProps = Omit<
   ComponentPropsWithRef<'a'>,
@@ -36,7 +36,7 @@ export function Link({
       rel={externalRel(target, rel)}
       target={target}
     >
-      {children}
+      <span className={labelStyle}>{children}</span>
       {external ? <IconExternalLink className={iconStyle} size="xs" /> : null}
     </a>
   )

@@ -2,6 +2,12 @@
 
 Internal component browser for the Soma registry and local Nova UI implementation.
 
+## Foundations (docs)
+
+| Doc | Description |
+|---|---|
+| [Motion (duration + easing)](./docs/motion.md) | Docs v1 — semantic motion tokens and recipes for Accordion, Progress, Switch |
+
 ## Run locally
 
 ```bash
