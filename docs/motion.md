@@ -164,6 +164,18 @@ Prototype clocks **180ms** enter / **120ms** leave — map to `moderate` / `fast
 
 Reduced motion: instant show/hide; skip leave animation.
 
+**Positioning / dismiss (shared Menu + Select)**
+
+| Event | Behavior |
+|---|---|
+| Scroll — trigger still partly visible | Stay open · reposition (track trigger) |
+| Scroll — trigger fully clipped / off-screen | Dismiss with normal leave |
+| Viewport or layout resize | Stay open · reposition (do **not** close on resize) |
+| Trigger gone after resize (detached / zero box) | Dismiss — no valid anchor |
+| Outside pointer, Escape, or item chosen | Dismiss |
+
+Do not keep an orphaned popup when the trigger has no visible intersection with the viewport and its nearest scrollport. Do not fork Menu vs Select.
+
 ## Prototype → token map (reference)
 
 | Prototype pattern | Approx. legacy | Token |
