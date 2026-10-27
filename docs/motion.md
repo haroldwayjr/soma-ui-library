@@ -4,7 +4,7 @@
 
 **Scope:** Duration and easing tokens only. No full stagger scale, spring, or page-transition language in this pass. Progress **reveal** (first-paint grow) is included.
 
-**Primary consumers:** Accordion · Progress (Bar / Circle) · Switch.
+**Primary consumers:** Accordion · Progress (Bar / Circle) · Switch · Menu / Select.
 
 ## Rules
 
@@ -142,14 +142,36 @@ If height is not animated (`display` toggle only), still animate the chevron wit
 
 Reduced motion: toggle open/closed instantly; chevron may snap with no rotate tween.
 
+
+### Menu / Select (Popup)
+
+Shared open/close for **Menu / Popup**, **Select / Popup**, overflow / View menus, filter menus, and DOB calendar — not Tooltip, not Modal. Provenance: Care App `tool-rail-panels` (`menu-popover-in` / `menu-popover-out`).
+
+| Property | Duration | Easing |
+|---|---|---|
+| Popup enter (fade + scale) | `motion.duration.moderate` | `motion.easing.emphasized` |
+| Popup leave (fade + scale) | `motion.duration.fast` | `motion.easing.exit` |
+| Trigger chevron rotate (if any) | `motion.duration.moderate` | `motion.easing.emphasized` |
+
+**Settle / scale (prototype)**
+
+- Enter: opacity `0→1`, scale `0.96→1`, **~6px** Y settle **emerging from the trigger** (open down → start `-6px`; open up → `+6px`).
+- Leave: opacity `1→0`, scale `1→0.98`, **~4px** Y on the same axis.
+- `transform-origin` on the trigger corner; flip when the popup opens upward.
+- No hover-intent delay (unlike Tooltip).
+
+Prototype clocks **180ms** enter / **120ms** leave — map to `moderate` / `fast` (do not hardcode ms in product).
+
+Reduced motion: instant show/hide; skip leave animation.
+
 ## Prototype → token map (reference)
 
 | Prototype pattern | Approx. legacy | Token |
 |---|---|---|
 | Hover fill / color | 140ms ease | `normal` + `standard` |
 | Accordion / task-list chevron | 160ms ease | `normal` + `emphasized` |
-| Menu / popover enter | 180ms emphasized | `moderate` + `emphasized` (menus; not in v1 recipe set) |
-| Menu / popover leave | 120ms exit | `fast` + `exit` |
+| Menu / Select popup enter | 180ms emphasized | `moderate` + `emphasized` |
+| Menu / Select popup leave | 120ms exit | `fast` + `exit` |
 | View switcher thumb | 220ms custom ease | `moderate` + `emphasized` |
 | Progress meter first paint (Insurance Activity) | 900ms grow + stagger | `reveal` + `emphasized` |
 | Progress value change (post-load) | — | `moderate` + `standard` |
@@ -159,7 +181,6 @@ Reduced motion: toggle open/closed instantly; chevron may snap with no rotate tw
 
 - Formal delay / stagger token scale (pattern note above only)
 - Overlay / drawer / panel enter distances
-- Shared menu/popover recipe (values above are hints only)
 - Figma variable collection + Motions page
 - Per-component duration tokens (`duration.accordion`) — prefer roles above
 - Foundation browser page under `#/ui-library/foundation/motion` (tokens live here first)
@@ -167,5 +188,5 @@ Reduced motion: toggle open/closed instantly; chevron may snap with no rotate tw
 ## Related
 
 - Soma UI Library: [README](../README.md)
-- Care App prototype provenance: `prototypes/tool-rail-panels/styles.css` (`.ins-progress` / `ins-meter-grow`)
+- Care App prototype provenance: `prototypes/tool-rail-panels/styles.css` (`.ins-progress` / `ins-meter-grow`; Menu / Select `menu-popover-in` / `-out`)
 - Figma: [Soma Design System](https://www.figma.com/design/hB1NzwMnZt2ALeR0OslaWi/Soma-Design-System)
